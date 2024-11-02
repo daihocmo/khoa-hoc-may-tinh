@@ -34,9 +34,7 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-  logo: assets/logo.svg
-  favicon: assets/vietnam.svg
-  custom_dir: overrides
+
   features:
     - navigation.tabs
     - navigation.sections
