@@ -1,0 +1,53 @@
+site_name: Tôi luyện khoa học máy tính
+site_description: Một trang tổng hợp nhiều hướng dẫn tự học, lộ trình và tài nguyên tự học những thứ liên quan đến khoa học máy tính và lập trình
+site_author: duykhanh471
+
+nav:
+  - 'Trang chủ': 
+    - 'Trang chủ': index.md
+  - 'Hướng dẫn':
+    - 'Hướng dẫn chính': 'huong-dan/huong-dan-chinh.md'
+  - 'Lộ trình':
+    - 'Fullstack': 'lo-trinh/fullstack.md'
+  - 'Tài nguyên':
+    - 'Tài nguyên': tai-nguyen.md
+  - 'Gợi ý':
+    - 'Gợi ý': 'goi-y/goi-y.md'
+
+
+theme:
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  logo: assets/logo.svg
+  favicon: assets/vietnam.svg
+  custom_dir: overrides
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - toc.follow
+    - search.highlighting
+    - search.share
+    - search.suggest
+  name: material
+
+plugins:
+  - search
+
+extra:
+  generator: false
