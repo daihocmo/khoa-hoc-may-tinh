@@ -1,0 +1,2920 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="vozer vozer vozer vozer vozer vozer vozer vozer vozer vozer">
+      
+      
+        <meta name="author" content="duykhanh471">
+      
+      
+      
+        <link rel="prev" href="../dsa-vs-dev/">
+      
+      
+        <link rel="next" href="../javascript/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Phát triển Web - khOa hỌc mÁy</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#introduction" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="khOa hỌc mÁy" class="md-header__button md-logo" aria-label="khOa hỌc mÁy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            khOa hỌc mÁy
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Phát triển Web
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/daihocmo/khoa-hoc-may-tinh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gì cũng được
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+    
+  
+  Trang chủ
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lo-trinh-beginner/" class="md-tabs__link">
+          
+  
+  Lộ trình học
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../full-stack/" class="md-tabs__link">
+          
+  
+  Các lộ trình tổng hợp
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../javascript/" class="md-tabs__link">
+          
+  
+  Ngôn ngữ lập trình
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../tieng-anh-it/" class="md-tabs__link">
+        
+  
+    
+  
+  Tiếng Anh IT
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../resources/" class="md-tabs__link">
+          
+  
+  Tài nguyên học
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../contribute/" class="md-tabs__link">
+        
+  
+    
+  
+  Đóng góp
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="khOa hỌc mÁy" class="md-nav__button md-logo" aria-label="khOa hỌc mÁy" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    khOa hỌc mÁy
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/daihocmo/khoa-hoc-may-tinh" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Gì cũng được
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trang chủ
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Lộ trình học
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Lộ trình học
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lo-trinh-beginner/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lộ trình mới bắt đầu
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ke-hoach-3-nam/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Giáo trình 3 năm
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Các lộ trình tổng hợp
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Các lộ trình tổng hợp
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../full-stack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Fullstack
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../backend/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Back-end
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../teach-yourself-cs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Khoa học máy tính
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../dsa-vs-dev/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DSA
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Phát triển Web
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Phát triển Web
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆕 Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning-and-useful-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Warning and useful link
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆘 Contributing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 How to use this guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆙 Getting Help
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-to-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time to study
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Time to study">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-1-introduction-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 Week 1 - Introduction &amp; Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 Week 1 - Introduction & Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-curricular-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra curricular resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-2-html-css-basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Week 2 - HTML &amp; CSS Basic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Week 2 - HTML & CSS Basic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-curricular-resources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra curricular resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-3-js-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✏️ Week 3 - JS Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✏️ Week 3 - JS Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-4-js-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔥 Week 4 - JS Intermediate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔥 Week 4 - JS Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-free-resources-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced free resources (Optional):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-5-a-first-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Week 5 - A first website
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Week 5 - A first website">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-6-typescript-webpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⌨️ Week 6 - Typescript &amp; Webpack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⌨️ Week 6 - Typescript & Webpack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-7-nodejs-express-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Week 7 - NodeJs + Express + REST
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 Week 7 - NodeJs + Express + REST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-curricular-resources_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra curricular resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-8-database-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⛓️ Week 8 - Database Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⛓️ Week 8 - Database Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-9-react-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚛️ Week 9 - React basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚛️ Week 9 - React basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-10-react-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      🦸🏻 Week 10 - React advanced
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🦸🏻 Week 10 - React advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-11-a-fullstack-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Week 11 - A fullstack website
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Week 11 - A fullstack website">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-12-algorithms-data-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      💪🏻 Week 12 - Algorithms &amp; Data Structures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💪🏻 Week 12 - Algorithms & Data Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-13-docker-project-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐳🤝 Week 13 - Docker &amp; Project management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐳🤝 Week 13 - Docker & Project management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-14-cloud-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁️ Week 14 - Cloud basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☁️ Week 14 - Cloud basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-15-whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Week 15 - What's next?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tech-interview-preparation-in-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      💼🧑🏻‍💼Tech Interview Preparation in 2023
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💼🧑🏻‍💼Tech Interview Preparation in 2023">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-understand-the-interview-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Understand the Interview Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-review-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Review Fundamentals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-master-web-development-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Master Web Development Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-practice-coding-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Practice Coding Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-prepare-for-behavioral-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Prepare for Behavioral Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-leverage-free-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Leverage Free Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔚 Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Ngôn ngữ lập trình
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Ngôn ngữ lập trình
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../javascript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tieng-anh-it/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tiếng Anh IT
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Tài nguyên học
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Tài nguyên học
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../resources/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tài nguyên học
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../youtube/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Youtube
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../contribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Đóng góp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introduction" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆕 Introduction
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#assumptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      🧠 Assumptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#warning-and-useful-link" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚠️ Warning and useful link
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆘 Contributing
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-use-this-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      📚 How to use this guide
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#getting-help" class="md-nav__link">
+    <span class="md-ellipsis">
+      🆙 Getting Help
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#time-to-study" class="md-nav__link">
+    <span class="md-ellipsis">
+      Time to study
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Time to study">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-1-introduction-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔨 Week 1 - Introduction &amp; Tools
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔨 Week 1 - Introduction & Tools">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-curricular-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra curricular resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-2-html-css-basic" class="md-nav__link">
+    <span class="md-ellipsis">
+      🎨 Week 2 - HTML &amp; CSS Basic
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🎨 Week 2 - HTML & CSS Basic">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-curricular-resources_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra curricular resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-3-js-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ✏️ Week 3 - JS Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="✏️ Week 3 - JS Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-4-js-intermediate" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔥 Week 4 - JS Intermediate
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🔥 Week 4 - JS Intermediate">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-free-resources-optional" class="md-nav__link">
+    <span class="md-ellipsis">
+      Advanced free resources (Optional):
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-5-a-first-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      🏗️ Week 5 - A first website
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🏗️ Week 5 - A first website">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-6-typescript-webpack" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⌨️ Week 6 - Typescript &amp; Webpack
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⌨️ Week 6 - Typescript & Webpack">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-7-nodejs-express-rest" class="md-nav__link">
+    <span class="md-ellipsis">
+      🌐 Week 7 - NodeJs + Express + REST
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🌐 Week 7 - NodeJs + Express + REST">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-curricular-resources_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra curricular resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-8-database-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⛓️ Week 8 - Database Basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⛓️ Week 8 - Database Basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-9-react-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ⚛️ Week 9 - React basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="⚛️ Week 9 - React basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-10-react-advanced" class="md-nav__link">
+    <span class="md-ellipsis">
+      🦸🏻 Week 10 - React advanced
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🦸🏻 Week 10 - React advanced">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-11-a-fullstack-website" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Week 11 - A fullstack website
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🚀 Week 11 - A fullstack website">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#track-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track 1
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 1">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#track-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      Track 2
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Track 2">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-12-algorithms-data-structures" class="md-nav__link">
+    <span class="md-ellipsis">
+      💪🏻 Week 12 - Algorithms &amp; Data Structures
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💪🏻 Week 12 - Algorithms & Data Structures">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why it Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-13-docker-project-management" class="md-nav__link">
+    <span class="md-ellipsis">
+      🐳🤝 Week 13 - Docker &amp; Project management
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="🐳🤝 Week 13 - Docker & Project management">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-14-cloud-basics" class="md-nav__link">
+    <span class="md-ellipsis">
+      ☁️ Week 14 - Cloud basics
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="☁️ Week 14 - Cloud basics">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#week-description_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Week Description
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#why-it-matters_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      Why It Matters
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#week-15-whats-next" class="md-nav__link">
+    <span class="md-ellipsis">
+      🚀 Week 15 - What's next?
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tech-interview-preparation-in-2023" class="md-nav__link">
+    <span class="md-ellipsis">
+      💼🧑🏻‍💼Tech Interview Preparation in 2023
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="💼🧑🏻‍💼Tech Interview Preparation in 2023">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-understand-the-interview-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 1: Understand the Interview Process
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-review-fundamentals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 2: Review Fundamentals
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-master-web-development-concepts" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 3: Master Web Development Concepts
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-practice-coding-problems" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 4: Practice Coding Problems
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-prepare-for-behavioral-questions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 5: Prepare for Behavioral Questions
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-leverage-free-resources" class="md-nav__link">
+    <span class="md-ellipsis">
+      Step 6: Leverage Free Resources
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔚 Conclusion
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+  <h1>Phát triển Web</h1>
+
+<p>Learn how to become a web developer.</p>
+<h2 id="introduction">🆕 Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
+<p>Becoming a web developer today can be a hard journey. Online there are tons of videos, books, and courses. This can cause analysis paralysis. Also, as a new developer, you can literally learn tens of different languages. There are a few reasons why I decided to create this repository:</p>
+<ul>
+<li>Let you avoid common mistakes</li>
+<li>Provide a free study path accessible to everyone</li>
+<li>Connect the dots between the technologies</li>
+<li>Help you learn tech in the correct way</li>
+</ul>
+<h2 id="assumptions">🧠 Assumptions<a class="headerlink" href="#assumptions" title="Permanent link">&para;</a></h2>
+<p>Unfortunately, in computer science, there is no solution that fits all the requirements. I have to make a few assumptions about you to give you a useful path.</p>
+<p>My assumptions are: </p>
+<ul>
+<li>You are passionate about computer science and you want to learn more</li>
+<li>Your English level is enough to understand videos, books, and articles</li>
+<li>You don’t have past working experience in this field</li>
+<li>All the listed resources are free</li>
+<li>You have basics tech skills, like using a computer, installing software, and using the web</li>
+</ul>
+<h2 id="warning-and-useful-link">⚠️ Warning and useful link<a class="headerlink" href="#warning-and-useful-link" title="Permanent link">&para;</a></h2>
+<p>This 15-week web developer roadmap is designed to give you a taste of what it's like to be a developer and help you understand if this is the career path you'd like to pursue. It's important to remember that this roadmap is a starting point, aimed at helping you with prototyping and gaining some practical knowledge.</p>
+<p>While this roadmap provides a wealth of useful information for free, it's crucial to keep in mind that it is not a replacement for a more formal education, such as a university degree. A comprehensive education will provide you with in-depth knowledge and a strong foundation in computer science, which is essential for a successful career in web development.</p>
+<p>So, if you're a tech enthusiast considering a developer career, give this 15-week roadmap a try to see if it's the right fit for you. But remember, this is only the beginning of your journey, and further education will be necessary to fully develop your skills and knowledge in the field.</p>
+<p>You can check a few useful resources about CS:
+- <a href="https://github.com/ossu/computer-science">Open Source Society University</a>
+- <a href="https://teachyourselfcs.com/">Teach Yourself Computer Science</a>
+- <a href="https://github.com/P1xt/p1xt-guides">Computer Science and Programming - Version 4.0</a>
+- <a href="https://github.com/ForrestKnight/open-source-cs">The Open Source Computer Science Degree</a>
+- <a href="https://roadmap.sh/roadmaps">Developer Roadmaps</a></p>
+<h2 id="contributing">🆘 Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h2>
+<p>If you want to contribute to this project by suggesting changes, fixing broken links, adding useful resources etc please follow our <a href="https://github.com/alfonsograziano/web-developer-roadmap/blob/main/CONTRIBUTING.md">Contribution Guide</a></p>
+<h2 id="how-to-use-this-guide">📚 How to use this guide<a class="headerlink" href="#how-to-use-this-guide" title="Permanent link">&para;</a></h2>
+<p>As you’ll see in the next section, I divided the study into multiple weeks. I assume a daily study of 5h/day, 6 days/week (30hrs/week). If you can’t afford this rhythm (which is totally fine), just keep in mind that this is not a race, you can take your time.</p>
+<p>You’ll find a few checkboxes, feel free to copy this document (or fork it as we will see later) and check the checkbox as soon as you finish an activity. </p>
+<p>You’ll find activities related to hard and soft skills. Being a good developer is not about writing code. </p>
+<p>Ready? Let’s get started! 🚀</p>
+<h2 id="getting-help">🆙  Getting Help<a class="headerlink" href="#getting-help" title="Permanent link">&para;</a></h2>
+<p>As you embark on your journey through the Web Developer Roadmap, you may encounter challenges or have questions along the way. Don't worry - this is a normal part of the learning process. In this section, we provide some guidance on where and how to get help when you need it.</p>
+<ol>
+<li><strong>Open a GitHub issue in the repository</strong>: If you come across an issue specifically related to the content or structure of the Web Developer Roadmap, consider opening an issue in the GitHub repository. This will allow us to address your concern and potentially help others who might have the same question.</li>
+<li><strong>Google your error</strong>: When you face an error or issue that you're not sure how to resolve, try googling it. Chances are, someone else has encountered the same problem and has either documented a solution or discussed it in a forum.</li>
+<li><strong>Check Stack Overflow</strong>: Stack Overflow is a question and answer platform for professional and enthusiast programmers. It's likely that you will find a solution or a similar issue there. Remember to search for your error message or issue before asking a new question. Be sure to provide all the necessary context and code snippets when posting a question to help others understand your problem.</li>
+<li><strong>Review the documentation</strong>: When working with a specific technology, always refer to its official documentation. This can often provide the solution or explanation you need. Keep in mind that some technologies have more extensive documentation than others, so don't hesitate to look for additional resources, such as tutorials or blog posts, if the official docs don't fully address your question.</li>
+<li><strong>Ask in communities</strong>: Joining online communities, such as forums, social media groups, or Slack channels, can be an invaluable resource. Many developers are willing to help others and share their experiences. Just make sure to follow the community guidelines and be respectful when asking for help.</li>
+<li><strong>Find a mentor</strong>: Having a mentor or a more experienced developer to guide you can make a big difference in your learning journey. You can find potential mentors through online communities, local meetups, or even within your personal network.</li>
+<li><strong>Take a break</strong>: Sometimes, taking a short break from the problem can help you approach it with a fresh perspective. This can lead to new ideas and solutions that you may have missed earlier.</li>
+</ol>
+<p>Remember, seeking help is a natural part of the learning process, and there's no shame in asking for assistance. The web development community is known for its collaborative spirit, so don't hesitate to reach out when you need support. Good luck!</p>
+<h2 id="time-to-study">Time to study<a class="headerlink" href="#time-to-study" title="Permanent link">&para;</a></h2>
+<h3 id="week-1-introduction-tools">🔨 Week 1 - Introduction &amp; Tools<a class="headerlink" href="#week-1-introduction-tools" title="Permanent link">&para;</a></h3>
+<h4 id="week-description">Week Description<a class="headerlink" href="#week-description" title="Permanent link">&para;</a></h4>
+<p>In the first week of our 15-week web developer roadmap, you'll be introduced to the fundamentals of programming and computer science. 
+This week, you will watch a series of videos that explain the basics of programming languages, how the internet works, and the tools that you'll use throughout the course. You'll also be setting up your development environment by installing Visual Studio Code and configuring Git, a version control system. Finally, you'll create accounts on Github and LinkedIn to help you manage your projects and expand your professional network.</p>
+<h4 id="why-it-matters">Why It Matters<a class="headerlink" href="#why-it-matters" title="Permanent link">&para;</a></h4>
+<p>Understanding the basics of programming, the internet, and the tools you'll be using is crucial for your journey as a web developer. This week's content will help you build a solid foundation and gain confidence in your ability to learn more advanced topics in the following weeks. Furthermore, setting up your development environment, creating a Github account, and getting familiar with Git will enable you to collaborate with other developers and share your work. Lastly, creating a LinkedIn account will allow you to connect with professionals in the industry and access potential job opportunities as you progress through the course.</p>
+<p>#### Week tasks</p>
+<ul>
+<li>[ ]  Watch <a href="https://www.youtube.com/watch?v=zOjov-2OZ0E&amp;ab_channel=freeCodeCamp.org">Introduction to Programming and Computer Science - Full Course</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/2lVDktWK-pc">The Programming Language Guide</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/zN8YNNHcaZc">How does the internet work? (Full Course)</a></li>
+<li>[ ]  Watch <a href="https://www.youtube.com/watch?v=WPqXP_kLzpo&amp;t=1s">Visual Studio Code Crash Course</a><ul>
+<li>[ ]  Download and configure Visual Studio Code</li>
+</ul>
+</li>
+<li>[ ]  Watch <a href="https://youtu.be/RGOj5yH7evk">Git and GitHub for Beginners - Crash Course</a><ul>
+<li>[ ]  Create a <a href="https://github.com/">Github</a> account</li>
+<li>[ ]  Download <a href="https://git-scm.com/downloads">Git</a></li>
+<li>[ ]  Create and publish a first Github repository containing only a text file with your name</li>
+<li>[ ]  Fork this repository and update the MD file as soon as you proceed with the roadmap</li>
+</ul>
+</li>
+<li>[ ]  Create a <a href="https://www.linkedin.com/">Linkedin</a> account (we will optimize it in the next weeks)<ul>
+<li>[ ]  Send me a <a href="https://www.linkedin.com/in/alfonso-graziano/">connection</a> if you want</li>
+</ul>
+</li>
+</ul>
+<h4 id="extra-curricular-resources">Extra curricular resources<a class="headerlink" href="#extra-curricular-resources" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Harvard's CS50x (Introduction to Computer Science): https://www.edx.org/course/introduction-computer-science-harvardx-cs50x</li>
+<li>Stanford's Introduction to Computer Science (CS106A): https://see.stanford.edu/Course/CS106A</li>
+</ul>
+<h3 id="week-2-html-css-basic">🎨 Week 2 - HTML &amp; CSS Basic<a class="headerlink" href="#week-2-html-css-basic" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_1">Week description<a class="headerlink" href="#week-description_1" title="Permanent link">&para;</a></h4>
+<p>HTML &amp; CSS are two of the 3 main components of a frontend web application. </p>
+<p>Like other topics in this roadmap, is virtually impossible to learn them in one week, but we can at least gain a basic understanding of how they work and start experimenting to create a few demo applications. We will cover the HTML &amp; CSS basics, Tailwind and we’re going to create a first presentation Linkedin post.</p>
+<h4 id="why-it-matters_1">Why it matters<a class="headerlink" href="#why-it-matters_1" title="Permanent link">&para;</a></h4>
+<p>HTML creates the basic structure of a web page. With CSS we can add style, animations, handling responsiveness, and a lot more. Also, joining dev communities is really important and can be a career booster.</p>
+<p>#### Week tasks</p>
+<ul>
+<li>[ ]  Watch <a href="https://www.youtube.com/watch?v=iG2jotQo9NI&amp;ab_channel=EnvatoTuts%2B">HTML &amp; CSS for Beginners | FREE MEGA COURSE (7+ Hours!)</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/lCxcTsOHrjo">Tailwind CSS Full Course for Beginners | Complete All-in-One Tutorial | 3 Hours</a></li>
+<li>[ ]  Create an account on <a href="https://www.frontendmentor.io/">Frontend Mentor</a><ul>
+<li>[ ]  Complete at least <a href="https://www.frontendmentor.io/challenges?languages=HTML|CSS&amp;types=free">5 challenges</a> with HTML + CSS and publish them on Github</li>
+</ul>
+</li>
+<li>[ ]  Validate your knowledge with <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=HTML">HTML Quiz</a> &amp; <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=CSS">CSS Quiz</a></li>
+<li>[ ]  Improve your social presence<ul>
+<li>[ ]  Create your first Linkedin post by explaining who you are, what are you studying, and why you decided to start this journey</li>
+<li>[ ]  Connect with at least 10 software developers. You can search for them in your city for example.</li>
+</ul>
+</li>
+<li>[ ]  Join software developer's <a href="https://dev.to/htnguy/top-10-discord-servers-for-developers-559o">Discord communities</a> and start to interact with them</li>
+</ul>
+<p>Right now you should have an understanding of how the DOM works, how to style HTML, and you should already have a few projects on Github, congratulations! 🎉</p>
+<p>Keep in mind that this is not programming. HTML and CSS are a way to define what to show on a web browser. Programming is something different, we will see it in the next week.</p>
+<h4 id="extra-curricular-resources_1">Extra curricular resources<a class="headerlink" href="#extra-curricular-resources_1" title="Permanent link">&para;</a></h4>
+<p>Learning HTML and CSS is essential for web development, and there are many great resources available to help you get started. Here are some of the best websites for learning HTML and CSS basics:</p>
+<ul>
+<li>Mozilla Developer Network (MDN) Web Docs:</li>
+<li>HTML: https://developer.mozilla.org/en-US/docs/Web/HTML</li>
+<li>
+<p>CSS: https://developer.mozilla.org/en-US/docs/Web/CSS
+MDN is a comprehensive and authoritative resource for web developers, providing detailed documentation and guides on HTML, CSS, and other web technologies.</p>
+</li>
+<li>
+<p>W3Schools:</p>
+</li>
+<li>HTML: https://www.w3schools.com/html/</li>
+<li>
+<p>CSS: https://www.w3schools.com/css/
+W3Schools offers beginner-friendly tutorials and interactive examples to help you learn and practice HTML and CSS.</p>
+</li>
+<li>
+<p>CSS-Tricks:</p>
+</li>
+<li>CSS: https://css-tricks.com/
+CSS-Tricks is a popular blog and resource site that covers various CSS techniques, tips, and tricks, as well as HTML and JavaScript.</li>
+</ul>
+<h3 id="week-3-js-basics">✏️ Week 3 - JS Basics<a class="headerlink" href="#week-3-js-basics" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_2">Week description<a class="headerlink" href="#week-description_2" title="Permanent link">&para;</a></h4>
+<p>In this roadmap, we decided to keep just one language to use both on the frontend and on the backend to keep it simpler. Javascript is a powerful language and we’re going to use it to build full-stack complex applications. </p>
+<p>In this first week, we will learn a few basics JS skills and a few Soft Skills for software developers</p>
+<h4 id="why-it-matters_2">Why it matters<a class="headerlink" href="#why-it-matters_2" title="Permanent link">&para;</a></h4>
+<p>I remember when I started coding for the first time. It was interesting but hard, complex, and a huge topic. In the end, programming is just the first step to becoming a software engineer. The more you exercise, the more you improve your skills. Keep going! 🚀</p>
+<p>#### Week tasks</p>
+<ul>
+<li>[ ]  Watch <a href="https://youtu.be/lI1ae4REbFM">JavaScript Tutorial for Beginners - Full Course in 12 Hours (2022)</a><ul>
+<li>[ ]  Replicate the two portfolio projects at the end and add them to your Github profile</li>
+</ul>
+</li>
+<li>[ ]  Complete at least <a href="https://www.frontendmentor.io/challenges?languages=HTML|CSS,HTML|CSS|JS&amp;types=free">10 challenges</a> with HTML + CSS and publish them on Github</li>
+<li>[ ]  Practice as much as you can with <a href="https://exercism.org/tracks/javascript/exercises">Exercism</a></li>
+<li>[ ]  Start learning a few <a href="https://www.youtube.com/playlist?list=PL32pD389V8xsYo9ETSd4JTu5EYYLcYZCu">Software Development soft skills</a></li>
+<li>[ ]  Read <a href="https://www.trio.dev/blog/software-engineer-soft-skills">10 Soft Skills Every Software Engineer Should Have</a></li>
+<li>[ ]  Publish 3 posts on Linkedin about what you’re learning and present demos (using videos or screenshots) about your current projects</li>
+</ul>
+<p>What huge progress! You have the Javascript basics and should be able to accomplish simple tasks. Javascript is a big language and contains a lot of concepts, we will analyze them more in detail next week!</p>
+<h3 id="week-4-js-intermediate">🔥 Week 4 - JS Intermediate<a class="headerlink" href="#week-4-js-intermediate" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_3">Week Description<a class="headerlink" href="#week-description_3" title="Permanent link">&para;</a></h4>
+<p>During the fourth week of our 15-week web developer roadmap, you'll be focusing on gaining a deep understanding of JavaScript and clean coding practices. You will study the renowned book "Eloquent JavaScript" up to Chapter 19, taking notes and reproducing all the projects from the chapters. Additionally, you'll create a Github repository to store your notes and share them with others. To further enhance your coding skills, you'll watch a "Clean Code" playlist to learn best practices for writing efficient and maintainable code. Finally, you'll engage with the community by participating in an online JavaScript event or workshop, sharing your experience on LinkedIn, and inviting others to contribute to your Github repository via Pull Requests.</p>
+<h4 id="why-it-matters_3">Why It Matters<a class="headerlink" href="#why-it-matters_3" title="Permanent link">&para;</a></h4>
+<p>JavaScript is an essential language for web development, and having a solid grasp of its fundamentals will enable you to build interactive and dynamic websites. Studying "Eloquent JavaScript" will help you understand the language's core concepts, techniques, and best practices, making you a more skilled and effective web developer. Learning clean coding practices through the "Clean Code" playlist will allow you to write code that is not only efficient but also maintainable, a valuable skill for any developer. Engaging with the community by participating in events and sharing your work on LinkedIn not only helps you learn from others but also increases your visibility and credibility within the industry.</p>
+<p>#### Week tasks</p>
+<ul>
+<li>[ ]  Study <a href="https://eloquentjavascript.net/">Eloquent Javascript</a> up to Chapter 19<ul>
+<li>[ ]  Create a Github repository with Eloquent Javascript notes</li>
+<li>[ ]  Study and reproduce all the projects up to Chapter 19</li>
+</ul>
+</li>
+<li>[ ] Continue practicing with <a href="https://exercism.org/tracks/javascript/exercises">Exercism</a> challenges</li>
+<li>[ ]  Watch <a href="https://www.youtube.com/playlist?list=PLWKjhJtqVAbkK24EaPurzMq0-kw5U9pJh">Clean Code playlist</a></li>
+<li>[ ]  Share on Linkedin the Github repository with your notes and ask for Pull Requests</li>
+<li>[ ]  Participate in an online JS event/workshop and after that, share a post on Linkedin with what you learned</li>
+</ul>
+<h4 id="advanced-free-resources-optional">Advanced free resources (Optional):<a class="headerlink" href="#advanced-free-resources-optional" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Deep JavaScript: Theory and techniques Dr. Axel Rauschmayer <a href="https://exploringjs.com/deep-js/toc.html">Free edition</a></li>
+<li><a href="https://github.com/leonardomso/33-js-concepts">33 Concepts Every JavaScript Developer Should Know</a> - A curated collection of articles, videos, and resources covering 33 advanced JavaScript concepts.</li>
+</ul>
+<h3 id="week-5-a-first-website">🏗️ Week 5 - A first website<a class="headerlink" href="#week-5-a-first-website" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_4">Week Description<a class="headerlink" href="#week-description_4" title="Permanent link">&para;</a></h4>
+<p>During the course of one week, the personal project will be broken down into manageable tasks that will help in the development of a fully functional basic frontend weather forecast application using HTML, CSS, JavaScript, and Git. The app will fetch weather data from public and freely available APIs, allowing users to view current weather conditions and a 5-day forecast for their desired location.</p>
+<p>Day 1: Project setup and HTML structure
+Day 2: CSS styling for responsive and visually appealing design
+Day 3: JavaScript integration to fetch data from public weather APIs
+Day 4: Implement search functionality and geolocation support
+Day 5: Add unit toggle feature and test the application
+Day 6: Bug fixing, refining, and optimizing the code
+Day 7: Final review, documentation, and deployment to a platform like GitHub</p>
+<p>Also, for the first time, you will publish a project using <a href="https://pages.github.com/">Github Pages</a> so that everyone can see your project and interact with it.</p>
+<h4 id="why-it-matters_4">Why It Matters<a class="headerlink" href="#why-it-matters_4" title="Permanent link">&para;</a></h4>
+<p>This personal project matters for several reasons:</p>
+<p>Skill development: By working on this project, you will be able to enhance your frontend development skills in HTML, CSS, and JavaScript. You will gain a deeper understanding of API integration, responsive web design, and user experience.</p>
+<p>Portfolio building: Having a completed project like a weather forecast app in your portfolio showcases your skills in frontend development and your ability to work with APIs. This can be valuable when seeking job opportunities or freelance work.</p>
+<p>Version control proficiency: Utilizing Git for version control throughout the project allows you to gain experience in tracking changes, collaborating with others, and managing code. This skill is essential for any developer in the industry.</p>
+<p>Personal satisfaction: Completing a personal project from start to finish is a rewarding experience. It not only demonstrates your dedication and perseverance but also helps boost your confidence as a developer.</p>
+<p>Practical application: A weather forecast app is a useful tool for users to access weather information quickly and easily. By creating an intuitive and visually appealing app, you contribute to the daily lives of potential users.</p>
+<p>#### Week tasks</p>
+<p><strong>Project Brief:</strong>
+The main goal of this personal project is to create a fully functional basic frontend weather forecast application using HTML, CSS, JavaScript, and Git. The app will fetch weather data from public and freely available APIs and display the information in a visually appealing and user-friendly manner.</p>
+<p><strong>Objective:</strong>
+1. Develop an understanding of API integration using JavaScript.
+2. Enhance frontend development skills (HTML, CSS, JavaScript).
+3. Gain experience in version control using Git.</p>
+<p><strong>Requirements:</strong>
+1. HTML - Create a responsive and accessible webpage layout.
+2. CSS - Style the webpage, making it visually appealing and responsive.
+3. JavaScript - Fetch and process data from public weather APIs, and implement custom logic to present the data.
+4. Git - Use Git for version control, and host the project on a platform like GitHub.</p>
+<p><strong>Features:</strong>
+1. Current weather - Display the current temperature, weather condition, humidity, and wind speed.
+2. Weather forecast - Show a 5-day weather forecast with daily high and low temperatures and weather conditions.
+3. Search functionality - Allow users to search for weather information by city or ZIP code.
+4. Geolocation - Automatically fetch the weather data for the user's current location.
+5. Units toggle - Enable users to switch between Celsius and Fahrenheit temperature units.</p>
+<p><strong>APIs:</strong>
+1. OpenWeatherMap API (<strong><a href="https://openweathermap.org/api">https://openweathermap.org/api</a></strong>) - Fetch weather data for the current conditions and 5-day forecast.
+2. LocationIQ API (<strong><a href="https://locationiq.com/">https://locationiq.com/</a></strong>) - Convert user's input (city or ZIP code) into coordinates for OpenWeatherMap API.</p>
+<p><strong>Workflow:</strong>
+1. Set up the project structure and initialize a Git repository.
+2. Create the HTML layout and style it with CSS.
+3. Implement JavaScript logic to fetch and process data from the APIs.
+4. Add search functionality and geolocation support.
+5. Implement unit toggle and test the application.
+6. Regularly commit changes to the Git repository and push to a remote platform like GitHub.</p>
+<p><strong>Workflow:</strong>
+1. A responsive weather forecast application that fetches data from public APIs.
+2. The project hosted on a platform like GitHub, using Git for version control.</p>
+<p><strong>UI and Design files:</strong>
+If you don't know what Design to use, you can take a look at this free <a href="https://www.figma.com/community/file/1019097765306863573/Minimal-Weather-App">Figma file</a></p>
+<p><strong>Tasks</strong>
+- [ ]  Create the weather project using all the knowledge you gained
+    - [ ]  Create a video of the project or a Linkedin carousel
+    - [ ]  Publish the code on Github and gain at least a Pull Request from a peer
+    - [ ]  Host the project on <a href="https://youtu.be/QyFcl_Fba-k">Github Pages</a>
+    - [ ]  Watch <a href="https://youtu.be/NQP89ish9t8">How to Put a Website Online: Template, Coding, Domain, Hosting, and DNS</a></p>
+<h3 id="week-6-typescript-webpack">⌨️ Week 6 - Typescript &amp; Webpack<a class="headerlink" href="#week-6-typescript-webpack" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_5">Week Description<a class="headerlink" href="#week-description_5" title="Permanent link">&para;</a></h4>
+<p>This week is focused on learning TypeScript and Webpack, two essential tools for modern web development. You'll begin by studying comprehensive tutorials on TypeScript and Webpack to understand their fundamental concepts and usage. Afterward, you'll convert five JavaScript projects into TypeScript and push them to GitHub using the "typescript" branch. In addition, you'll experiment with Webpack to create your first bundles. To enhance your professional presence, you'll also work on improving your LinkedIn profile and invest time in networking to expand your connections.</p>
+<h4 id="why-it-matters_5">Why It Matters<a class="headerlink" href="#why-it-matters_5" title="Permanent link">&para;</a></h4>
+<p>Learning TypeScript and Webpack is crucial for developers looking to stay up-to-date with the latest trends and best practices in web development. TypeScript provides a more robust development experience by adding static types to JavaScript, leading to fewer runtime errors and better code maintainability. Webpack, on the other hand, simplifies the management of complex application dependencies and optimizes web applications for faster loading times.</p>
+<p>Moreover, a strong LinkedIn profile and an active network can significantly impact your career growth. By refining your LinkedIn profile and expanding your connections, you'll create more opportunities for collaboration, job offers, and professional development. Investing in these areas will not only help you stay relevant in the industry but also enhance your overall career prospects.</p>
+<p>#### Week tasks</p>
+<ul>
+<li>[ ]  Study <a href="https://youtu.be/30LWjhZzg50">Learn TypeScript - Full Tutorial</a></li>
+<li>[ ]  Study <a href="https://www.youtube.com/watch?v=MpGLUVbqoYQ&amp;ab_channel=freeCodeCamp.org">Learn Webpack - Full Tutorial for Beginners</a></li>
+<li>[ ]  Read <a href="https://blog.logrocket.com/using-webpack-typescript/">Using webpack with TypeScript</a></li>
+<li>[ ]  Convert 5 JS projects you created so far using Typescript, and push them on GitHub using the “typescript” branch</li>
+<li>[ ]  Experiment with Webpack and create your first bundles</li>
+<li>[ ]  Improve your <a href="https://www.linkedin.com/business/sales/blog/profile-best-practices/17-steps-to-a-better-linkedin-profile-in-2017">Linkedin profile</a></li>
+<li>[ ]  Invest 1hr/day in networking using Linkedin. Increase your network up to 50 valuable connections</li>
+<li>[ ]  Watch <a href="https://youtu.be/kWfxZ2jDmP8">How I Stay Motivated &amp; Continue Growing!</a></li>
+</ul>
+<h3 id="week-7-nodejs-express-rest">🌐 Week 7 - NodeJs + Express + REST<a class="headerlink" href="#week-7-nodejs-express-rest" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_6">Week Description<a class="headerlink" href="#week-description_6" title="Permanent link">&para;</a></h4>
+<p>This week, you will focus on mastering Node.js and Express.js, learning about API testing with Postman, and studying best practices for REST API design. Begin by studying the Node.js and Express.js full course, followed by chapters 20-21 of Eloquent JavaScript. Next, explore API testing by studying the Postman Beginner's Course. After that, read an article about REST API best practices to deepen your understanding of API design.</p>
+<p>Once you have a strong foundation in these areas, implement a basic CRUD REST API to practice your skills. Learn how to use Node.js with TypeScript to enhance your projects with type safety and other TypeScript features. To assess your progress, check your knowledge using the Node.js roadmap. Finally, aim to complete three mentoring sessions by reaching out to more experienced developers on LinkedIn for guidance and advice.</p>
+<h4 id="why-it-matters_6">Why it Matters<a class="headerlink" href="#why-it-matters_6" title="Permanent link">&para;</a></h4>
+<p>Node.js and Express.js are essential tools in modern web development, enabling developers to create fast and efficient server-side applications. Learning about these technologies and mastering API testing with Postman will provide you with a competitive edge in the job market.</p>
+<p>Studying best practices for REST API design and implementing a CRUD REST API will help you create robust and maintainable APIs for your projects, improving the overall quality of your applications. Integrating TypeScript with Node.js will enhance your projects with better type checking and other TypeScript features, leading to more reliable and scalable code.</p>
+<p>Connecting with experienced developers for mentoring sessions will provide you with valuable insights, guidance, and advice to enhance your learning process and help you grow as a developer. Overall, this week's tasks will equip you with the skills and knowledge to build better server-side applications and advance your career in web development.</p>
+<p>#### Week tasks</p>
+<ul>
+<li>[ ]  Study <a href="https://youtu.be/Oe421EPjeBE">Node.js and Express.js - Full Course</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/mbsmsi7l3r4">JWT Authentication Tutorial - Node.js</a></li>
+<li>[ ]  Study Eloquent Javascript chapters 20-21</li>
+<li>[ ]  Study <a href="https://youtu.be/VywxIQ2ZXw4">Postman Beginner's Course - API Testing</a></li>
+<li>[ ]  Read <a href="https://www.freecodecamp.org/news/rest-api-best-practices-rest-endpoint-design-examples/">REST API Best Practices</a></li>
+<li>[ ]  Implement a basic CRUD REST API</li>
+<li>[ ]  Learn <a href="https://www.digitalocean.com/community/tutorials/setting-up-a-node-project-with-typescript">how to use Node with Typescript</a></li>
+<li>[ ]  Check your knowledge in the <a href="https://roadmap.sh/nodejs">Node roadmap</a></li>
+<li>[ ]  Achieve 3 mentoring sessions. Contact more senior developers on Linkedin asking for a 30-minute mentoring session. A lot of devs will help you for free, you just need to ask</li>
+</ul>
+<h4 id="extra-curricular-resources_2">Extra curricular resources<a class="headerlink" href="#extra-curricular-resources_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li><a href="https://youtu.be/GHTA143_b-s">NestJs Course for Beginners - Create a REST API</a></li>
+</ul>
+<h3 id="week-8-database-basics">⛓️ Week 8 - Database Basics<a class="headerlink" href="#week-8-database-basics" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_7">Week Description<a class="headerlink" href="#week-description_7" title="Permanent link">&para;</a></h4>
+<p>This week, you will explore various database paradigms and learn how to work with SQL and NoSQL databases using popular tools and frameworks. Start by understanding the different types of database systems and their use cases. Next, learn the fundamentals of SQL and relational databases, covering topics such as database design, querying, and administration.</p>
+<p>After gaining a solid understanding of SQL, dive into TypeORM, a powerful Object Relational Mapper (ORM) for TypeScript and JavaScript, which will equip you with the skills to work with databases in a Node.js environment. Lastly, learn how to build applications using MongoDB, a popular NoSQL database, in conjunction with Node.js, Express, and Mongoose, covering essential concepts such as schema design, data modeling, and CRUD operations.</p>
+<h4 id="why-it-matters_7">Why it Matters<a class="headerlink" href="#why-it-matters_7" title="Permanent link">&para;</a></h4>
+<p>Databases play a critical role in the storage and management of data for various software systems. Understanding different database paradigms and being proficient in working with both SQL and NoSQL databases are essential skills for developers.</p>
+<p>Gaining valuable knowledge about various database paradigms will help you make informed decisions when selecting the appropriate database technology for your projects. Learning SQL and relational databases will enable you to work with widely-used database systems, while familiarity with TypeORM will allow you to work efficiently with databases in a Node.js environment. Acquiring skills in MongoDB will provide you with the ability to handle large-scale and complex data in NoSQL databases. These skills will make you a more versatile developer and increase your employability and value in the job market.</p>
+<p>#### Week tasks</p>
+<ul>
+<li>[ ]  Watch <a href="https://youtu.be/W2Z7fbCLSTw">7 Database Paradigms</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/HXV3zeQKqGY">SQL Tutorial - Full Database Course for Beginners</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/JaTbzPcyiOE">TypeORM Crash Course - TypeScript &amp; Node ORM</a></li>
+<li>[ ]  Practice with <a href="https://www.w3schools.com/quiztest/quiztest.asp?qtest=SQL">SQL Quiz</a></li>
+<li>[ ]  Check the <a href="https://youtu.be/c2M-rlkkT5o">MongoDB basics</a></li>
+<li>[ ]  Learn the <a href="https://mongoosejs.com/docs/index.html">Mongoose Documentation</a></li>
+</ul>
+<h3 id="week-9-react-basics">⚛️ Week 9 - React basics<a class="headerlink" href="#week-9-react-basics" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_8">Week Description<a class="headerlink" href="#week-description_8" title="Permanent link">&para;</a></h4>
+<p>This week's focus is on learning and mastering the React JavaScript library, a powerful and widely-used tool for building interactive user interfaces. You will start by watching a complete course, which will provide a comprehensive introduction to the core concepts and features of React. Then you will build and publish three projects from the course on Github to showcase your newly acquired skills.</p>
+<p>To further expand your understanding, you will study the React documentation, which provides in-depth explanations of React's features, concepts, and best practices. Finally, prepare for potential job interviews or simply deepen your understanding of React by reviewing the Top 100+ React Interview Questions You Must Prepare In 2023.</p>
+<h4 id="why-it-matters_8">Why it Matters<a class="headerlink" href="#why-it-matters_8" title="Permanent link">&para;</a></h4>
+<p>React is one of the most popular JavaScript libraries for developing modern and performant web applications. Learning React is essential for anyone looking to thrive in the web development industry, as it is frequently sought after by employers and is a valuable skill for both front-end and full-stack developers.</p>
+<p>By completing this week's tasks, you will gain a strong foundation in React, enabling you to build interactive and efficient web applications. By creating and publishing projects on Github, you will not only demonstrate your proficiency in React but also showcase your ability to apply the concepts in real-world scenarios. This will make you a more competitive candidate for job opportunities and collaborations.</p>
+<ul>
+<li>[ ]  Watch <a href="https://youtu.be/bMknfKXIFA8">React Course - Beginner's Tutorial for React JavaScript Library [2022]</a><ul>
+<li>[ ]  Build the three projects from the course and publish them on Github</li>
+</ul>
+</li>
+<li>[ ]  Study the <a href="https://react.dev/">React documentation</a></li>
+<li>[ ]  Check your knowledge using the <a href="https://roadmap.sh/react">React roadmap</a></li>
+<li>[ ]  Check the <a href="https://www.edureka.co/blog/interview-questions/react-interview-questions/">Top 100+ React Interview Questions You Must Prepare In 2023</a></li>
+</ul>
+<h3 id="week-10-react-advanced">🦸🏻 Week 10 - React advanced<a class="headerlink" href="#week-10-react-advanced" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_9">Week Description<a class="headerlink" href="#week-description_9" title="Permanent link">&para;</a></h4>
+<p>During this week, you will be diving into various topics related to modern web development with a focus on React and related technologies. You will learn about MUI5, an open-source design system for creating user interfaces that follow Google's Material Design principles. Additionally, you will gain a better understanding of advanced React concepts such as Higher-Order Components, Render Props, and Hooks. 
+You will also explore React Redux, a state management library for React, which is commonly used in larger applications. Lastly, you will study the Next.js React framework, which provides a set of tools and conventions for building server-side rendered React applications.</p>
+<h4 id="why-it-matters_9">Why it Matters<a class="headerlink" href="#why-it-matters_9" title="Permanent link">&para;</a></h4>
+<p>As the web development landscape continues to evolve rapidly, it's essential to stay up-to-date with the latest technologies and trends. React has become one of the most popular JavaScript libraries for building modern web applications, and MUI5 is a widely adopted design system that provides a consistent look and feel across different platforms. 
+Understanding advanced React concepts such as Hooks and Render Props can help you write more efficient and reusable code, while Redux can help you manage the state of larger applications more easily. </p>
+<p>Finally, Next.js is an excellent choice for building server-side rendered React applications, providing a straightforward and intuitive development experience. By exploring these topics, you will be well-equipped to build high-quality web applications that are both performant and user-friendly.</p>
+<ul>
+<li>[ ]  Learn <a href="https://youtu.be/o1chMISeTC0">MUI5 (Material User Interface) Crash Course</a></li>
+<li>[ ]  Understand <a href="https://reactresources.com/topics/advanced-concepts">Advanced React Concepts</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/NqzdVN2tyvQ">React Redux Full Course for Beginners</a></li>
+<li>[ ]  Study the <a href="https://youtu.be/KjY94sAKLlw">Next.js React Framework Course</a></li>
+</ul>
+<h3 id="week-11-a-fullstack-website">🚀 Week 11 -  A fullstack website<a class="headerlink" href="#week-11-a-fullstack-website" title="Permanent link">&para;</a></h3>
+<p>For this week, you have two briefs. Read them, you can choose and work on the project you prefer. If you need any help with the project or you want any other detail, please feel free to <a href="https://www.linkedin.com/in/alfonso-graziano/">contact me on Linkedin</a>.</p>
+<p>If you want to customize the project brief to stick with your interests, consider using a Large Language Model (like ChatGPT) with this prompt: </p>
+<blockquote>
+<p>I'm learning web development. Act as a companion software engineer. For now my skills are: HTML, CSS, Javascript, React, SQL, MongoDB, Typescript, Express, Redux, Next.js. I want to create a demo project to showcase my skills in one week. Create for me a project brief I can achieve with my skills on this topic: "Add your topic here".</p>
+</blockquote>
+<h4 id="track-1">Track 1<a class="headerlink" href="#track-1" title="Permanent link">&para;</a></h4>
+<h5 id="week-description_10">Week Description<a class="headerlink" href="#week-description_10" title="Permanent link">&para;</a></h5>
+<p>During this one-week project, you will be creating a Fitness Tracker Web App that allows users to track and manage their workouts, nutrition, and progress. The app will include user authentication, workout and meal logging, progress tracking, and social features such as following other users and sharing achievements. You will be using your skills in React, Next.js, Express, Node, MongoDB, Redux, HTML, and CSS to create a full-stack web application.</p>
+<p>The week is divided into four milestones to ensure steady progress and the timely completion of each part of the project. You will start by setting up the frontend and backend boilerplates and implementing user authentication. Next, you will work on the workout and meal logging features, as well as develop the essential web pages. The third milestone will see you implementing progress tracking and social features. Finally, you will wrap up the project by deploying the application and preparing documentation.</p>
+<h5 id="why-it-matters_10">Why It Matters<a class="headerlink" href="#why-it-matters_10" title="Permanent link">&para;</a></h5>
+<p>This Fitness Tracker Web App project matters for several reasons:</p>
+<ul>
+<li>Skill development: By building a full-stack web application, you will not only reinforce your existing skills in React, Next.js, Express, Node, MongoDB, Redux, HTML, and CSS but also learn how to integrate and utilize them effectively in a real-world project.</li>
+<li>Portfolio enhancement: A full-stack project like this demonstrates your expertise and versatility as a developer. It showcases your ability to handle both frontend and backend development, as well as your capacity to integrate third-party APIs and create a user-friendly interface.</li>
+<li>Time management: With a strict one-week deadline, this project will help you improve your time management and prioritization skills. You will learn how to break down a project into manageable milestones, allocate time efficiently, and work under pressure.</li>
+<li>Problem-solving: Building a Fitness Tracker Web App from scratch will require you to find solutions to various technical and design challenges. This experience will sharpen your problem-solving abilities, making you a more adept developer.</li>
+<li>Real-world impact: The app has the potential to improve the lives of fitness enthusiasts by providing a convenient way to track and manage their workouts, nutrition, and progress. By offering a seamless user experience, you can help people achieve their fitness goals more effectively.</li>
+</ul>
+<p><strong>Project Title:</strong> Fitness Tracker Web App</p>
+<p><strong>Project Brief:</strong> Design and develop a full-stack web application that allows users to track and manage their workouts, nutrition, and progress. The app will include user authentication, workout and meal logging, progress tracking, and social features such as following other users and sharing achievements.</p>
+<p>Requirements:</p>
+<ol>
+<li>Frontend (React, Next.js, Redux, HTML, CSS)
+a. Landing page<ul>
+<li>Brief overview of the app's features</li>
+<li>Call-to-action for user registration
+b. User authentication (login, registration, password reset)
+c. Dashboard</li>
+<li>Overview of user's workouts, meals, and progress</li>
+<li>Option to log workouts and meals
+d. Progress tracking</li>
+<li>Display graphs and statistics related to user's fitness progress
+e. Social features</li>
+<li>Ability to follow other users</li>
+<li>Share achievements with friends</li>
+</ul>
+</li>
+<li>Backend (Node, Express, MongoDB)
+a. RESTful API<ul>
+<li>Endpoints for user authentication and CRUD operations</li>
+<li>Endpoints for workout and meal logging</li>
+<li>Endpoints for progress tracking and social features
+b. Database (MongoDB)</li>
+<li>Store user data, workout logs, meal logs, and progress data</li>
+</ul>
+</li>
+<li>
+<p>Project Setup &amp; Deployment
+a. Version control (Git)</p>
+<ul>
+<li>Track and manage changes to your codebase
+b. Environment setup</li>
+<li>Configure development, staging, and production environments
+c. Deployment (e.g. Vercel, Netlify, or Heroku)</li>
+<li>Deploy frontend and backend applications to production</li>
+</ul>
+<p>Milestones:</p>
+<ol>
+<li>Day 1-2 (10 hours)<ul>
+<li>Set up the frontend (React, Next.js) and backend (Node, Express) boilerplate</li>
+<li>Implement user authentication (login, registration, password reset)</li>
+<li>Create the database schema and set up the MongoDB database</li>
+</ul>
+</li>
+<li>Day 3-4 (10 hours)<ul>
+<li>Implement the workout and meal logging features (frontend and backend)</li>
+<li>Design and develop the landing page, dashboard, and progress tracking page</li>
+<li>Integrate social features (following other users, sharing achievements)</li>
+</ul>
+</li>
+<li>Day 5-6 (8 hours)<ul>
+<li>Refine the user interface and experience</li>
+<li>Implement additional features, such as workout and meal plans</li>
+<li>Perform testing and debugging</li>
+</ul>
+</li>
+<li>Day 7 (2 hours)<ul>
+<li>Deployment and final testing</li>
+<li>Prepare documentation and project handoff</li>
+</ul>
+</li>
+</ol>
+<p>By following this brief, you will create a comprehensive full-stack fitness tracker web app within the given time frame of one week (30 hours). This project will not only enhance your portfolio but also help you develop essential skills in full-stack web development.</p>
+</li>
+</ol>
+<h4 id="track-2">Track 2<a class="headerlink" href="#track-2" title="Permanent link">&para;</a></h4>
+<h5 id="week-description_11">Week Description<a class="headerlink" href="#week-description_11" title="Permanent link">&para;</a></h5>
+<p>During this one-week project, you will be creating an Online Event Booking Platform that caters to event organizers and attendees. The platform will enable users to browse, book, and manage events such as conferences, workshops, or seminars. You will be utilizing your skills in React, Next.js, Express, Node, SQL, Redux, HTML, and CSS to create a full-stack web application complete with user authentication, event creation and management, booking and payment processing, and an admin panel.</p>
+<p>The week is divided into four milestones to ensure steady progress and the timely completion of each part of the project. You will begin by setting up the frontend and backend boilerplates and implementing user authentication. Next, you will work on event CRUD operations and design the essential web pages. The third milestone will see you developing the admin panel and implementing search functionality. Finally, you will wrap up the project by deploying the application and preparing documentation.</p>
+<h5 id="why-it-matters_11">Why It Matters<a class="headerlink" href="#why-it-matters_11" title="Permanent link">&para;</a></h5>
+<p>This Online Event Booking Platform project matters for several reasons:</p>
+<p>Skill development: By building a full-stack web application, you will not only reinforce your existing skills in React, Next.js, Express, Node, SQL, Redux, HTML, and CSS but also learn how to integrate and utilize them effectively in a real-world project.</p>
+<p>Portfolio enhancement: A full-stack project like this demonstrates your expertise and versatility as a developer. It showcases your ability to handle both frontend and backend development, as well as your capacity to integrate third-party APIs, such as payment processing.</p>
+<p>Time management: With a strict one-week deadline, this project will help you improve your time management and prioritization skills. You will learn how to break down a project into manageable milestones, allocate time efficiently, and work under pressure.</p>
+<p>Problem-solving: Building an Online Event Booking Platform from scratch will require you to find solutions to various technical and design challenges. This experience will sharpen your problem-solving abilities, making you a more adept developer.</p>
+<p>Real-world impact: The platform has the potential to provide a valuable service for event organizers and attendees alike. By simplifying the event booking process and offering a streamlined user experience, you can make a tangible difference in the way people discover, book, and manage events.</p>
+<p>Project Title: <strong>Online Event Booking Platform</strong></p>
+<p>Project Brief:
+Design and develop a full-stack web application that allows users to browse, book, and manage events, such as conferences, workshops, or seminars. The platform will include user authentication, event creation and management, booking and payment processing, and an admin panel to manage events and users.</p>
+<p>Requirements:</p>
+<ol>
+<li>Frontend (React, Next.js, Redux, HTML, CSS)
+a. Landing page<ul>
+<li>Display a list of featured events</li>
+<li>Search bar to find events by name, date, or location
+b. Event details page</li>
+<li>Event information (name, description, date, time, location, price)</li>
+<li>Button to book the event (requires user authentication)
+c. User authentication (login, registration, password reset)
+d. User dashboard</li>
+<li>Manage bookings (view, cancel)</li>
+<li>Edit user profile information
+e. Admin panel</li>
+<li>Manage events (create, edit, delete)</li>
+<li>Manage users (view, edit, delete)</li>
+</ul>
+</li>
+<li>Backend (Node, Express, SQL)
+a. RESTful API<ul>
+<li>Endpoints for event CRUD operations</li>
+<li>Endpoints for user authentication and CRUD operations</li>
+<li>Endpoints for booking management
+b. Database (SQL)</li>
+<li>Store event data, user data, and bookings
+c. Payment processing (use a third-party API, e.g. Stripe)</li>
+<li>Securely handle payments for event bookings</li>
+</ul>
+</li>
+<li>Project Setup &amp; Deployment
+a. Version control (Git)<ul>
+<li>Track and manage changes to your codebase
+b. Environment setup</li>
+<li>Configure development, staging, and production environments
+c. Deployment (e.g. Vercel, Netlify, or Heroku)</li>
+<li>Deploy frontend and backend applications to production</li>
+</ul>
+</li>
+</ol>
+<p>Milestones:</p>
+<ol>
+<li>Day 1-2 (10 hours)<ul>
+<li>Set up the frontend (React, Next.js) and backend (Node, Express) boilerplate</li>
+<li>Implement user authentication (login, registration, password reset)</li>
+<li>Create the database schema and set up the SQL database</li>
+</ul>
+</li>
+<li>Day 3-4 (10 hours)<ul>
+<li>Implement the event CRUD operations (frontend and backend)</li>
+<li>Design and develop the landing page, event details page, and user dashboard</li>
+<li>Integrate payment processing API</li>
+</ul>
+</li>
+<li>Day 5-6 (8 hours)<ul>
+<li>Develop the admin panel for event and user management</li>
+<li>Implement search functionality on the landing page</li>
+<li>Perform testing and debugging</li>
+</ul>
+</li>
+<li>Day 7 (2 hours)<ul>
+<li>Deployment and final testing</li>
+<li>Prepare documentation and project handoff</li>
+</ul>
+</li>
+</ol>
+<p>By following this brief, you will create a comprehensive full-stack online event booking platform within the given time frame of one week (30 hours).</p>
+<h3 id="week-12-algorithms-data-structures">💪🏻 Week 12 - Algorithms &amp; Data Structures<a class="headerlink" href="#week-12-algorithms-data-structures" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_12">Week Description<a class="headerlink" href="#week-description_12" title="Permanent link">&para;</a></h4>
+<p>This week, you will focus on enhancing your understanding of algorithms and problem-solving skills. Start by watching the MIT Introduction to Algorithms course, which covers fundamental concepts and techniques in algorithms, data structures, and complexity analysis. Once you have completed the course, create a Leetcode account and challenge yourself by solving at least 10 easy problems to practice your newly acquired skills.</p>
+<h4 id="why-it-matters_12">Why it Matters<a class="headerlink" href="#why-it-matters_12" title="Permanent link">&para;</a></h4>
+<p>A strong foundation in algorithms is crucial for any software developer, as it equips you with the ability to solve complex problems efficiently and write optimized code. By watching the MIT Introduction to Algorithms course, you will learn essential algorithms and data structures that can help you in a variety of real-world scenarios.</p>
+<p>Practicing problems on Leetcode will not only help reinforce the concepts learned in the course but also improve your problem-solving skills and ability to think critically about coding challenges. This will prepare you for technical interviews, where algorithmic problems are often used to assess candidates' skills. Overall, this week's tasks will strengthen your understanding of algorithms, enhance your coding skills, and make you a more competitive candidate in the job market.</p>
+<ul>
+<li>[ ]  Watch <a href="https://www.youtube.com/playlist?list=PLUl4u3cNGP63EdVPNLG3ToM6LaEUuStEY">MIT 6.006 Introduction to Algorithms</a></li>
+<li>[ ]  Create a <a href="https://leetcode.com/">Leetcode</a> account and solve at least 10 easy problems</li>
+</ul>
+<h3 id="week-13-docker-project-management">🐳🤝 Week 13 - Docker &amp; Project management<a class="headerlink" href="#week-13-docker-project-management" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_13">Week Description<a class="headerlink" href="#week-description_13" title="Permanent link">&para;</a></h4>
+<p>This week, delve into the fundamentals of Docker containers and Kubernetes, learn how to containerize your project application using Docker Compose, and gain valuable insights on project management from a comprehensive course by Google.</p>
+<h4 id="why-it-matters_13">Why It Matters<a class="headerlink" href="#why-it-matters_13" title="Permanent link">&para;</a></h4>
+<p>Understanding Docker containers and Kubernetes is crucial for modern software development, as they facilitate efficient deployment and scaling of applications. Mastering containerization techniques ensures seamless collaboration and consistency across environments. Additionally, effective project management skills are essential to successfully plan, execute, and complete projects, ultimately leading to improved team performance and better outcomes.</p>
+<ul>
+<li>[ ]  Watch <a href="https://youtu.be/kTp5xUtcalw">Docker Containers and Kubernetes Fundamentals</a></li>
+<li>[ ]  Containerize your project application with Docker using Docker Compose</li>
+<li>[ ]  Watch <a href="https://youtu.be/INHsqkkcjaM">Project Management Full Course By Google</a></li>
+</ul>
+<h3 id="week-14-cloud-basics">☁️ Week 14 - Cloud basics<a class="headerlink" href="#week-14-cloud-basics" title="Permanent link">&para;</a></h3>
+<h4 id="week-description_14">Week Description<a class="headerlink" href="#week-description_14" title="Permanent link">&para;</a></h4>
+<p>This week, we will focus on cloud and System Design basics using AWS by watching a comprehensive course, creating an AWS account, and experimenting with AWS services. Deploy your projects using AWS and take advantage of the free tier offerings.</p>
+<h4 id="why-it-matters_14">Why It Matters<a class="headerlink" href="#why-it-matters_14" title="Permanent link">&para;</a></h4>
+<p>Understanding System Design and basic cloud knowledge are really valuable in our industry. Gaining hands-on experience with AWS by deploying projects will help you develop essential cloud computing skills, increasing your marketability and proficiency in managing cloud-based infrastructure.</p>
+<ul>
+<li>[ ]  Read the <a href="https://github.com/donnemartin/system-design-primer">System Design Primer</a></li>
+<li>[ ]  Watch <a href="https://youtu.be/SOTamWNgDKc">AWS Certified Cloud Practitioner Certification Course</a></li>
+<li>[ ]  Create an AWS account and start experimenting</li>
+<li>[ ]  Deploy your projects using AWS. Keep in mind that you have a free tier to exploit</li>
+</ul>
+<h3 id="week-15-whats-next">🚀 Week 15 - What's next?<a class="headerlink" href="#week-15-whats-next" title="Permanent link">&para;</a></h3>
+<p>Congratulations on completing the Web Developer Roadmap 2023! You've gained valuable skills and knowledge that will help you succeed in your career as a web developer. As you move forward, there are several paths you can take to further enhance your skills and stay up-to-date with the latest trends and technologies.</p>
+<p>Here are some recommended next steps:</p>
+<ul>
+<li>Specialize in a technology: Consider specializing in a particular technology or framework that interests you, such as React Native, Vue.js, or Angular. This will help you become an expert in that area and provide unique value to potential employers or clients.</li>
+<li>Build a portfolio: Continue building projects and adding them to your portfolio. This will help you showcase your skills and demonstrate your ability to create high-quality web applications.</li>
+<li>Contribute to open-source projects: Contributing to open-source projects is a great way to gain experience, build your network, and give back to the community. Look for projects that align with your interests and skills and start contributing.</li>
+<li>Attend conferences and meetups: Attending conferences and meetups is an excellent way to network and stay up-to-date with the latest trends and best practices in web development. Look for events in your area or attend virtual events if you can't travel.</li>
+<li>Keep learning: The field of web development is constantly evolving, so it's essential to continue learning and growing. Consider taking online courses, reading technical blogs, or following industry leaders on social media to stay informed.</li>
+<li>Consider pursuing certifications: Certifications are a great way to demonstrate your expertise in a particular area of web development. Consider pursuing certifications offered by industry leaders such as Google, Amazon, and Microsoft to enhance your credibility and career prospects.</li>
+</ul>
+<p>Remember, there's no one-size-fits-all approach to becoming a successful web developer. It's up to you to chart your own path and find the opportunities that align with your interests and goals. Best of luck on your journey!</p>
+<h2 id="tech-interview-preparation-in-2023">💼🧑🏻‍💼<strong>Tech Interview Preparation in 2023</strong><a class="headerlink" href="#tech-interview-preparation-in-2023" title="Permanent link">&para;</a></h2>
+<p>As the web development industry has evolved rapidly in recent years, so has the interview process. Companies are constantly seeking top talent with a deep understanding of the latest technologies and best practices. To secure a coveted position in this competitive field, it's crucial to be well-prepared for technical interviews. In this section, we'll explore the essential steps to prepare for a web development interview and recommend a comprehensive free resource to help you succeed.</p>
+<h3 id="step-1-understand-the-interview-process"><strong>Step 1: Understand the Interview Process</strong><a class="headerlink" href="#step-1-understand-the-interview-process" title="Permanent link">&para;</a></h3>
+<p>Familiarize yourself with the general structure of a technical interview process, which typically involves multiple stages, including a phone screen, technical assessments, and in-person or remote interviews. Each stage has its own purpose and requires specific preparation. For example, a phone screen might focus on your communication skills and high-level understanding of web development concepts, while technical assessments will test your coding abilities and problem-solving skills.</p>
+<h3 id="step-2-review-fundamentals"><strong>Step 2: Review Fundamentals</strong><a class="headerlink" href="#step-2-review-fundamentals" title="Permanent link">&para;</a></h3>
+<p>Before diving into specific web development technologies, ensure that you have a solid foundation in computer science and programming fundamentals. This includes data structures, algorithms, and time and space complexity analysis. Practice solving coding problems using different data structures and algorithms to demonstrate your proficiency in these areas.</p>
+<h3 id="step-3-master-web-development-concepts"><strong>Step 3: Master Web Development Concepts</strong><a class="headerlink" href="#step-3-master-web-development-concepts" title="Permanent link">&para;</a></h3>
+<p>Develop a deep understanding of core web development concepts, such as HTML, CSS, JavaScript, and various frameworks and libraries. Additionally, familiarize yourself with different aspects of web development, including frontend, backend, and full-stack development, and the associated tools and technologies.</p>
+<h3 id="step-4-practice-coding-problems"><strong>Step 4: Practice Coding Problems</strong><a class="headerlink" href="#step-4-practice-coding-problems" title="Permanent link">&para;</a></h3>
+<p>To excel in technical interviews, you must be able to solve coding problems quickly and efficiently. Practice coding problems on various online platforms, focusing on web development-specific challenges. Aim to improve your problem-solving skills, coding style, and efficiency.</p>
+<h3 id="step-5-prepare-for-behavioral-questions"><strong>Step 5: Prepare for Behavioral Questions</strong><a class="headerlink" href="#step-5-prepare-for-behavioral-questions" title="Permanent link">&para;</a></h3>
+<p>Apart from technical knowledge, interviewers will assess your soft skills, such as communication, teamwork, and problem-solving. Be ready to discuss your past experiences, the challenges you've faced, and how you've contributed to team success.</p>
+<h3 id="step-6-leverage-free-resources"><strong>Step 6: Leverage Free Resources</strong><a class="headerlink" href="#step-6-leverage-free-resources" title="Permanent link">&para;</a></h3>
+<p>There are numerous free resources available to help you prepare for web development interviews. One of the best is the <a href="https://www.techinterviewhandbook.org/">Tech Interview Handbook</a>, which offers a wealth of information on various topics, including data structures, algorithms, system design, and behavioral questions. This comprehensive guide provides curated lists of coding problems, mock interview resources, and helpful tips for navigating the interview process.</p>
+<p>By following these steps and leveraging the Tech Interview Handbook, you'll be well-equipped to tackle web development interviews in 2023 and land your dream job.</p>
+<h2 id="conclusion">🔚 Conclusion<a class="headerlink" href="#conclusion" title="Permanent link">&para;</a></h2>
+<p>In conclusion, this 15-week web developer roadmap offers a comprehensive and accessible study path for aspiring web developers. It covers essential technologies and concepts, from HTML and CSS basics to advanced React and cloud services. By following this roadmap, learners will develop a strong foundation in web development, improve their problem-solving skills, and gain hands-on experience with modern tools and technologies.</p>
+<p>Additionally, the roadmap emphasizes the importance of soft skills, networking, and staying up-to-date with industry trends. It also provides guidance for tech interview preparation, ensuring that learners are well-equipped to face the job market confidently. By the end of this journey, learners will have built a solid portfolio showcasing their skills and be prepared to pursue further specialization, contribute to open-source projects, and advance their careers in web development.</p>
+<p>Ultimately, this roadmap is a valuable starting point for those passionate about computer science and eager to break into the web development field. With dedication, perseverance, and a strong commitment to learning, individuals following this roadmap will be well on their way to becoming successful web developers and contributing to the ever-evolving world of technology.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.tabs", "search.suggest", "search.highlighting", "search.share"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
