@@ -12,5 +12,5 @@ Bài viết đang trong quá trình thực hiện. Bạn có thể đọc luôn 
 
 ## Định hướng riêng biệt
 
-- [Lộ trình Fullstack](./huong-dan/fullstack) - Bài đăng trên Voz tổng hợp linh tinh của mình
+- [Lộ trình Fullstack](docs/fullstack.md) - Bài đăng trên Voz tổng hợp linh tinh của mình
 - [coding-interview-university](https://github.com/jwasham/coding-interview-university) - Gợi ý của bác [itculi9x](). Học để lấy nền tảng trước khi cày

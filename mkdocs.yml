@@ -1,0 +1,77 @@
+site_name: khOa hỌc mÁy 
+site_description: vozer vozer vozer vozer vozer vozer vozer vozer vozer vozer 
+site_author: duykhanh471
+repo_url: https://github.com/daihocmo/khoa-hoc-may-tinh
+repo_name: Gì cũng được
+
+nav:
+  - 'Trang chủ': 'index.md'
+  - 'Lộ trình học': 
+    - 'Lộ trình mới bắt đầu': 'lo-trinh-beginner.md'
+    - 'Giáo trình 3 năm': 'ke-hoach-3-nam.md'
+  - 'Các lộ trình tổng hợp': 
+    - 'Fullstack': 'full-stack.md'
+    - 'Back-end': 'backend.md'
+    - 'Khoa học máy tính': 'teach-yourself-cs.md'  
+    - 'DSA': 'dsa-vs-dev.md'
+    - 'Phát triển Web': 'webdev.md'
+  - 'Ngôn ngữ lập trình': 
+    - 'JavaScript': 'javascript.md'
+  - 'Tiếng Anh IT': 'tieng-anh-it.md'
+  - 'Tài nguyên học': 
+    - 'Tài nguyên học': 'resources.md'
+    - 'Youtube': 'youtube.md'
+  - 'Đóng góp': 'contribute.md'
+
+theme:
+  palette:
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: grey
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tabs
+    - search.suggest
+    - search.highlighting
+    - search.share
+  name: material
+
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - meta
+  - admonition
+  - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      
+plugins:
+  - search
+  # - open-in-new-tab
+  
+extra:
+  generator: false
