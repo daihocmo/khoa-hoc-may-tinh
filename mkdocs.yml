@@ -6,16 +6,16 @@ repo_name: Gì cũng được
 
 nav:
   - 'Trang chủ': 'index.md'
-  - 'Lộ trình học': 
+  - 'Hướng dẫn tự học': 
+    - 'Fullstack': 'full-stack.md'
+    - 'Khoa học máy tính': 'teach-yourself-cs.md'  
+  - 'Lộ trình': 
     - 'Lộ trình mới bắt đầu': 'lo-trinh-beginner.md'
     - 'Giáo trình 3 năm': 'ke-hoach-3-nam.md'
-  - 'Các lộ trình tổng hợp': 
-    - 'Fullstack': 'full-stack.md'
     - 'Back-end': 'backend.md'
-    - 'Khoa học máy tính': 'teach-yourself-cs.md'  
     - 'DSA': 'dsa-vs-dev.md'
     - 'Phát triển Web': 'webdev.md'
-  - 'Ngôn ngữ lập trình': 
+  - 'Ngôn ngữ': 
     - 'JavaScript': 'javascript.md'
   - 'Tiếng Anh IT': 'tieng-anh-it.md'
   - 'Tài nguyên học': 
