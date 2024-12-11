@@ -1,4 +1,5 @@
 # Lộ trình tự học Fullstack 6 tháng theo tuần.
+Hiện tại lộ trình này mình viết cho cá nhân mình dùng nên nó vẫn chưa được hoàn chỉnh. Mình cũng sẽ chỉnh sửa và cải thiện trong quá trình học luôn.
 
 ## Lộ trình học
 
@@ -6,7 +7,7 @@
 | --- | --- | --- | --- |
 | 1  | **HTML, CSS, và DOM**  | - Học HTML structure, forms, và semantics.<br>- Học CSS cơ bản và responsive design.<br>- Tìm hiểu về DOM và JavaScript integration. | - Xây dựng một static webpage.<br>- Add interactivity với DOM manipulation.<br>- [HTML Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#html-foundations)<br>- [CSS Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#css-foundations) |
 | 2  | **JavaScript cơ bản** | - Học về variables, loops, functions, và arrays.<br>- Tìm hiểu về ES6 features như `let`, `const`, và arrow functions. | - Làm một ứng dụng to-do list.<br>- [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)<br>- [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts)  |
-| 3 + 4 | **Backend cơ bản và HTTP Servers** (Chọn stack backend, Node.js, Java Spring) | - Học cơ bản về stack backend bạn chọn.<br>- Học HTTP cơ bản và vòng tuần hoàn request-response.<br>- Tạo REST APIs (sử dụng Node.js và Express). | - Xây dựng một (Node.js) server đơn giản.<br>- - Xây dựng một REST API cho một blog platform. |
+| 3 + 4 | **Backend** | - Học cơ bản về stack backend bạn chọn.<br>- Học HTTP cơ bản và request-response cycle.<br>- Tạo REST APIs (sử dụng Node.js và Express). | - Xây dựng một (Node.js) server đơn giản.<br>- Xây dựng một REST API cho một blog platform.<br>- [Fullstack JavaScript](https://www.theodinproject.com/paths/full-stack-javascript)<br>- [Full Stack Ruby on Rails](https://www.theodinproject.com/paths/full-stack-ruby-on-rails)<br>- [Zero To Production In Rust - Bản Sample được đăng trên trang Blog cá nhân của tác giả](https://www.lpalmieri.com/posts/2020-05-24-zero-to-production-0-foreword/) và [Code for "Zero To Production In Rust"](https://github.com/LukeMathWalker/zero-to-production)<br>- [Tất tần tật về học Java](https://github.com/loda-kun/java-all) và [loda-kun/spring-boot-learning](https://github.com/loda-kun/spring-boot-learning)<br>- Còn lại bạn tự tìm ;-; |
 | 5  | **NoSQL Databases (MongoDB)**  | - Học NoSQL concepts.<br>- Perform CRUD operations với MongoDB.<br>- Tìm hiểu về schema design và indexing.  | - Xây dựng một database cho một "Bookshelf App" sử dụng MongoDB.|
 | 6  | **SQL cơ bản**  | - Học SQL syntax.<br>- Perform CRUD operations với SQL databases (e.g., MySQL hoặc PostgreSQL).| - Xây dựng một simple database cho user data.  |
 | 7  | **ORMs (Sequelize/Mongoose)**  | - Học về Object-Relational Mapping.<br>- Sử dụng Sequelize cho SQL và Mongoose cho MongoDB.<br>- Học model relationships.| - Xây dựng một project that integrates Sequelize hoặc Mongoose. |
