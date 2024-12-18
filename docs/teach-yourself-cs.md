@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+---
+
 # Hướng dẫn bắt đầu học KHMT
 Đây là các giáo trình tự học mà bạn có thể đọc, bài viết dưới đây sẽ là hướng dẫn của cá nhân mình cách bắt đầu tự học Khoa học máy tính dựa trên TeachYourselfCS. TeachYourselfCS ngắn hơn so với OSSU với đọc nhiều hơn nên đây sẽ là giáo trình mình lựa chọn (Tùy thuộc vào cách học của bạn mà có thể OSSU sẽ tốt hơn hoặc bạn muốn học hơn).
 

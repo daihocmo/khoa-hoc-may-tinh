@@ -1,28 +1,16 @@
-site_name: khOa hỌc mÁy 
+site_name: Không học máy tính
 site_description: vozer vozer vozer vozer vozer vozer vozer vozer vozer vozer 
 site_author: duykhanh471
 repo_url: https://github.com/daihocmo/khoa-hoc-may-tinh
-repo_name: Gì cũng được
+repo_name: Đóng góp cho trang trên Github
 
 nav:
   - 'Trang chủ': 'index.md'
-  - 'Hướng dẫn tự học': 
-    - 'Fullstack': 'full-stack.md'
-    - 'Khoa học máy tính': 'teach-yourself-cs.md'  
-  - 'Lộ trình': 
-    - 'Lộ trình mới bắt đầu': 'lo-trinh-beginner.md'
-    - 'Giáo trình 3 năm': 'ke-hoach-3-nam.md'
-    - 'Back-end': 'backend.md'
-    - 'DSA': 'dsa-vs-dev.md'
-    - 'Phát triển Web': 'webdev.md'
-  - 'Ngôn ngữ': 
-    - 'JavaScript': 'javascript.md'
-  - 'Tiếng Anh IT': 'tieng-anh-it.md'
-  - 'Tài nguyên học': 
-    - 'Tài nguyên học': 'resources.md'
-    - 'Youtube': 'youtube.md'
-  - 'Đóng góp': 'contribute.md'
-
+  - 'Fullstack': 'full-stack.md'
+  - 'Khoa học máy tính': 'teach-yourself-cs.md'  
+  - 'IT English': 'tieng-anh-it.md'
+  - 'Tài nguyên học': 'resources.md'
+  - 'Youtube': 'youtube.md'
 theme:
   palette:
     # Palette toggle for light mode
@@ -49,6 +37,11 @@ theme:
     - search.highlighting
     - search.share
   name: material
+  favicon: assets/favicon.png
+  icon:
+    repo: fontawesome/brands/github
+  custom_dir: overrides
+  language: vi
 
 markdown_extensions:
   - pymdownx.emoji:

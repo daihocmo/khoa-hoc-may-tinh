@@ -1,3 +1,9 @@
+---
+hide:
+  - navigation
+  - toc
+---
+
 # Web Development Skills
 
 | **Category**               | **Skill**                                    |
