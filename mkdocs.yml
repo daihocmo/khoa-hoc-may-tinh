@@ -11,6 +11,10 @@ nav:
   - 'IT English': 'tieng-anh-it.md'
   - 'Tài nguyên học': 'resources.md'
   - 'Youtube': 'youtube.md'
+  - 'Các hướng dẫn khác':
+    - 'Cách lên kế hoạch': 'cach-len-ke-hoach.md'
+    - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
+    
 theme:
   palette:
     # Palette toggle for light mode
@@ -40,7 +44,6 @@ theme:
   favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/github
-  custom_dir: overrides
   language: vi
 
 markdown_extensions:

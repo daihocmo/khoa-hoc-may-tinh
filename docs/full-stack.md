@@ -38,6 +38,57 @@ Hiện tại lộ trình này mình viết cho cá nhân mình dùng nên nó v�
 | 26 | **Final Enhancements & Portfolio** | - Polish the capstone project.<br>- Add the project to một portfolio site.<br>- Prepare cho interviews với dự án và một resume. | - Tạo một portfolio cá nhân sử dụng Next.js.<br>- Showcase all 10 dự án trong portfolio của bạn.|
 
 
+
+### Tuần 1: HTML, CSS, và DOM
+
+### Tuần 2
+
+### Tuần 3
+
+### Tuần 4
+
+### Tuần 5
+
+### Tuần 6
+
+### Tuần 7
+
+### Tuần 8
+
+### Tuần 9
+
+### Tuần 10
+
+### Tuần 11
+
+### Tuần 12
+
+### Tuần 13
+
+### Tuần 14
+
+### Tuần 15
+
+### Tuần 16
+
+### Tuần 17
+
+### Tuần 18
+
+### Tuần 19
+
+### Tuần 20
+
+### Tuần 21
+
+### Tuần 22
+
+### Tuần 23
+
+### Tuần 24
+
+### Tuần 25
+
 ## Danh sách dự án
 
 Danh sách 10 ý tưởng gợi ý để xây dựng ứng dụng Fullstack.
