@@ -6,8 +6,12 @@ repo_name: Đóng góp cho trang trên Github
 
 nav:
   - 'Trang chủ': 'index.md'
-  - 'Fullstack': 'full-stack.md'
-  - 'Khoa học máy tính': 'teach-yourself-cs.md'  
+  - 'Hướng dẫn bắt đầu':
+    - 'Bắt đầu học lập trình': 'truoc-khi-bat-dau.md'
+    - 'Janki - Phần 1': 'janki1.md'
+    - 'Janki - Phần 2': 'janki2.md'
+  - 'Fullstack': 'fullstack.md'
+  - 'Khoa học máy tính': 'khmt.md'  
   - 'IT English': 'tieng-anh-it.md'
   - 'Tài nguyên học': 'resources.md'
   - 'Youtube': 'youtube.md'
@@ -41,7 +45,6 @@ theme:
     - search.highlighting
     - search.share
   name: material
-  favicon: assets/favicon.png
   icon:
     repo: fontawesome/brands/github
   language: vi

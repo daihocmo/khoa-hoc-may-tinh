@@ -1,7 +1,6 @@
 ---
 hide:
   - navigation
-  - toc
 ---
 
 # Lộ trình tự học Fullstack 6 tháng theo tuần.
@@ -31,7 +30,7 @@ Lộ trình sẽ được chia ra làm 26 tuần.
 - [HTML Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#html-foundations)
 - [CSS Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#css-foundations) 
 
-### Tuần 2
+### Tuần 2: JavaScript cơ bản
 #### Bạn sẽ học
 
 - variables, loops, functions, và arrays.
@@ -68,7 +67,7 @@ Cho cả tuần này và tuần 4
 
 Tiếp tục hoàn thành tuần 3
 
-### Tuần 5
+### Tuần 5: NoSQL Databases (MongoDB)
 
 #### Bạn sẽ học
 - Học NoSQL concepts.
@@ -81,7 +80,7 @@ Tiếp tục hoàn thành tuần 3
 #### Nguồn tài nguyên học
 Chưa có
 
-### Tuần 6
+### Tuần 6: SQL cơ bản
 
 #### Bạn sẽ học
 - Học SQL syntax.
@@ -93,7 +92,7 @@ Chưa có
 #### Nguồn tài nguyên học
 Chưa có
 
-### Tuần 7
+### Tuần 7: ORMs (Sequelize/Mongoose)
 
 #### Bạn sẽ học
 - Học về Object-Relational Mapping.
@@ -106,7 +105,7 @@ Chưa có
 #### Nguồn tài nguyên học
 Chưa có 
 
-### Tuần 8
+### Tuần 8: React cơ bản (Hoặc Vue, Stelve .etc.)
 
 #### Bạn sẽ học
 - Học React nền tảng: JSX, components, props, và state.
@@ -117,7 +116,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 9
+### Tuần 9: Styling React Apps (Hoặc Vue, Stelve .etc.)
 
 #### Bạn sẽ học
 - Style React apps sử dụng Tailwind CSS hoặc styled-components.
@@ -127,7 +126,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 10
+### Tuần 10: TypeScript cơ bản
 
 #### Bạn sẽ học
 - Học TypeScript syntax và static typing.
@@ -139,7 +138,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 11
+### Tuần 11: Next.js cơ bản
 
 #### Bạn sẽ học
 - Học server-side rendering (SSR) và static site generation (SSG).
@@ -150,7 +149,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 12
+### Tuần 12: Monorepos và Turborepo
 
 #### Bạn sẽ học
 - Học monorepos và how to organize multiple dự án.
@@ -161,7 +160,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 13
+### Tuần 13: Websockets & RTC cơ bản
 
 #### Bạn sẽ học
 - Học real-time communication với Websockets.
@@ -173,7 +172,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 14
+### Tuần 14: Testing cơ bản
 
 #### Bạn sẽ học
 - Học unit và integration testing.
@@ -185,7 +184,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 15
+### Tuần 15: Authentication & JWT
 
 #### Bạn sẽ học
 - Học secure user authentication.
@@ -196,7 +195,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 16
+### Tuần 16: Tối ưu cơ sở dữ liệu
 
 #### Bạn sẽ học
 - Tìm hiểu về database optimization techniques (e.g., indexing, query optimization).
@@ -206,7 +205,7 @@ Chưa có
 
 #### Nguồn tài nguyên học
 
-### Tuần 17
+### Tuần 17: Khái niệm Backend nâng cao
 
 #### Bạn sẽ học
 - Học thêm về asynchronous programming và error handling.
