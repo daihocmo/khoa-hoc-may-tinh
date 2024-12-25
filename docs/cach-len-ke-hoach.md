@@ -143,7 +143,7 @@ Vì vậy, đừng mắc kẹt trong việc làm một bản kế hoạch hoàn 
 
 Bây giờ bạn đã có thể thử lập kế hoạch và xây dựng một dự án lập trình được rồi á. Hy vọng bài đăng này giúp cho việc xây dựng dự án bớt khó nhằn và đáng sợ hơn.
 
-Điều quan trọng là xác định rõ ràng dự án, thiết lập quy trình làm việc của bạn và sau đó chia dự án thành các thành phần nhỏ hơn để tạo ra dự án lớn hơn. Bằng cách đó, dự án không giống như một ngọn núi khổng lồ để leo lên, thay vào đó, nó sẽ giống như một chiếc thang với mỗi bước giúp bạn đạt được mục tiêu của mình.
+Điều quan trọng là xác định rõ ràng dự án, thiết lập quy trình làm việc của bạn và sau đó chia dự án thành các thành phần nhỏ hơn để tạo ra dự án lớn hơn. Bằng cách đó, dự án sẽ không còn như một ngọn núi khổng lồ để leo lên nữa và nó sẽ trông như một chiếc thang với mỗi bước giúp bạn đạt được mục tiêu của mình.
 
 Nếu bạn thấy ai đó đang gặp khó khăn để thoát khỏi tutorial hell, đừng chỉ bảo họ "làm nhiều dự án vào". Hãy cho họ biết cách lập kế hoạch và xây dựng.
 
