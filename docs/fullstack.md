@@ -33,8 +33,7 @@ Mỗi tuần bạn nên thử làm ít nhất một dự án (một ứng dụng
 
 #### Bạn sẽ học
 
-- Học HTML cơ bản, forms, và semantics.
-- Học CSS cơ bản và responsive design.
+HTML/CSS cơ bản và responsive design
 
 #### Nguồn tài nguyên học
 Nguồn học cơ bản:
@@ -53,6 +52,7 @@ Nếu học trên FullStackOpen thì học phần [Part 0 - Fundamentals of Web 
 
 ### Tuần 2: JavaScript cơ bản
 #### Bạn sẽ học
+JavaScript cơ bản
 
 - Các nội dung cơ bản như: variables (biến), loops (vòng lặp), functions (hàm), và arrays (chuỗi).
 - Tìm hiểu về các chức năng ES6 như let, const, và arrow functions.
@@ -69,10 +69,18 @@ Nếu học trên FullStackOpen thì học phần [Part 0 - Fundamentals of Web 
 ### Tuần 3: Backend (Phần 1)
 Thường mình thấy trong các khóa học hoặc chương trình khác thì mọi người thường hay cho học Frontend trước. Chương trình này sẽ lựa chọn Backend để khởi đầu trước.
 
+Trích từ [một bình luận của một vozer khác](https://voz.vn/t/lo-trinh-tu-hoc-phat-trien-website-fullstack-fullstack-web-development.970731/post-33389959) trên Thread Fullstack của tôi:
+
+> mình nghĩ nên bắt đầu từ BE trước, nắm vững các kiến thức cơ bản về DB, OOP, thuật toán, mạng, Linux,...
+> rồi học liên quan đến setup, build web trên server qua Docker, VPS,...
+> sau đấy mới move dần qua FE. Bắt đầu từ SSR để làm quen với HTML, CSS, JS sau đó chuyển qua CSR làm quen với các lib, framework như React, Vue, Angular
+
+Thanks bác, lộ trình này sẽ học Backend trước rồi mới học Frontend
+
 #### Bạn sẽ học
 - Những kiến thức cơ bản về Internet: Cách Internet hoạt động, HTTP, tên miền, hosting, DNS, trình duyệt bla bla.
-- Understand the JavaScript runtime environment.
-- Write HTTP servers.
+- Tìm hiểu về [JavaScript runtime environment](https://topdev.vn/blog/javascript-runtime-environment-la-gi/) và [Web Server](https://viblo.asia/p/web-server-la-gi-tim-hieu-ve-web-server-WR5JRv0rJGv)
+- Viết [HTTP servers](https://scribe.rip/@gabriellamedas/the-http-server-explained-c41380307917).
 - Lựa chọn ngôn ngữ Backend bạn muốn học (JavaScript, Ruby, Java, Go, Rust .etc.) và học [cơ bản](https://old.reddit.com/r/learnprogramming/comments/pxg54p/how_to_start_programming_from_zero/) của nó. Chương trình này sẽ lựa chọn Node.js
 - Version Control System (Git và Github):
   - [Từ gà tới pro Git và Github trong 20 phút - Tự học Git siêu tốc](https://www.youtube.com/watch?v=1JuYQgpbrW0)
@@ -80,6 +88,8 @@ Thường mình thấy trong các khóa học hoặc chương trình khác thì 
 
 #### Nguồn tài nguyên học
 - [Awesome Lập trình](https://daihocmo.github.io/awesome-lap-trinh/) - Danh sách tổng hợp tài nguyên học lập trình và khoa học máy tính bằng Tiếng Việt.
+
+Nếu bạn đang học Rust thì hãy đọc [Hướng dẫn cày Rust](https://daihocmo.github.io/awesome-lap-trinh/ngon-ngu/rust.html)
 
 #### Đọc thêm
 - [Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages) - Học cách viết Commit Message mỗi khi thực hiện commit trong Git.
@@ -90,22 +100,32 @@ Thường mình thấy trong các khóa học hoặc chương trình khác thì 
 ### Tuần 4: Backend (Phần 2)
 
 #### Bạn sẽ học
-- Learn HTTP basics, request-response cycle.
-- Create REST APIs using Node.js and Express.
+- Học [HTTP basics](https://www.freecodecamp.org/news/what-is-http/), [request-response cycle](https://davisgitonga.dev/blog/request-response-cycle).
+- Tạo REST APIs.
 
-### Tài nguyên học
+#### Tài nguyên học
+- [Khóa Node.js và Express.js của F8](https://www.youtube.com/playlist?list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3)
+
+Nếu bạn cũng đang học Rust như mình thì:
+
+- [Create a blazingly fast REST API in Rust (Part 1/2)](https://hub.qovery.com/guides/tutorial/create-a-blazingly-fast-api-in-rust-part-1/)
+- [Tạo CRUD API đơn giản với Rust](https://viblo.asia/p/tao-crud-api-don-gian-voi-rust-Az45bG0OKxY)
+
+#### Có thể bạn sẽ muốn đọc thêm
+- [Request-Response Cycle Through A Story](https://scribe.rip/@castonboyd/request-response-cycle-through-a-story-e552a7afff41)
+- [CRUD là gì? So sánh sự khác biệt giữa CRUD và REST](https://vietnix.vn/crud-la-gi/)
 
 ### Tuần 5: NoSQL Databases (MongoDB)
 
 #### Bạn sẽ học
-- Understand NoSQL concepts.
-- Perform CRUD operations with MongoDB.
-- Explore schema design and indexing.
-
-- Xây dựng một database cho một "Bookshelf App" sử dụng MongoDB.
+- Tìm hiểu về [NoSQL concepts](https://viblo.asia/p/gioi-thieu-ve-nosql-database-djeZ1a9jZWz)
+- Perform [CRUD operations](https://viblo.asia/p/crud-la-gi-lap-trinh-website-crud-crud-database-Ljy5VyLzlra) with MongoDB.
+- Tìm hiểu về schema design và indexing:
+  - [Database Schema Design](https://viblo.asia/p/lam-the-nao-de-thiet-ke-mot-co-so-du-lieu-phan-1-rYvGwavgKVw) - Thiết kế cơ sở dữ liệu
 
 #### Nguồn tài nguyên học
-Chưa có
+- [A Comprehensive NoSQL Tutorial Using MongoDB](https://www.datacamp.com/tutorial/nosql-tutorial)
+- [Learn About NoSQL Databases in This 3-hour Course](https://www.freecodecamp.org/news/learn-nosql-in-3-hours/)
 
 ### Tuần 6: SQL cơ bản
 
@@ -122,9 +142,6 @@ Chưa có
 - Learn about Object-Relational Mapping.
 - Use Sequelize for SQL and Mongoose for MongoDB.
 - Understand model relationships.
-
-
-- Xây dựng một dự án có tích hợp Sequelize hoặc Mongoose.
 
 #### Nguồn tài nguyên học
 Chưa có 
