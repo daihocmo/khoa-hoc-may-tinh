@@ -6,75 +6,102 @@ hide:
 # Lộ trình tự học Fullstack 6 tháng theo tuần.
 Hiện tại lộ trình này mình viết cho cá nhân mình dùng nên nó vẫn chưa được hoàn chỉnh. Mình cũng sẽ chỉnh sửa và cải thiện trong quá trình học luôn.
 
-!!! warning "Lộ trình này chỉ mang tính chất ước lượng"
+!!! warning "Thời gian học lộ trình này chỉ mang tính chất ước lượng"
     Bạn có thể sẽ hoàn thành nó chậm hơn hoặc nhanh hơn so với thời gian mà chương trình đề cập. Phần này tùy thuộc vào bạn. Vậy nên, kể cả khi mình hoàn thành nó sau 6 tháng cũng không vấn đề gì. Điều quan trọng nhất là cần duy trì thói quen học hàng ngày.
 
-## Lộ trình học
-Lộ trình sẽ được chia ra làm 26 tuần.
+## Chọn lộ trình khác
 
-### Tuần 1: HTML, CSS, và DOM
+Nếu bạn muốn học những lộ trình khác thì có thể thử:
+
+- [Fullstack Open](https://fullstackopen.com/en/)
+- [TheOdinProject](https://www.theodinproject.com/)
+- [FreeCodeCamp](https://www.freecodecamp.org/learn/full-stack-developer/)
+
+Lộ trình mình viết lại để khắc phục những "nhược điểm" (theo cá nhân mình thôi nha) của TOP và FCC:
+
+- FCC quá tập trung vào làm bài tập thực hành: Nghe có vẻ hơi ngược đời nhưng cách học của mình muốn là "học kiến thức nền tảng và đi xây dựng những dự án mà mình chọn". Mình khi học FCC hay cố hoàn thành bài tập cho xong mà không cảm thấy như đống kiến thức đó được sử dụng thực tế.
+- TOP không thống nhất trong nguồn tài nguyên: Họ gợi ý mỗi việc học một phần kiến thức ở một trang khác nhau. Mình nghĩ là nó khá hay cho việc học thêm, nhưng nó khá phức tạp và phải chuyển qua chuyển lại các trang khác. Dù vậy nhưng lộ trình này cũng gợi ý kiểu vậy :D nhưng nó ít hơn.
+
+## Lộ trình học
+Lộ trình sẽ được chia ra làm 26 tuần. Cách học cơ bản của lộ trình là trong mỗi tuần sẽ có những phần kiến thức mà bạn cần (mình nghĩ là cần) học. Bạn hoàn toàn có thể bỏ qua những phần bạn đã học từ trước hoặc muốn học sau (Khi dự án bạn muốn xây dựng cần đến phần kiến thức đó). Lộ trình này được xây dựng dựa trên [lộ trình Fullstack của Repo này](https://github.com/nishant-Tiwari24/coding-resources).
+
+Về phần dự án hàng tuần, thử nghĩ xem bạn muốn làm ứng dụng gì. Bạn có thể đọc [Hướng dẫn xây dựng dự án cơ bản](cach-len-ke-hoach.md) để học cách bắt đầu lên ý tưởng.
+
+Mỗi tuần bạn nên thử làm ít nhất một dự án (một ứng dụng đơn giản để áp dụng các nội dung bạn đã học trong tuần, gì cũng được). Mình sẽ để một danh sách gợi ý bên dưới.
+
+### Tuần 1: HTML, CSS
 
 #### Bạn sẽ học
 
-- Học HTML structure, forms, và semantics.
+- Học HTML cơ bản, forms, và semantics.
 - Học CSS cơ bản và responsive design.
-- Tìm hiểu về DOM và JavaScript integration.
-
-#### Kết thúc tuần này, bạn hãy thử làm
-
-- Xây dựng một static webpage.
-- Thêm tương tác với DOM manipulation.
 
 #### Nguồn tài nguyên học
+Nguồn học cơ bản:
 
+- [Khóa HTML/CSS cơ bản của F8 - Tiếng Việt](https://www.youtube.com/playlist?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz)
 - [HTML Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#html-foundations)
 - [CSS Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#css-foundations) 
+
+Nếu học trên FullStackOpen thì học phần [Part 0 - Fundamentals of Web apps](https://fullstackopen.com/en/part0)
+
+Đọc thêm các nội dung khác liên quan đến HTML/CSS:
+
+- [Giới thiệu về DOM](https://viblo.asia/p/gioi-thieu-ve-dom-WAyK8J2ElxX) - Tìm hiểu về DOM (Document Object Model). Sẽ có một chút phần code của JavaScript, bạn có thể bỏ qua và chỉ cần tập trung vào hiểu DOM là gì.
+- [Guide to Writing Semantic HTML](https://cs.fyi/guide/writing-semantic-html) - Cách viết semantic HTML (Semantic HTML refers to the use of HTML markup to convey the meaning of the content on a web page, rather than just its appearance)
+- [Don't click here](https://www.dont-click-here.com/)  
 
 ### Tuần 2: JavaScript cơ bản
 #### Bạn sẽ học
 
-- variables, loops, functions, và arrays.
+- Các nội dung cơ bản như: variables (biến), loops (vòng lặp), functions (hàm), và arrays (chuỗi).
 - Tìm hiểu về các chức năng ES6 như let, const, và arrow functions.
-
-#### Kết thúc tuần này, bạn hãy thử làm
+- DOM manipulation
 
 #### Nguồn tài nguyên học
 
-- [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript)
-- [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts)
+- [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - Học từ đầu - Khóa này đã có người dịch sang Tiếng Việt và bạn có thể đọc luôn: [Bản dịch Tiếng Việt của 30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/Vietnamese/README.md).
+- [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts) - Tổng hợp những concepts mà "JS devs" nên biết
+
+#### Trong lúc học HTML/CSS/JS bạn có thể đọc thêm một số bài viết này
+- [Command Line Basics](https://www.theodinproject.com/lessons/foundations-command-line-basics) - Tìm hiểu cách sử dụng giao diện dòng lệnh cơ bản cho các hệ điều hành Unix-based (MacOS, Linux .etc.)
 
 ### Tuần 3: Backend (Phần 1)
-Cho cả tuần này và tuần 4
+Thường mình thấy trong các khóa học hoặc chương trình khác thì mọi người thường hay cho học Frontend trước. Chương trình này sẽ lựa chọn Backend để khởi đầu trước.
 
 #### Bạn sẽ học
-- Học cơ bản về stack backend bạn chọn.
-- Học HTTP cơ bản và request-response cycle.
-- Tạo REST APIs (sử dụng Node.js và Express).
-
-#### Kết thúc tuần này, bạn hãy thử làm
+- Những kiến thức cơ bản về Internet: Cách Internet hoạt động, HTTP, tên miền, hosting, DNS, trình duyệt bla bla.
+- Understand the JavaScript runtime environment.
+- Write HTTP servers.
+- Lựa chọn ngôn ngữ Backend bạn muốn học (JavaScript, Ruby, Java, Go, Rust .etc.) và học [cơ bản](https://old.reddit.com/r/learnprogramming/comments/pxg54p/how_to_start_programming_from_zero/) của nó. Chương trình này sẽ lựa chọn Node.js
+- Version Control System (Git và Github):
+  - [Từ gà tới pro Git và Github trong 20 phút - Tự học Git siêu tốc](https://www.youtube.com/watch?v=1JuYQgpbrW0)
+  - [Git and Github Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
 
 #### Nguồn tài nguyên học
+- [Awesome Lập trình](https://daihocmo.github.io/awesome-lap-trinh/) - Danh sách tổng hợp tài nguyên học lập trình và khoa học máy tính bằng Tiếng Việt.
 
-
-- [Fullstack JavaScript](https://www.theodinproject.com/paths/full-stack-javascript)
-- [Full Stack Ruby on Rails](https://www.theodinproject.com/paths/full-stack-ruby-on-rails)
-- [Zero To Production In Rust - Bản Sample được đăng trên trang Blog cá nhân của tác giả](https://www.lpalmieri.com/posts/2020-05-24-zero-to-production-0-foreword/) và [Code for "Zero To Production In Rust"](https://github.com/LukeMathWalker/zero-to-production)
-- [Tất tần tật về học Java](https://github.com/loda-kun/java-all) và [loda-kun/spring-boot-learning](https://github.com/loda-kun/spring-boot-learning)
-
-- Còn lại bạn tự tìm ;-;
+#### Đọc thêm
+- [Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages) - Học cách viết Commit Message mỗi khi thực hiện commit trong Git.
+- [Problem Solving](https://www.theodinproject.com/lessons/foundations-problem-solving) - Giải quyết vấn đề trong lập trình.
+- [Understanding Errors](https://www.theodinproject.com/lessons/foundations-understanding-errors) - Hiểu về lỗi trong lập trình (Bài viết này tập trung vào JS, nhưng đọc để hiểu về tư duy về lỗi lập trình khá hay)
+- [Clean Code](https://www.theodinproject.com/lessons/foundations-clean-code) - Phần lớn thời gian lập trình được dành để đọc Code. Hướng dẫn viết Code dễ đọc.
 
 ### Tuần 4: Backend (Phần 2)
 
-Tiếp tục hoàn thành tuần 3
+#### Bạn sẽ học
+- Learn HTTP basics, request-response cycle.
+- Create REST APIs using Node.js and Express.
+
+### Tài nguyên học
 
 ### Tuần 5: NoSQL Databases (MongoDB)
 
 #### Bạn sẽ học
-- Học NoSQL concepts.
-- Perform CRUD operations với MongoDB.
-- Tìm hiểu về schema design và indexing.
+- Understand NoSQL concepts.
+- Perform CRUD operations with MongoDB.
+- Explore schema design and indexing.
 
-#### Kết thúc tuần này, bạn hãy thử làm
 - Xây dựng một database cho một "Bookshelf App" sử dụng MongoDB.
 
 #### Nguồn tài nguyên học
@@ -83,11 +110,8 @@ Chưa có
 ### Tuần 6: SQL cơ bản
 
 #### Bạn sẽ học
-- Học SQL syntax.
-- Perform CRUD operations với SQL databases (e.g., MySQL hoặc PostgreSQL).
-
-#### Kết thúc tuần này, bạn hãy thử làm
-- Xây dựng một database đơn giản cho user data.
+- Learn SQL syntax.
+- Perform CRUD operations with SQL databases (e.g., MySQL or PostgreSQL).
 
 #### Nguồn tài nguyên học
 Chưa có
@@ -95,23 +119,21 @@ Chưa có
 ### Tuần 7: ORMs (Sequelize/Mongoose)
 
 #### Bạn sẽ học
-- Học về Object-Relational Mapping.
-- Sử dụng Sequelize cho SQL và Mongoose cho MongoDB.
-- Học model relationships.
+- Learn about Object-Relational Mapping.
+- Use Sequelize for SQL and Mongoose for MongoDB.
+- Understand model relationships.
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Xây dựng một dự án có tích hợp Sequelize hoặc Mongoose.
 
 #### Nguồn tài nguyên học
 Chưa có 
 
-### Tuần 8: React cơ bản (Hoặc Vue, Stelve .etc.)
+### Tuần 8: React cơ bản
 
 #### Bạn sẽ học
 - Học React nền tảng: JSX, components, props, và state.
 - Sử dụng React Developer Tools.
-
-#### Kết thúc tuần này, bạn hãy thử làm
 - Xây dựng một task tracker app.
 
 #### Nguồn tài nguyên học
@@ -120,9 +142,7 @@ Chưa có
 
 #### Bạn sẽ học
 - Style React apps sử dụng Tailwind CSS hoặc styled-components.
-- Học responsive design trong React.
-
-#### Kết thúc tuần này, bạn hãy thử làm
+- Học responsive design trong React
 
 #### Nguồn tài nguyên học
 
@@ -133,9 +153,6 @@ Chưa có
 - Tích hợp TypeScript với React.
 - Tìm hiểu về type declarations cho APIs và models.
 
-#### Kết thúc tuần này, bạn hãy thử làm
-- Refactor the task tracker app to TypeScript.
-
 #### Nguồn tài nguyên học
 
 ### Tuần 11: Next.js cơ bản
@@ -144,7 +161,7 @@ Chưa có
 - Học server-side rendering (SSR) và static site generation (SSG).
 - Xây dựng SEO-friendly apps.
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Xây dựng một blog site sử dụng Next.js.
 
 #### Nguồn tài nguyên học
@@ -155,7 +172,7 @@ Chưa có
 - Học monorepos và how to organize multiple dự án.
 - Sử dụng Turborepo cho performance optimization.
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Tạo một monorepo cho shared libraries trong React và Node.js.
 
 #### Nguồn tài nguyên học
@@ -166,10 +183,6 @@ Chưa có
 - Học real-time communication với Websockets.
 - Học RTC cho video/audio communication.
 
-#### Kết thúc tuần này, bạn hãy thử làm
-- Xây dựng một chat app với Websockets.
-- Tìm hiểu về RTC cho một video conferencing feature.
-
 #### Nguồn tài nguyên học
 
 ### Tuần 14: Testing cơ bản
@@ -179,9 +192,6 @@ Chưa có
 - Sử dụng Jest và React Testing Library.
 - Test APIs và frontend components.
 
-#### Kết thúc tuần này, bạn hãy thử làm
-- Write tests cho your REST API và React components.
-
 #### Nguồn tài nguyên học
 
 ### Tuần 15: Authentication & JWT
@@ -190,9 +200,6 @@ Chưa có
 - Học secure user authentication.
 - Sử dụng JWT và cookies cho session management.
 
-#### Kết thúc tuần này, bạn hãy thử làm
-- Add login/logout functionality to your blog platform.
-
 #### Nguồn tài nguyên học
 
 ### Tuần 16: Tối ưu cơ sở dữ liệu
@@ -200,7 +207,7 @@ Chưa có
 #### Bạn sẽ học
 - Tìm hiểu về database optimization techniques (e.g., indexing, query optimization).
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Optimize queries cho existing dự án.
 
 #### Nguồn tài nguyên học
@@ -212,7 +219,7 @@ Chưa có
 - Học middleware chaining.
 - Implement các logic backend phức tạp.
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Refactor APIs với advanced features như rate limiting và complex queries.
 
 #### Nguồn tài nguyên học
@@ -223,7 +230,7 @@ Chưa có
 - Sử dụng ref và populate trong Mongoose cho relationships.
 - Học API versioning và documentation (Swagger).
 
-#### Kết thúc tuần này, bạn hãy thử làm  
+  
 - Add relationships to your MongoDB models.   
 
 #### Nguồn tài nguyên học
@@ -234,9 +241,6 @@ Chưa có
 - Học dynamic form handling, animations, và accessibility features trong React.
 - Tìm hiểu về Framer Motion cho animations.
 
-#### Kết thúc tuần này, bạn hãy thử làm
-- Add form validation và animations to the task tracker.
-
 #### Nguồn tài nguyên học
 
 ### Tuần 20: Project Planning    
@@ -244,9 +248,6 @@ Chưa có
 #### Bạn sẽ học
 - Plan một capstone project.
 - Define features, Tạo high-level (HLD) và low-level designs (LLD)
-
-#### Kết thúc tuần này, bạn hãy thử làm
-- Tạo một project blueprint (e.g., e-commerce app hoặc task tracker). 
 
 #### Nguồn tài nguyên học
 
@@ -256,7 +257,7 @@ Chưa có
 - Xây dựng the backend cho your capstone project.
 - Implement CRUD APIs, authentication, và error handling.
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Set up Express.js, MongoDB, và authentication cho the project. 
 
 #### Nguồn tài nguyên học
@@ -268,7 +269,7 @@ Chưa có
 - Sử dụng React hoặc Next.js cho user interface.
 - Style the app với Tailwind CSS.   
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Tích hợp the backend với the frontend. 
 
 #### Nguồn tài nguyên học
@@ -279,7 +280,7 @@ Chưa có
 - Add real-time features sử dụng Websockets hoặc RTC.
 - Implement live chat hoặc real-time notifications
 
-#### Kết thúc tuần này, bạn hãy thử làm
+
 - Enhance the capstone app với real-time functionality.  
 
 #### Nguồn tài nguyên học
@@ -289,10 +290,7 @@ Chưa có
 #### Bạn sẽ học
 - Test the app thoroughly.
 - Deploy the app to một cloud platform (e.g., Vercel, Heroku)
-
-#### Kết thúc tuần này, bạn hãy thử làm
-- Write unit và integration tests.
-- Deploy the capstone project.   
+   
 
 #### Nguồn tài nguyên học
 
@@ -303,10 +301,6 @@ Chưa có
 - Optimize frontend và backend performance.
 - Học về caching strategies
 
-#### Kết thúc tuần này, bạn hãy thử làm
-- Add ESLint và Prettier vào dự án của bạn.
-- Optimize API response times và frontend load times.
-
 #### Nguồn tài nguyên học
 
 ### Tuần 26: Final Enhancements & Portfolio
@@ -314,13 +308,11 @@ Chưa có
 #### Bạn sẽ học
 - Polish the capstone project.
 
-#### Kết thúc tuần này, bạn hãy thử làm
+#### Đặc biệt chút
 - Add the project to một portfolio site.
 - Prepare cho interviews với dự án và một resume.   
 - Tạo một portfolio cá nhân sử dụng Next.js.
 - Showcase all 10 dự án trong portfolio của bạn. 
-
-#### Nguồn tài nguyên học
 
 
 ## Danh sách dự án
