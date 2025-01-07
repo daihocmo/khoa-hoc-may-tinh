@@ -224,7 +224,7 @@ Mình viết lộ trình này để mình học và mình chưa hiểu lắm v�
 - Sử dụng Turborepo để tối ưu performance.
 
 #### Nguồn tài nguyên học
-- [What is Turborepo and Why Should You Care?](https://refine.dev/blog/how-to-use-turborepo/#introduction)
+- [Beginner's guide to monorepos and turborepo](https://dev.to/sammaji/beginners-guide-to-monorepos-and-turborepo-590c)
 - [Modern Monorepo with Turborepo. Bắt đầu với một project cơ bản từ Turborepo](https://viblo.asia/p/modern-monorepo-with-turborepo-bat-dau-voi-mot-project-co-ban-tu-turborepo-gwd43ogA4X9)
 
 ### Tuần 13: Websockets & RTC cơ bản
@@ -241,52 +241,58 @@ Mình viết lộ trình này để mình học và mình chưa hiểu lắm v�
 ### Tuần 14: Testing cơ bản
 
 #### Bạn sẽ học
-- Học unit và integration testing.
-- Sử dụng Jest và React Testing Library.
-- Test APIs và frontend components.
+- Học unit và integration testing:
+  - [Sự khác nhau giữa Unit, Integration và Functional Testing](https://viblo.asia/p/su-khac-nhau-giua-unit-integration-va-functional-testing-YmjeoLZrkqa)
+  - [What's the difference between unit tests and integration tests?](https://stackoverflow.com/a/5357837)
+- Sử dụng Jest và React Testing Library (Nếu bạn chọn học React ở trên, cá nhân mình không học nên sẽ bổ sung phần này sau)
+- Test APIs và các frontend components.
+  - [Sơ lược về API Testing](https://anhtester.com/blog/blog/so-luoc-ve-api-testing)
+  - [Học cách test API đơn giản và dễ dàng trong 10 phút](https://viblo.asia/p/hoc-cach-test-api-don-gian-va-de-dang-trong-10-phut-Do7546xBZM6)
 
 #### Nguồn tài nguyên học
+- [API Testing With Postman](https://www.youtube.com/playlist?list=PLgcMOggxCIP1X0wyYsqzdAgYQJnsJAOKU) - Khóa này bằng Tiếng Việt.
+- [Postman Beginner's Course - API Testing](https://www.youtube.com/watch?v=VywxIQ2ZXw4)
 
 ### Tuần 15: Authentication & JWT
 
 #### Bạn sẽ học
-- Học secure user authentication.
-- Sử dụng JWT và cookies cho session management.
+- [Tìm hiểu về khái niệm xác thực người dùng Authentication](https://viblo.asia/p/tim-hieu-ve-khai-niem-xac-thuc-nguoi-dung-authentication-ByEZkrM4KQ0) và [phân biệt sự khác nhau giữa Authentication và Authorization](https://viblo.asia/p/phan-biet-su-khac-nhau-giua-authentication-va-authorization-Eb85oad4Z2G)
+- Sử dụng JWT (JSON Web Token) và cookies cho session management:
+  - [JWT và Session một số thông tin bạn nên biết](https://www.facebook.com/groups/devoiminhdidauthe/posts/25529417370035293/)
+  - [JWT – JSON Web Tokens và Session Cookies trong việc Authentication](https://viblo.asia/p/jwt-json-web-tokens-va-session-cookies-trong-viec-authentication-XL6lA9QDlek)
+  - [JSON Web Token hay Session Cookies, đâu mới là chân ái ?](https://viblo.asia/p/json-web-token-hay-session-cookies-dau-moi-la-chan-ai-Qbq5Q0oJlD8)
+  - [Lưu JWT trong cookie hay local storage?](https://haiconmeo.info/blog/code-blog/jwt-cookie)
 
 #### Nguồn tài nguyên học
+- [Session, cookie, CORS, JWT, SSO](https://www.youtube.com/playlist?list=PL_-VfJajZj0VaEt6Q1Z_CSg_Ci9aP9oQ1) - Danh sách phát của F8
 
 ### Tuần 16: Tối ưu cơ sở dữ liệu
 
 #### Bạn sẽ học
-- Tìm hiểu về database optimization techniques (e.g., indexing, query optimization).
-
-
-- Optimize queries cho existing dự án.
+- Tìm hiểu về kĩ thuật tối ưu cơ sở dữ liệu (database optimization techniques). Ví dụ như indexing, query optimization .etc.
 
 #### Nguồn tài nguyên học
+- [Tự học SQL: 10 Kỹ thuật tối ưu hóa lệnh truy vấn hiệu quả](https://datapot.vn/tu-hoc-sql-10-ky-thuat-toi-uu-hoa-lenh-truy-van-sql/?srsltid=AfmBOor8LgzTt4DmuIDGQ_TJ2ABDFTBk-5RZZ8q1QlFJHEHGBYsGsLMR)
+- [11 Database Optimization Techniques](https://danielfoo.medium.com/11-database-optimization-techniques-97fdbed1b627)
 
 ### Tuần 17: Khái niệm Backend nâng cao
 
 #### Bạn sẽ học
-- Học thêm về asynchronous programming và error handling.
-- Học middleware chaining.
-- Implement các logic backend phức tạp.
+- Học thêm về [asynchronous programming](https://fullstack.edu.vn/blog/co-ban-tong-quan-lap-trinh-synchronous-va-asynchronous.html) và [error handling](https://viblo.asia/p/javascript-error-handling-vyDZO1N95wj) (Lưu ý cho ai chưa biết thì hai khái niệm này không chỉ giới hạn trong JavaScript).
+- Học middleware chaining - Theo mình tìm hiểu thì khái niệm này chỉ giới hạn trong Express.js. Đọc bài ['Express Middleware' is just a fancy way of chaining a bunch of functions.](https://dev.to/getd/express-middleware-is-just-a-fancy-way-of-chaining-a-bunch-of-functions-explained-in-3-mins-43jf)
+- [Các khái niệm Backend "cao cấp hơn"](https://medium.com/@zalewski/exploring-advanced-backend-concepts-databases-software-design-and-architecture-90d76d2a82c5):
 
+#### Cập nhật dự án của bạn
+- Viết API và có thêm những tính năng nâng cao như rate limiting và complex queries:
+  - [API Rate Limiting là gì và một số thuật toán hay dùng](https://viblo.asia/p/api-rate-limiting-la-gi-va-mot-so-thuat-toan-hay-dung-bJzKmPyr59N)
+  - [What does it mean to be able to write "complex" SQL queries?](https://www.reddit.com/r/datascience/comments/z6mot6/what_does_it_mean_to_be_able_to_write_complex_sql/)
 
-- Refactor APIs với advanced features như rate limiting và complex queries.
 
 #### Nguồn tài nguyên học
 
 ### Tuần 18: Ref, Populate, và API Design
 
-#### Bạn sẽ học
-- Sử dụng ref và populate trong Mongoose cho relationships.
-- Học API versioning và documentation (Swagger).
-
-  
-- Add relationships to your MongoDB models.   
-
-#### Nguồn tài nguyên học
+Đang trong quá trình thêm
 
 ### Tuần 19: Các chức năng Frontend nâng cao    
 
@@ -294,218 +300,73 @@ Mình viết lộ trình này để mình học và mình chưa hiểu lắm v�
 - Học dynamic form handling, animations, và accessibility features trong React.
 - Tìm hiểu về Framer Motion cho animations.
 
-#### Nguồn tài nguyên học
-
 ### Tuần 20: Project Planning    
 
 #### Bạn sẽ học
-- Plan một capstone project.
-- Define features, Tạo high-level (HLD) và low-level designs (LLD)
+- Lên kế hoạch cho một [capstone project](https://domyessay.com/blog/capstone-project-outline) (Dự án tốt nghiệp)
+- Định nghĩa các tính năng, Tạo high-level (HLD) và low-level designs (LLD)
 
-#### Nguồn tài nguyên học
+#### Ghi chú
+Đây sẽ là một dự án (tương đối) lớn. Trước khi bắt tay vào làm dự án này, bạn nên hoàn thành một số các dự án cỡ nhỏ và vừa. Bạn có thể xem [Những DỰ ÁN CÁ NHÂN nên làm khi TỰ HỌC lập trình](https://www.youtube.com/watch?v=XIcWaewPAjQ) của ông Dev để tìm hiểu thêm.
+
+Nếu bạn vẫn chưa biết bắt đầu từ đâu để phát triển một ứng dụng nhỏ, hãy đọc [Hướng dẫn lên kế hoạch cho một dự án lập trình](cach-len-ke-hoach.md)
 
 ### Tuần 21: Capstone Backend Development     
+Sau khoảng một tuần lập kế hoạch và học thêm một số các khái niệm liên quan đến HLD và LLD, bây giờ sẽ là lúc bắt đầu.
 
-#### Bạn sẽ học
-- Xây dựng the backend cho your capstone project.
+#### Bạn sẽ làm
+- Xây dựng phần Backend cho **dự án tốt nghiệp** của bạn.
 - Implement CRUD APIs, authentication, và error handling.
-
-
-- Set up Express.js, MongoDB, và authentication cho the project. 
-
-#### Nguồn tài nguyên học
 
 ### Tuần 22: Capstone Frontend Development    
 
-#### Bạn sẽ học
-- Xây dựng the frontend cho your capstone project.
-- Sử dụng React hoặc Next.js cho user interface.
-- Style the app với Tailwind CSS.   
+#### Bạn sẽ làm
+- Xây dựng Frontend cho **dự án tốt nghiệp** của bạn.
+- Có thể sử dụng React/Next.js với Tailwind CSS.   
 
-
-- Tích hợp the backend với the frontend. 
-
-#### Nguồn tài nguyên học
 
 ### Tuần 23: Real-Time Features trong Capstone    
 
 #### Bạn sẽ học
-- Add real-time features sử dụng Websockets hoặc RTC.
+- Thêm những tính năng real-time sử dụng Websockets hoặc RTC.
 - Implement live chat hoặc real-time notifications
-
-
-- Enhance the capstone app với real-time functionality.  
-
-#### Nguồn tài nguyên học
 
 ### Tuần 24: Testing và Deployment     
 
 #### Bạn sẽ học
-- Test the app thoroughly.
-- Deploy the app to một cloud platform (e.g., Vercel, Heroku)
-   
+- Test ứng dụng
+- Deploy lên một nền tảng cloud (e.g., Vercel, Heroku)
 
 #### Nguồn tài nguyên học
 
 ### Tuần 25: Linting và Performance Optimization    
 
 #### Bạn sẽ học
-- Set up linting tools (e.g., ESLint, Prettier).
-- Optimize frontend và backend performance.
-- Học về caching strategies
+- Thiết lập các công cụ [Linting](https://toidicodedao.com/2018/05/15/viet-code-tot-hon-voi-linter-eslint-visual-studio-code/) (e.g., ESLint, Prettier).
+- Tối ưu performance cho cả Backend và Frontend.
+- Học về [caching strategies](https://viblo.asia/p/chien-luoc-caching-caching-strategies-zXRJ8jPOVGq)
 
-#### Nguồn tài nguyên học
+#### Đọc thêm
+- [Cache Strategies](https://medium.com/@mmoshikoo/cache-strategies-996e91c80303)
+- [9 Caching Strategies for System Design Interviews](https://dev.to/somadevtoo/9-caching-strategies-for-system-design-interviews-369g)
 
 ### Tuần 26: Final Enhancements & Portfolio
-
-#### Bạn sẽ học
-- Polish the capstone project.
+Thêm thắt chỉnh sửa đôi chút cho dự án tốt nghiệp
 
 #### Đặc biệt chút
-- Add the project to một portfolio site.
-- Prepare cho interviews với dự án và một resume.   
+- Thêm dự án vào trang Portfolio của bản thân.
+- Chuẩn bị đi phỏng vấn với dự án đó, và một resume nữa.   
 - Tạo một portfolio cá nhân sử dụng Next.js.
-- Showcase all 10 dự án trong portfolio của bạn. 
+- Showcase tất cả 10 dự án trong portfolio của bạn. 
+
+### Sau khi hoàn thành
+Sau khi bạn hoàn thành xong 26 tuần này, sẽ còn rất nhiều thứ nữa bạn (cần) nên học để có thể cải thiện hơn nữa sản phẩm của bạn. Dưới đây là một số gợi ý (Chưa được cập nhật hết):
+
+- Học hết chương trình [Khoa học máy tính](khoa-hoc-may-tinh.md)
+- Học Quy trình phát triển phần mềm - Khi đi làm thì sẽ thường dùng Agile/Scrum. Xem [Scrum cơ bản - Quy trình phát triển phần mềm](https://www.youtube.com/watch?v=KmOKQS9u-90)
 
 
-## Danh sách dự án
+## Danh sách dự án gợi ý
 
-Danh sách 10 ý tưởng gợi ý để xây dựng ứng dụng Fullstack.
-
-### Dự án 1: Task Tracker App    
-  
-#### Mô tả
-Một React app to track daily tasks với add, edit, và delete functionality.    
-
-#### Các bước xây dựng
-1. Set up React. 
-2. Xây dựng một task list UI. 
-3. Add state management với React hooks. 
-4. Store tasks locally.
-
-#### Tech Stack
-React, CSS 
-
-### Dự án 2: Bookshelf App
-
-#### Mô tả
-một MongoDB-powered app to manage một collection of books với search và CRUD operations.
-
-#### Các bước xây dựng
-1. Set up MongoDB.
-2. Tạo Express APIs cho CRUD operations.
-3. Connect backend to một React frontend
-
-#### Tech Stack
-Node.js, Express, MongoDB, React
-
-### Dự án 3:  Blog Platform       . 
-
-#### Mô tả
-Một platform cho users to post, edit, và delete blog entries. Includes JWT-based authentication.
-
-#### Các bước xây dựng
-1. Xây dựng REST APIs với Express. 
-2. Sử dụng MongoDB hoặc PostgreSQL cho storing blogs. 
-3. Add authentication
-
-#### Tech Stack
-Node.js, MongoDB/PostgreSQL, React  
-
-### Dự án 4: Chat App    
-
-#### Mô tả
-Real-time chat app sử dụng Websockets với user authentication.  
-#### Các bước xây dựng
-1. Set up Websockets on the backend.
-2. Implement chat UI trong React.
-3. Add JWT authentication.   
-#### Tech Stack
-Node.js, Websockets, React
-
-### Dự án 5: E-Commerce Store
-
-#### Mô tả
-một store với product listings, một cart system, và checkout functionality.    
-  
-#### Các bước xây dựng
-1. Design product APIs. 
-2. Add cart logic trong React.
-3. Tích hợp Razorpay/Stripe cho payments.
-
-#### Tech Stack
-React, Node.js, MongoDB, Payment APIs
-
-### Dự án 6: Portfolio Website
-
-#### Mô tả
-một personal portfolio to showcase dự án và skills.   
-
-#### Các bước xây dựng
-1. Sử dụng Next.js cho SSR.
-2. Style với Tailwind CSS.
-3. Add portfolio content dynamically sử dụng JSON.    
-
-#### Tech Stack
-Next.js, Tailwind CSS   
-
-
-### Dự án 7: Expense Tracker    
- 
-#### Mô tả
-một tool to track income và expenses với visualizations.    
-
-#### Các bước xây dựng
-1. Tạo React components cho transactions.
-2. Store data trong MongoDB.
-3. Visualize data sử dụng Chart.js.
-
-#### Tech Stack
-React, MongoDB, Chart.js   
-
-### Dự án 8: Online Classroom Platform    
-
-#### Mô tả
-một platform cho faculty to share documents, conduct live sessions, và Tạo assignments.   
-
-#### Các bước xây dựng
-1. Xây dựng backend với Express.
-2. Implement user roles.
-3. Add WebRTC cho live classes.  
-
-#### Tech Stack
-Node.js, WebRTC, React   
-
-
-### Dự án 9: Video Conferencing App    
- 
-#### Mô tả
-một basic conferencing app sử dụng WebRTC cho real-time communication.   
-
-#### Các bước xây dựng
-1. Set up WebRTC APIs.
-2. Xây dựng React frontend.
-3. Manage connections sử dụng signaling servers.   
-
-#### Tech Stack
-WebRTC, React 
-
-### Dự án 10: Capstone E-Commerce App    
-#### Mô tả
-một fully-featured app với real-time notifications, authentication, và performance optimization.  
-#### Các bước xây dựng
-
-1. Plan HLD và LLD.
-2. Develop backend APIs.
-3. Add Websocket-based notifications.
-4. Deploy on the cloud.   
-#### Tech Stack
-
-Node.js, React, MongoDB, Websockets   
-     
-
-### Chi tiết về việc xây dựng dự án
-
-1.  Progressive Complexity : Projects grow trong difficulty from simple React apps (e.g., Task Tracker) to advanced, multi-featured applications (e.g., Capstone E-Commerce App).
-2.  Full Stack Integration : Emphasizes both frontend và backend skills, including databases, APIs, và real-time communication.
-3.  Deployment : Includes một deployment step (e.g., sử dụng Vercel, Heroku, hoặc AWS) to simulate production environments.
+- [9 project nhỏ mà bạn có thể code để luyện tập kĩ năng lập trình](https://toidicodedao.com/2018/09/04/project-luyen-tap-ki-nang-lap-trinh/)
+- [Những DỰ ÁN CÁ NHÂN nên làm khi TỰ HỌC lập trình](https://www.youtube.com/watch?v=XIcWaewPAjQ)

@@ -11,7 +11,17 @@ nav:
     - 'Janki - Phần 1': 'janki1.md'
     - 'Janki - Phần 2': 'janki2.md'
   - 'Fullstack': 'fullstack.md'
-  - 'Khoa học máy tính': 'khmt.md'  
+  - 'Khoa học máy tính': 
+    - 'Lộ trình chính': 'khmt.md'
+    - 'Programming': 'programming.md'
+    - 'Kiến trúc máy tính': 'architecture.md'
+    - 'CTDL & Giải thuật': 'algorithms.md'
+    - 'Toán': 'math.md'
+    - 'Hệ điều hành': 'os.md'
+    - 'Mạng máy tính': 'computer-networking.md'
+    - 'Cơ sở dữ liệu': 'database.md'
+    - 'Languages and Compilers': 'languages-and-compilers.md'
+    - 'Hệ thống phân tán': distributed-systems.md	
   - 'IT English': 'tieng-anh-it.md'
   - 'Tài nguyên học': 'resources.md'
   - 'Youtube': 'youtube.md'

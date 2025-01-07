@@ -16,56 +16,70 @@ hide:
 
 Tham gia cộng đồng tự học trên Discord để cùng trao đổi: [Khoa học máy tính!](https://discord.gg/x93EE354PB)
 
-> Nếu việc tự học 9 chủ đề trong nhiều năm làm bạn cảm thấy quá sức, chúng tôi khuyên bạn chỉ nên tập trung vào hai cuốn sách: CS:APP và DDIA. Theo kinh nghiệm của chúng tôi, hai cuốn sách này mang lại hiệu quả cực kỳ cao trên tổng thời gian đầu tư học, đặc biệt cho các kỹ sư tự học và tốt nghiệp từ bootcamp làm việc trên các ứng dụng trực tuyến. Chúng cũng có thể được coi là chất xúc tác giúp bạn có động lực học các chủ đề còn lại.
+> TYCS: TeachYourselfCS (Từ giờ trong hướng dẫn sẽ viết tắt như vậy)
 
 ### 1. Programming
-Do bị loạn khi đọc sách nên t đi tìm một hướng tiếp cận khác, là sử dụng lộ trình được một người làm sẵn để học theo, có thể học song song cả bài giảng CS61A lẫn sách (Sẽ được đề cập thêm ở trong tài liệu được để đường dẫn ở đây): [Structure and Interpretation of Computer Programs](https://romanbird.github.io/sicp/) (Bao gồm cả Lab với Homework luôn). Lưu ý là sẽ sử dụng Scheme
+Gợi ý của TYCS là cuốn [Structure and Interpretation of Computer Programs](https://sarabander.github.io/sicp/html/index.xhtml). 
+
+Đọc hướng dẫn học cuốn sách này của romanbird: [Structure and Interpretation of Computer Programs](https://romanbird.github.io/sicp/) (Bao gồm cả Lab với Homework luôn). Hướng dẫn học này sẽ sử dụng cả bài giảng CS61A nữa (Còn kho bài giảng trên MIT nhưng TYCS gợi ý CS61A hơn).
 
 ### 2. Computer Architecture
-Nếu mọi người muốn học thông qua bài giảng trên Youtube thì có một danh sách phát, dưới dạng Recording lại thôi: [Computer Systems: A programmer's Perspective](https://www.youtube.com/playlist?list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE)
+Có hai lựa chọn cho mọi người: 
 
-Một Repository hiếm hoi cho cuốn CS:APP: [Zhenye-Na/CSAPP-Labs](https://github.com/Zhenye-Na/CSAPP-Labs)
+- [Nand2Tetris](https://www.nand2tetris.org/course)
+  - Có thể bạn sẽ muốn đọc [nand2tetris: a book review and recap](https://sevko.io/articles/nand-2-tetris/)
+  - Trong trang chủ của Nand2Tetris thì sẽ được chia ra làm hai nửa: Hardware và Software. Phần Hardware là 6 chương đầu còn 6 chương còn lại là về Software. Bạn có thể đọc miễn phí 6 chương đầu trên trang chủ.
+  - 6 chương sau của cuốn sách có thể được học trong khóa [Build a Modern Computer from First Principles: Nand to Tetris Part II (project-centered course)](https://www.coursera.org/learn/nand2tetris2)
+- CS:APP: Tui chọn Nand2Tetris vì nó miễn phí ;-; 
+  - Bài giảng của [Computer Systems: A programmer's Perspective](https://www.youtube.com/playlist?list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE) trên Youtube.
+  - Một Repository hiếm hoi cho cuốn CS:APP: [Zhenye-Na/CSAPP-Labs](https://github.com/Zhenye-Na/CSAPP-Labs)
 
-Có một ông trong phần bình luận trên Youtube của bài giảng gợi ý:
+> In seeking simplicity and cohesiveness, Nand2Tetris trades off depth. In particular, two very important concepts in modern computer architectures are pipelining and memory hierarchy, but both are mostly absent from the text.
 
-For anybody that doesn't want the watch the entire series and have some programming background the most worth while lectures are:
+Đây là bài giảng cho [memory hierarchy](https://www.youtube.com/watch?v=zDJxqQ3J8r0&list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE&index=11&pp=iAQB) từ cuốn CS:APP.
 
-- Lecture 10: Program Optimization,
-- Lecture 16: System Level IO
-- Lecture 20: Dynamic Memory Allocation Advanced Concepts
-- Lecture 23: Concurrent Programming
+> For anybody that doesn't want the watch the entire series and have some programming background the most worth while lectures are:
+>
+> - Lecture 10: Program Optimization,
+> - Lecture 16: System Level IO
+> - Lecture 20: Dynamic Memory Allocation Advanced Concepts
+> - Lecture 23: Concurrent Programming
+
+(Cho những người xem Lectures của CS:APP ở trên).
 
 ### 3. Data Structure and Algorithms
-Chuyển qua về việc học DSA, cá nhân t thử nhìn qua khóa trên Youtube thì chất lượng khá thấp (Khóa trên Youtube là quay lại bài giảng với sách thì chưa đọc). T tìm cái gì đó dễ tiếp cận với các video được chia bite-sized để dễ tiếp thu thì có bộ video bài giảng của đại học Stanford về môn này, thiên về hướng hiểu thuật toán hơn là sử dụng một ngôn ngữ cụ thể:
+TYCS gợi ý học cuốn [The Algorithm Design Manual](https://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/BOOK/BOOK/BOOK.HTM) (Có thể đọc miễn phí trên trang web này)
+
+Bạn có thể truy cập trang [The Algorithms](https://the-algorithms.com/) để tìm cách áp dụng thuật toán bất kì trong ngôn ngữ yêu thích của bạn.
+
+Cho những người muốn xem video bài giảng, thì đây là bài giảng của [Tim Roughgarden](http://timroughgarden.org/videos.html).
 
 - [Algorithms 1](https://www.youtube.com/playlist?list=PLXFMmlk03Dt7Q0xr1PIAriY5623cKiH7V)
 - [Algorithms 2](https://www.youtube.com/playlist?list=PLXFMmlk03Dt5EMI2s2WQBsLsZl7A5HEK6)
-Lấy slide bài giảng với các thông tin khác trên repo này: [AlessandroCorradini/Stanford-University-Algorithms-Design-and-Analysis](https://github.com/AlessandroCorradini/Stanford-University-Algorithms-Design-and-Analysis)
+- Lấy slide bài giảng với các thông tin khác trên repo này: [AlessandroCorradini/Stanford-University-Algorithms-Design-and-Analysis](https://github.com/AlessandroCorradini/Stanford-University-Algorithms-Design-and-Analysis)
 
-Luyện tập thì: [Solve Algorithms Code Challenges](https://www.hackerrank.com/domains/algorithms) (Hoặc có thể dùng Leetcode nhưng Leetcode có vẻ chuyên cho việc đi phỏng vấn hơn).
-
+> For practice, our preferred approach is for students to solve problems on [Leetcode](http://leetcode.com/). These tend to be interesting problems with decent accompanying solutions and discussions. They also help you test progress against questions that are commonly used in technical interviews at the more competitive software companies. We suggest solving around 100 random leetcode problems as part of your studies.
+> 
+> Finally, we strongly recommend *[How to Solve It](https://smile.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069116407X/)* as an excellent and unique guide to general problem solving; it's as applicable to computer science as it is to mathematics.
 
 ### 4. Toán
-Về phần học toán, t đang khá phân vân nên là đây mới là định hướng thôi
 
-- Phần liên quan nhất với CS là toán rời rạc, nên t sẽ bắt đầu trước từ cái này: <https://cims.nyu.edu/~regev/teaching/discrete_math_fall_2005/dmbook.pdf>
-- Chuyển qua học đại số tuyến tính (Linear Algebra): [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
-
-Còn một gợi ý khác là học cuốn Math for Computer Science nhưng nó hơi nâng cao so với t nên bỏ qua
+1. Discrete mathematics: Đọc [lecture notes by László Lovász](https://cims.nyu.edu/~regev/teaching/discrete_math_fall_2005/dmbook.pdf)
+2. Chuyển qua học đại số tuyến tính (Linear Algebra): [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
+3. For a more advanced treatment, we suggest *[Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf)*, the book-length lecture notes for the MIT course of the same name. That course's video lectures are also [freely available](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/video_galleries/video-lectures/), and are our recommended video lectures for discrete math.
 
 ### 5. Hệ điều hành
 Theo gợi ý từ TYCS:
 
 > *Operating Systems: Three Easy Pieces* is a good alternative that's [freely available online](http://pages.cs.wisc.edu/~remzi/OSTEP/). We particularly like the structure and readability of the book, and feel that the exercises are worthwhile.
 
-Thì bạn nên đọc [hướng dẫn cách học OSTEP (Viết tắt của Operating Systems: Three Easy Pieces) được viết bởi OSSU](https://github.com/ossu/computer-science/blob/master/coursepages/ostep/README.md).
+Đọc [hướng dẫn cách học OSTEP (Viết tắt của Operating Systems: Three Easy Pieces) được viết bởi OSSU](https://github.com/ossu/computer-science/blob/master/coursepages/ostep/README.md).
 
 Các repository lưu trữ phần Code và bài tập của sách:
 
 - [ostep-code](https://github.com/remzi-arpacidusseau/ostep-code) 
 - [ostep-homework](https://github.com/remzi-arpacidusseau/ostep-homework/)
 
-Trên trang của OSTEP sẽ yêu cầu bạn tải từng chương của sách riêng biệt. Nếu bạn sử dụng MacOS/Linux hoặc bất kì OS nào hỗ trợ Bash, bạn hãy tải script [theagoliveira/OSTEP.sh](https://gist.github.com/theagoliveira/65980c144bf53cf8ee5e351bd827d7e7) và chạy để nó tự động tải hết tệp PDF về cho bạn.
 
 ### 6. Cơ sở dữ liệu
 Gợi ý của bên trang hướng dẫn là xem bài giảng CS186: [CS186Berkeley](https://www.youtube.com/@CS186Berkeley/videos)
@@ -81,7 +95,9 @@ Trong đúng một quyển là **Computer Networking: A Top-Down Approach**.
 
 > Our favorite book on the topic is *[Computer Networking: A Top-Down Approach](https://smile.amazon.com/Computer-Networking-Top-Down-Approach-7th/dp/0133594149/)*. The small projects and exercises in the book are well worth doing, and we particularly like the "Wireshark labs", which they have [generously provided online](http://www-net.cs.umass.edu/wireshark-labs/).
 
-Bạn có thể xem [video bài giảng miễn phí của Computer Networking: a Top-Down Approach](http://gaia.cs.umass.edu/kurose_ross/online_lectures.htm)
+Tài nguyên học
+- Bạn có thể xem [video bài giảng miễn phí của Computer Networking: a Top-Down Approach](http://gaia.cs.umass.edu/kurose_ross/online_lectures.htm)
+- [Lecture notes của sách trên](https://github.com/VasanthVanan/computer-networking-top-down-approach-notes)
 
 ### 8. Ngôn ngữ và Trình biên dịch
 Nếu bạn hiểu cách ngôn ngữ và trình biên dịch thực sự hoạt động, bạn sẽ viết mã tốt hơn và học ngôn ngữ mới dễ dàng hơn.
@@ -98,9 +114,7 @@ Nếu bạn chọn đọc sách thì:
 
 Một số tài nguyên khác:
 
-- [Tóm tắt sách](https://github.com/awdoiudh/Designing-Data-Intensive-Applications-2nd-Edition/tree/main/en-us) - Bản Tiếng Trung (Bản gốc) sẽ được viết đầy đủ hơn.
 - [Ghi chú học tập của một người học trên Github](https://github.com/keyvanakbary/learning-notes/blob/master/books/designing-data-intensive-applications.md)
-- [bcherny/designing-data-intensive-application-notes.md](https://gist.github.com/bcherny/b870a60d1650973df7e400c8603ac76d)
 
 Nếu bạn muốn học theo video bài giảng thì:
 
