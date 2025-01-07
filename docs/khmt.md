@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Hướng dẫn bắt đầu học KHMT
 Đây là các giáo trình tự học mà bạn có thể đọc, bài viết dưới đây sẽ là hướng dẫn của cá nhân mình cách bắt đầu tự học Khoa học máy tính dựa trên TeachYourselfCS. TeachYourselfCS ngắn hơn so với OSSU với đọc nhiều hơn nên đây sẽ là giáo trình mình lựa chọn (Tùy thuộc vào cách học của bạn mà có thể OSSU sẽ tốt hơn hoặc bạn muốn học hơn).
 
@@ -67,6 +62,18 @@ Cho những người muốn xem video bài giảng, thì đây là bài giảng 
 1. Discrete mathematics: Đọc [lecture notes by László Lovász](https://cims.nyu.edu/~regev/teaching/discrete_math_fall_2005/dmbook.pdf)
 2. Chuyển qua học đại số tuyến tính (Linear Algebra): [Essence of linear algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab).
 3. For a more advanced treatment, we suggest *[Mathematics for Computer Science](https://courses.csail.mit.edu/6.042/spring18/mcs.pdf)*, the book-length lecture notes for the MIT course of the same name. That course's video lectures are also [freely available](https://ocw.mit.edu/courses/6-042j-mathematics-for-computer-science-fall-2010/video_galleries/video-lectures/), and are our recommended video lectures for discrete math.
+
+Một số nội dung khác:
+
+- [Essence of calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr)
+- [MIT 18.01 Single Variable Calculus, Fall 2007](https://www.youtube.com/playlist?list=PLE2215608E2574180)
+- [wmboyles/Math-Summaries](https://github.com/wmboyles/Math-summaries) - Medium length summaries of math subjects like multivariable calculus. Longer than a formula sheet, shorter than a textbook (Bao gồm: Single Variable Calculus, Differential Equations, Multivariable Calculus)
+
+> Well, "calculus 1" and "calculus 3" may refer to particular courses at your school, but they're going to be meaningless to most people. Not every place organizes classes the same way your school does! I can't know how your particular college organizes its classes.
+> 
+> That said, I'm going to interpret the question here as, "What's the difference betwen single-variable calculus and multivariable calculus?" or "What's so 'multivariable' about multivariable calculus? It sure seems like this 'single-variable calculus' I've learned often has more than one variable in it!"
+> 
+> The answer is that single-variable calculus (mostly) studies functions of one real variable, while multivariable calculus studies functions of multiple real variables. So in single-variable calculus you might, say, integrate the function f(x)=x2 from x=0 to x=1, but in multivariable calculus you might integrate the function f(x,y)=xy from x=0 to x=1 and y=0 to y=1.
 
 ### 5. Hệ điều hành
 Theo gợi ý từ TYCS:

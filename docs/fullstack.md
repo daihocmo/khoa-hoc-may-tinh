@@ -362,7 +362,7 @@ Thêm thắt chỉnh sửa đôi chút cho dự án tốt nghiệp
 ### Sau khi hoàn thành
 Sau khi bạn hoàn thành xong 26 tuần này, sẽ còn rất nhiều thứ nữa bạn (cần) nên học để có thể cải thiện hơn nữa sản phẩm của bạn. Dưới đây là một số gợi ý (Chưa được cập nhật hết):
 
-- Học hết chương trình [Khoa học máy tính](khoa-hoc-may-tinh.md)
+- Học hết chương trình [Khoa học máy tính](khmt.md)
 - Học Quy trình phát triển phần mềm - Khi đi làm thì sẽ thường dùng Agile/Scrum. Xem [Scrum cơ bản - Quy trình phát triển phần mềm](https://www.youtube.com/watch?v=KmOKQS9u-90)
 
 

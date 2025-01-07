@@ -21,13 +21,16 @@ nav:
     - 'Mạng máy tính': 'computer-networking.md'
     - 'Cơ sở dữ liệu': 'database.md'
     - 'Languages and Compilers': 'languages-and-compilers.md'
-    - 'Hệ thống phân tán': distributed-systems.md	
-  - 'IT English': 'tieng-anh-it.md'
-  - 'Tài nguyên học': 'resources.md'
-  - 'Youtube': 'youtube.md'
+    - 'Hệ thống phân tán': 'distributed-systems.md'
   - 'Các hướng dẫn khác':
     - 'Cách lên kế hoạch': 'cach-len-ke-hoach.md'
     - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
+    - 'Nhật ký lập trình': 'code-diary.md'
+    - 'Webdev101': 'webdev101.md'
+  - 'IT English': 'tieng-anh-it.md'
+  - 'Tài nguyên học': 'resources.md'
+  - 'Youtube': 'youtube.md'
+
     
 theme:
   palette:
