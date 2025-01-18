@@ -9,6 +9,14 @@ Hiện tại lộ trình này mình viết cho cá nhân mình dùng nên nó v�
 !!! warning "Thời gian học lộ trình này chỉ mang tính chất ước lượng"
     Bạn có thể sẽ hoàn thành nó chậm hơn hoặc nhanh hơn so với thời gian mà chương trình đề cập. Phần này tùy thuộc vào bạn. Vậy nên, kể cả khi mình hoàn thành nó sau 6 tháng cũng không vấn đề gì. Điều quan trọng nhất là cần duy trì thói quen học hàng ngày.
 
+## Fullstack là cái gì?
+
+> Practically all web applications have (at least) two "layers": the browser, being closer to the end-user, is the top layer, and the server the bottom one. There is often also a database layer below the server. We can therefore think of the architecture of a web application as a stack of layers.
+>
+> Often, we also talk about the frontend and the backend. The browser is the frontend, and the JavaScript that runs on the browser is the frontend code. The server on the other hand is the backend.
+>
+> In the context of this course, full-stack web development means that we focus on all parts of the application: the frontend, the backend, and the database. Sometimes the software on the server and its operating system are seen as parts of the stack, but we won't go into those.
+
 ## Chọn lộ trình khác
 
 Nếu bạn muốn học những lộ trình khác thì có thể thử:
@@ -28,6 +36,18 @@ Lộ trình sẽ được chia ra làm 26 tuần. Cách học cơ bản của l�
 Về phần dự án hàng tuần, thử nghĩ xem bạn muốn làm ứng dụng gì. Bạn có thể đọc [Hướng dẫn xây dựng dự án cơ bản](cach-len-ke-hoach.md) để học cách bắt đầu lên ý tưởng.
 
 Mỗi tuần bạn nên thử làm ít nhất một dự án (một ứng dụng đơn giản để áp dụng các nội dung bạn đã học trong tuần, gì cũng được). Mình sẽ để một danh sách gợi ý bên dưới.
+
+### Định hướng cho chương trình học
+Chương trình học của mình sẽ yêu cầu mọi người đào sâu về Backend hơn Frontend và không đi vào một lựa chọn cụ thể nào. Với Frontend bạn cũng sẽ tự chọn thứ bạn muốn học.
+
+- Ví dụ: Ở mục Frontend, bạn muốn học Vue.js thì tự tìm các nội dung "cơ bản" mà bạn cần học.
+- Ở Backend cũng không bắt bạn đi theo một lựa chọn cụ thể nào cả
+
+Bọn mình sẽ tập trung vào hiểu cốt lõi của cả một ứng dụng. Ở Backend thì có những khái niệm như HTTP GET/POST hay Database, còn Frontend thì có HTML/CSS/JS (Còn lại Framework do bạn chọn).
+
+Lập trình Web phát triển quá nhanh, hết frontend framework này đến cái khác, công cụ này đến công cụ khác và bạn sẽ rất dễ để bắt gặp các câu hỏi như "Mình nên học cái gì?". Bạn cần phải tự tìm thông tin thêm về thứ bạn muốn chọn.
+
+Chương trình này không dạy bạn hết về Fullstack và bạn vẫn sẽ còn phải học rất nhiều để nâng cao khả năng của bản thân.
 
 ### Tuần 1: HTML, CSS
 
@@ -79,13 +99,13 @@ Trích từ [một bình luận của một vozer khác](https://voz.vn/t/lo-tri
 Thanks bác, lộ trình này sẽ học Backend trước rồi mới học Frontend
 
 #### Bạn sẽ học
-- Những kiến thức cơ bản về Internet: Cách Internet hoạt động, HTTP, tên miền, hosting, DNS, trình duyệt bla bla.
+- Những kiến thức cơ bản về Internet: Cách Internet hoạt động, HTTP, tên miền, hosting, DNS, trình duyệt bla bla. Bạn hãy đọc toàn bộ bài [Fundamentals of Web apps](https://fullstackopen.com/en/part0/fundamentals_of_web_apps).
 - Tìm hiểu về [JavaScript runtime environment](https://topdev.vn/blog/javascript-runtime-environment-la-gi/) và [Web Server](https://viblo.asia/p/web-server-la-gi-tim-hieu-ve-web-server-WR5JRv0rJGv)
 - Viết [HTTP servers](https://scribe.rip/@gabriellamedas/the-http-server-explained-c41380307917).
 - Lựa chọn ngôn ngữ Backend bạn muốn học (JavaScript, Ruby, Java, Go, Rust .etc.) và học [cơ bản](https://old.reddit.com/r/learnprogramming/comments/pxg54p/how_to_start_programming_from_zero/) của nó. Chương trình này sẽ lựa chọn Node.js
 - Version Control System (Git và Github):
-  - [Từ gà tới pro Git và Github trong 20 phút - Tự học Git siêu tốc](https://www.youtube.com/watch?v=1JuYQgpbrW0)
-  - [Git and Github Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
+    - [Từ gà tới pro Git và Github trong 20 phút - Tự học Git siêu tốc](https://www.youtube.com/watch?v=1JuYQgpbrW0)
+    - [Git and Github Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
 
 #### Nguồn tài nguyên học
 - [Awesome Lập trình](https://daihocmo.github.io/awesome-lap-trinh/) - Danh sách tổng hợp tài nguyên học lập trình và khoa học máy tính bằng Tiếng Việt.

@@ -7,12 +7,13 @@ repo_name: Đóng góp cho trang trên Github
 nav:
   - 'Trang chủ': 'index.md'
   - 'Hướng dẫn bắt đầu':
-    - 'Bắt đầu học lập trình': 'truoc-khi-bat-dau.md'
-    - 'Janki - Phần 1': 'janki1.md'
-    - 'Janki - Phần 2': 'janki2.md'
+    - 'Bắt đầu học lập trình': 'truoc-khi-bat-dau-vi.md'
+    - 'Janki - Phần 1': 'janki1-vi.md'
+    - 'Janki - Phần 2': 'janki2-vi.md'
   - 'Fullstack': 'fullstack.md'
   - 'Khoa học máy tính': 
-    - 'Lộ trình chính': 'khmt.md'
+    - 'TYCS': 'khmt.md'
+    - 'Khoa học máy tính': 'khmt-vi.md'
     - 'Programming': 'programming.md'
     - 'Kiến trúc máy tính': 'architecture.md'
     - 'CTDL & Giải thuật': 'algorithms.md'
