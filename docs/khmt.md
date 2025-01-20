@@ -19,33 +19,13 @@ Gợi ý của TYCS là cuốn [Structure and Interpretation of Computer Program
 Đọc hướng dẫn học cuốn sách này của romanbird: [Structure and Interpretation of Computer Programs](https://romanbird.github.io/sicp/) (Bao gồm cả Lab với Homework luôn). Hướng dẫn học này sẽ sử dụng cả bài giảng CS61A nữa (Còn kho bài giảng trên MIT nhưng TYCS gợi ý CS61A hơn).
 
 ### 2. Computer Architecture
-Có hai lựa chọn cho mọi người: 
 
-- [Nand2Tetris](https://www.nand2tetris.org/course)
-  - Có thể bạn sẽ muốn đọc [nand2tetris: a book review and recap](https://sevko.io/articles/nand-2-tetris/)
-  - Trong trang chủ của Nand2Tetris thì sẽ được chia ra làm hai nửa: Hardware và Software. Phần Hardware là 6 chương đầu còn 6 chương còn lại là về Software. Bạn có thể đọc miễn phí 6 chương đầu trên trang chủ.
-  - 6 chương sau của cuốn sách có thể được học trong khóa [Build a Modern Computer from First Principles: Nand to Tetris Part II (project-centered course)](https://www.coursera.org/learn/nand2tetris2)
-- CS:APP: Tui chọn Nand2Tetris vì nó miễn phí ;-; 
-  - Bài giảng của [Computer Systems: A programmer's Perspective](https://www.youtube.com/playlist?list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE) trên Youtube.
-  - Một Repository hiếm hoi cho cuốn CS:APP: [Zhenye-Na/CSAPP-Labs](https://github.com/Zhenye-Na/CSAPP-Labs)
+Học khóa [15-213: Intro to Computer Systems: Schedule for Fall 2015](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/schedule.html) và sử dụng sách [Computer Systems: A programmer's Perspective](https://github.com/xuyanshi/CSAPP/blob/main/Computer%20Systems%20A%20Programmer's%20Perspective(3rd).pdf)
 
-> In seeking simplicity and cohesiveness, Nand2Tetris trades off depth. In particular, two very important concepts in modern computer architectures are pipelining and memory hierarchy, but both are mostly absent from the text.
-
-Đây là bài giảng cho [memory hierarchy](https://www.youtube.com/watch?v=zDJxqQ3J8r0&list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE&index=11&pp=iAQB) từ cuốn CS:APP.
-
-> For anybody that doesn't want the watch the entire series and have some programming background the most worth while lectures are:
->
-> - Lecture 10: Program Optimization,
-> - Lecture 16: System Level IO
-> - Lecture 20: Dynamic Memory Allocation Advanced Concepts
-> - Lecture 23: Concurrent Programming
-
-(Cho những người xem Lectures của CS:APP ở trên).
+Có đính kèm [video bài giảng](https://scs.hosted.panopto.com/Panopto/Pages/Sessions/List.aspx#folderID=%22b96d90ae-9871-4fae-91e2-b1627b43e25e%22) trên trang luôn. Học mọi người có thể xem trên Youtube cho tiện: [Computer Systems: A programmer's Perspective](https://www.youtube.com/playlist?list=PLyboo2CCDSWnhzzzzDQ3OBPrRiIjl-aIE)
 
 ### 3. Data Structure and Algorithms
-TYCS gợi ý học cuốn [The Algorithm Design Manual](https://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/BOOK/BOOK/BOOK.HTM) (Có thể đọc miễn phí trên trang web này)
-
-Bạn có thể truy cập trang [The Algorithms](https://the-algorithms.com/) để tìm cách áp dụng thuật toán bất kì trong ngôn ngữ yêu thích của bạn.
+TYCS gợi ý học cuốn [The Algorithm Design Manual](https://www8.cs.umu.se/kurser/TDBAfl/VT06/algorithms/BOOK/BOOK/BOOK.HTM) (Có thể đọc miễn phí trên trang web này). Cá nhân mình thích xem 
 
 Cho những người muốn xem video bài giảng, thì đây là bài giảng của [Tim Roughgarden](http://timroughgarden.org/videos.html).
 
@@ -54,8 +34,8 @@ Cho những người muốn xem video bài giảng, thì đây là bài giảng 
 - Lấy slide bài giảng với các thông tin khác trên repo này: [AlessandroCorradini/Stanford-University-Algorithms-Design-and-Analysis](https://github.com/AlessandroCorradini/Stanford-University-Algorithms-Design-and-Analysis)
 
 > For practice, our preferred approach is for students to solve problems on [Leetcode](http://leetcode.com/). These tend to be interesting problems with decent accompanying solutions and discussions. They also help you test progress against questions that are commonly used in technical interviews at the more competitive software companies. We suggest solving around 100 random leetcode problems as part of your studies.
-> 
-> Finally, we strongly recommend *[How to Solve It](https://smile.amazon.com/How-Solve-Mathematical-Princeton-Science/dp/069116407X/)* as an excellent and unique guide to general problem solving; it's as applicable to computer science as it is to mathematics.
+
+Bạn có thể truy cập trang [The Algorithms](https://the-algorithms.com/) để tìm cách áp dụng thuật toán bất kì trong ngôn ngữ yêu thích của bạn.
 
 ### 4. Toán
 

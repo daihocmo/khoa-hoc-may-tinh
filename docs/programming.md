@@ -1,9 +1,7 @@
 # Lập trình
 
-Học lập trình ở đây không phải chỉ là học lập trình một ngôn ngữ. Trong phần Programming của TeachYourselfCS cũng có nói:
+Học SICP, trong trang của [romanbird hướng dẫn học SICP](https://romanbird.github.io/sicp/) cũng đã có lộ trình đầy đủ học CS61A. Mọi người tự vào đó xem lịch.
 
-> Most undergraduate CS programs start with an “introduction” to computer programming. The best versions of these courses cater not just to novices, but also to those who missed beneficial concepts and programming models while first learning to code.
+Các bài giảng khó nhìn vc :)) nên mấy bạn có thể mở note lên vừa nghe giảng vừa đọc source code trong lecture notes đã được đính kèm trong trang của romanbird.
 
-Mình không thực sự cho rằng các khóa học "Lập trình" trên bậc đại học trong nước có thể truyền đạt được những gì như cuốn **Structure and Interpretation of Computer Programs** đã làm.
-
-Cho đến hiện tại, mình vẫn chưa tìm được một loại tài nguyên nào bằng Tiếng Việt có thể truyền đạt về "Programming" như cuốn SICP đã làm.
+Cá nhân mình chọn SICP vì nó tối giản hơn so với mục Core Programming của OSSU, với SICP đúng kiểu sách gối đầu giường.
