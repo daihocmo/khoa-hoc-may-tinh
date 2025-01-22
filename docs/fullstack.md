@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+
 
 # Lộ trình tự học Fullstack 6 tháng theo tuần.
 Hiện tại lộ trình này mình viết cho cá nhân mình dùng nên nó vẫn chưa được hoàn chỉnh. Mình cũng sẽ chỉnh sửa và cải thiện trong quá trình học luôn.

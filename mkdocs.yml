@@ -6,14 +6,14 @@ repo_name: Đóng góp cho trang trên Github
 
 nav:
   - 'Trang chủ': 'index.md'
-  - 'Hướng dẫn bắt đầu':
+  - 'Hướng dẫn tự học':
     - 'Bắt đầu học lập trình': 'truoc-khi-bat-dau-vi.md'
     - 'Janki - Phần 1': 'janki1-vi.md'
     - 'Janki - Phần 2': 'janki2-vi.md'
-  - 'Fullstack': 'fullstack.md'
-  - 'Khoa học máy tính': 
+  - 'Hướng dẫn tự học KHMT':
     - 'TYCS': 'khmt.md'
     - 'Khoa học máy tính': 'khmt-vi.md'
+  - 'Các môn học':
     - 'Programming': 'programming.md'
     - 'Kiến trúc máy tính': 'architecture.md'
     - 'CTDL & Giải thuật': 'algorithms.md'
@@ -23,6 +23,9 @@ nav:
     - 'Cơ sở dữ liệu': 'database.md'
     - 'Languages and Compilers': 'languages-and-compilers.md'
     - 'Hệ thống phân tán': 'distributed-systems.md'
+  - 'Định hướng':
+    - 'Fullstack': 'fullstack.md'
+    - 'DevOps': 'devops.md'
   - 'Các hướng dẫn khác':
     - 'Cách lên kế hoạch': 'cach-len-ke-hoach.md'
     - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
@@ -30,7 +33,6 @@ nav:
     - 'Webdev101': 'webdev101.md'
   - 'IT English': 'tieng-anh-it.md'
   - 'Tài nguyên học': 'resources.md'
-  - 'Youtube': 'youtube.md'
 
     
 theme:
@@ -54,7 +56,9 @@ theme:
         name: Switch to light mode
   features:
     - navigation.instant
-    - navigation.tabs
+    - navigation.instant.progress
+    - navigation.sections
+    - navigation.expand
     - search.suggest
     - search.highlighting
     - search.share
@@ -63,25 +67,6 @@ theme:
     repo: fontawesome/brands/github
   language: vi
 
-markdown_extensions:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
-  - meta
-  - admonition
-  - attr_list
-  - pymdownx.critic
-  - pymdownx.caret
-  - pymdownx.mark
-  - pymdownx.tilde
-  - pymdownx.details
-  - pymdownx.keys
-  - pymdownx.superfences
-  - pymdownx.tabbed:
-      alternate_style: true
-  - toc:
-      permalink: true
-      
 plugins:
   - search
   - open-in-new-tab

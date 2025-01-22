@@ -1,8 +1,16 @@
 # Kiến trúc máy tính (Computer Architecture)
 
-## Thử viết qua
+## Tài nguyên học trong khóa học
 
-Trước khi học nên học C, à okay thì nếu định học C thì hãy học cuốn [Modern C](https://inria.hal.science/hal-02383654v2/file/modernC.pdf) - Quyển này miễn phí nha. Học C xong sẽ có nền tảng để bắt đầu học OSTEP luôn.
+- [Lab + Assignments](https://github.com/Zhenye-Na/CSAPP-Labs)
+- [Lab Solutions](https://github.com/codeAligned/CMU-15213-Lab)
+- [Lecture Notes](https://github.com/yarkhinephyo/15-213-computer-systems-notes) - Ghi chú bài giảng được ghi dưới dạng Markdown, có thể lấy thẳng ghi chú từ slides bài giảng cũng được.
+
+## Chuẩn bị
+
+Trước khi học khóa này thì nên học C. Nếu định học C thì hãy học cuốn [Modern C](https://inria.hal.science/hal-02383654v2/file/modernC.pdf) - Quyển này miễn phí nha. Học C xong sẽ có nền tảng để bắt đầu học OSTEP luôn.
+
+Trong khóa sẽ có C Bootcamp, nhưng nếu học từ quyển Modern C rồi thì mạnh dạn bỏ qua thôi.
 
 ## Giáo trình học theo tuần
 

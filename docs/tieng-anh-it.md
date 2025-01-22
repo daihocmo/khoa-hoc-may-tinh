@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+
 
 # Tự học Tiếng Anh
 

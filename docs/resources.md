@@ -1,7 +1,4 @@
----
-hide:
-  - navigation
----
+
 
 Đây là trang tổng hợp tài nguyên cho rất nhiều mảng.
 
