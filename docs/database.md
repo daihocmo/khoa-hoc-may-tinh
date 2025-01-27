@@ -1,3 +1,3 @@
 # Cơ sở dữ liệu
 
-Chưa có gì
+Học CS-186 hết, có hết ở trang đầu khóa rồi đấy
