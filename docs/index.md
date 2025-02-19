@@ -7,19 +7,8 @@ Lưu ý là trang này không phải là một trang "khóa học" đâu nha. M�
 Cảm hứng xây dựng trang đến từ [csdiy.wiki](https://csdiy.wiki/).
 
 ### Tại sao lại học Khoa học máy tính
-Trích từ bản dịch của TeachYourselfCS:
-
-Có 2 loại kỹ sư phần mềm:
-
--   những người hiểu rõ về khoa học máy tính để làm những công việc đầy thử thách và sáng tạo.
--   những người chỉ làm việc đều đều vì họ đã quen thuộc với một số công cụ.
-
-Cả hai đều tự gọi mình là kỹ sư phần mềm và cả hai đều có xu hướng kiếm được mức lương tương tự khi mới vào nghề. Nhưng các kỹ sư loại 1 sẽ tiến tới công việc hoàn thiện hơn và được trả lương cao, xứng đáng hơn theo thời gian, cho dù đó là các dự án thương mại hay các dự án nguồn mở, người quản lý về kỹ thuật hay bản thân là cá nhân xuất sắc.
-
-Các kỹ sư loại 1 tìm cách học chuyên sâu về KHMT, cho dù thông qua các kiểu học truyền thống hay bằng cách học hỏi không ngừng nghỉ trong suốt sự nghiệp của họ. Các kỹ sư loại 2 thường chỉ ở trên bề mặt, học các công cụ và công nghệ cụ thể hơn là nền tảng cơ bản tạo ra chúng, chỉ học các kỹ năng mới khi các công nghệ mới diễn ra và xuất hiện.
-
-Hiện tại, số lượng người vào ngành IT đang tăng lên nhanh chóng, trong khi số lượng người tốt nghiệp KHMT thì tương đối ổn định. Tình trạng dư cung của cá kỹ sư loại 2 này đang bắt đầu làm giảm cơ hội việc làm của chính họ, và đẩy họ ra khỏi ngành IT. Cho dù bạn đang phấn đấu để trở thành kỹ sư loại 1 hay chỉ đơn giản là tìm kiếm công việc an toàn hơn, học KHMT là con đường đúng đắn duy nhất.
-
+Mình chưa tìm hiểu. Nhưng học KHMT giúp cá nhân mình hiểu hơn về nhiều khái niệm trong *lập trình* nói riêng và *máy tính* nói chung. Hệ quả tất yếu là mình giỏi hơn thật.
+ 
 ### Không chỉ về Khoa học máy tính
 Trang cũng được mở rộng thêm để phục vụ người đọc như một quyển sách chuyên dụng cho nhiều lĩnh vực khác nhau trong mảng công nghệ thông tin. Tất nhiên, phải chờ có người đóng góp. Cá nhân mình học KHMT nên mình sẽ đảm nhận phần này.
 

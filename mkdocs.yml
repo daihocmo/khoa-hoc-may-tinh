@@ -1,4 +1,4 @@
-site_name: Không học máy tính
+site_name: Tự học Khoa học máy tính
 site_description: vozer vozer vozer vozer vozer vozer vozer vozer vozer vozer 
 site_author: duykhanh471
 repo_url: https://github.com/daihocmo/khoa-hoc-may-tinh
@@ -7,31 +7,28 @@ repo_name: Đóng góp cho trang trên Github
 nav:
   - 'Trang chủ': 'index.md'
   - 'Hướng dẫn tự học':
-    - 'Bắt đầu học lập trình': 'truoc-khi-bat-dau-vi.md'
-    - 'Janki - Phần 1': 'janki1-vi.md'
-    - 'Janki - Phần 2': 'janki2-vi.md'
-  - 'Hướng dẫn tự học KHMT':
+    - 'Bắt đầu': 'bat-dau.md'
+    - 'Ghi nhớ': 'ghi-nho.md'
+    - 'Nhật ký code': 'nhat-ky-code.md'
+    - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
+    - 'Đừng làm dự án nữa': 'cach-len-ke-hoach.md'
+  - 'Giáo trình tự học':
     - 'TYCS': 'khmt.md'
-    - 'Khoa học máy tính': 'khmt-vi.md'
-  - 'Các môn học':
-    - 'Programming': 'programming.md'
+    - 'Giáo trình chính': 'khmt-vi.md'
+    - 'Lập trình': 'programming.md'
     - 'Kiến trúc máy tính': 'architecture.md'
     - 'CTDL & Giải thuật': 'algorithms.md'
     - 'Toán': 'math.md'
     - 'Hệ điều hành': 'os.md'
     - 'Mạng máy tính': 'computer-networking.md'
     - 'Cơ sở dữ liệu': 'database.md'
-    - 'Languages and Compilers': 'languages-and-compilers.md'
+    - 'Trình biên dịch': 'languages-and-compilers.md'
     - 'Hệ thống phân tán': 'distributed-systems.md'
-  - 'Định hướng':
+  - 'Định hướng chuyên môn':
+    - 'Lựa chọn': 'lua-chon.md'
     - 'Fullstack': 'fullstack.md'
     - 'DevOps': 'devops.md'
-  - 'Các hướng dẫn khác':
-    - 'Cách lên kế hoạch': 'cach-len-ke-hoach.md'
-    - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
-    - 'Nhật ký lập trình': 'code-diary.md'
-    - 'Webdev101': 'webdev101.md'
-  - 'IT English': 'tieng-anh-it.md'
+  - 'Tự học Tiếng Anh': 'tieng-anh-it.md'
   - 'Tài nguyên học': 'resources.md'
 
     

@@ -1,51 +1,41 @@
-!!! info "Nguồn bài viết"
-Đây là [một bài đăng trên Reddit](https://old.reddit.com/r/learnprogramming/comments/pxg54p/how_to_start_programming_from_zero/) của [marinsborg](https://old.reddit.com/user/marinsborg)
+# Điểm khởi đầu
 
-Giới thiệu
------
+### Trước khi bắt đầu
+Nếu bạn muốn trở thành một phần của thế giới lập trình, bạn cần phải biết những kiến ​​thức cơ bản về lập trình.
 
-Bây giờ là năm 2021 và có rất nhiều người làm lập trình viên. Nếu bạn muốn trở thành một phần của thế giới đó, bạn cần phải biết những kiến ​​thức cơ bản về lập trình.
+Có một sự khác biệt không nhỏ giữa việc *học lập trình* và *học một số ngôn ngữ lập trình*. Bạn có thể 'học' hai ngôn ngữ lập trình và có thể bạn vẫn không thực sự *biết cách lập trình*.
 
-Tại sao bài đăng này hay hơn hầu hết các bài đăng hoặc khóa học video khác trên internet? Và tại sao đây lại là bài đăng về lập trình khi không có ngôn ngữ lập trình nào trong đó?
+Học một ngôn ngữ lập trình cũng tương tự việc học một ngoại ngữ. Học lập trình cũng tương tự việc học cách suy nghĩ. **Khả năng suy nghĩ không bị giới hạn hoặc quyết định bởi một ngôn ngữ nào cả**. Nếu bạn học một ngôn ngữ mới, khả năng suy nghĩ của bạn sẽ không thay đổi chút nào. Lập trình cũng tương tự. Các khái niệm lập trình không phụ thuộc vào ngôn ngữ lập trình.
 
-Vâng, có sự khác biệt giữa việc học lập trình và học một số ngôn ngữ lập trình. Bạn có thể 'học' hai ngôn ngữ lập trình và vẫn có khả năng bạn vẫn không biết cách lập trình.
+Bài đăng này sẽ tập trung vào các khái niệm lập trình giúp bạn có thể học bất kỳ ngôn ngữ lập trình nào. Học theo cách này nhanh hơn nhiều và bạn không bị phân tâm bởi cú pháp của ngôn ngữ lập trình.
 
-Học một ngôn ngữ lập trình cũng giống như học một ngoại ngữ. Học lập trình cũng giống như học cách suy nghĩ. Khi con người sinh ra đã có khả năng suy nghĩ. Khả năng đó tự nhiên sẽ ngày càng tốt hơn theo thời gian. Điều đó có nghĩa là hầu hết mọi người sẽ phản ứng theo cùng một cách trong cùng một tình huống bất kể họ đến từ đâu. Ví dụ, nếu họ thấy một vụ tai nạn trên đường, họ sẽ gọi xe cứu thương. Điểm khác biệt duy nhất là họ sẽ sử dụng ngôn ngữ của riêng mình để mô tả vụ tai nạn.
+### Suy nghĩ như một lập trình viên
 
-**Khả năng suy nghĩ không bị giới hạn hoặc quyết định bởi một ngôn ngữ nào đó**. Nếu bạn học một ngôn ngữ mới, khả năng suy nghĩ của bạn sẽ không thay đổi chút nào. Lập trình cũng vậy. Các khái niệm lập trình không phụ thuộc vào ngôn ngữ lập trình.
-
-Trong bài đăng này, tôi sẽ dạy bạn các khái niệm lập trình giúp bạn học bất kỳ ngôn ngữ lập trình nào. Học theo cách này nhanh hơn nhiều và bạn không bị phân tâm bởi cú pháp của ngôn ngữ lập trình.
-
-Làm thế nào để suy nghĩ như một lập trình viên?
-----------------------------------
-
-Đây là câu hỏi được nhiều người muốn bắt đầu học lập trình đặt ra. Và để trả lời ngay - bạn cần sử dụng **phương pháp tiếp cận thuật toán** để giải quyết vấn đề. Điều đó có nghĩa chính xác là gì? Tôi sẽ giải thích trong chương này.
+Ta có thể sử dụng **phương pháp tiếp cận thuật toán** để giải quyết vấn đề.
 
 [Lập trình máy tính](https://en.wikipedia.org/wiki/Computer_programming) là quá trình thiết kế và xây dựng một chương trình máy tính có thể thực thi. Một chương trình máy tính là **tập hợp các hướng dẫn** có thể được máy tính thực thi để thực hiện một nhiệm vụ cụ thể.
 
 Nói một cách dễ hiểu, lập trình chỉ là cho máy tính biết nó cần làm gì. Để mô tả cho máy tính biết nó cần làm gì, các lập trình viên sử dụng nhiều ngôn ngữ lập trình khác nhau.
 
-Bây giờ, tôi sẽ yêu cầu bạn lấy bút và giấy hoặc chỉ cần mở trình soạn thảo văn bản yêu thích của bạn và viết ra tất cả các bước bạn cần thực hiện để làm một bát ngũ cốc. Tôi sẽ làm điều tương tự, nhưng tôi sẽ làm theo cách tương tự như mô tả cho máy tính. Sau khi hoàn thành, bạn có thể so sánh kết quả của bạn và của tôi:
+Giờ bạn hãy lấy bút và giấy hoặc trình soạn thảo văn bản bất kì và viết ra tất cả các bước bạn cần thực hiện để nấu một bát mì tôm thơm phức giá rẻ cho sinh viên đỗ nghèo khỉ. Đây là ví dụ của mình:
 
-Kết quả của tôi:
+- Đến tủ bếp và mở cửa tủ
+- Lấy từ tủ gói mì (Ở đây tôi lấy Hảo Hảo).
+- Đóng cửa tủ bếp.
+- Mở tủ dụng cụ bếp
+- Lấy thìa, đũa, chảo, xoong
+- Đóng tủ dụng cụ bếp
+- Mở tủ lạnh ra
+- Lấy các nguyên liệu khác: Xúc xích, trứng, giò.
+- Đóng tủ lạnh
+- Thái xúc xích, giò
+- Rán trứng
+- Rán xúc xích và giò
+- Đặt nước đun
+- Nấu mì
+- Cho nguyên liệu đã chế biến ở trên vào xoong mì
 
-- đến tủ lạnh và mở cửa tủ
-- lấy một chai sữa ra và đặt lên bàn
-- đóng cửa tủ lạnh
-- đến tủ (hoặc tủ đựng đồ) và mở cửa tủ
-- lấy hộp ngũ cốc và bát ra và đặt lên bàn, cạnh sữa (bước này tùy thuộc vào nơi bạn cất bát và ngũ cốc)
-- đóng cửa tủ
-- đến ngăn kéo đựng thìa và mở ra
-- lấy một thìa và đóng ngăn kéo
-- đến bàn, đặt thìa cạnh bát
-- lấy hộp ngũ cốc và lấy túi nilon ra khỏi hộp (giả sử ngũ cốc được đựng trong túi nilon)
-- đổ ngũ cốc ra khỏi túi nilon vào bát cho đến khi bát đầy một nửa hoặc một phần ba
-- trả lại túi nilon vào hộp ngũ cốc (hoặc vứt đi nếu hết)
-- lấy một chai sữa và mở ra
-- đổ sữa lên ngũ cốc bên trong bát cho đến khi bát đầy một nửa
-- đóng chai sữa và đặt lên bàn
-
-Và thế là xong, bữa sáng đã sẵn sàng.
+Và thế là xong.
 
 Đây là cách các lập trình viên nghĩ. Bạn có thể thấy rằng không có gì phức tạp và ai cũng có thể làm được. Trong các bước trên có một số trường hợp bổ sung mà tôi đã bỏ qua để đơn giản hóa việc trình bày như nếu không có sữa trong tủ lạnh thì sao, nếu bạn hết sữa hoặc ngũ cốc thì sao, nếu bạn không có thìa hoặc bát sạch thì sao, nếu bạn làm rơi và vỡ bát, v.v.
 
@@ -53,12 +43,9 @@ Nhưng bạn đã hiểu ý rồi. Và trong video sau, bạn sẽ thấy điề
 
 <https://www.youtube.com/watch?v=cDA3_5982h8>
 
-Đây là cách lập trình hoạt động hầu hết thời gian. Bạn biết mình phải làm gì, bạn viết mã cho việc đó, sau đó bạn kiểm tra xem nó có hoạt động như những gì cần làm không. Nếu không, thì bạn biết rằng mình đã làm sai điều gì đó. Bạn thay đổi mã của mình và thử lại cho đến khi bạn có được giải pháp đúng.
+Đây là cách lập trình hoạt động hầu hết thời gian. Bạn biết mình phải làm gì, bạn viết code cho việc đó, sau đó bạn kiểm tra xem nó có hoạt động như những gì cần làm không. Nếu không, thì bạn biết rằng mình đã làm sai điều gì đó. Bạn thay đổi mã của mình và thử lại cho đến khi bạn có được giải pháp đúng.
 
-Thuật toán
----------
-
-Trong chương này, tôi sẽ giải thích mọi thứ theo cách chính thức.
+### Thuật toán
 
 Thuật toán là một tập hợp các quy trình từng bước được xác định, cung cấp câu trả lời đúng cho một vấn đề cụ thể.
 
@@ -76,7 +63,7 @@ Ví dụ tốt nhất về thuật toán mà bạn đã thấy trong cuộc số
 
 ### Sơ đồ luồng
 
-[Sơ đồ luồng](https://en.wikipedia.org/wiki/Flowchart) là một loại sơ đồ biểu diễn quy trình làm việc hoặc quy trình. Sơ đồ luồng cũng có thể được định nghĩa là biểu diễn sơ đồ của một thuật toán, một cách tiếp cận từng bước để giải quyết một nhiệm vụ.
+[Sơ đồ luồng](https://en.wikipedia.org/wiki/Flowchart) hay Flowchart là một loại sơ đồ biểu diễn quy trình làm việc hoặc quy trình. Sơ đồ luồng cũng có thể được định nghĩa là biểu diễn sơ đồ của một thuật toán, một cách tiếp cận từng bước để giải quyết một nhiệm vụ.
 
 Mỗi sơ đồ luồng bao gồm các khối xây dựng của nó. Để hiểu sơ đồ luồng, trước tiên bạn cần biết ý nghĩa của từng khối xây dựng. Tôi đã tạo bảng đơn giản này để bạn luôn có thể quay lại đây cho đến khi bạn học hết tất cả.
 
@@ -219,3 +206,7 @@ Lập trình không khó như bạn nghĩ. Bạn cần kiên nhẫn với bản 
 Tôi chỉ muốn chỉ ra tầm quan trọng của việc bắt đầu với các nhiệm vụ dễ hơn và sau đó tiến tới một số dự án lớn hơn mà bạn có thể muốn xây dựng. Bạn không thể học một ngôn ngữ nước ngoài nào đó chỉ sau một đêm nhưng bạn sẽ ngày càng giỏi hơn theo thời gian - lập trình cũng vậy.
 
 Khi bạn học cú pháp của một số ngôn ngữ lập trình, hãy thử giải các nhiệm vụ từ chương bài tập về nhà bằng ngôn ngữ lập trình đó.
+
+
+!!! info "Nguồn bài viết"
+    Được dịch và viết lại từ [một bài đăng trên Reddit](https://old.reddit.com/r/learnprogramming/comments/pxg54p/how_to_start_programming_from_zero/) của [marinsborg](https://old.reddit.com/user/marinsborg)

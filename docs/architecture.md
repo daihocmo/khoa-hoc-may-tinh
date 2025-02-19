@@ -5,6 +5,7 @@
 - [Lab + Assignments](https://github.com/Zhenye-Na/CSAPP-Labs)
 - [Lab Solutions](https://github.com/codeAligned/CMU-15213-Lab)
 - [Lecture Notes](https://github.com/yarkhinephyo/15-213-computer-systems-notes) - Ghi chú bài giảng được ghi dưới dạng Markdown, có thể lấy thẳng ghi chú từ slides bài giảng cũng được.
+- [Textbook](https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/books/CSAPP_2016.pdf) - Trích xuât từ khóa [CMPT 295 : Introduction to Computer Systems](https://www.cs.sfu.ca/~ashriram/Courses/CS295/) của SFU. 
 
 ## Chuẩn bị
 
