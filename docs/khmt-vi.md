@@ -1,16 +1,3 @@
-[voz.vn](https://voz.vn/t/giao-trinh-tu-hoc-khoa-hoc-may-tinh-tieng-viet.1059180/#post-35453246)
-
-kiến thức - Giáo trình tự học Khoa học máy tính - Tiếng Việt
-============================================================
-
-D duykhanh471 Member
-
-7--9 minutes
-
-* * * * *
-
-Chưa hoàn chỉnh, đây mới chỉ là ý tưởng và sẽ còn được cập nhật
-
 ### Tự học Khoa học Máy Tính​
 
 Trang này về cơ bản là bản Tiếng Việt của TYCS, được đổi các sách giáo trình từ Tiếng Anh về Tiếng Việt.
