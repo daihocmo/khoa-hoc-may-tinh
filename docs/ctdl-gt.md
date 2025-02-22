@@ -2,6 +2,7 @@
 
 Hướng dẫn này sẽ tập trung vào việc giúp bạn hiểu về cấu trúc dữ liệu và thuật toán. Về phần áp dụng thì bạn lên LeetCode, Hackerrank hoặc bất cứ nền tảng nào. Bạn cũng có thể sử dụng Algorithms Visualizer để có thể xem cách thuật toán vận hành.
 
+
 ## Kiến thức nền tảng
 
 ### Toán rời rạc
@@ -25,6 +26,14 @@ Muốn "cưỡi ngựa xem hoa" một chút, đọc [8 kiểu cấu trúc dữ l
 ### Lập trình "cơ bản"
 
 Bạn có thể viết bằng mã giả (pseudocode) hoặc một ngôn ngữ bất kì, thường là Java hoặc Python.
+
+### Tài nguyên khác
+
+Phần lớn các bài viết được dẫn nguồn tới Viblo, và đây là một số nguồn bằng Tiếng Việt khác
+
+- [VNOI Wiki - Thuật toán](https://wiki.vnoi.info/)
+- [Chuong Le Hoang - DSA](https://lhchuong.wordpress.com/category/data-structures-algorithms/)
+- [Nguyễn Tuấn](https://chidokun.github.io/categories/gi%E1%BA%A3i-thu%E1%BA%ADt/)
 
 ## Cấu trúc dữ liệu
 

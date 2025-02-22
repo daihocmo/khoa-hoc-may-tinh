@@ -1,64 +1,69 @@
-# Kiến trúc máy tính (Computer Architecture)
+# Hệ thống máy tính
 
-## Tài nguyên học trong khóa học
+> Môn này mình không biết được gọi là *Hệ thống máy tính* hay *kiến trúc máy tính* nữa. Nhưng theo tên của TYCS là *Computer Architecture* nên mình để là *Kiến trúc máy tính* nha.
 
-- [Lab + Assignments](https://github.com/Zhenye-Na/CSAPP-Labs)
-- [Lab Solutions](https://github.com/codeAligned/CMU-15213-Lab)
-- [Lecture Notes](https://github.com/yarkhinephyo/15-213-computer-systems-notes) - Ghi chú bài giảng được ghi dưới dạng Markdown, có thể lấy thẳng ghi chú từ slides bài giảng cũng được.
-- [Textbook](https://www.cs.sfu.ca/~ashriram/Courses/CS295/assets/books/CSAPP_2016.pdf) - Trích xuât từ khóa [CMPT 295 : Introduction to Computer Systems](https://www.cs.sfu.ca/~ashriram/Courses/CS295/) của SFU. 
+## Giáo trình
 
-## Chuẩn bị
+### Tài nguyên học gợi ý
+Tài nguyên học bằng Tiếng Việt duy nhất mà mình tìm được là khóa IT3030 của ĐHBKHN.
 
-Trước khi học khóa này thì nên học C. Nếu định học C thì hãy học cuốn [Modern C](https://inria.hal.science/hal-02383654v2/file/modernC.pdf) - Quyển này miễn phí nha. Học C xong sẽ có nền tảng để bắt đầu học OSTEP luôn.
+Khóa học: [Kiến trúc máy tính (IT3030) - SOICT HUST](https://www.youtube.com/playlist?list=PL54DF7EQeBp6a3T4DBIIZrqCzmMoRgvbK)
 
-Trong khóa sẽ có C Bootcamp, nhưng nếu học từ quyển Modern C rồi thì mạnh dạn bỏ qua thôi.
+Tài liệu học: 
 
-## Giáo trình học theo tuần
+- [Slide bài giảng](https://tailieuhust.com/tai-lieu-mon-kien-truc-may-tinh-hust/)
+- Giáo trình: [Computer Organization And Design](https://archive.org/details/computer-organization-and-design-fifth-edition-the-hardware-software-interface-by-hennessy)
 
-Cái này mình chỉ cấu trúc lại một chút dựa trên chương trình gốc [15-213: Intro to Computer Systems: Schedule for Fall 2015](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/schedule.html) của khóa học và thêm bài giảng trên Youtube vào thôi.
 
-Nhớ đọc thêm [Student Site](http://csapp.cs.cmu.edu/3e/students.html) và lấy Labs trên trang [Lab Assignments](http://csapp.cs.cmu.edu/3e/labs.html) của khóa học.
+## Hướng dẫn học
 
-| Week | Lecture | Reading | Labs | Videos | 
-| --- | --- | --- | --- | --- |
-| 1 | Overview ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/01-overview.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/01-overview.pptx)) | | | [01 Overview](https://www.youtube.com/watch?v=4CpHpFu_KYM) |
-|  | Bits, Bytes, and Ints: Part 1 ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/02-03-bits-ints.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/02-03-bits-ints.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/02-03-bits-ints), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/02-03-bits-ints.tar)) | 2.1 | L1 (datalab) out ([handout files](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/labs/datalab-handout.tar), [writeup](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/labs/datalab.pdf)) | [02 Bits ints Part1](https://www.youtube.com/watch?v=SIHjTvIM1EQ) |
-| 2 | Bits, Bytes, and Ints: Part 2 ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/02-03-bits-ints.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/02-03-bits-ints.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/02-03-bits-ints/), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/02-03-bits-ints.tar)) | 2.2-2.3 | | [03 Bits ints Part2](https://www.youtube.com/watch?v=hs3wRnQUh0o) | 
-| | Floating Point ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/04-float.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/04-float.pptx)) | 2.4 | | [04 Floating Point](https://www.youtube.com/watch?v=E8_ymtFfZvA) |
-| 3 | *Recitation 3: Datalab and Data Representations* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec03.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec03.pptx)) *Linux Boot Camp* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/linux_boot_camp.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/linux_boot_camp.pptx)) | | | |
-| | Machine Prog: Basics ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/05-machine-basics.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/05-machine-basics.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/05-machine-basics), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/05-machine-basics.tar)) | 3.1-3.5 | | [05 Machine Level Programming I Basics](https://www.youtube.com/watch?v=-UbRr4gDnyE) | 
-| | Machine Prog: Control ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/06-machine-control.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/06-machine-control.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/06-machine-control), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/06-machine-control.tar)) | 3.6 | L1 due 11:59pm, L2 (bomblab) out | [06 Machine Level Programming II Control](https://www.youtube.com/watch?v=Q9DHaqlS3ZM) |
-| 4 | *Recitation 4: Bomb Lab* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec04.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec04.pptx)) | | | |
-| | Machine Prog: Procedures ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/07-machine-procedures.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/07-machine-procedures.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/07-machine-procedures), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/07-machine-procedures.tar)) | 3.7 | | [07 Machine Level Programming III Procedures](https://www.youtube.com/watch?v=lthX7JQjlgI) | 
-| | Machine Prog: Data ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/08-machine-data.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/08-machine-data.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/08-machine-data), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/08-machine-data.tar)) | 3.8-3.9 | | [08 Machine Level Programming IV Data](https://www.youtube.com/watch?v=hZHmIW6ru3I) |
-| 5 | *Recitation 5: Attack Lab and Stacks* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec05.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec05.pptx)) | | | |
-|  | Machine Prog: Advanced ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/09-machine-advanced.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/09-machine-advanced.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/09-machine-advanced), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/09-machine-advanced.tar)) | 3.10 | L2 due 11:59pm, L3 (attacklab) out | [09 Machine Level Programming V Advanced Topics](https://www.youtube.com/watch?v=8vcm7kpTDow) |
-| | Code Optimization ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/10-optimization.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/10-optimization.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/10-optimization), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/10-optimization.tar)) | 5 | | [10 Program Optimization](https://www.youtube.com/watch?v=rH91tGltTiw) |
-| 6 | *Recitation 6: C Review* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec06.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec06.pptx)) C Boot Camp ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/c_boot_camp.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/c_boot_camp.pptx), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/c_boot_camp.tar)) |
-| | The Memory Hierarchy ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/11-memory-hierarchy.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/11-memory-hierarchy.pptx)) | 6.1-6.3 | | [11 The Memory Hierarchy](https://www.youtube.com/watch?v=zDJxqQ3J8r0) |
-| | Cache Memories ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/12-cache-memories.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/12-cache-memories.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/12-cache-memories), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/12-cache-memories.tar)) | 6.4-6.7 | L3 due 11:59pm, L4 (cachelab) out | [12 Cache Memories](https://www.youtube.com/watch?v=bdn4QuJOVSc) |
-| 7 | *Recitation 7: Cache Lab and Blocking* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec07.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec07.pptx)) |
-|  | Linking ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/13-linking.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/13-linking.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/13-linking), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/13-linking.tar)) | 7 | [13 Linking](https://www.youtube.com/watch?v=ZbKImUe3mQs) | 
-| | ECF: Exceptions & Processes ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/14-ecf-procs.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/14-ecf-procs.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/14-ecf-procs), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/14-ecf-procs.tar)) | 8.1-8.4 | L4 due 11:59pm | [14 ECF  Exceptions & Processes](https://www.youtube.com/watch?v=H8PpoEAnB6k) |
-| 8 | *Recitation 8: Exam Review* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec08.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec08.pptx)) | | | |
-| | ECF: Signals ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/15-ecf-signals.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/15-ecf-signals.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/15-ecf-signals), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/15-ecf-signals.tar)) | 8.5-8.8 | | [15 ECF  Signals and Nonlocal Jumps](https://www.youtube.com/watch?v=rznU-XtrLhA) |
-|  | System Level I/O ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/16-io.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/16-io.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/16-io), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/16-io.tar)) | 10 | L5 (tshlab) out | [16 System Level I O](https://www.youtube.com/watch?v=G4z6h_DcV4c) |
-| 9 | *Recitation 9: Shell Lab, Processes, and Signals, and I/O* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec09.pdf) [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec09.pptx)) | | | |
-|  | Virtual Memory: Concepts ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/17-vm-concepts.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/17-vm-concepts.pptx)) | 9.1-9.6 | | [17 Virtual Memory  Concepts](https://www.youtube.com/watch?v=I9Qxm2zYZv8) |
-| | Virtual Memory: Systems ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/18-vm-systems.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/18-vm-systems.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/18-vm-systems), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/18-vm-systems.tar)) | 9.7-9.8 | | [18 Virtual Memory  Systems](https://www.youtube.com/watch?v=PCOkUPC65Jk) |
-| 10 | *Recitation 10: Virtual Memory* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec10.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec10.pptx)) | | | |
-| | Storage Allocation: Basic ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/19-malloc-basic.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/19-malloc-basic.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/19-malloc-basic), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/19-malloc-basic.tar)) | 9.9 | L5 due 11:59pm, L6 (malloclab) out | [19 Dynamic Memory Allocation  Basic Concepts](https://www.youtube.com/watch?v=TmykAwKQo6g) |
-|  | Storage Allocation: Advanced ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/20-malloc-advanced.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/20-malloc-advanced.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/20-malloc-advanced/)) | 9.9-9.11 | | [20 Dynamic Memory Allocation  Advanced Concepts](https://www.youtube.com/watch?v=ru_2lvPNeQM) |
-| 11 | *Recitation 11: Malloc Lab* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec11.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec11.pptx)) | | | |
-| | Network Programming: Part 1 ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/21-netprog1.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/21-netprog1.pptx)) | 11.1-11.4 | | [21 Network Programmin Part 1](https://www.youtube.com/watch?v=LPxALdezA8Y) |
-| | Network Programming: Part 2 ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/22-netprog2.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/22-netprog2.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/22-netprog2/), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/22-netprog2.tar)) | 11.5-11.6 | | |
-| 12 | *Recitation 12: Debugging Malloc Lab* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec12.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec12.pptx)) | | | [22 Network Programming Part II](https://www.youtube.com/watch?v=f-KltQKLwd0) |
-|  | Concurrent Programming ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/23-concprog.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/23-concprog.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/23-concprog), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/23-concprog.tar)) | 12.1-12.3 | | [23 Concurrent Programming](https://www.youtube.com/watch?v=_sQZ3ouLFZ4) |
-| | Synchronization: Basic ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/24-sync-basic.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/24-sync-basic.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/24-sync-basic), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/24-sync-basic.tar)) | 12.4, 12.5.1-3 | L6 Due 11:59pm, L7 (proxylab) out | [24 Synchronization  Basics](https://www.youtube.com/watch?v=k2AtE2ks454) |
-| 13 | *Recitation 13: Proxy Lab* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec13.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec13.pptx)) |
-|  | Synchronization: Advanced ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/25-sync-advanced.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/25-sync-advanced.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/25-sync-advanced), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/25-sync-advanced.tar)) | 12.5.4-5, 12.7 | [25 Synchronization  Advanced](https://www.youtube.com/watch?v=JW-letxOAgM) | |
-|  | No class: Thanksgiving | | | |
-| 14 | *Recitation 14: Synchronization* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec14.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec14.pptx)) | | | |
-|  | Thread-Level Parallelism ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/26-parallelism.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/26-parallelism.pptx), [code](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/26-parallelism), [tar](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/code/26-parallelism.tar)) | 12.6 | | [26 Thread Level Parallelism](https://www.youtube.com/watch?v=-uv8xsvhfp4) |
-|  | The Future of Computing ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/27-future.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/lectures/27-future.pptx)) | | | [27 Future of Computing](https://www.youtube.com/watch?v=eeKMluYiDgI) |
-| 15 | *Recitation 15: Exam review* ([pdf](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec15.pdf), [pptx](https://www.cs.cmu.edu/afs/cs/academic/class/15213-f15/www/recitations/rec15.pptx)) | | | |
+Phần này mình nhờ Gemini tạo ra từ mục lục cuốn CS:APP, sẽ cập nhật thêm sau
+
+**1. Biểu diễn dữ liệu (Data Representation):**
+
+* **Hệ thống số**: Hiểu rõ về hệ nhị phân, thập phân, thập lục phân và cách chuyển đổi giữa chúng.
+* **Biểu diễn số nguyên**: Số nguyên có dấu và không dấu, bù hai, các phép toán số học.
+* **Biểu diễn số dấu phẩy động**: IEEE 754, độ chính xác đơn và độ chính xác kép.
+* **Biểu diễn văn bản**: ASCII, Unicode.
+
+**2. Kiến trúc tập lệnh (Instruction Set Architecture - ISA):**
+
+* **Ngôn ngữ Assembly**: Nắm vững các lệnh cơ bản, thanh ghi, chế độ địa chỉ.
+* **Cấu trúc chương trình**: Hiểu cách chương trình được tổ chức trong bộ nhớ, stack, heap.
+* **Gọi hàm**: Cách tham số được truyền, giá trị trả về, quản lý stack frame.
+
+**3. Bộ vi xử lý (Processor):**
+
+* **Cấu trúc CPU**: ALU, thanh ghi, bộ điều khiển.
+* **Pipeline**: Hiểu cách tăng tốc độ xử lý bằng cách thực hiện song song các lệnh.
+* **Branch prediction**: Cách CPU dự đoán hướng rẽ nhánh để giảm độ trễ.
+* **Cache**: Hiểu cách bộ nhớ cache hoạt động để tăng tốc độ truy xuất dữ liệu.
+
+**4. Hệ thống bộ nhớ (Memory Hierarchy):**
+
+* **Bộ nhớ chính (RAM)**: DRAM, SRAM, các loại bộ nhớ khác.
+* **Bộ nhớ cache**: Nguyên lý hoạt động, các loại cache, tối ưu hóa hiệu năng cache.
+* **Bộ nhớ ảo (Virtual Memory)**: Phân trang, phân đoạn, TLB.
+* **Lưu trữ thứ cấp (Disk)**: HDD, SSD, cách tổ chức dữ liệu trên đĩa.
+
+**5. Hệ thống nhập/xuất (Input/Output):**
+
+* **Các thiết bị I/O**: Bàn phím, chuột, màn hình, ổ đĩa, mạng.
+* **Giao tiếp I/O**: Polling, ngắt, DMA.
+* **Hệ thống bus**: PCI, USB, các loại bus khác.
+
+**6. Hiệu năng hệ thống (System Performance):**
+
+* **Đo lường hiệu năng**: CPI, MIPS, FLOPS.
+* **Tối ưu hóa hiệu năng**: Tối ưu hóa code, tối ưu hóa bộ nhớ, tối ưu hóa I/O.
+* **Đánh giá hiệu năng**: Benchmark, profiling.
+
+**Lời khuyên bổ sung:**
+
+* Nắm vững kiến thức về hệ điều hành, đặc biệt là quản lý bộ nhớ và quản lý tiến trình.
+* Thực hành lập trình Assembly để hiểu rõ hơn về hoạt động của CPU.
+* Tìm hiểu về các kiến trúc máy tính phổ biến như x86, ARM.
+* Tìm hiểu về các kiến trúc bộ nhớ cache L1, L2, L3.
+
+Chúc bạn học tốt môn Kiến trúc máy tính!
+
