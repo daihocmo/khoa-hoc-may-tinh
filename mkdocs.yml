@@ -20,7 +20,7 @@ nav:
     - 'Toán': 'toan.md'
     - 'Hệ điều hành': 'he-dieu-hanh.md'
     - 'Mạng máy tính': 'mang-may-tinh.md'
-    - 'Cơ sở dữ liệu': 'co-so-du-lieu.md'
+    - 'Cơ sở dữ liệu': 'csdl.md'
     - 'Trình biên dịch': 'trinh-bien-dich.md'
     - 'Hệ thống phân tán': 'he-thong-phan-tan.md'
   - 'Định hướng chuyên môn':
@@ -28,7 +28,7 @@ nav:
     - 'Fullstack': 'fullstack.md'
     - 'DevOps': 'devops.md'
   - 'Tự học Tiếng Anh': 'tieng-anh-it.md'
-  - 'Tài nguyên học': 'resources.md'
+  - 'Tài nguyên học': 'tai-nguyen-hoc.md'
 
     
 theme:
