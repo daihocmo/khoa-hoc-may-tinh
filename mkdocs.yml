@@ -11,7 +11,7 @@ nav:
     - 'Ghi nhớ': 'ghi-nho.md'
     - 'Nhật ký code': 'nhat-ky-code.md'
     - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
-    - 'Đừng làm dự án nữa': 'cach-len-ke-hoach.md'
+    - 'Bắt đầu dự án': 'cach-len-ke-hoach.md'
   - 'Giáo trình tự học':
     - 'Hướng dẫn chính': 'khmt.md'
     - 'Lập trình': 'lap-trinh.md'
@@ -25,7 +25,13 @@ nav:
     - 'Hệ thống phân tán': 'he-thong-phan-tan.md'
   - 'Định hướng chuyên môn':
     - 'Lựa chọn': 'lua-chon.md'
-    - 'Fullstack': 'fullstack.md'
+    - 'Fullstack': 
+      - 'Hướng dẫn chính': 'fullstack.md'
+      - 'HTML/CSS': 'html-css.md'
+      - 'JavaScript': 'js.md'
+      - 'React JS': 'react-js.md'
+      - 'NodeJS & ExpressJS': 'node-va-express.md'
+      - 'Rust': 'rust-guide.md'
     - 'DevOps': 'devops.md'
   - 'Tự học Tiếng Anh': 'tieng-anh-it.md'
   - 'Tài nguyên học': 'tai-nguyen-hoc.md'
@@ -63,6 +69,26 @@ theme:
     repo: fontawesome/brands/github
   language: vi
 
+markdown_extensions:
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - meta
+  - admonition
+  - attr_list
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.keys
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+      
+      
 plugins:
   - search
   - open-in-new-tab

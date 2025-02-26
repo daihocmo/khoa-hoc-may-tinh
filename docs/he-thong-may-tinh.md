@@ -65,5 +65,3 @@ Phần này mình nhờ Gemini tạo ra từ mục lục cuốn CS:APP, sẽ c�
 * Tìm hiểu về các kiến trúc máy tính phổ biến như x86, ARM.
 * Tìm hiểu về các kiến trúc bộ nhớ cache L1, L2, L3.
 
-Chúc bạn học tốt môn Kiến trúc máy tính!
-

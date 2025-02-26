@@ -22,10 +22,7 @@ Nếu bạn muốn học những lộ trình khác thì có thể thử:
 - [TheOdinProject](https://www.theodinproject.com/)
 - [FreeCodeCamp](https://www.freecodecamp.org/learn/full-stack-developer/)
 
-Lộ trình mình viết lại để khắc phục những "nhược điểm" (theo cá nhân mình thôi nha) của TOP và FCC:
-
-- FCC quá tập trung vào làm bài tập thực hành: Nghe có vẻ hơi ngược đời nhưng cách học của mình muốn là "học kiến thức nền tảng và đi xây dựng những dự án mà mình chọn". Mình khi học FCC hay cố hoàn thành bài tập cho xong mà không cảm thấy như đống kiến thức đó được sử dụng thực tế.
-- TOP không thống nhất trong nguồn tài nguyên: Họ gợi ý mỗi việc học một phần kiến thức ở một trang khác nhau. Mình nghĩ là nó khá hay cho việc học thêm, nhưng nó khá phức tạp và phải chuyển qua chuyển lại các trang khác. Dù vậy nhưng lộ trình này cũng gợi ý kiểu vậy :D nhưng nó ít hơn.
+Bạn hoàn toàn có thể sử dụng những hướng dẫn Fullstack trên để hỗ trợ quá trình học của mình.
 
 ## Lộ trình học
 Lộ trình sẽ được chia ra làm 26 tuần. Cách học cơ bản của lộ trình là trong mỗi tuần sẽ có những phần kiến thức mà bạn cần (mình nghĩ là cần) học. Bạn hoàn toàn có thể bỏ qua những phần bạn đã học từ trước hoặc muốn học sau (Khi dự án bạn muốn xây dựng cần đến phần kiến thức đó). Lộ trình này được xây dựng dựa trên [lộ trình Fullstack của Repo này](https://github.com/nishant-Tiwari24/coding-resources).
@@ -58,14 +55,20 @@ Nguồn học cơ bản:
 - [Khóa HTML/CSS cơ bản của F8 - Tiếng Việt](https://www.youtube.com/playlist?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz)
 - [HTML Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#html-foundations)
 - [CSS Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#css-foundations) 
-
-Nếu học trên FullStackOpen thì học phần [Part 0 - Fundamentals of Web apps](https://fullstackopen.com/en/part0)
+- [Đọc hết toàn bộ nội dung cơ bản của HTML/CSS](html-css.md)
+- Nếu học trên FullStackOpen thì học phần [Part 0 - Fundamentals of Web apps](https://fullstackopen.com/en/part0)
 
 Đọc thêm các nội dung khác liên quan đến HTML/CSS:
 
 - [Giới thiệu về DOM](https://viblo.asia/p/gioi-thieu-ve-dom-WAyK8J2ElxX) - Tìm hiểu về DOM (Document Object Model). Sẽ có một chút phần code của JavaScript, bạn có thể bỏ qua và chỉ cần tập trung vào hiểu DOM là gì.
 - [Guide to Writing Semantic HTML](https://cs.fyi/guide/writing-semantic-html) - Cách viết semantic HTML (Semantic HTML refers to the use of HTML markup to convey the meaning of the content on a web page, rather than just its appearance)
 - [Don't click here](https://www.dont-click-here.com/)  
+
+Sau đó bạn cũng có thể lựa chọn sử dụng CSS Framework để giúp việc trang trí Website của bạn được đơn giản hơn nhiều, dưới đây là một số CSS Framework được gợi ý:
+
+- [Bootstrap](https://getbootstrap.com/)
+- [TailwindCSS](https://tailwindcss.com/docs/installation/play-cdn)
+- [Pure CSS](https://pure-css.github.io/start/) - Siêu tối giản
 
 ### Tuần 2: JavaScript cơ bản
 #### Bạn sẽ học
@@ -80,9 +83,15 @@ JavaScript cơ bản
 - [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - Học từ đầu - Khóa này đã có người dịch sang Tiếng Việt và bạn có thể đọc luôn: [Bản dịch Tiếng Việt của 30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/Vietnamese/README.md).
 - [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts) - Tổng hợp những concepts mà "JS devs" nên biết
 - Nếu bạn thích học thêm thì học khóa [JavaScript nâng cao](https://www.youtube.com/playlist?list=PL_-VfJajZj0U1MSx1IMu13oLJq2nM97ac)
+- [Hướng dẫn tự học JS nhanh](js.md) - Nếu bạn đã học lập trình từ trước.
 
 #### Trong lúc học HTML/CSS/JS bạn có thể đọc thêm một số bài viết này
 - [Command Line Basics](https://www.theodinproject.com/lessons/foundations-command-line-basics) - Tìm hiểu cách sử dụng giao diện dòng lệnh cơ bản cho các hệ điều hành Unix-based (MacOS, Linux .etc.)
+
+#### Làm bài tập luyện tập
+Có thể lên một số trang như Exercism để luyện tập lập trình. Có thể thử đọc [Tổng hợp bài tập JavaScript có code mẫu](https://quantrimang.com/hoc/bai-tap-javascript-co-giai-159572)
+
+Luyện tập DOM Manipulation thông qua [Bài tập về DOM](https://javascript.uduer.com/bai-tap-ve-dom)
 
 ### Tuần 3: Backend (Phần 1)
 Thường mình thấy trong các khóa học hoặc chương trình khác thì mọi người thường hay cho học Frontend trước. Chương trình này sẽ lựa chọn Backend để khởi đầu trước.
@@ -103,11 +112,14 @@ Thanks bác, lộ trình này sẽ học Backend trước rồi mới học Fron
 - Version Control System (Git và Github):
     - [Từ gà tới pro Git và Github trong 20 phút - Tự học Git siêu tốc](https://www.youtube.com/watch?v=1JuYQgpbrW0)
     - [Git and Github Crash Course](https://www.youtube.com/watch?v=RGOj5yH7evk)
+- Tự học cách thiết kế API cơ bản thông qua: [Learn API Design](https://github.com/dwyl/learn-api-design)
 
 #### Nguồn tài nguyên học
 - [Awesome Lập trình](https://daihocmo.github.io/awesome-lap-trinh/) - Danh sách tổng hợp tài nguyên học lập trình và khoa học máy tính bằng Tiếng Việt.
 
 Nếu bạn đang học Rust thì hãy đọc [Hướng dẫn cày Rust](https://daihocmo.github.io/awesome-lap-trinh/ngon-ngu/rust.html)
+
+
 
 #### Đọc thêm
 - [Commit Messages](https://www.theodinproject.com/lessons/foundations-commit-messages) - Học cách viết Commit Message mỗi khi thực hiện commit trong Git.
@@ -121,13 +133,10 @@ Nếu bạn đang học Rust thì hãy đọc [Hướng dẫn cày Rust](https:/
 - Học [HTTP basics](https://www.freecodecamp.org/news/what-is-http/), [request-response cycle](https://davisgitonga.dev/blog/request-response-cycle).
 - Tạo [REST APIs](https://viblo.asia/p/restful-api-la-gi-1Je5EDJ4lnL).
 
-#### Tài nguyên học
-- [Khóa Node.js và Express.js của F8](https://www.youtube.com/playlist?list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3)
 
-Nếu bạn cũng đang học Rust như mình thì:
-
-- [Create a blazingly fast REST API in Rust (Part 1/2)](https://hub.qovery.com/guides/tutorial/create-a-blazingly-fast-api-in-rust-part-1/)
-- [Tạo CRUD API đơn giản với Rust](https://viblo.asia/p/tao-crud-api-don-gian-voi-rust-Az45bG0OKxY)
+#### Lựa chọn định hướng
+- Nếu bạn dự định Fullstack JS, học NodeJS và ExpressJS (Và thêm cái gì nữa thì mình cũng không rõ). Bạn có thể học toàn bộ phần này trên Khóa [Full Stack JavaScript](https://www.theodinproject.com/paths/full-stack-javascript) của TheOdinProject hoặc [NodeJS & ExpressJS](https://www.youtube.com/playlist?list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3) của F8 (Tiếng Việt, bằng Video).
+- Nếu bạn chọn Rust thì đọc: [Một hướng dẫn khá nhanh về Rust](rust-guide.md)
 
 #### Có thể bạn sẽ muốn đọc thêm
 - [Request-Response Cycle Through A Story](https://scribe.rip/@castonboyd/request-response-cycle-through-a-story-e552a7afff41)
@@ -141,8 +150,10 @@ Nếu bạn cũng đang học Rust như mình thì:
 - Tìm hiểu về schema design và indexing:
   - [Database Schema Design](https://viblo.asia/p/lam-the-nao-de-thiet-ke-mot-co-so-du-lieu-phan-1-rYvGwavgKVw) - Thiết kế cơ sở dữ liệu. 
   - [Index trong database là gì? Tại sao cần Index Database?](https://viblo.asia/p/index-trong-database-la-gi-tai-sao-can-index-database-Az45bYDzlxY)
-
-
+- Sử dụng công cụ quản lý cơ sở dữ liệu:
+  - [XAMPP + phpmyadmin](https://www.apachefriends.org/download.html) - Đọc thêm hướng dẫn [Cài đặt MySQL và sử dụng phpmyadmin trong XAMPP](https://diendanhocweb.com/cai-dat-mysql-va-su-dung-phpmyadmin-trong-xampp/)
+  - [DBeaver](https://dbeaver.io/)
+  - [HeidiSQL](https://www.heidisql.com/)
 #### Nguồn tài nguyên học
 - [A Comprehensive NoSQL Tutorial Using MongoDB](https://www.datacamp.com/tutorial/nosql-tutorial)
 - [Learn About NoSQL Databases in This 3-hour Course](https://www.freecodecamp.org/news/learn-nosql-in-3-hours/)
@@ -176,7 +187,6 @@ Nếu bạn cũng đang học Rust như mình thì:
 
 ### Tuần 8: React cơ bản
 #### Nhiều Framework quá @@!
-
 Mình viết lộ trình này để mình học và mình chưa hiểu lắm về vụ Framework. Số lượng Framework nhiều quá nên hơi chóng mặt, với một phần là hiện trạng "1m2 8 ông front-end" nên cá nhân mình nghĩ là bạn nên chọn những gì bạn muốn học (Hoặc học Framework mà công việc của bạn cần, không bắt buộc phải học React.js, ví dụ như Vue, Stelve .etc.). Thử đọc mấy ông vozer chém gió chút (mình chưa đọc hết, để tìm hiểu thêm xong mình sẽ viết một bài riêng sau):
 
 - [Trả lời tất cả những câu hỏi về Front End !!!](https://voz.vn/t/tra-loi-tat-ca-nhung-cau-hoi-ve-front-end.549780/page-20) - Trang 20 của Thread này nói về Next.js với React.js và một số vấn đề xoay quanh nó.
@@ -186,6 +196,8 @@ Mình viết lộ trình này để mình học và mình chưa hiểu lắm v�
 #### Bạn sẽ học
 - Học [React](https://viblo.asia/p/bat-dau-voi-reactjs-YWOZrDGP5Q0) nền tảng: [JSX, components, props, và state](https://viblo.asia/p/react-co-ban-component-jsx-props-state-bJzKmkA6l9N).
 - Sử dụng React Developer Tools.
+- [Tổng Hợp Nguyên Tắc Vàng Và Xu Hướng Thiết Kế UI/UX Nổi Bật Bạn Không Nên Bỏ Qua](https://glints.com/vn/blog/nguyen-tac-va-xu-huong-thiet-ke-ui-u/)
+- [Học ReactJS nhanh](react-js.md) - Bài hướng dẫn nhanh, chưa sửa
 
 #### Nguồn tài nguyên học
 - [Học thông qua trang chủ của React](https://react.dev/learn)
