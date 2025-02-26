@@ -3,52 +3,53 @@ Chắc thế, cái này do Gemini viết dựa trên nội dung khóa học củ
 
 ## Phần 1: Giới thiệu và Cài đặt
 
-### 3\. Cài đặt môi trường, công cụ phù hợp để học JavaScript
+### Cài đặt môi trường, công cụ phù hợp để học JavaScript
 
-* **Tóm tắt:**  Để học JavaScript, bạn cần:
-    * **Trình duyệt web:** Bất kỳ trình duyệt hiện đại nào (Chrome, Firefox, Edge...) đều có thể chạy JavaScript.
-    * **Trình soạn thảo code:** VS Code (Visual Studio Code) là lựa chọn tốt, miễn phí, nhiều extension hỗ trợ JavaScript.
-    * **Node.js (tùy chọn):**  Để chạy JavaScript ngoài trình duyệt (backend, công cụ...). Cài đặt từ [https://nodejs.org/](https://www.google.com/url?sa=E&source=gmail&q=https://nodejs.org/).
+Để học JavaScript, bạn cần:
 
-### 4\. Cách sử dụng JS trong file HTML | Visual Studio Code
+* **Trình duyệt web:** Bất kỳ trình duyệt hiện đại nào (Chrome, Firefox, Edge...) đều có thể chạy JavaScript.
+* **Trình soạn thảo code:** VS Code (Visual Studio Code) là lựa chọn tốt, miễn phí, nhiều extension hỗ trợ JavaScript.
+* **Node.js (tùy chọn):**  Để chạy JavaScript ngoài trình duyệt (backend, công cụ...). Cài đặt từ [https://nodejs.org/](https://www.google.com/url?sa=E&source=gmail&q=https://nodejs.org/).
 
-* **Tóm tắt:** Có 2 cách chính để nhúng JavaScript vào file HTML:
+### Cách sử dụng JS trong file HTML
 
-    * **Internal (nội tuyến):** Viết code JS trực tiếp trong thẻ `<script>` bên trong `<head>` hoặc `<body>` của file HTML.
-    * **External (ngoại tuyến):** Viết code JS trong file riêng (`.js`), sau đó liên kết đến file HTML bằng thẻ `<script src="path/to/script.js"></script>`. Cách này tốt hơn cho dự án lớn, dễ quản lý code.
+Có 2 cách chính để nhúng JavaScript vào file HTML:
+
+* **Internal (nội tuyến):** Viết code JS trực tiếp trong thẻ `<script>` bên trong `<head>` hoặc `<body>` của file HTML.
+* **External (ngoại tuyến):** Viết code JS trong file riêng (`.js`), sau đó liên kết đến file HTML bằng thẻ `<script src="path/to/script.js"></script>`. Cách này tốt hơn cho dự án lớn, dễ quản lý code.
 
 * **Ví dụ (External JS - phổ biến nhất):**
 
-    * **`index.html`:**
+* **`index.html`:**
 
-    ```html
-    <!DOCTYPE html>
-    <html>
-    <head>
-        <title>Ví dụ External JS</title>
-    </head>
-    <body>
-        <h1>Xin chào JavaScript!</h1>
-        <script src="script.js"></script>
-    </body>
-    </html>
-    ```
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ví dụ External JS</title>
+</head>
+<body>
+    <h1>Xin chào JavaScript!</h1>
+    <script src="script.js"></script>
+</body>
+</html>
+```
 
-    * **`script.js`:**
+* **`script.js`:**
 
-    ```javascript
+```javascript
     alert('Chào mừng đến với JavaScript!');
-    ```
+```
 
 ## Phần 2: Cú pháp và Cơ bản
 
-### 5\. Khai báo biến | Làm quen với cú pháp trong JavaScript
+### Khai báo biến
 
-* **Tóm tắt:** Biến dùng để lưu trữ dữ liệu trong chương trình. Trong JavaScript, có 3 từ khóa khai báo biến:
+Biến dùng để lưu trữ dữ liệu trong chương trình. Trong JavaScript, có 3 từ khóa khai báo biến:
 
-    * `var` (ít dùng hiện nay, phạm vi function-scoped).
-    * `let` (phạm vi block-scoped, có thể gán lại giá trị).
-    * `const` (phạm vi block-scoped, không thể gán lại giá trị sau khi khởi tạo). Nên dùng `const` khi giá trị không đổi, `let` khi cần thay đổi.
+* `var` (ít dùng hiện nay, phạm vi function-scoped).
+* `let` (phạm vi block-scoped, có thể gán lại giá trị).
+* `const` (phạm vi block-scoped, không thể gán lại giá trị sau khi khởi tạo). Nên dùng `const` khi giá trị không đổi, `let` khi cần thay đổi.
 
 * **Ví dụ:**
 
@@ -60,21 +61,21 @@ age = 31; // Có thể gán lại giá trị cho age
 console.log(name + " is " + age + " years old.");
 ```
 
-### 6\. Sử dụng Comments trong JavaScript | Mục đích sử dụng Comments
+### Sử dụng Comments trong JavaScript
 
-* **Tóm tắt:** Comment (chú thích) trong JavaScript giúp ghi chú, giải thích code, hoặc tạm ẩn code mà không ảnh hưởng đến chương trình.
+Comment (chú thích) trong JavaScript giúp ghi chú, giải thích code, hoặc tạm ẩn code mà không ảnh hưởng đến chương trình.
 
-    * **Single-line comment:** `// Đây là comment một dòng`
+* **Single-line comment:** `// Đây là comment một dòng`
 
-    * **Multi-line comment:**
+* **Multi-line comment:**
 
-    ```javascript
-    /*
-    Đây là
-    comment
-    nhiều dòng
-    */
-    ```
+```javascript
+/*
+Đây là
+comment
+nhiều dòng
+*/
+```
 
 * **Ví dụ:**
 
@@ -88,15 +89,15 @@ sẽ in ra lời chào
 console.log("Xin chào, " + name + "!");
 ```
 
-### 7\. Một số hàm built-in trong JavaScript | Built-in functions
+### Một số hàm built-in trong JavaScript
 
-* **Tóm tắt:** Built-in functions (hàm dựng sẵn) là các hàm có sẵn trong JavaScript để thực hiện các tác vụ phổ biến. Ví dụ:
+Built-in functions (hàm dựng sẵn) là các hàm có sẵn trong JavaScript để thực hiện các tác vụ phổ biến. Ví dụ:
 
-    * `alert()`: Hiển thị hộp thoại thông báo.
-    * `console.log()`: In thông tin ra console (DevTools).
-    * `prompt()`: Hiển thị hộp thoại nhập liệu.
-    * `parseInt()`, `parseFloat()`: Chuyển đổi chuỗi sang số nguyên, số thực.
-    * `typeof()`: Kiểm tra kiểu dữ liệu của biến.
+* `alert()`: Hiển thị hộp thoại thông báo.
+* `console.log()`: In thông tin ra console (DevTools).
+* `prompt()`: Hiển thị hộp thoại nhập liệu.
+* `parseInt()`, `parseFloat()`: Chuyển đổi chuỗi sang số nguyên, số thực.
+* `typeof()`: Kiểm tra kiểu dữ liệu của biến.
 
 * **Ví dụ:**
 
@@ -110,22 +111,22 @@ let number = parseInt(numberString); // Chuyển chuỗi "123" sang số 123
 console.log(typeof(number)); // In ra "number"
 ```
 
-### 8\. Làm quen với toán tử trong JavaScript | Các loại toán tử JS
+### Làm quen với toán tử trong JavaScript
 
-* **Tóm tắt:** Toán tử (operator) là ký hiệu thực hiện phép toán trên các giá trị (toán hạng). JavaScript có nhiều loại toán tử:
-    * Toán tử số học (+, -, \*, /, %, \*\*, ++, --).
-    * Toán tử gán (=, +=, -=, \*=, /=, %=).
-    * Toán tử so sánh (==, ===, \!=, \!==, \>, \<, \>=, \<=).
-    * Toán tử logic (&& - AND, || - OR, \! - NOT).
-    * Toán tử chuỗi (+ - cộng chuỗi).
+Toán tử (operator) là ký hiệu thực hiện phép toán trên các giá trị (toán hạng). JavaScript có nhiều loại toán tử:
+* Toán tử số học (+, -, \*, /, %, \*\*, ++, --).
+* Toán tử gán (=, +=, -=, \*=, /=, %=).
+* Toán tử so sánh (==, ===, \!=, \!==, \>, \<, \>=, \<=).
+* Toán tử logic (&& - AND, || - OR, \! - NOT).
+* Toán tử chuỗi (+ - cộng chuỗi).
 
-### 9\. Toán tử số học trong JavaScript | Các loại toán tử số học JS
+### Toán tử số học trong JavaScript
 
-* **Tóm tắt:** Toán tử số học thực hiện các phép toán cơ bản:
+Toán tử số học thực hiện các phép toán cơ bản:
 
-    * `+` (cộng), `-` (trừ), `*` (nhân), `/` (chia).
-    * `%` (chia lấy dư - modulo).
-    * `**` (lũy thừa - exponentiation).
+* `+` (cộng), `-` (trừ), `*` (nhân), `/` (chia).
+* `%` (chia lấy dư - modulo).
+* `**` (lũy thừa - exponentiation).
 
 * **Ví dụ:**
 
@@ -140,12 +141,12 @@ console.log(x % y); // 0 (chia lấy dư)
 console.log(x ** y); // 100000 (10 mũ 5)
 ```
 
-### 10\. Toán tử ++  -- với tiền tố & hậu tố (Prefix & Postfix) trong JavaScript
+### Toán tử ++  -- với tiền tố & hậu tố (Prefix & Postfix) trong JavaScript
 
-* **Tóm tắt:** Toán tử tăng/giảm (`++`, `--`) tăng hoặc giảm giá trị biến đi 1.
+Toán tử tăng/giảm (`++`, `--`) tăng hoặc giảm giá trị biến đi 1.
 
-    * **Prefix (++x, --x):** Tăng/giảm giá trị **trước** khi sử dụng giá trị đó trong biểu thức.
-    * **Postfix (x++, x--):** Tăng/giảm giá trị **sau** khi sử dụng giá trị đó trong biểu thức.
+* **Prefix (++x, --x):** Tăng/giảm giá trị **trước** khi sử dụng giá trị đó trong biểu thức.
+* **Postfix (x++, x--):** Tăng/giảm giá trị **sau** khi sử dụng giá trị đó trong biểu thức.
 
 * **Ví dụ:**
 
@@ -159,12 +160,12 @@ let d = c++; // Postfix: d = 5 trước, sau đó c tăng lên 6
 console.log("c:", c, "d:", d); // c: 6 d: 5
 ```
 
-### 11\. Toán tử gán trong JavaScript | Cách sử dụng toán tử gán
+### Toán tử gán trong JavaScript
 
-* **Tóm tắt:** Toán tử gán gán giá trị cho biến.
+Toán tử gán gán giá trị cho biến.
 
-    * `=` (gán trực tiếp).
-    * `+=`, `-=`, `*=`, `/=`, `%=` (gán kết hợp phép toán).
+* `=` (gán trực tiếp).
+* `+=`, `-=`, `*=`, `/=`, `%=` (gán kết hợp phép toán).
 
 * **Ví dụ:**
 
@@ -179,9 +180,9 @@ num %= 3; // num = num % 3 (num = 2 - dư của 11 chia 3)
 console.log(num); // 2
 ```
 
-### 12\. Toán tử chuỗi (String Operator) trong JavaScript | khi nào sử dụng toán tử chuỗi
+### Toán tử chuỗi (String Operator) trong JavaScript
 
-* **Tóm tắt:** Toán tử chuỗi chính là toán tử `+` (cộng) dùng để **nối chuỗi** (concatenation).
+Toán tử chuỗi chính là toán tử `+` (cộng) dùng để **nối chuỗi** (concatenation).
 
 * **Ví dụ:**
 
@@ -192,18 +193,18 @@ let fullName = firstName + " " + lastName; // Nối chuỗi
 console.log(fullName); // Gemini AI
 ```
 
-### 13\. Toán tử so sánh trong Javascript (phần 1)
+### Toán tử so sánh trong Javascript (phần 1)
 
-* **Tóm tắt:** Toán tử so sánh so sánh hai giá trị và trả về giá trị boolean (`true` hoặc `false`).
-    * `==` (bằng giá trị - loose equality): So sánh giá trị, có thể ép kiểu dữ liệu.
-    * `===` (bằng giá trị và kiểu dữ liệu - strict equality): So sánh cả giá trị và kiểu dữ liệu, không ép kiểu. Nên dùng `===` để so sánh chính xác.
-    * `!=` (không bằng giá trị - loose inequality).
-    * `!==` (không bằng giá trị hoặc kiểu dữ liệu - strict inequality).
-    * `>` (lớn hơn), `<` (nhỏ hơn), `>=` (lớn hơn hoặc bằng), `<=` (nhỏ hơn hoặc bằng).
+Toán tử so sánh so sánh hai giá trị và trả về giá trị boolean (`true` hoặc `false`).
+* `==` (bằng giá trị - loose equality): So sánh giá trị, có thể ép kiểu dữ liệu.
+* `===` (bằng giá trị và kiểu dữ liệu - strict equality): So sánh cả giá trị và kiểu dữ liệu, không ép kiểu. Nên dùng `===` để so sánh chính xác.
+* `!=` (không bằng giá trị - loose inequality).
+* `!==` (không bằng giá trị hoặc kiểu dữ liệu - strict inequality).
+* `>` (lớn hơn), `<` (nhỏ hơn), `>=` (lớn hơn hoặc bằng), `<=` (nhỏ hơn hoặc bằng).
 
-### 14\. Kiểu dữ liệu Boolean (Boolean data type) trong JavaScript
+### Kiểu dữ liệu Boolean (Boolean data type) trong JavaScript
 
-* **Tóm tắt:** Boolean là kiểu dữ liệu logic chỉ có 2 giá trị: `true` (đúng) và `false` (sai). Thường dùng trong câu lệnh điều kiện và toán tử logic.
+Boolean là kiểu dữ liệu logic chỉ có 2 giá trị: `true` (đúng) và `false` (sai). Thường dùng trong câu lệnh điều kiện và toán tử logic.
 
 * **Ví dụ:**
 
@@ -214,13 +215,13 @@ console.log(typeof(isAdult)); // "boolean"
 console.log(isRaining); // false
 ```
 
-### 15\. Câu lệnh điều kiện If - Else trong JavaScript
+### Câu lệnh điều kiện If - Else trong JavaScript
 
-* **Tóm tắt:** Câu lệnh `if...else` thực hiện code khác nhau dựa trên điều kiện đúng hay sai.
+Câu lệnh `if...else` thực hiện code khác nhau dựa trên điều kiện đúng hay sai.
 
-    * `if (condition) { ... }`: Nếu `condition` đúng (`true`), code trong block `if` được thực hiện.
-    * `else { ... }`: Nếu `condition` sai (`false`), code trong block `else` được thực hiện (tùy chọn).
-    * `else if (condition2) { ... }`: Kiểm tra thêm điều kiện nếu điều kiện `if` sai (có thể có nhiều `else if`).
+* `if (condition) { ... }`: Nếu `condition` đúng (`true`), code trong block `if` được thực hiện.
+* `else { ... }`: Nếu `condition` sai (`false`), code trong block `else` được thực hiện (tùy chọn).
+* `else if (condition2) { ... }`: Kiểm tra thêm điều kiện nếu điều kiện `if` sai (có thể có nhiều `else if`).
 
 * **Ví dụ:**
 
@@ -233,13 +234,13 @@ if (age >= 18) {
 }
 ```
 
-### 16\. Toán tử logical trong JavaScript | Cách hoạt động của toán tử
+### Toán tử logical trong JavaScript
 
-* **Tóm tắt:** Toán tử logic kết hợp các biểu thức boolean.
+Toán tử logic kết hợp các biểu thức boolean.
 
-    * `&&` (AND - và): `true` nếu **cả hai** toán hạng đều `true`.
-    * `||` (OR - hoặc): `true` nếu **ít nhất một** toán hạng là `true`.
-    * `!` (NOT - phủ định): Đảo ngược giá trị boolean (`!true` là `false`, `!false` là `true`).
+* `&&` (AND - và): `true` nếu **cả hai** toán hạng đều `true`.
+* `||` (OR - hoặc): `true` nếu **ít nhất một** toán hạng là `true`.
+* `!` (NOT - phủ định): Đảo ngược giá trị boolean (`!true` là `false`, `!false` là `true`).
 
 * **Ví dụ:**
 
@@ -256,24 +257,24 @@ if (hasLicense && hasCar) { // Cả hai phải true
 console.log(!hasLicense); // false (phủ định true)
 ```
 
-### 17\. Kiểu dữ liệu trong JavaScript | Các kiểu dữ liệu JS
+### Kiểu dữ liệu trong JavaScript
 
-* **Tóm tắt:** JavaScript là ngôn ngữ kiểu dữ liệu động (dynamic typing), kiểu dữ liệu của biến được xác định khi chạy chương trình, không cần khai báo rõ ràng. Các kiểu dữ liệu cơ bản:
-    * `Number` (số): Số nguyên, số thực.
-    * `String` (chuỗi): Văn bản.
-    * `Boolean` (boolean): `true` hoặc `false`.
-    * `Null`: Giá trị rỗng có chủ ý.
-    * `Undefined`: Biến đã khai báo nhưng chưa gán giá trị.
-    * `Symbol` (ES6): Giá trị duy nhất, thường dùng làm key object.
-    * `Object` (đối tượng): Tập hợp các cặp key-value.
+JavaScript là ngôn ngữ kiểu dữ liệu động (dynamic typing), kiểu dữ liệu của biến được xác định khi chạy chương trình, không cần khai báo rõ ràng. Các kiểu dữ liệu cơ bản:
+* `Number` (số): Số nguyên, số thực.
+* `String` (chuỗi): Văn bản.
+* `Boolean` (boolean): `true` hoặc `false`.
+* `Null`: Giá trị rỗng có chủ ý.
+* `Undefined`: Biến đã khai báo nhưng chưa gán giá trị.
+* `Symbol` (ES6): Giá trị duy nhất, thường dùng làm key object.
+* `Object` (đối tượng): Tập hợp các cặp key-value.
 
-### 18\. Toán tử so sánh trong JavaScript (phần 2)
+### Toán tử so sánh trong JavaScript (phần 2)
 
-* **Tóm tắt:** Tiếp tục về toán tử so sánh, tập trung vào sự khác biệt giữa `==` và `===`. Nên dùng `===` và `!==` để so sánh chính xác, tránh các hành vi ép kiểu không mong muốn của `==` và `!=`.
+Tiếp tục về toán tử so sánh, tập trung vào sự khác biệt giữa `==` và `===`. Nên dùng `===` và `!==` để so sánh chính xác, tránh các hành vi ép kiểu không mong muốn của `==` và `!=`.
 
-### 19\. Toán tử logical và câu lệnh điều kiện If trong JavaScript
+### Toán tử logical và câu lệnh điều kiện If trong JavaScript
 
-* **Tóm tắt:** Kết hợp toán tử logic và câu lệnh `if` để tạo điều kiện phức tạp hơn.
+Kết hợp toán tử logic và câu lệnh `if` để tạo điều kiện phức tạp hơn.
 
 * **Ví dụ:**
 
@@ -287,9 +288,9 @@ if (age >= 18 && hasTicket) { // Vừa đủ tuổi, vừa có vé
 }
 ```
 
-### 20\. Chuỗi trong JavaScript | JavaScript String
+### Chuỗi trong JavaScript
 
-* **Tóm tắt:** Chuỗi (string) là kiểu dữ liệu văn bản trong JavaScript, được bao quanh bởi dấu nháy đơn (`'...'`), nháy kép (`"..."`) hoặc backtick (\`...\`). Backtick dùng cho template literals (chuỗi template).
+Chuỗi (string) là kiểu dữ liệu văn bản trong JavaScript, được bao quanh bởi dấu nháy đơn (`'...'`), nháy kép (`"..."`) hoặc backtick (\`...\`). Backtick dùng cho template literals (chuỗi template).
 
 * **Ví dụ:**
 
@@ -302,20 +303,20 @@ console.log(doubleQuoteString);
 console.log(templateString);
 ```
 
-### 21\. Làm việc với chuỗi trong JavaScript | Javascript string methods
+### Làm việc với chuỗi trong JavaScript
 
-* **Tóm tắt:** String methods (phương thức chuỗi) là các hàm có sẵn để thao tác với chuỗi. Ví dụ:
+String methods (phương thức chuỗi) là các hàm có sẵn để thao tác với chuỗi. Ví dụ:
 
-    * `length`: Thuộc tính lấy độ dài chuỗi.
-    * `charAt(index)`: Lấy ký tự tại vị trí index.
-    * `indexOf(substring)`: Tìm vị trí đầu tiên của substring.
-    * `lastIndexOf(substring)`: Tìm vị trí cuối cùng của substring.
-    * `slice(start, end)`: Cắt chuỗi từ vị trí start đến end (không bao gồm end).
-    * `substring(start, end)`: Tương tự `slice`.
-    * `toUpperCase()`, `toLowerCase()`: Chuyển chuỗi thành chữ hoa, chữ thường.
-    * `trim()`: Xóa khoảng trắng đầu và cuối chuỗi.
-    * `split(delimiter)`: Chia chuỗi thành mảng các chuỗi con dựa trên delimiter.
-    * `replace(oldValue, newValue)`: Thay thế chuỗi con oldValue bằng newValue.
+* `length`: Thuộc tính lấy độ dài chuỗi.
+* `charAt(index)`: Lấy ký tự tại vị trí index.
+* `indexOf(substring)`: Tìm vị trí đầu tiên của substring.
+* `lastIndexOf(substring)`: Tìm vị trí cuối cùng của substring.
+* `slice(start, end)`: Cắt chuỗi từ vị trí start đến end (không bao gồm end).
+* `substring(start, end)`: Tương tự `slice`.
+* `toUpperCase()`, `toLowerCase()`: Chuyển chuỗi thành chữ hoa, chữ thường.
+* `trim()`: Xóa khoảng trắng đầu và cuối chuỗi.
+* `split(delimiter)`: Chia chuỗi thành mảng các chuỗi con dựa trên delimiter.
+* `replace(oldValue, newValue)`: Thay thế chuỗi con oldValue bằng newValue.
 
 * **Ví dụ:**
 
@@ -331,17 +332,17 @@ console.log(message.split(" ")); // ["", "", "Hello", "World!", "", ""] (chia th
 console.log(message.replace("World", "JavaScript")); // "  Hello JavaScript!  "
 ```
 
-### 22\. Số và làm việc với kiểu số trong JavaScript | JavaScript number methods
+### Số và làm việc với kiểu số trong JavaScript
 
-* **Tóm tắt:** Number methods (phương thức số) là các hàm có sẵn để thao tác với số. Ví dụ:
+Number methods (phương thức số) là các hàm có sẵn để thao tác với số. Ví dụ:
 
-    * `toFixed(digits)`: Định dạng số thập phân với `digits` chữ số sau dấu phẩy.
-    * `parseInt()`, `parseFloat()`: Chuyển đổi chuỗi sang số nguyên, số thực.
-    * `isNaN()`: Kiểm tra xem có phải NaN (Not-a-Number) không.
-    * `Number.isInteger()`: Kiểm tra xem có phải số nguyên không.
-    * `Math.random()`: Sinh số ngẫu nhiên từ 0 đến \< 1.
-    * `Math.floor()`, `Math.ceil()`, `Math.round()`: Làm tròn số xuống, lên, gần nhất.
-    * `Math.max()`, `Math.min()`: Tìm số lớn nhất, nhỏ nhất.
+* `toFixed(digits)`: Định dạng số thập phân với `digits` chữ số sau dấu phẩy.
+* `parseInt()`, `parseFloat()`: Chuyển đổi chuỗi sang số nguyên, số thực.
+* `isNaN()`: Kiểm tra xem có phải NaN (Not-a-Number) không.
+* `Number.isInteger()`: Kiểm tra xem có phải số nguyên không.
+* `Math.random()`: Sinh số ngẫu nhiên từ 0 đến \< 1.
+* `Math.floor()`, `Math.ceil()`, `Math.round()`: Làm tròn số xuống, lên, gần nhất.
+* `Math.max()`, `Math.min()`: Tìm số lớn nhất, nhỏ nhất.
 
 * **Ví dụ:**
 
@@ -357,9 +358,9 @@ console.log(Math.floor(3.9)); // 3 (làm tròn xuống)
 console.log(Math.max(1, 5, 2)); // 5 (số lớn nhất)
 ```
 
-### 23\. Mảng trong JavaScript | JavaScript array
+### Mảng trong JavaScript
 
-* **Tóm tắt:** Mảng (array) là kiểu dữ liệu danh sách, chứa nhiều giá trị theo thứ tự. Các phần tử mảng có thể có kiểu dữ liệu khác nhau. Mảng được khai báo bằng dấu ngoặc vuông `[...]`.
+Mảng (array) là kiểu dữ liệu danh sách, chứa nhiều giá trị theo thứ tự. Các phần tử mảng có thể có kiểu dữ liệu khác nhau. Mảng được khai báo bằng dấu ngoặc vuông `[...]`.
 
 * **Ví dụ:**
 
@@ -371,19 +372,19 @@ console.log(colors[0]); // "red" (phần tử đầu tiên, index 0)
 console.log(numbers.length); // 5 (độ dài mảng)
 ```
 
-### 24\. Làm việc với mảng trong JavaScript | JavaScript array
+### Làm việc với mảng trong JavaScript
 
-* **Tóm tắt:** Các thao tác cơ bản với mảng:
+Các thao tác cơ bản với mảng:
 
-    * Truy cập phần tử: `array[index]`.
-    * Sửa đổi phần tử: `array[index] = newValue;`.
-    * Thêm phần tử:
-        * `push(element)`: Thêm vào cuối mảng.
-        * `unshift(element)`: Thêm vào đầu mảng.
-    * Xóa phần tử:
-        * `pop()`: Xóa phần tử cuối mảng và trả về phần tử đó.
-        * `shift()`: Xóa phần tử đầu mảng và trả về phần tử đó.
-        * `splice(startIndex, deleteCount, item1, item2, ...)`: Xóa và/hoặc thêm phần tử tại vị trí bất kỳ.
+* Truy cập phần tử: `array[index]`.
+* Sửa đổi phần tử: `array[index] = newValue;`.
+* Thêm phần tử:
+    * `push(element)`: Thêm vào cuối mảng.
+    * `unshift(element)`: Thêm vào đầu mảng.
+* Xóa phần tử:
+    * `pop()`: Xóa phần tử cuối mảng và trả về phần tử đó.
+    * `shift()`: Xóa phần tử đầu mảng và trả về phần tử đó.
+    * `splice(startIndex, deleteCount, item1, item2, ...)`: Xóa và/hoặc thêm phần tử tại vị trí bất kỳ.
 
 * **Ví dụ:**
 
@@ -403,9 +404,9 @@ fruits.splice(1, 2, "pear", "melon"); // Xóa 2 phần tử từ index 1, thêm 
 console.log(fruits); // ["kiwi", "pear", "melon", "orange"]
 ```
 
-### 25\. Hàm trong JavaScript | JavaScript function
+### Hàm trong JavaScript
 
-* **Tóm tắt:** Hàm (function) là khối code thực hiện một tác vụ cụ thể, có thể tái sử dụng nhiều lần. Giúp code có cấu trúc, dễ đọc, dễ bảo trì.
+Hàm (function) là khối code thực hiện một tác vụ cụ thể, có thể tái sử dụng nhiều lần. Giúp code có cấu trúc, dễ đọc, dễ bảo trì.
 
 * **Khai báo hàm:**
 
@@ -430,9 +431,9 @@ let sum = add(5, 3); // Gọi hàm add với đối số 5 và 3
 console.log(sum); // 8
 ```
 
-### 26\. Tham số trong hàm | JavaScript function
+### Tham số trong hàm
 
-* **Tóm tắt:** Tham số (parameter) là biến được khai báo trong định nghĩa hàm, dùng để nhận giá trị đầu vào khi gọi hàm. Đối số (argument) là giá trị thực tế được truyền vào khi gọi hàm.
+Tham số (parameter) là biến được khai báo trong định nghĩa hàm, dùng để nhận giá trị đầu vào khi gọi hàm. Đối số (argument) là giá trị thực tế được truyền vào khi gọi hàm.
 
 * **Ví dụ:** (ví dụ trên đã có tham số)
 
@@ -445,9 +446,9 @@ greet("Gemini"); // "Gemini" là đối số
 greet("User"); // "User" là đối số
 ```
 
-### 27\. Return trong hàm JS | JavaScript function
+### Return trong hàm JS
 
-* **Tóm tắt:** Câu lệnh `return` trong hàm dùng để trả về một giá trị từ hàm. Hàm có thể trả về bất kỳ kiểu dữ liệu nào (số, chuỗi, mảng, object...). Nếu không có `return`, hàm trả về `undefined`.
+Câu lệnh `return` trong hàm dùng để trả về một giá trị từ hàm. Hàm có thể trả về bất kỳ kiểu dữ liệu nào (số, chuỗi, mảng, object...). Nếu không có `return`, hàm trả về `undefined`.
 
 * **Ví dụ:** (ví dụ hàm `add` và `greet` trên đã có return và không return)
 
@@ -467,17 +468,17 @@ let greeting = sayHello();
 console.log(greeting); // undefined (hàm không trả về gì)
 ```
 
-### 28\. Hiểu hơn về function trong JavaScript | Một số điều cần biết về function
+### Hiểu hơn về function trong JavaScript
 
-* **Tóm tắt:** Hàm là first-class citizens trong JavaScript: có thể gán cho biến, truyền như đối số cho hàm khác, trả về từ hàm khác. Hàm có thể có tên (named function) hoặc không tên (anonymous function).
+Hàm là first-class citizens trong JavaScript: có thể gán cho biến, truyền như đối số cho hàm khác, trả về từ hàm khác. Hàm có thể có tên (named function) hoặc không tên (anonymous function).
 
-### 29\. Các loại function trong JavaScript | Khái niệm function
+### Các loại function trong JavaScript
 
-* **Tóm tắt:** Các loại function trong JavaScript:
+Các loại function trong JavaScript:
 
-    * **Named function:** Hàm có tên, khai báo bằng từ khóa `function`. (ví dụ trên)
-    * **Anonymous function:** Hàm không tên, thường dùng gán cho biến hoặc làm callback.
-    * **Arrow function (ES6):** Cú pháp ngắn gọn hơn cho anonymous function.
+* **Named function:** Hàm có tên, khai báo bằng từ khóa `function`. (ví dụ trên)
+* **Anonymous function:** Hàm không tên, thường dùng gán cho biến hoặc làm callback.
+* **Arrow function (ES6):** Cú pháp ngắn gọn hơn cho anonymous function.
 
 * **Ví dụ (Anonymous function và Arrow function):**
 
@@ -503,13 +504,9 @@ setTimeout(() => {
 }, 2000);
 ```
 
-### 30\. Polyfill là gì? | Khái niệm polyfill trong JavaScript
+### Object trong JavaScript
 
-* **Tóm tắt:** Polyfill là code (thường là JavaScript) cung cấp chức năng mới (thường là tính năng ES6+ mới) cho các trình duyệt cũ không hỗ trợ. Giúp code chạy được trên nhiều trình duyệt, kể cả trình duyệt cũ.
-
-### 31\. Object trong JavaScript | Khái niệm object
-
-* **Tóm tắt:** Object (đối tượng) là kiểu dữ liệu phức tạp trong JavaScript, biểu diễn một thực thể có thuộc tính (properties) và phương thức (methods). Object là tập hợp các cặp key-value, key là chuỗi (hoặc Symbol), value có thể là bất kỳ kiểu dữ liệu nào. Object được khai báo bằng dấu ngoặc nhọn `{...}`.
+Object (đối tượng) là kiểu dữ liệu phức tạp trong JavaScript, biểu diễn một thực thể có thuộc tính (properties) và phương thức (methods). Object là tập hợp các cặp key-value, key là chuỗi (hoặc Symbol), value có thể là bất kỳ kiểu dữ liệu nào. Object được khai báo bằng dấu ngoặc nhọn `{...}`.
 
 * **Ví dụ:**
 
@@ -528,9 +525,9 @@ console.log(person["age"]); // 2 (truy cập thuộc tính bằng dấu ngoặc 
 person.greet(); // Gọi phương thức greet
 ```
 
-### 32\. Object constructor trong JavaScript
+### Object constructor trong JavaScript
 
-* **Tóm tắt:** Object constructor (hàm tạo đối tượng) là hàm đặc biệt dùng để tạo ra các object cùng loại (cùng cấu trúc thuộc tính và phương thức). Dùng từ khóa `new` để gọi constructor.
+Object constructor (hàm tạo đối tượng) là hàm đặc biệt dùng để tạo ra các object cùng loại (cùng cấu trúc thuộc tính và phương thức). Dùng từ khóa `new` để gọi constructor.
 
 * **Ví dụ:**
 
@@ -548,13 +545,13 @@ console.log(myDog.name); // "Lucky"
 myDog.bark(); // Gọi phương thức bark
 ```
 
-### 33\. Object prototype(cơ bản) trong JavaScript
+### Object prototype(cơ bản) trong JavaScript
 
-* **Tóm tắt:** Prototype là cơ chế kế thừa trong JavaScript. Mỗi object được tạo ra từ constructor có một prototype. Prototype là một object khác, chứa các thuộc tính và phương thức mà các object con kế thừa. Giúp tái sử dụng code, tiết kiệm bộ nhớ.
+Prototype là cơ chế kế thừa trong JavaScript. Mỗi object được tạo ra từ constructor có một prototype. Prototype là một object khác, chứa các thuộc tính và phương thức mà các object con kế thừa. Giúp tái sử dụng code, tiết kiệm bộ nhớ.
 
-### 34\. Date object trong JavaScript | Đối tượng date
+### Date object trong JavaScript
 
-* **Tóm tắt:** Date object (đối tượng Date) dùng để làm việc với ngày và giờ trong JavaScript. Tạo Date object bằng `new Date()`.
+Date object (đối tượng Date) dùng để làm việc với ngày và giờ trong JavaScript. Tạo Date object bằng `new Date()`.
 
 * **Ví dụ:**
 
@@ -574,13 +571,13 @@ console.log(now.getMinutes()); // Lấy phút
 
 ## Phần 3: Câu lệnh điều khiển và Vòng lặp
 
-### 35\. Câu lệnh rẽ nhánh If, else | JavaScript if-else
+### Câu lệnh rẽ nhánh If, else
 
-* **Tóm tắt:** (Đã đề cập ở mục 15) Ôn lại và mở rộng về câu lệnh `if...else`, `else if`.
+(Đã đề cập ở mục 15) Ôn lại và mở rộng về câu lệnh `if...else`, `else if`.
 
-### 36\. Câu lệnh rẽ nhánh Switch trong JavaScript
+### Câu lệnh rẽ nhánh Switch trong JavaScript
 
-* **Tóm tắt:** Câu lệnh `switch...case` là một cách khác để rẽ nhánh chương trình dựa trên giá trị của một biểu thức. Thường dùng khi có nhiều trường hợp (case) có thể xảy ra.
+Câu lệnh `switch...case` là một cách khác để rẽ nhánh chương trình dựa trên giá trị của một biểu thức. Thường dùng khi có nhiều trường hợp (case) có thể xảy ra.
 
 * **Ví dụ:**
 
@@ -617,9 +614,9 @@ switch (dayOfWeek) {
 console.log("Hôm nay là " + dayName); // Hôm nay là Thứ Tư
 ```
 
-### 37\. Toán tử 3 ngôi(ternary operator) trong JavaScript
+### Toán tử 3 ngôi(ternary operator) trong JavaScript
 
-* **Tóm tắt:** Toán tử 3 ngôi (ternary operator) `condition ? valueIfTrue : valueIfFalse` là cú pháp rút gọn của câu lệnh `if...else` khi chỉ có một điều kiện và trả về một trong hai giá trị.
+Toán tử 3 ngôi (ternary operator) `condition ? valueIfTrue : valueIfFalse` là cú pháp rút gọn của câu lệnh `if...else` khi chỉ có một điều kiện và trả về một trong hai giá trị.
 
 * **Ví dụ:**
 
@@ -638,22 +635,22 @@ if (age >= 18) {
 console.log(message2); // "Chưa đủ tuổi"
 ```
 
-### 38\. Vòng lặp trong JavaScript | JavaScript Loop
+### Vòng lặp trong JavaScript
 
-* **Tóm tắt:** Vòng lặp (loop) dùng để lặp đi lặp lại một khối code nhiều lần. Các loại vòng lặp trong JavaScript:
-    * `for` loop.
-    * `for...in` loop (lặp qua thuộc tính của object).
-    * `for...of` loop (lặp qua giá trị của iterable object - mảng, chuỗi...).
-    * `while` loop.
-    * `do...while` loop.
+Vòng lặp (loop) dùng để lặp đi lặp lại một khối code nhiều lần. Các loại vòng lặp trong JavaScript:
+* `for` loop.
+* `for...in` loop (lặp qua thuộc tính của object).
+* `for...of` loop (lặp qua giá trị của iterable object - mảng, chuỗi...).
+* `while` loop.
+* `do...while` loop.
 
-### 39\. Vòng lặp For trong JavaScript | For loop
+### Vòng lặp For trong JavaScript
 
-* **Tóm tắt:** `for` loop có cú pháp: `for (initialization; condition; increment/decrement) { ... }`
+`for` loop có cú pháp: `for (initialization; condition; increment/decrement) { ... }`
 
-    * `initialization`: Khởi tạo biến đếm (chạy một lần đầu tiên).
-    * `condition`: Điều kiện lặp (kiểm tra trước mỗi lần lặp, nếu `true` thì lặp tiếp, `false` thì dừng).
-    * `increment/decrement`: Tăng/giảm biến đếm sau mỗi lần lặp.
+* `initialization`: Khởi tạo biến đếm (chạy một lần đầu tiên).
+* `condition`: Điều kiện lặp (kiểm tra trước mỗi lần lặp, nếu `true` thì lặp tiếp, `false` thì dừng).
+* `increment/decrement`: Tăng/giảm biến đếm sau mỗi lần lặp.
 
 * **Ví dụ:**
 
@@ -663,17 +660,7 @@ for (let i = 1; i <= 5; i++) { // Lặp 5 lần, i từ 1 đến 5
 }
 ```
 
-### 40\. Vòng lặp For trong JavaScript | For loop phần 2
-
-* **Tóm tắt:** Tiếp tục về `for` loop, tập trung vào các ví dụ và ứng dụng khác nhau.
-
-### 41\. Vòng lặp For trong JavaScript | For loop phần 3
-
-* **Tóm tắt:** Tiếp tục về `for` loop, có thể đi sâu vào nested loop (vòng lặp lồng nhau).
-
-### 42\. Vòng lặp For/in trong JavaScript | For...in loop
-
-* **Tóm tắt:** `for...in` loop lặp qua **thuộc tính (key)** của một object.
+`for...in` loop lặp qua **thuộc tính (key)** của một object.
 
 * **Ví dụ:**
 
@@ -693,9 +680,9 @@ for (let key in person) { // Lặp qua key của object person
 // city: Internet
 ```
 
-### 43\. Vòng lặp For/of trong JavaScript | For...of loop
+### Vòng lặp For/of trong JavaScript
 
-* **Tóm tắt:** `for...of` loop lặp qua **giá trị** của một **iterable object** (mảng, chuỗi, Map, Set...).
+`for...of` loop lặp qua **giá trị** của một **iterable object** (mảng, chuỗi, Map, Set...).
 
 * **Ví dụ:**
 
@@ -722,9 +709,9 @@ for (let char of message) { // Lặp qua ký tự của chuỗi message
 // o
 ```
 
-### 44\. Vòng lặp While trong JavaScript | JavaScript while loop
+### Vòng lặp While trong JavaScript
 
-* **Tóm tắt:** `while` loop lặp khi điều kiện còn đúng (`true`). Cú pháp: `while (condition) { ... }`
+`while` loop lặp khi điều kiện còn đúng (`true`). Cú pháp: `while (condition) { ... }`
 
 * **Ví dụ:**
 
@@ -736,9 +723,9 @@ while (count <= 5) { // Lặp khi count <= 5
 }
 ```
 
-### 45\. Vòng lặp Do/while trong JavaScript | Do...while loop
+### Vòng lặp Do/while trong JavaScript
 
-* **Tóm tắt:** `do...while` loop tương tự `while` loop, nhưng code trong block `do` được thực hiện **ít nhất một lần** trước khi kiểm tra điều kiện. Cú pháp: `do { ... } while (condition);`
+`do...while` loop tương tự `while` loop, nhưng code trong block `do` được thực hiện **ít nhất một lần** trước khi kiểm tra điều kiện. Cú pháp: `do { ... } while (condition);`
 
 * **Ví dụ:**
 
@@ -754,12 +741,12 @@ do {
 // Num: 2
 ```
 
-### 46\. Break và Continue trong vòng lặp | JavaScript Break and Continue
+### Break và Continue trong vòng lặp
 
 * **Tóm tắt:**
 
-    * `break`: Thoát khỏi vòng lặp ngay lập tức.
-    * `continue`: Bỏ qua lần lặp hiện tại và chuyển sang lần lặp tiếp theo.
+* `break`: Thoát khỏi vòng lặp ngay lập tức.
+* `continue`: Bỏ qua lần lặp hiện tại và chuyển sang lần lặp tiếp theo.
 
 * **Ví dụ:**
 
@@ -779,9 +766,9 @@ for (let j = 1; j <= 5; j++) {
 }
 ```
 
-### 47\. Vòng lặp lồng nhau (Nested loop) | JavaScript nested loop
+### Vòng lặp lồng nhau (Nested loop)
 
-* **Tóm tắt:** Nested loop (vòng lặp lồng nhau) là vòng lặp bên trong vòng lặp khác. Thường dùng để xử lý dữ liệu đa chiều (ví dụ: ma trận, bảng).
+Nested loop (vòng lặp lồng nhau) là vòng lặp bên trong vòng lặp khác. Thường dùng để xử lý dữ liệu đa chiều (ví dụ: ma trận, bảng).
 
 * **Ví dụ:**
 
@@ -804,22 +791,22 @@ for (let i = 1; i <= 3; i++) { // Vòng lặp ngoài
 //   Vòng lặp trong lần 2
 ```
 
-### 48\. Ví dụ mở rộng về vòng lặp | JavaScript Loops
+### Ví dụ mở rộng về vòng lặp
 
-* **Tóm tắt:** Tổng hợp các ví dụ phức tạp hơn về vòng lặp, có thể kết hợp với điều kiện, mảng, object... để giải quyết các bài toán thực tế.
+Tổng hợp các ví dụ phức tạp hơn về vòng lặp, có thể kết hợp với điều kiện, mảng, object... để giải quyết các bài toán thực tế.
 
 ## Phần 4: Làm việc với Mảng nâng cao
 
-### 49\. Làm việc với mảng trong JavaScript | Array methods (Phần 2)
+### Làm việc với mảng trong JavaScript
 
-* **Tóm tắt:** Tiếp tục về Array methods, giới thiệu các phương thức quan trọng để thao tác và xử lý mảng:
+Tiếp tục về Array methods, giới thiệu các phương thức quan trọng để thao tác và xử lý mảng:
 
-    * `concat(array2, array3, ...)`: Nối mảng với các mảng khác.
-    * `join(separator)`: Nối các phần tử mảng thành chuỗi, phân tách bằng separator.
-    * `slice(startIndex, endIndex)`: Trả về mảng con từ startIndex đến endIndex (không bao gồm endIndex).
-    * `splice(startIndex, deleteCount, item1, item2, ...)`: (Đã đề cập ở mục 24) Xóa và/hoặc thêm phần tử tại vị trí bất kỳ.
-    * `sort()`: Sắp xếp mảng (mặc định theo thứ tự bảng chữ cái hoặc số tăng dần). Cần custom function để sắp xếp số đúng cách.
-    * `reverse()`: Đảo ngược mảng.
+* `concat(array2, array3, ...)`: Nối mảng với các mảng khác.
+* `join(separator)`: Nối các phần tử mảng thành chuỗi, phân tách bằng separator.
+* `slice(startIndex, endIndex)`: Trả về mảng con từ startIndex đến endIndex (không bao gồm endIndex).
+* `splice(startIndex, deleteCount, item1, item2, ...)`: (Đã đề cập ở mục 24) Xóa và/hoặc thêm phần tử tại vị trí bất kỳ.
+* `sort()`: Sắp xếp mảng (mặc định theo thứ tự bảng chữ cái hoặc số tăng dần). Cần custom function để sắp xếp số đúng cách.
+* `reverse()`: Đảo ngược mảng.
 
 * **Ví dụ:**
 
@@ -841,9 +828,9 @@ numbers.reverse(); // Đảo ngược mảng
 console.log(numbers); // [8, 5, 3, 2, 1]
 ```
 
-### 50\. Array map method trong JavaScript | Làm việc với mảng
+### Array map method trong JavaScript
 
-* **Tóm tắt:** `map()` method tạo ra một **mảng mới** bằng cách gọi một function (callback) cho **mỗi phần tử** của mảng ban đầu. Callback function nhận vào phần tử hiện tại và trả về giá trị mới cho phần tử tương ứng trong mảng mới.
+`map()` method tạo ra một **mảng mới** bằng cách gọi một function (callback) cho **mỗi phần tử** của mảng ban đầu. Callback function nhận vào phần tử hiện tại và trả về giá trị mới cho phần tử tương ứng trong mảng mới.
 
 * **Ví dụ:**
 
@@ -859,14 +846,14 @@ let doubledNumbers = numbers.map(number => number * 2); // Nhân đôi mỗi s�
 console.log(doubledNumbers); // [2, 4, 6, 8, 10]
 ```
 
-### 51\. Phương thức reduce khi làm việc với array | JavaScript array reduce() method
+### Phương thức reduce khi làm việc với array
 
-* **Tóm tắt:** `reduce()` method thực hiện một callback function "reducer" trên mỗi phần tử của mảng, và trả về một **giá trị duy nhất** (không phải mảng mới như `map()`). Thường dùng để tính tổng, tích, hoặc gom nhóm dữ liệu trong mảng.
+`reduce()` method thực hiện một callback function "reducer" trên mỗi phần tử của mảng, và trả về một **giá trị duy nhất** (không phải mảng mới như `map()`). Thường dùng để tính tổng, tích, hoặc gom nhóm dữ liệu trong mảng.
 
 * **Callback function của `reduce()` nhận 2 tham số chính:**
 
-    * `accumulator` (giá trị tích lũy): Giá trị được trả về từ lần gọi callback trước đó (hoặc `initialValue` nếu được cung cấp).
-    * `currentValue` (giá trị hiện tại): Phần tử mảng đang được xử lý.
+* `accumulator` (giá trị tích lũy): Giá trị được trả về từ lần gọi callback trước đó (hoặc `initialValue` nếu được cung cấp).
+* `currentValue` (giá trị hiện tại): Phần tử mảng đang được xử lý.
 
 * **Cú pháp:** `array.reduce(reducerFunction, initialValue);` (`initialValue` là giá trị khởi tạo cho `accumulator`, tùy chọn).
 
@@ -884,13 +871,13 @@ let product = numbers.reduce((accumulator, currentValue) => accumulator * curren
 console.log(product); // 120 (tích các số trong mảng)
 ```
 
-### 52\. Phương thức reduce khi làm việc với array - phần 2 | JavaScript array reduce() method
+### Phương thức reduce khi làm việc với array - phần 2
 
-* **Tóm tắt:** Tiếp tục về `reduce()`, có thể đi sâu vào các ứng dụng phức tạp hơn như gom nhóm đối tượng trong mảng, flatten mảng đa chiều...
+Tiếp tục về `reduce()`, có thể đi sâu vào các ứng dụng phức tạp hơn như gom nhóm đối tượng trong mảng, flatten mảng đa chiều...
 
-### 53\. Phương thức includes | JavaScript String/Array includes() method
+### Phương thức includes
 
-* **Tóm tắt:** `includes()` method kiểm tra xem một chuỗi có chứa một substring (với chuỗi) hoặc một mảng có chứa một phần tử (với mảng) hay không. Trả về `true` nếu có, `false` nếu không.
+`includes()` method kiểm tra xem một chuỗi có chứa một substring (với chuỗi) hoặc một mảng có chứa một phần tử (với mảng) hay không. Trả về `true` nếu có, `false` nếu không.
 
 * **Ví dụ:**
 
@@ -904,12 +891,12 @@ console.log(fruits.includes("banana")); // true (mảng fruits chứa "banana")
 console.log(fruits.includes("grape")); // false
 ```
 
-### 54\. Đối tượng math | JavaScript math object
+### Đối tượng math
 
-* **Tóm tắt:** Math object là built-in object cung cấp các hằng số toán học và hàm toán học. Không cần tạo instance (không dùng `new Math()`). Truy cập trực tiếp qua `Math.property` hoặc `Math.method()`.
+Math object là built-in object cung cấp các hằng số toán học và hàm toán học. Không cần tạo instance (không dùng `new Math()`). Truy cập trực tiếp qua `Math.property` hoặc `Math.method()`.
 
-    * **Hằng số:** `Math.PI` (số Pi), `Math.E` (số e), ...
-    * **Hàm:** `Math.random()`, `Math.floor()`, `Math.ceil()`, `Math.round()`, `Math.max()`, `Math.min()`, `Math.pow()`, `Math.sqrt()`, ... (đã đề cập một số ở mục 22).
+* **Hằng số:** `Math.PI` (số Pi), `Math.E` (số e), ...
+* **Hàm:** `Math.random()`, `Math.floor()`, `Math.ceil()`, `Math.round()`, `Math.max()`, `Math.min()`, `Math.pow()`, `Math.sqrt()`, ... (đã đề cập một số ở mục 22).
 
 * **Ví dụ:**
 
@@ -920,9 +907,9 @@ console.log(Math.pow(2, 3)); // 8 (2 mũ 3)
 console.log(Math.round(4.6)); // 5 (làm tròn gần nhất)
 ```
 
-### 55\. Hiểu về Javascript Callback Functions | Callback Trong Javascript | Javascript Callback
+### Hiểu về Javascript Callback Functions
 
-* **Tóm tắt:** Callback function (hàm callback) là hàm được truyền vào làm đối số của một hàm khác, và sẽ được gọi lại (callback) sau khi hàm cha thực hiện xong một tác vụ nào đó (thường là tác vụ bất đồng bộ - asynchronous). Dùng nhiều trong xử lý sự kiện, AJAX, Promises...
+Callback function (hàm callback) là hàm được truyền vào làm đối số của một hàm khác, và sẽ được gọi lại (callback) sau khi hàm cha thực hiện xong một tác vụ nào đó (thường là tác vụ bất đồng bộ - asynchronous). Dùng nhiều trong xử lý sự kiện, AJAX, Promises...
 
 * **Ví dụ (setTimeout với callback):**
 
@@ -940,17 +927,17 @@ doSomething(function() { // Truyền anonymous function làm callback
 });
 ```
 
-### 56\. Callback trong JavaScript | Callback functions phần 2
+### Callback trong JavaScript
 
-* **Tóm tắt:** Tiếp tục về callback, có thể đi sâu vào callback hell (callback lồng nhau quá sâu, code khó đọc, khó bảo trì) và cách khắc phục (Promises, async/await).
+Tiếp tục về callback, có thể đi sâu vào callback hell (callback lồng nhau quá sâu, code khó đọc, khó bảo trì) và cách khắc phục (Promises, async/await).
 
-### 57\. Xây dựng phương thức làm việc với array | Array empty element?
+### Xây dựng phương thức làm việc với array
 
-* **Tóm tắt:** Có thể nói về việc tạo custom array methods (phương thức mảng tự định nghĩa) bằng cách thêm phương thức vào `Array.prototype`. Tuy nhiên, cách này ít dùng hiện nay vì có thể xung đột với các phương thức chuẩn hoặc thư viện khác. Nên ưu tiên dùng các phương thức mảng có sẵn.
+Có thể nói về việc tạo custom array methods (phương thức mảng tự định nghĩa) bằng cách thêm phương thức vào `Array.prototype`. Tuy nhiên, cách này ít dùng hiện nay vì có thể xung đột với các phương thức chuẩn hoặc thư viện khác. Nên ưu tiên dùng các phương thức mảng có sẵn.
 
-### 58\. Xây dựng phương thức forEach | JavaScript Array forEach() Method
+### Xây dựng phương thức forEach
 
-* **Tóm tắt:** `forEach()` method lặp qua từng phần tử của mảng và thực hiện callback function cho mỗi phần tử. Tương tự `for...of` loop, nhưng ngắn gọn hơn. Không tạo mảng mới, không trả về giá trị, chỉ thực hiện side effects (ví dụ: in ra console, sửa đổi mảng gốc...).
+`forEach()` method lặp qua từng phần tử của mảng và thực hiện callback function cho mỗi phần tử. Tương tự `for...of` loop, nhưng ngắn gọn hơn. Không tạo mảng mới, không trả về giá trị, chỉ thực hiện side effects (ví dụ: in ra console, sửa đổi mảng gốc...).
 
 * **Ví dụ:**
 
@@ -964,9 +951,9 @@ colors.forEach(function(color) { // forEach() với anonymous function
 colors.forEach(color => console.log("Màu (arrow): " + color));
 ```
 
-### 59\. Xây dựng phương thức filter | JavaScript Array filter() method
+### Xây dựng phương thức filter
 
-* **Tóm tắt:** `filter()` method tạo ra một **mảng mới** chứa các phần tử thỏa mãn một điều kiện nào đó (được kiểm tra bởi callback function). Callback function trả về `true` nếu phần tử thỏa mãn điều kiện, `false` nếu không.
+`filter()` method tạo ra một **mảng mới** chứa các phần tử thỏa mãn một điều kiện nào đó (được kiểm tra bởi callback function). Callback function trả về `true` nếu phần tử thỏa mãn điều kiện, `false` nếu không.
 
 * **Ví dụ:**
 
@@ -982,9 +969,9 @@ let oddNumbers = numbers.filter(number => number % 2 !== 0); // Lọc số lẻ
 console.log(oddNumbers); // [1, 3, 5]
 ```
 
-### 60\. Xây dựng phương thức some | JavaScript Array some() method
+### Xây dựng phương thức some
 
-* **Tóm tắt:** `some()` method kiểm tra xem **ít nhất một** phần tử trong mảng có thỏa mãn điều kiện (callback function) hay không. Trả về `true` nếu có ít nhất một phần tử thỏa mãn, `false` nếu không có phần tử nào thỏa mãn.
+`some()` method kiểm tra xem **ít nhất một** phần tử trong mảng có thỏa mãn điều kiện (callback function) hay không. Trả về `true` nếu có ít nhất một phần tử thỏa mãn, `false` nếu không có phần tử nào thỏa mãn.
 
 * **Ví dụ:**
 
@@ -999,9 +986,9 @@ let allOddNumbers = numbers.some(number => number % 2 !== 0); // Kiểm tra có 
 console.log(allOddNumbers); // true
 ```
 
-### 61\. Xây dựng phương thức every | JavaScript Array every() method
+### Xây dựng phương thức every
 
-* **Tóm tắt:** `every()` method kiểm tra xem **tất cả** phần tử trong mảng có thỏa mãn điều kiện (callback function) hay không. Trả về `true` nếu **tất cả** phần tử thỏa mãn, `false` nếu có ít nhất một phần tử không thỏa mãn.
+`every()` method kiểm tra xem **tất cả** phần tử trong mảng có thỏa mãn điều kiện (callback function) hay không. Trả về `true` nếu **tất cả** phần tử thỏa mãn, `false` nếu có ít nhất một phần tử không thỏa mãn.
 
 * **Ví dụ:**
 
@@ -1016,9 +1003,9 @@ let allPositiveNumbers = numbers.every(number => number > 0); // Kiểm tra tấ
 console.log(allPositiveNumbers); // true
 ```
 
-### 62\. Đệ quy là gì? Học về đệ quy trong JavaScript | Recursive Function
+### Đệ quy là gì? Học về đệ quy trong JavaScript
 
-* **Tóm tắt:** Đệ quy (recursion) là kỹ thuật lập trình mà một hàm tự gọi lại chính nó. Dùng để giải quyết các bài toán có cấu trúc lặp lại, hoặc bài toán có thể chia nhỏ thành các bài toán con tương tự. Cần có điều kiện dừng (base case) để tránh lặp vô hạn.
+Đệ quy (recursion) là kỹ thuật lập trình mà một hàm tự gọi lại chính nó. Dùng để giải quyết các bài toán có cấu trúc lặp lại, hoặc bài toán có thể chia nhỏ thành các bài toán con tương tự. Cần có điều kiện dừng (base case) để tránh lặp vô hạn.
 
 * **Ví dụ (tính giai thừa):**
 
@@ -1036,27 +1023,27 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 
 ## Phần 5: DOM và Events
 
-### 63\. HTML DOM là gì? | JavaScript HTML DOM
+### HTML DOM là gì?
 
-* **Tóm tắt:** HTML DOM (Document Object Model) là mô hình biểu diễn cấu trúc HTML dưới dạng cây các đối tượng (nodes). JavaScript có thể truy cập và thao tác với DOM để thay đổi nội dung, cấu trúc, style của trang web.
+HTML DOM (Document Object Model) là mô hình biểu diễn cấu trúc HTML dưới dạng cây các đối tượng (nodes). JavaScript có thể truy cập và thao tác với DOM để thay đổi nội dung, cấu trúc, style của trang web.
 
-### 64\. HTML DOM và DOM API là gì? | JavaScript HTML DOM
+### HTML DOM và DOM API là gì?
 
-* **Tóm tắt:** DOM API (Application Programming Interface) là tập hợp các đối tượng, thuộc tính, phương thức do trình duyệt cung cấp để JavaScript tương tác với DOM. Ví dụ: `document.getElementById()`, `element.innerHTML`, `element.style.color`, `element.addEventListener()`.
+DOM API (Application Programming Interface) là tập hợp các đối tượng, thuộc tính, phương thức do trình duyệt cung cấp để JavaScript tương tác với DOM. Ví dụ: `document.getElementById()`, `element.innerHTML`, `element.style.color`, `element.addEventListener()`.
 
-### 65\. DOM Document Object trong JavaScript | HTML DOM
+### DOM Document Object trong JavaScript
 
-* **Tóm tắt:** `document` object là entry point (điểm bắt đầu) để truy cập DOM từ JavaScript. Đại diện cho toàn bộ trang HTML. Các phương thức và thuộc tính của `document` cho phép truy cập và thao tác với các phần tử HTML trên trang.
+`document` object là entry point (điểm bắt đầu) để truy cập DOM từ JavaScript. Đại diện cho toàn bộ trang HTML. Các phương thức và thuộc tính của `document` cho phép truy cập và thao tác với các phần tử HTML trên trang.
 
-### 66\. Lấy element trong DOM | Get element methods
+### Lấy element trong DOM
 
-* **Tóm tắt:** Các phương thức chính để lấy element (phần tử HTML) từ DOM:
+Các phương thức chính để lấy element (phần tử HTML) từ DOM:
 
-    * `document.getElementById(id)`: Lấy element có `id` attribute tương ứng (trả về 1 element hoặc `null`).
-    * `document.getElementsByClassName(className)`: Lấy danh sách (HTMLCollection) các element có `class` attribute tương ứng (trả về HTMLCollection rỗng nếu không tìm thấy).
-    * `document.getElementsByTagName(tagName)`: Lấy danh sách (HTMLCollection) các element có tag name tương ứng (ví dụ: "p", "div", "a"...) (trả về HTMLCollection rỗng nếu không tìm thấy).
-    * `document.querySelector(selector)`: Lấy **element đầu tiên** phù hợp với CSS selector (trả về 1 element hoặc `null`).
-    * `document.querySelectorAll(selector)`: Lấy danh sách (NodeList) **tất cả** element phù hợp với CSS selector (trả về NodeList rỗng nếu không tìm thấy). Nên dùng `querySelector` và `querySelectorAll` vì linh hoạt hơn (dùng CSS selector).
+* `document.getElementById(id)`: Lấy element có `id` attribute tương ứng (trả về 1 element hoặc `null`).
+* `document.getElementsByClassName(className)`: Lấy danh sách (HTMLCollection) các element có `class` attribute tương ứng (trả về HTMLCollection rỗng nếu không tìm thấy).
+* `document.getElementsByTagName(tagName)`: Lấy danh sách (HTMLCollection) các element có tag name tương ứng (ví dụ: "p", "div", "a"...) (trả về HTMLCollection rỗng nếu không tìm thấy).
+* `document.querySelector(selector)`: Lấy **element đầu tiên** phù hợp với CSS selector (trả về 1 element hoặc `null`).
+* `document.querySelectorAll(selector)`: Lấy danh sách (NodeList) **tất cả** element phù hợp với CSS selector (trả về NodeList rỗng nếu không tìm thấy). Nên dùng `querySelector` và `querySelectorAll` vì linh hoạt hơn (dùng CSS selector).
 
 * **Ví dụ:**
 
@@ -1098,26 +1085,26 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 67\. Lấy element trong DOM | Get element methods - phần 2
+### Lấy element trong DOM
 
-* **Tóm tắt:** Tiếp tục về các phương thức lấy element, có thể tập trung vào `querySelector` và `querySelectorAll` và các loại CSS selector có thể dùng (class, id, tag name, attribute selectors, pseudo-classes...).
+Tiếp tục về các phương thức lấy element, có thể tập trung vào `querySelector` và `querySelectorAll` và các loại CSS selector có thể dùng (class, id, tag name, attribute selectors, pseudo-classes...).
 
-### 68\. Lấy element trong DOM | Get element methods - phần 3
+### Lấy element trong DOM
 
-* **Tóm tắt:** Có thể đi sâu vào performance khi chọn element, cách tối ưu selector, và sự khác biệt giữa HTMLCollection và NodeList (HTMLCollection là live collection - tự động cập nhật khi DOM thay đổi, NodeList có thể là static hoặc live tùy phương thức lấy).
+Có thể đi sâu vào performance khi chọn element, cách tối ưu selector, và sự khác biệt giữa HTMLCollection và NodeList (HTMLCollection là live collection - tự động cập nhật khi DOM thay đổi, NodeList có thể là static hoặc live tùy phương thức lấy).
 
-### 69\. Attribute node và Text node trong HTML DOM
+### Attribute node và Text node trong HTML DOM
 
-* **Tóm tắt:** Trong DOM tree, mỗi element HTML là một element node. Bên trong element node có thể có attribute nodes (thuộc tính HTML) và text nodes (nội dung text).
+Trong DOM tree, mỗi element HTML là một element node. Bên trong element node có thể có attribute nodes (thuộc tính HTML) và text nodes (nội dung text).
 
-### 70\. DOM attribute | Thêm sửa xóa attribute
+### DOM attribute
 
-* **Tóm tắt:** DOM API cung cấp các phương thức để thao tác với attribute nodes:
+DOM API cung cấp các phương thức để thao tác với attribute nodes:
 
-    * `element.getAttribute(attributeName)`: Lấy giá trị attribute.
-    * `element.setAttribute(attributeName, value)`: Sửa đổi hoặc thêm attribute.
-    * `element.removeAttribute(attributeName)`: Xóa attribute.
-    * `element.hasAttribute(attributeName)`: Kiểm tra xem element có attribute không.
+* `element.getAttribute(attributeName)`: Lấy giá trị attribute.
+* `element.setAttribute(attributeName, value)`: Sửa đổi hoặc thêm attribute.
+* `element.removeAttribute(attributeName)`: Xóa attribute.
+* `element.hasAttribute(attributeName)`: Kiểm tra xem element có attribute không.
 
 * **Ví dụ:**
 
@@ -1142,12 +1129,12 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 71\. InnerText & textContent Property | Text node in Dom
+### InnerText & textContent Property
 
-* **Tóm tắt:** `innerText` và `textContent` properties dùng để lấy hoặc set nội dung text của một element.
+`innerText` và `textContent` properties dùng để lấy hoặc set nội dung text của một element.
 
-    * `innerText`: Chỉ lấy text "hiển thị" (sau khi render), không lấy text của các element ẩn (ví dụ: `display: none`).
-    * `textContent`: Lấy **tất cả** text content, kể cả text của element ẩn. Nên dùng `textContent` vì chuẩn hơn, nhất quán hơn.
+* `innerText`: Chỉ lấy text "hiển thị" (sau khi render), không lấy text của các element ẩn (ví dụ: `display: none`).
+* `textContent`: Lấy **tất cả** text content, kể cả text của element ẩn. Nên dùng `textContent` vì chuẩn hơn, nhất quán hơn.
 
 * **Ví dụ:**
 
@@ -1175,12 +1162,12 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 72\. Thêm element vào element trong DOM | InnerHTML property | OuterHTML property
+### Thêm element vào element trong DOM
 
 * **Tóm tắt:**
 
-    * `element.innerHTML`: Lấy hoặc set **HTML content bên trong** element (dạng chuỗi HTML). Có thể dùng để thêm HTML vào element.
-    * `element.outerHTML`: Lấy hoặc set **HTML content của chính element và bên trong nó** (dạng chuỗi HTML).
+* `element.innerHTML`: Lấy hoặc set **HTML content bên trong** element (dạng chuỗi HTML). Có thể dùng để thêm HTML vào element.
+* `element.outerHTML`: Lấy hoặc set **HTML content của chính element và bên trong nó** (dạng chuỗi HTML).
 
 * **Ví dụ:**
 
@@ -1210,18 +1197,18 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 73\. Node properties | HTML DOM
+### Node properties
 
-* **Tóm tắt:** Node properties (thuộc tính node) cung cấp thông tin về node trong DOM tree. Ví dụ:
-    * `node.nodeName`: Tên node (tag name cho element node, "\#text" cho text node...).
-    * `node.nodeType`: Loại node (1: element node, 3: text node...).
-    * `node.parentNode`: Node cha.
-    * `node.childNodes`: Danh sách node con (HTMLCollection/NodeList).
-    * `node.firstChild`, `node.lastChild`, `node.nextSibling`, `node.previousSibling`: Node con đầu, con cuối, node anh em kế tiếp, node anh em trước đó.
+Node properties (thuộc tính node) cung cấp thông tin về node trong DOM tree. Ví dụ:
+* `node.nodeName`: Tên node (tag name cho element node, "\#text" cho text node...).
+* `node.nodeType`: Loại node (1: element node, 3: text node...).
+* `node.parentNode`: Node cha.
+* `node.childNodes`: Danh sách node con (HTMLCollection/NodeList).
+* `node.firstChild`, `node.lastChild`, `node.nextSibling`, `node.previousSibling`: Node con đầu, con cuối, node anh em kế tiếp, node anh em trước đó.
 
-### 74\. Đối tượng DOM style trong Element node | DOM CSS
+### Đối tượng DOM style trong Element node
 
-* **Tóm tắt:** `element.style` object cho phép truy cập và sửa đổi inline styles (style viết trực tiếp trong attribute `style`) của element từ JavaScript.
+`element.style` object cho phép truy cập và sửa đổi inline styles (style viết trực tiếp trong attribute `style`) của element từ JavaScript.
 
 * **Ví dụ:**
 
@@ -1246,14 +1233,14 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 75\. ClassList Property
+### ClassList Property
 
-* **Tóm tắt:** `element.classList` property trả về một đối tượng `DOMTokenList` đại diện cho danh sách class của element. Cung cấp các phương thức để thao tác với class:
+`element.classList` property trả về một đối tượng `DOMTokenList` đại diện cho danh sách class của element. Cung cấp các phương thức để thao tác với class:
 
-    * `classList.add(className)`: Thêm class.
-    * `classList.remove(className)`: Xóa class.
-    * `classList.toggle(className)`: Thêm class nếu chưa có, xóa class nếu đã có.
-    * `classList.contains(className)`: Kiểm tra xem element có class không.
+* `classList.add(className)`: Thêm class.
+* `classList.remove(className)`: Xóa class.
+* `classList.toggle(className)`: Thêm class nếu chưa có, xóa class nếu đã có.
+* `classList.contains(className)`: Kiểm tra xem element có class không.
 
 * **Ví dụ:**
 
@@ -1285,20 +1272,20 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 76\. DOM events
+### DOM events
 
-* **Tóm tắt:** DOM events (sự kiện DOM) là các hành động xảy ra trên trang web (click chuột, gõ phím, load trang...). JavaScript có thể lắng nghe (listen) và xử lý (handle) các sự kiện này để tạo tương tác.
+DOM events (sự kiện DOM) là các hành động xảy ra trên trang web (click chuột, gõ phím, load trang...). JavaScript có thể lắng nghe (listen) và xử lý (handle) các sự kiện này để tạo tương tác.
 
-### 77\. DOM events example | JavaScript HTML DOM Events
+### DOM events example
 
-* **Tóm tắt:** Ví dụ về các sự kiện DOM phổ biến:
+Ví dụ về các sự kiện DOM phổ biến:
 
-    * `click`: Click chuột.
-    * `mouseover`, `mouseout`: Chuột di vào, di ra khỏi element.
-    * `keydown`, `keyup`: Phím được nhấn, phím được nhả.
-    * `submit`: Form được submit.
-    * `load`: Trang hoặc resource (ảnh, script...) đã load xong.
-    * `DOMContentLoaded`: DOM tree đã được parse xong.
+* `click`: Click chuột.
+* `mouseover`, `mouseout`: Chuột di vào, di ra khỏi element.
+* `keydown`, `keyup`: Phím được nhấn, phím được nhả.
+* `submit`: Form được submit.
+* `load`: Trang hoặc resource (ảnh, script...) đã load xong.
+* `DOMContentLoaded`: DOM tree đã được parse xong.
 
 * **Ví dụ (sự kiện click):**
 
@@ -1324,12 +1311,12 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 78\. PreventDefault & StopPropagation | DOM events
+### PreventDefault & StopPropagation
 
 * **Tóm tắt:**
 
-    * `event.preventDefault()`: Ngăn chặn hành vi mặc định của sự kiện (ví dụ: ngăn link chuyển trang, ngăn form submit trang).
-    * `event.stopPropagation()`: Ngăn chặn sự kiện lan truyền lên các element cha (event bubbling).
+* `event.preventDefault()`: Ngăn chặn hành vi mặc định của sự kiện (ví dụ: ngăn link chuyển trang, ngăn form submit trang).
+* `event.stopPropagation()`: Ngăn chặn sự kiện lan truyền lên các element cha (event bubbling).
 
 * **Ví dụ (`preventDefault` trên link):**
 
@@ -1352,63 +1339,45 @@ console.log(factorial(5)); // 120 (5! = 5 * 4 * 3 * 2 * 1)
 </html>
 ```
 
-### 79\. Event listener | add & removeEventListener
+### Event listener
 
-* **Tóm tắt:** Event listener (bộ lắng nghe sự kiện) dùng để đăng ký (attach) một function (event handler) để xử lý một sự kiện trên một element.
-    * `element.addEventListener(eventType, eventHandler, useCapture)`: Đăng ký event listener.
-    * `element.removeEventListener(eventType, eventHandler, useCapture)`: Gỡ bỏ event listener.
+Event listener (bộ lắng nghe sự kiện) dùng để đăng ký (attach) một function (event handler) để xử lý một sự kiện trên một element.
 
-### 80\. Form validation - Phần 1 | Thực hành HTML DOM
+* `element.addEventListener(eventType, eventHandler, useCapture)`: Đăng ký event listener.
+* `element.removeEventListener(eventType, eventHandler, useCapture)`: Gỡ bỏ event listener.
 
-* **Tóm tắt:** Form validation (kiểm tra dữ liệu form) là quá trình kiểm tra dữ liệu người dùng nhập vào form trước khi submit lên server. Dùng JavaScript để validation phía client (trình duyệt), cải thiện trải nghiệm người dùng, giảm tải cho server.
+```js
+const button = document.querySelector(".btn")
+button.addEventListener("click", function(event) {
+  console.log("Hello!");
+})
 
-### 81\. Form validation - Phần 2 | Thực hành HTML DOM
-
-* **Tóm tắt:** Tiếp tục về form validation, có thể tập trung vào các loại validation phổ biến (required field, email format, password mạnh...), cách hiển thị thông báo lỗi.
-
-### 82\. Form validation - Phần 3 | Thực hành HTML DOM
-
-* **Tóm tắt:** Tiếp tục về form validation, có thể tập trung vào validation theo thời gian thực (real-time validation) khi người dùng nhập liệu.
-
-### 83\. Form validation - Phần 4 | Thực hành HTML DOM
-
-* **Tóm tắt:** Tiếp tục về form validation, có thể tập trung vào các kỹ thuật nâng cao, custom validation.
-
-### 84\. Form validation - Thành quả đạt được | Vanilla JS form validation
-
-* **Tóm tắt:** Tổng kết về form validation với JavaScript thuần (Vanilla JS), không dùng thư viện/framework.
-
-### 85\. Form validation - Cách làm 2 | Thực hành HTML DOM
-
-* **Tóm tắt:** Có thể giới thiệu một cách tiếp cận khác để form validation (ví dụ: dùng class CSS để đánh dấu lỗi, hiển thị thông báo lỗi bên cạnh input...).
-
-### 86\. Form validation - Cách làm 2 (hoàn thiện) | Thực hành HTML DOM
-
-* **Tóm tắt:** Hoàn thiện cách làm form validation thứ 2.
-
+// OR using Javascript one-liners
+button.addEventListener("click", event => console.log("Hello!"))
+```
 ## Phần 6: JSON, Promise, ES6+
 
-### 87\. JSON là gì? JSON được sử dụng như thế nào trong JavaScript?
+### JSON là gì? Được sử dụng ra sao trong JS?
 
-* **Tóm tắt:** JSON (JavaScript Object Notation) là định dạng dữ liệu text nhẹ, dễ đọc, dễ parse, dựa trên cú pháp object của JavaScript. Dùng phổ biến để trao đổi dữ liệu giữa server và client trong web development (ví dụ: API).
+JSON (JavaScript Object Notation) là định dạng dữ liệu text nhẹ, dễ đọc, dễ parse, dựa trên cú pháp object của JavaScript. Dùng phổ biến để trao đổi dữ liệu giữa server và client trong web development (ví dụ: API).
 
-    * Cấu trúc: key-value pairs, key là chuỗi, value có thể là string, number, boolean, null, array, object.
+* Cấu trúc: key-value pairs, key là chuỗi, value có thể là string, number, boolean, null, array, object.
 
-    * Ví dụ JSON:
+* Ví dụ JSON:
 
-    ```json
+```json
     {
         "name": "Gemini",
         "age": 2,
         "isRobot": true,
         "skills": ["learning", "coding", "talking"]
     }
-    ```
+```
 
 * **JavaScript built-in object `JSON` cung cấp:**
 
-    * `JSON.stringify(object)`: Chuyển đổi object JavaScript sang chuỗi JSON.
-    * `JSON.parse(jsonString)`: Chuyển đổi chuỗi JSON sang object JavaScript.
+* `JSON.stringify(object)`: Chuyển đổi object JavaScript sang chuỗi JSON.
+* `JSON.parse(jsonString)`: Chuyển đổi chuỗi JSON sang object JavaScript.
 
 * **Ví dụ:**
 
@@ -1421,30 +1390,30 @@ let parsedObject = JSON.parse(jsonString); // Chuyển JSON string sang object
 console.log(parsedObject.name); // "Gemini"
 ```
 
-### 88\. Promise (sync async) trong JavaScript | Khái niệm promise
+### Promise (sync async) trong JavaScript
 
-* **Tóm tắt:** Promise là object đại diện cho kết quả (thành công hoặc thất bại) của một tác vụ **bất đồng bộ** (asynchronous) và có thể chưa hoàn thành ngay lập tức (ví dụ: gọi API, đọc file...). Giúp xử lý bất đồng bộ một cách dễ đọc, dễ quản lý hơn so với callback.
-    * **Trạng thái Promise:**
-        * `pending` (chờ xử lý): Tác vụ chưa hoàn thành.
-        * `fulfilled` (thành công): Tác vụ hoàn thành thành công.
-        * `rejected` (thất bại): Tác vụ hoàn thành thất bại.
+Promise là object đại diện cho kết quả (thành công hoặc thất bại) của một tác vụ **bất đồng bộ** (asynchronous) và có thể chưa hoàn thành ngay lập tức (ví dụ: gọi API, đọc file...). Giúp xử lý bất đồng bộ một cách dễ đọc, dễ quản lý hơn so với callback.
+* **Trạng thái Promise:**
+    * `pending` (chờ xử lý): Tác vụ chưa hoàn thành.
+    * `fulfilled` (thành công): Tác vụ hoàn thành thành công.
+    * `rejected` (thất bại): Tác vụ hoàn thành thất bại.
 
-### 89\. Promise (nỗi đau) | Promise javascript | Học promise trong Javascript
+### Promise (nỗi đau)
 
-* **Tóm tắt:** Có thể nói về "callback hell" và tại sao Promise ra đời để giải quyết vấn đề callback hell. Promise giúp code bất đồng bộ dễ đọc, dễ maintain hơn bằng cách "chaining" các tác vụ bất đồng bộ tuần tự hoặc song song.
+Có thể nói về "callback hell" và tại sao Promise ra đời để giải quyết vấn đề callback hell. Promise giúp code bất đồng bộ dễ đọc, dễ maintain hơn bằng cách "chaining" các tác vụ bất đồng bộ tuần tự hoặc song song.
 
-### 90\. Promise trong Javascript | Cách sử dụng Promise | JavaScript Promise
+### Promise trong Javascript
 
-* **Tóm tắt:** Cách tạo Promise: `new Promise((resolve, reject) => { ... });`
+Cách tạo Promise: `new Promise((resolve, reject) => { ... });`
 
-    * `resolve(value)`: Gọi khi tác vụ thành công, truyền giá trị kết quả.
-    * `reject(error)`: Gọi khi tác vụ thất bại, truyền lỗi.
+* `resolve(value)`: Gọi khi tác vụ thành công, truyền giá trị kết quả.
+* `reject(error)`: Gọi khi tác vụ thất bại, truyền lỗi.
 
 * **Cách xử lý kết quả Promise:**
 
-    * `.then(onFulfilled)`: Xử lý khi Promise fulfilled (thành công).
-    * `.catch(onRejected)`: Xử lý khi Promise rejected (thất bại).
-    * `.finally(onFinally)`: Thực hiện code sau khi Promise fulfilled hoặc rejected (không quan tâm kết quả), thường dùng để cleanup (ví dụ: tắt loading indicator).
+* `.then(onFulfilled)`: Xử lý khi Promise fulfilled (thành công).
+* `.catch(onRejected)`: Xử lý khi Promise rejected (thất bại).
+* `.finally(onFinally)`: Thực hiện code sau khi Promise fulfilled hoặc rejected (không quan tâm kết quả), thường dùng để cleanup (ví dụ: tắt loading indicator).
 
 * **Ví dụ (Promise đơn giản):**
 
@@ -1469,9 +1438,9 @@ myPromise.then(function(result) { // Xử lý khi thành công
 });
 ```
 
-### 91\. Promise chain | Cách hoạt động của Promise | JavaScript Promise
+### Promise chain
 
-* **Tóm tắt:** Promise chaining (chuỗi Promise) cho phép liên kết các tác vụ bất đồng bộ tuần tự. `.then()` có thể trả về một Promise mới, tạo thành chuỗi. Giúp xử lý các tác vụ phụ thuộc lẫn nhau một cách tuần tự.
+Promise chaining (chuỗi Promise) cho phép liên kết các tác vụ bất đồng bộ tuần tự. `.then()` có thể trả về một Promise mới, tạo thành chuỗi. Giúp xử lý các tác vụ phụ thuộc lẫn nhau một cách tuần tự.
 
 * **Ví dụ (Promise chain):**
 
@@ -1499,13 +1468,13 @@ fetchData("url1").then(function(data1) { // Gọi API 1
 });
 ```
 
-### 92\. Promise methods (resolve, reject, all) | JavaScript Promise
+### Promise methods (resolve, reject, all)
 
-* **Tóm tắt:** Các static methods của `Promise` object:
+Các static methods của `Promise` object:
 
-    * `Promise.resolve(value)`: Trả về một Promise đã fulfilled với giá trị `value`.
-    * `Promise.reject(error)`: Trả về một Promise đã rejected với lỗi `error`.
-    * `Promise.all(promises)`: Nhận vào một mảng các Promises, trả về một Promise mới fulfilled khi **tất cả** Promises trong mảng fulfilled, hoặc rejected ngay lập tức nếu có **ít nhất một** Promise rejected. Dùng để chạy các tác vụ bất đồng bộ song song và đợi tất cả hoàn thành.
+* `Promise.resolve(value)`: Trả về một Promise đã fulfilled với giá trị `value`.
+* `Promise.reject(error)`: Trả về một Promise đã rejected với lỗi `error`.
+* `Promise.all(promises)`: Nhận vào một mảng các Promises, trả về một Promise mới fulfilled khi **tất cả** Promises trong mảng fulfilled, hoặc rejected ngay lập tức nếu có **ít nhất một** Promise rejected. Dùng để chạy các tác vụ bất đồng bộ song song và đợi tất cả hoàn thành.
 
 * **Ví dụ (`Promise.all`):**
 
@@ -1521,21 +1490,29 @@ Promise.all([promise1, promise2, promise3]).then(function(results) { // Chạy s
 });
 ```
 
-### 93\. Học về JavaScript ECMAScript 6 | ES6
+### Học về JavaScript ECMAScript 6
 
-* **Tóm tắt:** ECMAScript 6 (ES6) hoặc ES2015 là phiên bản JavaScript ra mắt năm 2015, giới thiệu nhiều tính năng mới, hiện đại, giúp code JavaScript mạnh mẽ và dễ viết hơn. Các tính năng ES6 quan trọng: `let`, `const`, arrow function, template literals, classes, modules, destructuring, spread operator...
+ECMAScript 6 (ES6) hoặc ES2015 là phiên bản JavaScript ra mắt năm 2015, giới thiệu nhiều tính năng mới, hiện đại, giúp code JavaScript mạnh mẽ và dễ viết hơn. Các tính năng ES6 quan trọng: `let`, `const`, arrow function, template literals, classes, modules, destructuring, spread operator...
 
-### 94\. Let & Const keyword | JavaScript ES6
+Sẽ được cập nhật dần bên dưới 
 
-* **Tóm tắt:** (Đã đề cập ở mục 5) Ôn lại và so sánh `let` và `const` với `var`. Nên ưu tiên dùng `let` và `const` thay cho `var` vì có phạm vi block-scoped rõ ràng hơn, tránh lỗi hoisting.
+### Let & Const keyword
 
-### 95\. Arrow function trong JavaScript ES6 | Khái niệm arrow function
+(Đã đề cập ở mục 5) Ôn lại và so sánh `let` và `const` với `var`. Nên ưu tiên dùng `let` và `const` thay cho `var` vì có phạm vi block-scoped rõ ràng hơn, tránh lỗi hoisting.
 
-* **Tóm tắt:** (Đã đề cập ở mục 29) Ôn lại arrow function, cú pháp ngắn gọn hơn cho anonymous function, đặc biệt hữu ích trong callback functions.
+### Arrow function trong JavaScript ES6
 
-### 96\. Template literals (Template string) trong javascript ES6
+(Đã đề cập ở mục 29) Ôn lại arrow function, cú pháp ngắn gọn hơn cho anonymous function, đặc biệt hữu ích trong callback functions.
 
-* **Tóm tắt:** Template literals (template string) dùng backtick \`\` để khai báo chuỗi, cho phép nhúng biến trực tiếp vào chuỗi bằng cú pháp `${variable}` (string interpolation), và hỗ trợ chuỗi nhiều dòng dễ dàng.
+```js
+const multiplyByTwo = (num) => {
+    return num * 2;
+}
+```
+
+### Template literals (Template string) trong javascript ES6
+
+Template literals (template string) dùng backtick \`\` để khai báo chuỗi, cho phép nhúng biến trực tiếp vào chuỗi bằng cú pháp `${variable}` (string interpolation), và hỗ trợ chuỗi nhiều dòng dễ dàng.
 
 * **Ví dụ:**
 
@@ -1549,9 +1526,9 @@ console.log(message);
 // Tôi là một robot.
 ```
 
-### 97\. Classes trong JavaScript ES6
+### Classes trong JavaScript ES6
 
-* **Tóm tắt:** Classes trong ES6 cung cấp cú pháp mới để định nghĩa object và kế thừa, gần gũi hơn với các ngôn ngữ hướng đối tượng khác (nhưng vẫn dựa trên prototype-based inheritance của JavaScript).
+Classes trong ES6 cung cấp cú pháp mới để định nghĩa object và kế thừa, gần gũi hơn với các ngôn ngữ hướng đối tượng khác (nhưng vẫn dựa trên prototype-based inheritance của JavaScript).
 
 * **Ví dụ (Class cơ bản):**
 
@@ -1585,13 +1562,13 @@ dog.speak(); // "Lucky makes a sound." (kế thừa từ Animal)
 dog.bark(); // "Woof!" (method của Dog)
 ```
 
-### 98\. Enhanced object literals trong javascript ES6
+### Enhanced object literals trong javascript ES6
 
-* **Tóm tắt:** Enhanced object literals (object literals cải tiến) trong ES6 cung cấp cú pháp ngắn gọn hơn để tạo object:
+Enhanced object literals (object literals cải tiến) trong ES6 cung cấp cú pháp ngắn gọn hơn để tạo object:
 
-    * Shorthand property names: Nếu key và value có cùng tên biến, có thể viết tắt `key` thay vì `key: key`.
-    * Method shorthand: Bỏ từ khóa `function` khi định nghĩa method trong object.
-    * Computed property names: Key có thể là biểu thức được tính toán trong ngoặc vuông `[...]`.
+* Shorthand property names: Nếu key và value có cùng tên biến, có thể viết tắt `key` thay vì `key: key`.
+* Method shorthand: Bỏ từ khóa `function` khi định nghĩa method trong object.
+* Computed property names: Key có thể là biểu thức được tính toán trong ngoặc vuông `[...]`.
 
 * **Ví dụ:**
 
@@ -1613,9 +1590,9 @@ person.greet(); // "Xin chào, tôi là Gemini"
 console.log(person.skill1); // "learning"
 ```
 
-### 99\. Default parameter values trong JavaScript ES6
+### Default parameter values trong JavaScript ES6
 
-* **Tóm tắt:** Default parameter values (giá trị tham số mặc định) trong ES6 cho phép gán giá trị mặc định cho tham số của hàm. Nếu khi gọi hàm không truyền đối số cho tham số đó, tham số sẽ nhận giá trị mặc định.
+Default parameter values (giá trị tham số mặc định) trong ES6 cho phép gán giá trị mặc định cho tham số của hàm. Nếu khi gọi hàm không truyền đối số cho tham số đó, tham số sẽ nhận giá trị mặc định.
 
 * **Ví dụ:**
 
@@ -1628,9 +1605,9 @@ greet("Gemini"); // "Xin chào, Gemini!" (truyền đối số)
 greet(); // "Xin chào, Guest!" (không truyền đối số, dùng giá trị mặc định)
 ```
 
-### 100\. Destructuring trong JavaScript ES6
+### Destructuring trong JavaScript ES6
 
-* **Tóm tắt:** Destructuring (phân rã cấu trúc) trong ES6 cho phép "giải nén" giá trị từ mảng hoặc object vào các biến riêng biệt một cách ngắn gọn.
+Destructuring (phân rã cấu trúc) trong ES6 cho phép "giải nén" giá trị từ mảng hoặc object vào các biến riêng biệt một cách ngắn gọn.
 
 * **Ví dụ (destructuring mảng):**
 
@@ -1653,14 +1630,14 @@ console.log(name); // "Gemini"
 console.log(age); // 2
 ```
 
-### 101\. Spread trong JavaScript ES6
+### Spread trong JavaScript ES6
 
-* **Tóm tắt:** Spread operator (`...`) trong ES6 có nhiều ứng dụng:
+Spread operator (`...`) trong ES6 có nhiều ứng dụng:
 
-    * **Copy mảng/object:** Tạo bản sao nông (shallow copy) của mảng hoặc object.
-    * **Nối mảng:** Nối nhiều mảng thành một mảng mới.
-    * **Truyền đối số hàm:** Truyền các phần tử của mảng làm đối số riêng lẻ cho hàm.
-    * **Rest parameters (tham số rest):** Thu thập các đối số còn lại của hàm vào một mảng.
+* **Copy mảng/object:** Tạo bản sao nông (shallow copy) của mảng hoặc object.
+* **Nối mảng:** Nối nhiều mảng thành một mảng mới.
+* **Truyền đối số hàm:** Truyền các phần tử của mảng làm đối số riêng lẻ cho hàm.
+* **Rest parameters (tham số rest):** Thu thập các đối số còn lại của hàm vào một mảng.
 
 * **Ví dụ (copy mảng, nối mảng):**
 
@@ -1676,46 +1653,46 @@ let combinedArray = [...arr1, ...arr3]; // Nối mảng arr1 và arr3
 console.log(combinedArray); // [1, 2, 3, 4, 5, 6]
 ```
 
-### 102\. Khái niệm tagged template literals (ít người biết) | JavaScript ES6
+### Khái niệm tagged template literals (ít người biết)
 
-* **Tóm tắt:** Tagged template literals là một tính năng nâng cao của template literals. Cho phép bạn định nghĩa một "tag function" để xử lý template literal theo cách tùy chỉnh. Ít dùng trong thực tế hàng ngày, nhưng hữu ích trong một số trường hợp đặc biệt (ví dụ: sanitizing input, i18n...).
+Tagged template literals là một tính năng nâng cao của template literals. Cho phép bạn định nghĩa một "tag function" để xử lý template literal theo cách tùy chỉnh. Ít dùng trong thực tế hàng ngày, nhưng hữu ích trong một số trường hợp đặc biệt (ví dụ: sanitizing input, i18n...).
 
-### 103\. Module trong JavaScript ES6
+### Module trong JavaScript ES6
 
-* **Tóm tắt:** Modules trong ES6 cho phép chia code JavaScript thành các file (module) riêng biệt, giúp code có cấu trúc tốt hơn, dễ tái sử dụng, dễ bảo trì.
+Modules trong ES6 cho phép chia code JavaScript thành các file (module) riêng biệt, giúp code có cấu trúc tốt hơn, dễ tái sử dụng, dễ bảo trì.
 
-    * `export`: Để export (xuất) các biến, hàm, class từ module.
-    * `import`: Để import (nhập) các module khác vào module hiện tại.
+* `export`: Để export (xuất) các biến, hàm, class từ module.
+* `import`: Để import (nhập) các module khác vào module hiện tại.
 
 * **Ví dụ:**
 
-    * **`module1.js` (module 1):**
+* **`module1.js` (module 1):**
 
-    ```javascript
+```javascript
     export const message = "Xin chào từ module 1!"; // Export biến
     export function greet(name) { // Export hàm
         console.log(message + " " + name);
     }
-    ```
+```
 
-    * **`main.js` (module chính):**
+* **`main.js` (module chính):**
 
-    ```javascript
+```javascript
     import { message, greet } from './module1.js'; // Import từ module1.js
 
     console.log(message); // "Xin chào từ module 1!"
     greet("User"); // "Xin chào từ module 1! User"
-    ```
+```
 
-    * **Trong HTML, cần thêm `type="module"` vào thẻ `<script>`:**
+* **Trong HTML, cần thêm `type="module"` vào thẻ `<script>`:**
 
-    ```html
+```html
     <script type="module" src="main.js"></script>
-    ```
+```
 
-### 104\. Khái niệm Optional chaining | ECMAScript 6+
+### Khái niệm Optional chaining
 
-* **Tóm tắt:** Optional chaining operator `?.` (ES2020+) giúp truy cập thuộc tính của object một cách an toàn, tránh lỗi khi object hoặc thuộc tính trung gian có thể `null` hoặc `undefined`. Nếu giá trị trước `?.` là `null` hoặc `undefined`, biểu thức trả về `undefined` ngay lập tức, không gây lỗi.
+Optional chaining operator `?.` (ES2020+) giúp truy cập thuộc tính của object một cách an toàn, tránh lỗi khi object hoặc thuộc tính trung gian có thể `null` hoặc `undefined`. Nếu giá trị trước `?.` là `null` hoặc `undefined`, biểu thức trả về `undefined` ngay lập tức, không gây lỗi.
 
 * **Ví dụ:**
 
@@ -1734,17 +1711,9 @@ console.log(user.profile?.email); // undefined (user.profile không tồn tại,
 // console.log(user.profile.email); // Lỗi: Cannot read property 'email' of undefined
 ```
 
-### 105\. Sử dụng BEM tạo Toast Message UI
+### Fetch
 
-* **Tóm tắt:** (Đã đề cập ở phần HTML/CSS) Ứng dụng BEM để tạo component Toast Message UI bằng JavaScript (thêm logic hiển thị, ẩn thông báo...).
-
-### 106\. Promise example | Ví dụ sử dụng Promise trong JavaScript
-
-* **Tóm tắt:** Tổng hợp các ví dụ thực tế hơn về Promise, có thể kết hợp với `fetch API` để gọi API và xử lý dữ liệu bất đồng bộ.
-
-### 107\. Fetch | Khái niệm Fetch trong JavaScript
-
-* **Tóm tắt:** Fetch API là built-in API hiện đại trong JavaScript để thực hiện các request HTTP (gọi API) một cách bất đồng bộ (dựa trên Promise). Thay thế cho `XMLHttpRequest` cũ.
+Fetch API là built-in API hiện đại trong JavaScript để thực hiện các request HTTP (gọi API) một cách bất đồng bộ (dựa trên Promise). Thay thế cho `XMLHttpRequest` cũ.
 
 * **Ví dụ (GET request với Fetch API):**
 
@@ -1759,12 +1728,11 @@ fetch('https://jsonplaceholder.typicode.com/todos/1') // Gọi API GET
     });
 ```
 
-### 108\. JSON server | Cài đặt thư viện JSON server
+### JSON server
 
-* **Tóm tắt:** JSON Server là thư viện Node.js giúp tạo nhanh REST API giả lập từ file JSON. Dùng để test frontend, làm backend demo, học API... Cài đặt bằng npm: `npm install -g json-server`. Chạy server: `json-server --watch db.json`.
+JSON Server là thư viện Node.js giúp tạo nhanh REST API giả lập từ file JSON. Dùng để test frontend, làm backend demo, học API... Cài đặt bằng npm: `npm install -g json-server`. Chạy server: `json-server --watch db.json`.
 
-### 109\. Phương thức reduce có logic như thế nào? | JavaScript reduce
+### Phương thức reduce có logic như thế nào?
 
-* **Tóm tắt:** (Đã đề cập ở mục 51, 52) Ôn lại và đi sâu hơn về logic hoạt động của `reduce()` method, cách accumulator và currentValue thay đổi qua mỗi lần lặp, và các ứng dụng khác nhau của `reduce()`.
+(Đã đề cập ở mục 51, 52) Ôn lại và đi sâu hơn về logic hoạt động của `reduce()` method, cách accumulator và currentValue thay đổi qua mỗi lần lặp, và các ứng dụng khác nhau của `reduce()`.
 
-Hy vọng hướng dẫn này giúp bạn ôn lại kiến thức JavaScript cơ bản. Nếu bạn muốn tìm hiểu sâu hơn về chủ đề nào, hoặc có câu hỏi khác, đừng ngần ngại hỏi nhé\!

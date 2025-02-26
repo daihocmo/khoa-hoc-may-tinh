@@ -2,11 +2,10 @@
 
 ## Phần 1: HTML
 
-### 1\. HTML CSS là gì? | Ví dụ trực quan về HTML & CSS
+### HTML CSS là gì?
 
-* **Tóm tắt:** HTML (HyperText Markup Language) là ngôn ngữ đánh dấu cấu trúc nội dung trang web, CSS (Cascading Style Sheets) là ngôn ngữ tạo kiểu dáng cho trang web. HTML tạo bộ khung, CSS trang trí bộ khung đó.
+HTML (HyperText Markup Language) là ngôn ngữ đánh dấu cấu trúc nội dung trang web, CSS (Cascading Style Sheets) là ngôn ngữ tạo kiểu dáng cho trang web. HTML tạo bộ khung, CSS trang trí bộ khung đó.
 
-* **Ví dụ:**
 
 ```html
 <!DOCTYPE html>
@@ -30,25 +29,26 @@
 </html>
 ```
 
-### 2\. Làm quen với Dev tools | Giới thiệu bộ công cụ Dev tools trên trình duyệt
+### Cần học cách sử dụng Dev Tools
+Đọc/xem một trong những hướng dẫn dưới đây
 
-* **Tóm tắt:** DevTools là bộ công cụ tích hợp sẵn trong trình duyệt (Chrome, Firefox, Edge...) giúp bạn xem và chỉnh sửa HTML, CSS, JavaScript, theo dõi lỗi, hiệu suất trang web...
-* **Cách dùng:** Chuột phải vào trang web -\> "Inspect" hoặc "Kiểm tra" (hoặc F12). Các tab chính: Elements (HTML, CSS), Console (JavaScript logs, errors), Network (tải nguyên mạng), Sources (code nguồn)...
+- [Chrome DevTools - Crash Course](https://www.youtube.com/watch?v=gTVpBbFWry8)
+- [A Detailed Guide to Chrome DevTools](https://www.headspin.io/blog/chrome-devtools-a-complete-guide)
+- [Chrome Developer Tools và Cách Sử Dụng: Hướng Dẫn Chi Tiết](https://websitehcm.com/chrome-developer-tools-va-cach-su-dung/)
 
-### 3\. Cài đặt môi trường, công cụ cần thiết để bắt đầu học HTML CSS
+### Cài đặt môi trường, công cụ cần thiết để bắt đầu học HTML CSS
 
-* **Tóm tắt:**  Chỉ cần trình duyệt web (Chrome, Firefox...) và trình soạn thảo code (VS Code, Sublime Text, Atom...). VS Code là lựa chọn phổ biến với nhiều extension hỗ trợ HTML, CSS.
-* **Cài đặt VS Code:** [Visual Studio Code](https://www.google.com/url?sa=E&source=gmail&q=https://code.visualstudio.com/). Cài thêm extension "Live Server" để xem trang web trực tiếp khi chỉnh sửa.
+Theo tiêu chuẩn là cài đặt [VSCode](https://code.visualstudio.com/) (Hoặc [VSCodium](https://vscodium.com/)). Rồi bạn tìm mục **Extensions**, tìm những Addons có từ khóa HTML/CSS, JS và chọn bừa :smile: cộng với tải **Live Server** là xong.
 
-### 4\. Cấu trúc file HTML | Khởi tạo folder dự án trong HTML
+### Cấu trúc tệp HTML
 
-* **Tóm tắt:** File HTML cơ bản có cấu trúc:
-    * `<!DOCTYPE html>`: Khai báo loại tài liệu HTML5.
-    * `<html>`: Thẻ gốc của trang HTML.
-    * `<head>`: Chứa meta thông tin (tiêu đề, CSS, JavaScript...).
-    * `<body>`: Chứa nội dung hiển thị trên trang web.
+File HTML cơ bản có cấu trúc:
 
-* **Ví dụ:**
+* `<!DOCTYPE html>`: Khai báo loại tài liệu HTML5.
+* `<html>`: Thẻ gốc của trang HTML.
+* `<head>`: Chứa meta thông tin (tiêu đề, CSS, JavaScript...).
+* `<body>`: Chứa nội dung hiển thị trên trang web.
+
 
 ```html
 <!DOCTYPE html>
@@ -64,31 +64,29 @@
 </html>
 ```
 
-### 5\. Comments trong HTML | Cú pháp mở và đóng Comments
+### Comments trong HTML
 
-* **Tóm tắt:** Comment (chú thích) trong HTML giúp ghi chú, giải thích code, hoặc tạm ẩn code mà không ảnh hưởng đến hiển thị.
+Comment (chú thích) trong HTML giúp ghi chú, giải thích code, hoặc tạm ẩn code mà không ảnh hưởng đến hiển thị.
 
-* **Cú pháp:** \`\`
-
-* **Ví dụ:**
+**Cú pháp:** \`\`
 
 ```html
 <p>Đoạn văn bản này hiển thị.</p>
 ```
 
-### 6\. Những thẻ HTML thông dụng
+### Những thẻ HTML thông dụng
 
-* **Tóm tắt:** HTML có nhiều thẻ khác nhau, mỗi thẻ có chức năng riêng để tạo cấu trúc và nội dung:
-    * Thẻ tiêu đề: `<h1>` - `<h6>` (quan trọng nhất là `<h1>`).
-    * Thẻ đoạn văn: `<p>`.
-    * Thẻ liên kết: `<a>` (`href` attribute để chỉ đích đến link).
-    * Thẻ hình ảnh: `<img>` (`src` attribute để chỉ đường dẫn ảnh, `alt` attribute cho text thay thế).
-    * Thẻ danh sách: `<ul>` (danh sách không thứ tự), `<ol>` (danh sách thứ tự), `<li>` (item trong danh sách).
-    * Thẻ div và span: `<div>` (khối), `<span>` (nội tuyến), dùng để nhóm các phần tử và style.
-    * Thẻ form: `<form>`, `<input>`, `<button>`, `<textarea>`, `<select>`, `<label>`.
-    * Thẻ table: `<table>`, `<tr>` (row), `<th>` (header cell), `<td>` (data cell).
+HTML có nhiều thẻ khác nhau, mỗi thẻ có chức năng riêng để tạo cấu trúc và nội dung:
 
-* **Ví dụ:**
+* Thẻ tiêu đề: `<h1>` - `<h6>` (quan trọng nhất là `<h1>`).
+* Thẻ đoạn văn: `<p>`.
+* Thẻ liên kết: `<a>` (`href` attribute để chỉ đích đến link).
+* Thẻ hình ảnh: `<img>` (`src` attribute để chỉ đường dẫn ảnh, `alt` attribute cho text thay thế).
+* Thẻ danh sách: `<ul>` (danh sách không thứ tự), `<ol>` (danh sách thứ tự), `<li>` (item trong danh sách).
+* Thẻ div và span: `<div>` (khối), `<span>` (nội tuyến), dùng để nhóm các phần tử và style.
+* Thẻ form: `<form>`, `<input>`, `<button>`, `<textarea>`, `<select>`, `<label>`.
+* Thẻ table: `<table>`, `<tr>` (row), `<th>` (header cell), `<td>` (data cell).
+
 
 ```html
 <h1>Tiêu đề chính</h1>
@@ -104,11 +102,10 @@
 </div>
 ```
 
-### 7\. Attributes trong HTML | Thêm thuộc tính (Attributes) vào thẻ
+### Attributes trong HTML
 
-* **Tóm tắt:** Attributes (thuộc tính) cung cấp thông tin bổ sung cho thẻ HTML, giúp điều chỉnh hành vi hoặc hiển thị của thẻ. Cú pháp: `attribute="value"` (nằm trong thẻ mở).
+Attributes (thuộc tính) cung cấp thông tin bổ sung cho thẻ HTML, giúp điều chỉnh hành vi hoặc hiển thị của thẻ. Cú pháp: `attribute="value"` (nằm trong thẻ mở).
 
-* **Ví dụ:**
 
 ```html
 <a href="https://f8.edu.vn" target="_blank">Liên kết F8 (mở tab mới)</a>
@@ -118,23 +115,22 @@
 
 ## Phần 2: CSS
 
-### 8\. Cách sử dụng CSS trong HTML | Hướng dẫn chi tiết của từng cách
+### Cách sử dụng CSS trong HTML
 
-* **Tóm tắt:** Có 3 cách chính để sử dụng CSS trong HTML:
+Có 3 cách chính để sử dụng CSS trong HTML:
 
 1.  **Inline CSS:** Viết trực tiếp trong thuộc tính `style` của thẻ HTML (ưu tiên cao nhất, ít dùng vì khó quản lý).
 2.  **Internal CSS:** Viết trong thẻ `<style>` trong `<head>` của file HTML (dùng cho style riêng của trang).
 3.  **External CSS:** Viết trong file CSS riêng (`.css`), liên kết đến HTML bằng thẻ `<link>` trong `<head>` (tốt nhất cho dự án lớn, dễ quản lý, tái sử dụng).
 
-* **Ví dụ (External CSS - phổ biến nhất):**
-
-* **`index.html`:**
+**`index.html`:**
 
 ```html
 <!DOCTYPE html>
 <html>
 <head>
     <title>Ví dụ External CSS</title>
+    <!--Dùng CSS từ tệp ngoài như này-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -144,7 +140,7 @@
 </html>
 ```
 
-* **`style.css`:**
+**`style.css`:**
 
 ```css
 body {
@@ -155,14 +151,13 @@ h1 {
 }
 ```
 
-### 9\. ID và Class trong CSS selectors
+### ID và Class trong CSS selectors
 
-* **Tóm tắt:** CSS selectors (bộ chọn) để chọn các phần tử HTML để style. ID và Class là 2 loại selector quan trọng:
+CSS selectors (bộ chọn) để chọn các phần tử HTML để style. ID và Class là 2 loại selector quan trọng:
 
-    * **ID selector:** Chọn phần tử HTML có `id` attribute tương ứng. Bắt đầu bằng `#`. ID là duy nhất trên trang.
-    * **Class selector:** Chọn các phần tử HTML có `class` attribute tương ứng. Bắt đầu bằng `.`. Class có thể dùng cho nhiều phần tử.
+* **ID selector:** Chọn phần tử HTML có `id` attribute tương ứng. Bắt đầu bằng `#`. ID là duy nhất trên trang.
+* **Class selector:** Chọn các phần tử HTML có `class` attribute tương ứng. Bắt đầu bằng `.`. Class có thể dùng cho nhiều phần tử.
 
-* **Ví dụ:**
 
 * **`index.html`:**
 
@@ -197,9 +192,9 @@ h1 {
 }
 ```
 
-### 10\. Mức độ ưu tiên trong CSS
+### Mức độ ưu tiên trong CSS
 
-* **Tóm tắt:** Khi có nhiều CSS rules cùng style một phần tử, trình duyệt áp dụng mức độ ưu tiên để quyết định rule nào được dùng:
+Khi có nhiều CSS rules cùng style một phần tử, trình duyệt áp dụng mức độ ưu tiên để quyết định rule nào được dùng:
 
 1.  **Inline CSS** (cao nhất).
 2.  **ID selectors**.
@@ -207,7 +202,6 @@ h1 {
 4.  **Element selectors, pseudo-elements** (thấp nhất).
 5.  **\!important** (cực cao, nên hạn chế dùng).
 
-* **Ví dụ:**
 
 * **`index.html`:**
 
@@ -240,18 +234,15 @@ p { /* Element selector (thấp nhất) */
 }
 ```
 
-    * Đoạn văn bản sẽ có màu **tím** (inline CSS ưu tiên nhất). Nếu bỏ inline style, sẽ có màu **đỏ** (ID selector ưu tiên hơn class và element).
+* Đoạn văn bản sẽ có màu **tím** (inline CSS ưu tiên nhất). Nếu bỏ inline style, sẽ có màu **đỏ** (ID selector ưu tiên hơn class và element).
 
-### 11\. CSS Variable là gì? | Cách đặt biến trong CSS
+### Biến trong CSS (CSS Variable) 
 
-* **Tóm tắt:** CSS Variables (biến CSS) cho phép bạn định nghĩa các giá trị có thể tái sử dụng trong CSS, giúp code dễ bảo trì và tùy biến.
+CSS Variables (biến CSS) cho phép bạn định nghĩa các giá trị có thể tái sử dụng trong CSS, giúp code dễ bảo trì và tùy biến. **Cú pháp:**
 
-* **Cú pháp:**
+* Khai báo biến: `--variable-name: value;` (trong `:root` selector để global, hoặc trong selector khác để local).
+* Sử dụng biến: `var(--variable-name)`
 
-    * Khai báo biến: `--variable-name: value;` (trong `:root` selector để global, hoặc trong selector khác để local).
-    * Sử dụng biến: `var(--variable-name)`
-
-* **Ví dụ:**
 
 ```css
 :root { /* Global variables */
@@ -270,18 +261,17 @@ h1 {
 }
 ```
 
-### 12\. CSS Units là gì? | Các đơn vị trong CSS
+### CSS Units là gì?
 
-* **Tóm tắt:** CSS Units (đơn vị CSS) xác định kích thước, khoảng cách, độ dài... trong CSS. Có 2 loại chính:
+CSS Units (đơn vị CSS) xác định kích thước, khoảng cách, độ dài... trong CSS. Có 2 loại chính:
 
-    * **Absolute units:** Cố định, không thay đổi theo môi trường (px, cm, mm, in, pt, pc). `px` (pixel) phổ biến nhất cho web.
-    * **Relative units:** Tương đối, thay đổi theo môi trường (%, em, rem, vw, vh).
-        * `%`: Phần trăm so với phần tử cha.
-        * `em`: Tương đối với `font-size` của phần tử cha.
-        * `rem`: Tương đối với `font-size` của thẻ gốc `<html>`.
-        * `vw`, `vh`: Phần trăm chiều rộng, chiều cao viewport (cửa sổ trình duyệt).
+* **Absolute units:** Cố định, không thay đổi theo môi trường (px, cm, mm, in, pt, pc). `px` (pixel) phổ biến nhất cho web.
+* **Relative units:** Tương đối, thay đổi theo môi trường (%, em, rem, vw, vh).
+    * `%`: Phần trăm so với phần tử cha.
+    * `em`: Tương đối với `font-size` của phần tử cha.
+    * `rem`: Tương đối với `font-size` của thẻ gốc `<html>`.
+    * `vw`, `vh`: Phần trăm chiều rộng, chiều cao viewport (cửa sổ trình duyệt).
 
-* **Ví dụ:**
 
 ```css
 body {
@@ -298,11 +288,10 @@ div {
 }
 ```
 
-### 13\. Thuộc tính Padding trong CSS | CSS Padding
+### Thuộc tính Padding trong CSS
 
-* **Tóm tắt:** `padding` tạo khoảng trắng bên trong **viền** của phần tử, đẩy nội dung ra xa viền. Có thể set `padding-top`, `padding-right`, `padding-bottom`, `padding-left` hoặc `padding` shorthand (top right bottom left).
+`padding` tạo khoảng trắng bên trong **viền** của phần tử, đẩy nội dung ra xa viền. Có thể set `padding-top`, `padding-right`, `padding-bottom`, `padding-left` hoặc `padding` shorthand (top right bottom left).
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -314,17 +303,16 @@ div {
 }
 ```
 
-### 14\. Thuộc tính Border trong CSS | CSS Border
+### Thuộc tính Border trong CSS
 
-* **Tóm tắt:** `border` tạo viền xung quanh phần tử. Các thuộc tính:
+`border` tạo viền xung quanh phần tử. Các thuộc tính:
 
-    * `border-width`: Độ dày viền (px, em...).
-    * `border-style`: Kiểu viền (solid, dashed, dotted, double...).
-    * `border-color`: Màu viền.
-    * `border` shorthand: `border: width style color;`
-    * `border-radius`: Bo tròn góc viền.
+* `border-width`: Độ dày viền (px, em...).
+* `border-style`: Kiểu viền (solid, dashed, dotted, double...).
+* `border-color`: Màu viền.
+* `border` shorthand: `border: width style color;`
+* `border-radius`: Bo tròn góc viền.
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -336,11 +324,10 @@ div {
 }
 ```
 
-### 15\. Thuộc tính Margin trong CSS | Tư duy sử dụng CSS Margin
+### Thuộc tính Margin trong CSS
 
-* **Tóm tắt:** `margin` tạo khoảng trắng bên ngoài **viền** của phần tử, đẩy phần tử ra xa các phần tử xung quanh. Tương tự padding, có `margin-top`, `margin-right`, `margin-bottom`, `margin-left` hoặc `margin` shorthand.
+`margin` tạo khoảng trắng bên ngoài **viền** của phần tử, đẩy phần tử ra xa các phần tử xung quanh. Tương tự padding, có `margin-top`, `margin-right`, `margin-bottom`, `margin-left` hoặc `margin` shorthand.
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -352,14 +339,13 @@ div {
 }
 ```
 
-### 16\. CSS Box-sizing | Tính ứng dụng của Box-sizing
+### CSS Box-sizing
 
-* **Tóm tắt:** `box-sizing` quyết định cách tính tổng kích thước của phần tử (width, height) khi có `padding` và `border`.
+`box-sizing` quyết định cách tính tổng kích thước của phần tử (width, height) khi có `padding` và `border`.
 
-    * `content-box` (mặc định): `width` và `height` chỉ tính phần nội dung, `padding` và `border` cộng thêm vào tổng kích thước.
-    * `border-box`: `width` và `height` bao gồm cả `padding` và `border`. Thuận tiện hơn, dễ kiểm soát kích thước phần tử.
+* `content-box` (mặc định): `width` và `height` chỉ tính phần nội dung, `padding` và `border` cộng thêm vào tổng kích thước.
+* `border-box`: `width` và `height` bao gồm cả `padding` và `border`. Thuận tiện hơn, dễ kiểm soát kích thước phần tử.
 
-* **Ví dụ:**
 
 ```css
 .content-box {
@@ -379,16 +365,15 @@ div {
 }
 ```
 
-### 17\. CSS Background-clip | Thuộc tính Background-clip
+### CSS Background-clip
 
-* **Tóm tắt:** `background-clip` xác định vùng mà background (màu, ảnh) sẽ được hiển thị bên trong phần tử.
+`background-clip` xác định vùng mà background (màu, ảnh) sẽ được hiển thị bên trong phần tử.
 
-    * `border-box` (mặc định): Background clip đến mép ngoài của viền.
-    * `padding-box`: Background clip đến mép ngoài của padding.
-    * `content-box`: Background clip đến mép ngoài của content box.
-    * `text`: Background clip theo hình dạng chữ (chỉ áp dụng cho text).
+* `border-box` (mặc định): Background clip đến mép ngoài của viền.
+* `padding-box`: Background clip đến mép ngoài của padding.
+* `content-box`: Background clip đến mép ngoài của content box.
+* `text`: Background clip theo hình dạng chữ (chỉ áp dụng cho text).
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -401,11 +386,10 @@ div {
 }
 ```
 
-### 18\. CSS Background-image |  Thuộc tính Background-image
+### CSS Background-image
 
-* **Tóm tắt:** `background-image` đặt ảnh nền cho phần tử. Giá trị là `url("path/to/image.jpg")` hoặc `linear-gradient()`, `radial-gradient()`...
+`background-image` đặt ảnh nền cho phần tử. Giá trị là `url("path/to/image.jpg")` hoặc `linear-gradient()`, `radial-gradient()`...
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -419,16 +403,15 @@ div {
 }
 ```
 
-### 19\. Thuộc tính Background-size | CSS Background-size
+### Thuộc tính Background-size
 
-* **Tóm tắt:** `background-size` điều chỉnh kích thước ảnh nền. Các giá trị phổ biến:
+`background-size` điều chỉnh kích thước ảnh nền. Các giá trị phổ biến:
 
-    * `auto` (mặc định): Kích thước ảnh gốc.
-    * `cover`: Ảnh nền phủ kín phần tử, có thể bị crop.
-    * `contain`: Ảnh nền vừa khít trong phần tử, có thể có khoảng trắng xung quanh.
-    * `px`, `%`: Kích thước cụ thể (px) hoặc phần trăm (%).
+* `auto` (mặc định): Kích thước ảnh gốc.
+* `cover`: Ảnh nền phủ kín phần tử, có thể bị crop.
+* `contain`: Ảnh nền vừa khít trong phần tử, có thể có khoảng trắng xung quanh.
+* `px`, `%`: Kích thước cụ thể (px) hoặc phần trăm (%).
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -439,15 +422,14 @@ div {
 }
 ```
 
-### 20\. Thuộc tính Background-origin | CSS Background-origin
+### Thuộc tính Background-origin
 
-* **Tóm tắt:** `background-origin` xác định vị trí bắt đầu của background-image.
+`background-origin` xác định vị trí bắt đầu của background-image.
 
-    * `border-box` (mặc định): Bắt đầu từ mép trên-trái của border box.
-    * `padding-box`: Bắt đầu từ mép trên-trái của padding box.
-    * `content-box`: Bắt đầu từ mép trên-trái của content box.
+* `border-box` (mặc định): Bắt đầu từ mép trên-trái của border box.
+* `padding-box`: Bắt đầu từ mép trên-trái của padding box.
+* `content-box`: Bắt đầu từ mép trên-trái của content box.
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -461,15 +443,14 @@ div {
 }
 ```
 
-### 21\. Thuộc tính Background-position | CSS Background-position
+### Thuộc tính Background-position
 
-* **Tóm tắt:** `background-position` định vị trí của ảnh nền trong phần tử. Giá trị:
+`background-position` định vị trí của ảnh nền trong phần tử. Giá trị:
 
-    * `top`, `bottom`, `left`, `right`, `center`.
-    * `px`, `%`: Vị trí cụ thể (px) hoặc phần trăm (%).
-    * Cặp giá trị: `background-position: horizontal vertical;` (ví dụ: `top center`, `50% 20px`).
+* `top`, `bottom`, `left`, `right`, `center`.
+* `px`, `%`: Vị trí cụ thể (px) hoặc phần trăm (%).
+* Cặp giá trị: `background-position: horizontal vertical;` (ví dụ: `top center`, `50% 20px`).
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -482,11 +463,10 @@ div {
 }
 ```
 
-### 22\. Cú pháp shorthand | CSS Background shorthand
+### Cú pháp shorthand
 
-* **Tóm tắt:** CSS Shorthand (cú pháp rút gọn) giúp viết nhiều thuộc tính CSS liên quan trong một dòng. `background` shorthand gộp nhiều thuộc tính background: `background: color image repeat position/size origin clip;` (thứ tự không quan trọng, có thể bỏ qua một số giá trị).
+CSS Shorthand (cú pháp rút gọn) giúp viết nhiều thuộc tính CSS liên quan trong một dòng. `background` shorthand gộp nhiều thuộc tính background: `background: color image repeat position/size origin clip;` (thứ tự không quan trọng, có thể bỏ qua một số giá trị).
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -504,16 +484,15 @@ div {
 }
 ```
 
-### 23\. CSS Functions | Hàm trong CSS
+### CSS Functions
 
-* **Tóm tắt:** CSS Functions (hàm CSS) là các hàm dựng sẵn trong CSS để tạo ra các giá trị động hoặc phức tạp. Ví dụ:
+CSS Functions (hàm CSS) là các hàm dựng sẵn trong CSS để tạo ra các giá trị động hoặc phức tạp. Ví dụ:
 
-    * `rgb()`, `rgba()`, `hsl()`, `hsla()`: Hàm màu.
-    * `linear-gradient()`, `radial-gradient()`: Hàm tạo gradient màu.
-    * `calc()`: Hàm tính toán.
-    * `var()`: Hàm dùng biến CSS.
+* `rgb()`, `rgba()`, `hsl()`, `hsla()`: Hàm màu.
+* `linear-gradient()`, `radial-gradient()`: Hàm tạo gradient màu.
+* `calc()`: Hàm tính toán.
+* `var()`: Hàm dùng biến CSS.
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -525,16 +504,15 @@ div {
 }
 ```
 
-### 24\. CSS Pseudo classes | Khái niệm lớp giả trong CSS
+### CSS Pseudo classes
 
-* **Tóm tắt:** CSS Pseudo-classes (lớp giả) chọn các phần tử dựa trên trạng thái hoặc vị trí đặc biệt, không dựa trên class hay ID. Bắt đầu bằng `:`. Ví dụ:
+CSS Pseudo-classes (lớp giả) chọn các phần tử dựa trên trạng thái hoặc vị trí đặc biệt, không dựa trên class hay ID. Bắt đầu bằng `:`. Ví dụ:
 
-    * `:hover`: Khi chuột di vào.
-    * `:active`: Khi phần tử đang được click.
-    * `:focus`: Khi phần tử được focus (ví dụ input).
-    * `:first-child`, `:last-child`, `:nth-child()`: Chọn phần tử con đầu, cuối, thứ n.
+* `:hover`: Khi chuột di vào.
+* `:active`: Khi phần tử đang được click.
+* `:focus`: Khi phần tử được focus (ví dụ input).
+* `:first-child`, `:last-child`, `:nth-child()`: Chọn phần tử con đầu, cuối, thứ n.
 
-* **Ví dụ:**
 
 ```css
 a:hover { /* Style link khi hover */
@@ -547,14 +525,13 @@ li:first-child { /* Style item đầu tiên trong danh sách */
 }
 ```
 
-### 25\. Phần tử giả trong CSS | CSS Pseudo-elements
+### Phần tử giả trong CSS
 
-* **Tóm tắt:** CSS Pseudo-elements (phần tử giả) tạo ra các phần tử "ảo" để style các phần cụ thể của phần tử thật. Bắt đầu bằng `::`. Ví dụ:
+CSS Pseudo-elements (phần tử giả) tạo ra các phần tử "ảo" để style các phần cụ thể của phần tử thật. Bắt đầu bằng `::`. Ví dụ:
 
-    * `::before`, `::after`: Tạo phần tử ảo trước/sau nội dung phần tử thật.
-    * `::first-line`, `::first-letter`: Style dòng đầu, chữ cái đầu của text.
+* `::before`, `::after`: Tạo phần tử ảo trước/sau nội dung phần tử thật.
+* `::first-line`, `::first-letter`: Style dòng đầu, chữ cái đầu của text.
 
-* **Ví dụ:**
 
 ```css
 p::first-line { /* Style dòng đầu tiên của đoạn văn */
@@ -566,15 +543,14 @@ a::before { /* Thêm icon trước link */
 }
 ```
 
-### 26\. Thuộc tính Position | CSS Position: Relative
+### Thuộc tính Position
 
-* **Tóm tắt:** `position` xác định cách phần tử được định vị trong layout. `position: relative` (tương đối):
+`position` xác định cách phần tử được định vị trong layout. `position: relative` (tương đối):
 
-    * Phần tử vẫn ở vị trí bình thường trong luồng văn bản.
-    * `top`, `right`, `bottom`, `left` dịch chuyển phần tử **tương đối** so với vị trí ban đầu của nó.
-    * Không ảnh hưởng đến vị trí các phần tử khác.
+* Phần tử vẫn ở vị trí bình thường trong luồng văn bản.
+* `top`, `right`, `bottom`, `left` dịch chuyển phần tử **tương đối** so với vị trí ban đầu của nó.
+* Không ảnh hưởng đến vị trí các phần tử khác.
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -587,15 +563,14 @@ div {
 }
 ```
 
-### 27\. Thuộc tính vị trí tuyệt đối | CSS Position: Absolute
+### Thuộc tính vị trí tuyệt đối
 
-* **Tóm tắt:** `position: absolute` (tuyệt đối):
+`position: absolute` (tuyệt đối):
 
-    * Phần tử bị loại khỏi luồng văn bản bình thường.
-    * Định vị **tuyệt đối** so với phần tử cha **gần nhất** có `position: relative`, `absolute`, `fixed` (nếu không có cha nào thì so với thẻ `<html>`).
-    * Các phần tử khác có thể "chèn" vào vị trí của phần tử absolute.
+* Phần tử bị loại khỏi luồng văn bản bình thường.
+* Định vị **tuyệt đối** so với phần tử cha **gần nhất** có `position: relative`, `absolute`, `fixed` (nếu không có cha nào thì so với thẻ `<html>`).
+* Các phần tử khác có thể "chèn" vào vị trí của phần tử absolute.
 
-* **Ví dụ:**
 
 ```html
 <div style="position: relative; width: 300px; height: 200px; border: 1px solid black;">
@@ -606,15 +581,14 @@ div {
 </div>
 ```
 
-### 28\. Thuộc tính Position: Fixed | CSS Position: Fixed
+### Thuộc tính Position: Fixed
 
-* **Tóm tắt:** `position: fixed` (cố định):
+`position: fixed` (cố định):
 
-    * Tương tự `absolute`: bị loại khỏi luồng văn bản.
-    * Định vị **cố định** so với **viewport** (cửa sổ trình duyệt).
-    * Không scroll theo trang, luôn ở vị trí cố định trên màn hình.
+* Tương tự `absolute`: bị loại khỏi luồng văn bản.
+* Định vị **cố định** so với **viewport** (cửa sổ trình duyệt).
+* Không scroll theo trang, luôn ở vị trí cố định trên màn hình.
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -628,15 +602,14 @@ div {
 }
 ```
 
-### 29\. Thuộc tính Position: Sticky | CSS Position: Sticky
+### Thuộc tính Position: Sticky
 
-* **Tóm tắt:** `position: sticky` (dính):
+`position: sticky` (dính):
 
-    * Kết hợp `relative` và `fixed`.
-    * Ban đầu hoạt động như `relative` (trong luồng văn bản).
-    * Khi scroll đến một vị trí nhất định (set bằng `top`, `bottom`, `left`, `right`), nó sẽ "dính" lại như `fixed` trong phạm vi phần tử cha.
+* Kết hợp `relative` và `fixed`.
+* Ban đầu hoạt động như `relative` (trong luồng văn bản).
+* Khi scroll đến một vị trí nhất định (set bằng `top`, `bottom`, `left`, `right`), nó sẽ "dính" lại như `fixed` trong phạm vi phần tử cha.
 
-* **Ví dụ:**
 
 ```css
 div {
@@ -648,30 +621,33 @@ div {
 }
 ```
 
-### 30\. Giới thiệu Flexbox | Thuộc tính Flexbox trong CSS
+### Giới thiệu Flexbox
 
-* **Tóm tắt:** Flexbox là layout module mạnh mẽ trong CSS, giúp tạo layout linh hoạt, một chiều (chính hoặc phụ). Dùng cho layout thành phần, UI nhỏ.
+Flexbox là layout module mạnh mẽ trong CSS, giúp tạo layout linh hoạt, một chiều (chính hoặc phụ). Dùng cho layout thành phần, UI nhỏ.
 * **Kích hoạt Flexbox:** `display: flex;` cho phần tử cha (container). Các phần tử con trực tiếp trở thành flex items.
 * **Trục chính (main axis) và trục phụ (cross axis):** Flexbox layout dựa trên 2 trục này. Mặc định trục chính là ngang (row), trục phụ là dọc (column).
 
-### 31\. Những thuộc tính CSS sử dụng trong Flexbox
+### Những thuộc tính CSS sử dụng trong Flexbox
 
-* **Thuộc tính cho container (phần tử cha):**
-    * `flex-direction`: Hướng trục chính (row, column, row-reverse, column-reverse).
-    * `justify-content`: Căn chỉnh các flex items trên trục chính (flex-start, flex-end, center, space-between, space-around, space-evenly).
-    * `align-items`: Căn chỉnh các flex items trên trục phụ (flex-start, flex-end, center, stretch, baseline).
-    * `flex-wrap`: Cho phép flex items xuống dòng khi không đủ chỗ (nowrap, wrap, wrap-reverse).
-    * `align-content`: Căn chỉnh các dòng flex items (khi `flex-wrap: wrap` hoặc `wrap-reverse`) trên trục phụ (flex-start, flex-end, center, space-between, space-around, stretch).
-* **Thuộc tính cho items (phần tử con):**
-    * `order`: Sắp xếp thứ tự item.
-    * `flex-grow`:  Item có thể lớn ra để lấp đầy không gian thừa.
-    * `flex-shrink`: Item có thể nhỏ lại khi không đủ chỗ.
-    * `flex-basis`: Kích thước cơ sở của item trước khi `flex-grow` và `flex-shrink` áp dụng.
-    * `align-self`: Ghi đè `align-items` cho item cụ thể.
+**Thuộc tính cho container (phần tử cha):**
 
-### 32\. Học Flexbox CSS qua ví dụ | Flexbox CSS | Flexbox layout | Flexbox example | Flexbox trong CSS
+* `flex-direction`: Hướng trục chính (row, column, row-reverse, column-reverse).
+* `justify-content`: Căn chỉnh các flex items trên trục chính (flex-start, flex-end, center, space-between, space-around, space-evenly).
+* `align-items`: Căn chỉnh các flex items trên trục phụ (flex-start, flex-end, center, stretch, baseline).
+* `flex-wrap`: Cho phép flex items xuống dòng khi không đủ chỗ (nowrap, wrap, wrap-reverse).
+* `align-content`: Căn chỉnh các dòng flex items (khi `flex-wrap: wrap` hoặc `wrap-reverse`) trên trục phụ (flex-start, flex-end, center, space-between, space-around, stretch).
 
-* **Ví dụ (layout menu ngang):**
+**Thuộc tính cho items (phần tử con):**
+
+* `order`: Sắp xếp thứ tự item.
+* `flex-grow`:  Item có thể lớn ra để lấp đầy không gian thừa.
+* `flex-shrink`: Item có thể nhỏ lại khi không đủ chỗ.
+* `flex-basis`: Kích thước cơ sở của item trước khi `flex-grow` và `flex-shrink` áp dụng.
+* `align-self`: Ghi đè `align-items` cho item cụ thể.
+
+### Học Flexbox CSS qua ví dụ
+
+**Ví dụ (layout menu ngang):**
 
 ```html
 <nav class="menu">
@@ -697,19 +673,18 @@ div {
 }
 ```
 
-### 33\. [Flexbox nâng cao] Liên hệ Flex model với các thuộc tính Flexbox trong CSS
+### [Flexbox nâng cao] Liên hệ Flex model với các thuộc tính Flexbox trong CSS
 
-* **Tóm tắt:** Hiểu rõ flex container, flex items, trục chính, trục phụ, main size, cross size... giúp dùng Flexbox hiệu quả hơn. Các thuộc tính Flexbox điều khiển cách flex items phân bổ không gian trên trục chính và trục phụ.
+Hiểu rõ flex container, flex items, trục chính, trục phụ, main size, cross size... giúp dùng Flexbox hiệu quả hơn. Các thuộc tính Flexbox điều khiển cách flex items phân bổ không gian trên trục chính và trục phụ.
 
-### 34\. CSS BEM Là Gì? Đặt Tên CSS Class Theo Tiêu Chuẩn BEM
+### CSS BEM Là Gì? Đặt Tên CSS Class Theo Tiêu Chuẩn BEM
 
-* **Tóm tắt:** BEM (Block, Element, Modifier) là quy tắc đặt tên class CSS giúp code dễ đọc, dễ bảo trì, tránh xung đột.
+BEM (Block, Element, Modifier) là quy tắc đặt tên class CSS giúp code dễ đọc, dễ bảo trì, tránh xung đột.
 
-    * **Block:** Phần tử độc lập, tái sử dụng (ví dụ: `menu`, `button`). Class: `block`.
-    * **Element:** Phần con của Block, phụ thuộc vào Block (ví dụ: `menu__item`, `button__text`). Class: `block__element`.
-    * **Modifier:** Biến thể của Block hoặc Element, thay đổi style (ví dụ: `button--primary`, `menu__item--active`). Class: `block--modifier` hoặc `block__element--modifier`.
+* **Block:** Phần tử độc lập, tái sử dụng (ví dụ: `menu`, `button`). Class: `block`.
+* **Element:** Phần con của Block, phụ thuộc vào Block (ví dụ: `menu__item`, `button__text`). Class: `block__element`.
+* **Modifier:** Biến thể của Block hoặc Element, thay đổi style (ví dụ: `button--primary`, `menu__item--active`). Class: `block--modifier` hoặc `block__element--modifier`.
 
-* **Ví dụ:**
 
 ```html
 <div class="button button--primary">
@@ -734,23 +709,10 @@ div {
 }
 ```
 
-### 35\. Sử dụng BEM để tạo buttons | Ứng dụng của BEM trong CSS
+### Tối ưu performace khi sử dụng ảnh với srcset
 
-* **Tóm tắt:** Áp dụng BEM để tạo các button với style khác nhau (primary, secondary, disabled...) dễ dàng và có cấu trúc.
+`srcset` attribute của thẻ `<img>` giúp cung cấp nhiều phiên bản ảnh với kích thước khác nhau, trình duyệt tự chọn ảnh phù hợp với kích thước màn hình, tối ưu hiệu suất tải trang, đặc biệt trên mobile.
 
-### 36\. Sử dụng BEM tạo Toast Message UI
-
-* **Tóm tắt:** Dùng BEM để xây dựng component Toast Message (thông báo nhỏ) có thể tái sử dụng, dễ tùy biến.
-
-### 37\. Giải đáp về BEM | Cách đặt tên khi các Block lồng nhau
-
-* **Tóm tắt:** Khi Block lồng nhau, vẫn tuân thủ BEM. Element của Block con vẫn đặt tên theo Block con đó, không "kế thừa" tên Block cha. Ví dụ: `menu__item` (item của menu), không phải `header__menu__item` nếu menu nằm trong header.
-
-### 38\. Tối ưu performace khi sử dụng ảnh với srcset | Thuộc tính srcset của thẻ IMG
-
-* **Tóm tắt:** `srcset` attribute của thẻ `<img>` giúp cung cấp nhiều phiên bản ảnh với kích thước khác nhau, trình duyệt tự chọn ảnh phù hợp với kích thước màn hình, tối ưu hiệu suất tải trang, đặc biệt trên mobile.
-
-* **Ví dụ:**
 
 ```html
 <img src="image-large.jpg"
@@ -760,16 +722,16 @@ div {
         alt="Ảnh responsive">
 ```
 
-### 39\. CSS selectors cơ bản | Học HTML CSS miễn phí
+### CSS selectors cơ bản
 
-* **Tóm tắt:** Ôn lại các CSS selectors cơ bản:
-    * **Element selectors:** `p`, `h1`, `div`...
-    * **Class selectors:** `.class-name`
-    * **ID selectors:** `#id-name`
-    * **Attribute selectors:** `[attribute]`, `[attribute="value"]`...
-    * **Universal selector:** `*` (chọn tất cả phần tử).
-    * **Combinators:**
-        * Descendant selector (space): `div p` (chọn `<p>` bên trong `<div>`).
-        * Child selector (`>`): `div > p` (chọn `<p>` là con trực tiếp của `<div>`).
-        * Adjacent sibling selector (`+`): `h1 + p` (chọn `<p>` ngay sau `<h1>`).
-        * General sibling selector (`~`): `h1 ~ p` (chọn tất cả `<p>` là anh em của `<h1>`).
+Ôn lại các CSS selectors cơ bản:
+* **Element selectors:** `p`, `h1`, `div`...
+* **Class selectors:** `.class-name`
+* **ID selectors:** `#id-name`
+* **Attribute selectors:** `[attribute]`, `[attribute="value"]`...
+* **Universal selector:** `*` (chọn tất cả phần tử).
+* **Combinators:**
+    * Descendant selector (space): `div p` (chọn `<p>` bên trong `<div>`).
+    * Child selector (`>`): `div > p` (chọn `<p>` là con trực tiếp của `<div>`).
+    * Adjacent sibling selector (`+`): `h1 + p` (chọn `<p>` ngay sau `<h1>`).
+    * General sibling selector (`~`): `h1 ~ p` (chọn tất cả `<p>` là anh em của `<h1>`).

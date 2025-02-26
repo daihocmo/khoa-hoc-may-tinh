@@ -104,6 +104,10 @@ Trích từ [một bình luận của một vozer khác](https://voz.vn/t/lo-tri
 
 Thanks bác, lộ trình này sẽ học Backend trước rồi mới học Frontend
 
+#### Những kiến thức cơ bản của Backend
+
+
+
 #### Bạn sẽ học
 - Những kiến thức cơ bản về Internet: Cách Internet hoạt động, HTTP, tên miền, hosting, DNS, trình duyệt bla bla. Bạn hãy đọc toàn bộ bài [Fundamentals of Web apps](https://fullstackopen.com/en/part0/fundamentals_of_web_apps).
 - Tìm hiểu về [JavaScript runtime environment](https://topdev.vn/blog/javascript-runtime-environment-la-gi/) và [Web Server](https://viblo.asia/p/web-server-la-gi-tim-hieu-ve-web-server-WR5JRv0rJGv)
@@ -154,6 +158,7 @@ Nếu bạn đang học Rust thì hãy đọc [Hướng dẫn cày Rust](https:/
   - [XAMPP + phpmyadmin](https://www.apachefriends.org/download.html) - Đọc thêm hướng dẫn [Cài đặt MySQL và sử dụng phpmyadmin trong XAMPP](https://diendanhocweb.com/cai-dat-mysql-va-su-dung-phpmyadmin-trong-xampp/)
   - [DBeaver](https://dbeaver.io/)
   - [HeidiSQL](https://www.heidisql.com/)
+
 #### Nguồn tài nguyên học
 - [A Comprehensive NoSQL Tutorial Using MongoDB](https://www.datacamp.com/tutorial/nosql-tutorial)
 - [Learn About NoSQL Databases in This 3-hour Course](https://www.freecodecamp.org/news/learn-nosql-in-3-hours/)
