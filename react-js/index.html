@@ -1,0 +1,3105 @@
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="vozer vozer vozer vozer vozer vozer vozer vozer vozer vozer">
+      
+      
+        <meta name="author" content="duykhanh471">
+      
+      
+      
+        <link rel="prev" href="../js/">
+      
+      
+        <link rel="next" href="../node-va-express/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+    
+    
+      
+        <title>React JS - Tự học Khoa học máy tính</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tu-hoc-reactjs-cung-rat-la-nhanh" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href=".." title="Tự học Khoa học máy tính" class="md-header__button md-logo" aria-label="Tự học Khoa học máy tính" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tự học Khoa học máy tính
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              React JS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Tìm kiếm" placeholder="Tìm kiếm" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Tìm kiếm">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Chia sẻ" aria-label="Chia sẻ" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Xoá" aria-label="Xoá" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/daihocmo/khoa-hoc-may-tinh" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Đóng góp cho trang trên Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Tự học Khoa học máy tính" class="md-nav__button md-logo" aria-label="Tự học Khoa học máy tính" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tự học Khoa học máy tính
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/daihocmo/khoa-hoc-may-tinh" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Đóng góp cho trang trên Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trang chủ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Hướng dẫn tự học
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hướng dẫn tự học
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bat-dau/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bắt đầu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ghi-nho/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ghi nhớ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nhat-ky-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nhật ký code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tu-duy-lap-trinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tư duy lập trình
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cach-len-ke-hoach/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bắt đầu dự án
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Giáo trình tự học
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Giáo trình tự học
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../khmt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hướng dẫn chính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lap-trinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lập trình
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-thong-may-tinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kiến trúc máy tính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ctdl-gt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CTDL & Giải thuật
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../toan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toán
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-dieu-hanh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hệ điều hành
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mang-may-tinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mạng máy tính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csdl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cơ sở dữ liệu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trinh-bien-dich/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trình biên dịch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-thong-phan-tan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hệ thống phân tán
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Định hướng chuyên môn
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Định hướng chuyên môn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lua-chon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lựa chọn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fullstack
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fullstack
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fullstack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hướng dẫn chính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html-css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML/CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    React JS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    React JS
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#phan-1-gioi-thieu-reactjs-va-moi-truong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 1: Giới thiệu ReactJS và Môi trường
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 1: Giới thiệu ReactJS và Môi trường">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-reactjs-la-gi-tai-sao-nen-hoc-reactjs-khoa-hoc-reactjs-mien-phi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ReactJS là gì | Tại sao nên học ReactJS | Khóa học ReactJS miễn phí
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-spampa-la-gi-khai-niem-spa-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. SPA/MPA là gì | Khái niệm SPA | ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-arrow-function-trong-javascript-es6-khai-niem-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Arrow function trong JavaScript ES6 | Khái niệm arrow function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-module-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Module trong JavaScript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-enhanced-object-literals-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Enhanced object literals trong javascript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-spread-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Spread trong JavaScript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-destructuring-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Destructuring trong JavaScript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-documentcreateelement-e-lam-gi-phuong-thuc-createelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. document.createElement() để làm gì | Phương thức createElement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-luu-y-react-a-co-version-18-video-bo-sung-khoa-hoc-reactjs-f8" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Lưu ý! React đã có version 18 | Video bổ sung khóa học ReactJS F8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-them-react-vao-website-github-npmjs-unpkg-la-gi" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Thêm React vào Website | Github, NPMJS, UNPKG là gì?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-phuong-thuc-reactcreateelement-cua-thu-vien-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Phương thức React.createElement() của thư viện ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-react-dom-la-gi-tai-sao-can-react-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. React-DOM là gì? | Tại sao cần React-DOM?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-su-dung-reactdom-version-18-video-bo-sung-khoa-hoc-reactjs-f8" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Sử dụng ReactDOM Version 18 | Video bổ sung khóa học ReactJS F8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-jsx-la-gi-tai-sao-can-jsx-jsx-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. JSX là gì? Tại sao cần JSX? | JSX ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-su-dung-jsx-render-arrays-giai-ap-jsx-jsx-fqa" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Sử dụng JSX render Arrays | Giải đáp JSX | JSX FQA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-react-element-types-react-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. React element types | React components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-props-la-gi-dung-props-khi-nao-khai-niem-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Props là gì? | Dùng props khi nào? | Khái niệm Props
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-dom-events-lam-viec-voi-jsx-phan-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. DOM events? | Làm việc với JSX - phần 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-tao-components-lam-viec-voi-jsx-phan-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Tạo Components | Làm việc với JSX - Phần 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-children-props-render-props-lam-viec-voi-jsx-phan-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Children props &amp; Render props | Làm việc với JSX - Phần 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-nodejs-la-gi-su-dung-nodejs-trong-reactjs-cai-at-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. NodeJS là gì? Sử dụng NodeJS trong ReactJS? | cài đặt NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-hay-cai-ung-react-reactdom-17-o-bai-sau-video-bo-sung" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Hãy cài đúng React &amp; ReactDOM 17 ở bài sau | Video bổ sung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-tao-du-an-voi-react-va-webpack-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Tạo dự án với React và Webpack | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-nang-cap-react-reactdom-tu-version-17-len-18-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Nâng cấp React &amp; ReactDOM từ version 17 lên 18 | ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-thu-vien-create-react-app-cai-at-thu-vien-cho-windows-va-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. Thư viện Create React App | Cài đặt thư viện cho Windows và MacOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-hieu-ro-hon-ve-npm-npx-va-yarn-cai-at-thu-vien-cho-du-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Hiểu rõ hơn về NPM, NPX và YARN | Cài đặt thư viện cho dự án
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-cra-folder-structure-cau-truc-thu-muc-du-an-create-react-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. CRA Folder Structure | Cấu trúc thư mục dự án | Create react app
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-2-hooks-quan-ly-state-va-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 2: Hooks - Quản lý State và Lifecycle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 2: Hooks - Quản lý State và Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#28-hooks-la-gi-khai-niem-hooks-react-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Hooks là gì? | Khái niệm Hooks - React Hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-usestate-trong-react-hook-react-hook-2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. useState trong React hook | React hook 2021
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-two-way-binding-rang-buoc-hai-chieu-react-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. Two-way binding | Ràng buộc hai chiều | React hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-todolist-with-usestate-xay-dung-ung-dung-todolist-react-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      31. Todolist with useState() | Xây dựng ứng dụng todolist | React hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-tim-hieu-ve-thuat-ngu-mounted-unmounted" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Tìm hiểu về thuật ngữ Mounted &amp; Unmounted
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-react-useeffect-hook-chi-tiet-danh-cho-nguoi-moi-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. React useEffect hook chi tiết dành cho người mới | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-useeffect-with-dependencies-react-hooks-2021-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      34. useEffect() with dependencies | React hooks 2021 | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-useeffect-with-dom-events-react-hooks-2021-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      35. useEffect() with DOM events | React hooks 2021 | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-useeffect-with-timer-functions-lam-viec-voi-setinterval-settimeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      36. useEffect() with timer functions | Làm việc với setInterval &amp; setTimeout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-useeffect-with-preview-avatar-ham-don-dep-cleanup-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      37. useEffect() with preview avatar | Hàm dọn dẹp Cleanup function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-useeffect-with-fake-chat-app-xu-ly-cac-chuc-nang-thoi-gian-thuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      38. useEffect() with fake Chat App | Xử lý các chức năng thời gian thực
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-uselayouteffect-hook-phan-biet-useeffect-va-uselayouteffect-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      39. useLayoutEffect() hook | Phân biệt useEffect và useLayoutEffect | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#40-useref-hook-cach-su-dung-useref-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      40. useRef() hook | Cách sử dụng useRef() hook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-reactmemo-hoc-phuong-thuc-memo-trong-react-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      41. React.memo() HOC | Phương thức memo trong react | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-usecallback-hook-tranh-tao-ra-ham-moi-khong-can-thiet-voi-usecallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      42. useCallback() hook | Tránh tạo ra hàm mới không cần thiết với useCallback()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-usememo-hook-tranh-thuc-hien-lai-1-logic-khong-can-thiet-voi-usememo" class="md-nav__link">
+    <span class="md-ellipsis">
+      43. useMemo() hook | Tránh thực hiện lại 1 logic không cần thiết với useMemo()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-usereducer-hook-khi-nao-su-dung-usereducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      44. useReducer() hook | Khi nào sử dụng useReducer()?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-todo-app-with-usereducer-hook-hieu-ro-hon-ve-usereducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      45. Todo App with useReducer() hook | Hiểu rõ hơn về useReducer()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-usereducer-recap-react-hooks-2021-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      46. useReducer() recap | React hooks 2021 | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-react-context-usecontext-hook-khai-niem-usecontext" class="md-nav__link">
+    <span class="md-ellipsis">
+      47. React Context &amp; useContext() hook | Khái niệm useContext()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-global-state-with-context-usereducer-trang-thai-toan-cuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      48. Global State with Context + useReducer | Trạng thái toàn cục
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-useimperativehandle-hook-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      49. useImperativeHandle() hook | React JS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-3-styling-va-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 3: Styling và Routing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 3: Styling và Routing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#50-su-dung-css-trong-du-an-reactjs-css-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      50. Sử dụng CSS trong dự án ReactJS | CSS in React
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#51-css-module-la-gi-su-dung-css-module-nhu-the-nao" class="md-nav__link">
+    <span class="md-ellipsis">
+      51. CSS module là gì? | Sử dụng CSS module như thế nào?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-thu-vien-clsx-va-classnames-su-dung-nhieu-class-class-ong-trong-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      52. Thư viện clsx và classnames | Sử dụng nhiều class &amp; class động trong ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-install-sass-e-dung-scss-cai-at-va-su-dung-scss-trong-du-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      53. Install SASS để dùng SCSS | Cài đặt và sử dụng SCSS trong dự án
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-react-router-v6-thu-vien-react-router-dom-inh-tuyen-trong-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      54. React Router V6 | Thư viện React router dom | Định tuyến trong ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../node-va-express/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NodeJS & ExpressJS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rust-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tieng-anh-it/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tự học Tiếng Anh
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tai-nguyen-hoc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tài nguyên học
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#phan-1-gioi-thieu-reactjs-va-moi-truong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 1: Giới thiệu ReactJS và Môi trường
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 1: Giới thiệu ReactJS và Môi trường">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-reactjs-la-gi-tai-sao-nen-hoc-reactjs-khoa-hoc-reactjs-mien-phi" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. ReactJS là gì | Tại sao nên học ReactJS | Khóa học ReactJS miễn phí
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-spampa-la-gi-khai-niem-spa-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. SPA/MPA là gì | Khái niệm SPA | ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-arrow-function-trong-javascript-es6-khai-niem-arrow-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Arrow function trong JavaScript ES6 | Khái niệm arrow function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-module-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Module trong JavaScript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-enhanced-object-literals-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Enhanced object literals trong javascript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-spread-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Spread trong JavaScript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-destructuring-trong-javascript-es6" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Destructuring trong JavaScript ES6
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-documentcreateelement-e-lam-gi-phuong-thuc-createelement" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. document.createElement() để làm gì | Phương thức createElement
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-luu-y-react-a-co-version-18-video-bo-sung-khoa-hoc-reactjs-f8" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Lưu ý! React đã có version 18 | Video bổ sung khóa học ReactJS F8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-them-react-vao-website-github-npmjs-unpkg-la-gi" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Thêm React vào Website | Github, NPMJS, UNPKG là gì?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-phuong-thuc-reactcreateelement-cua-thu-vien-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. Phương thức React.createElement() của thư viện ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-react-dom-la-gi-tai-sao-can-react-dom" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. React-DOM là gì? | Tại sao cần React-DOM?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-su-dung-reactdom-version-18-video-bo-sung-khoa-hoc-reactjs-f8" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Sử dụng ReactDOM Version 18 | Video bổ sung khóa học ReactJS F8
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-jsx-la-gi-tai-sao-can-jsx-jsx-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. JSX là gì? Tại sao cần JSX? | JSX ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-su-dung-jsx-render-arrays-giai-ap-jsx-jsx-fqa" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Sử dụng JSX render Arrays | Giải đáp JSX | JSX FQA
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-react-element-types-react-components" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. React element types | React components
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-props-la-gi-dung-props-khi-nao-khai-niem-props" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. Props là gì? | Dùng props khi nào? | Khái niệm Props
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-dom-events-lam-viec-voi-jsx-phan-1" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. DOM events? | Làm việc với JSX - phần 1
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-tao-components-lam-viec-voi-jsx-phan-2" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Tạo Components | Làm việc với JSX - Phần 2
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-children-props-render-props-lam-viec-voi-jsx-phan-3" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. Children props &amp; Render props | Làm việc với JSX - Phần 3
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-nodejs-la-gi-su-dung-nodejs-trong-reactjs-cai-at-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. NodeJS là gì? Sử dụng NodeJS trong ReactJS? | cài đặt NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-hay-cai-ung-react-reactdom-17-o-bai-sau-video-bo-sung" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. Hãy cài đúng React &amp; ReactDOM 17 ở bài sau | Video bổ sung
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-tao-du-an-voi-react-va-webpack-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Tạo dự án với React và Webpack | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-nang-cap-react-reactdom-tu-version-17-len-18-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Nâng cấp React &amp; ReactDOM từ version 17 lên 18 | ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-thu-vien-create-react-app-cai-at-thu-vien-cho-windows-va-macos" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. Thư viện Create React App | Cài đặt thư viện cho Windows và MacOS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-hieu-ro-hon-ve-npm-npx-va-yarn-cai-at-thu-vien-cho-du-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Hiểu rõ hơn về NPM, NPX và YARN | Cài đặt thư viện cho dự án
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-cra-folder-structure-cau-truc-thu-muc-du-an-create-react-app" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. CRA Folder Structure | Cấu trúc thư mục dự án | Create react app
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-2-hooks-quan-ly-state-va-lifecycle" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 2: Hooks - Quản lý State và Lifecycle
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 2: Hooks - Quản lý State và Lifecycle">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#28-hooks-la-gi-khai-niem-hooks-react-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Hooks là gì? | Khái niệm Hooks - React Hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-usestate-trong-react-hook-react-hook-2021" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. useState trong React hook | React hook 2021
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#30-two-way-binding-rang-buoc-hai-chieu-react-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      30. Two-way binding | Ràng buộc hai chiều | React hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#31-todolist-with-usestate-xay-dung-ung-dung-todolist-react-hooks" class="md-nav__link">
+    <span class="md-ellipsis">
+      31. Todolist with useState() | Xây dựng ứng dụng todolist | React hooks
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#32-tim-hieu-ve-thuat-ngu-mounted-unmounted" class="md-nav__link">
+    <span class="md-ellipsis">
+      32. Tìm hiểu về thuật ngữ Mounted &amp; Unmounted
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#33-react-useeffect-hook-chi-tiet-danh-cho-nguoi-moi-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      33. React useEffect hook chi tiết dành cho người mới | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#34-useeffect-with-dependencies-react-hooks-2021-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      34. useEffect() with dependencies | React hooks 2021 | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#35-useeffect-with-dom-events-react-hooks-2021-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      35. useEffect() with DOM events | React hooks 2021 | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#36-useeffect-with-timer-functions-lam-viec-voi-setinterval-settimeout" class="md-nav__link">
+    <span class="md-ellipsis">
+      36. useEffect() with timer functions | Làm việc với setInterval &amp; setTimeout
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#37-useeffect-with-preview-avatar-ham-don-dep-cleanup-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      37. useEffect() with preview avatar | Hàm dọn dẹp Cleanup function
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#38-useeffect-with-fake-chat-app-xu-ly-cac-chuc-nang-thoi-gian-thuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      38. useEffect() with fake Chat App | Xử lý các chức năng thời gian thực
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#39-uselayouteffect-hook-phan-biet-useeffect-va-uselayouteffect-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      39. useLayoutEffect() hook | Phân biệt useEffect và useLayoutEffect | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#40-useref-hook-cach-su-dung-useref-hook" class="md-nav__link">
+    <span class="md-ellipsis">
+      40. useRef() hook | Cách sử dụng useRef() hook
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#41-reactmemo-hoc-phuong-thuc-memo-trong-react-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      41. React.memo() HOC | Phương thức memo trong react | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-usecallback-hook-tranh-tao-ra-ham-moi-khong-can-thiet-voi-usecallback" class="md-nav__link">
+    <span class="md-ellipsis">
+      42. useCallback() hook | Tránh tạo ra hàm mới không cần thiết với useCallback()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-usememo-hook-tranh-thuc-hien-lai-1-logic-khong-can-thiet-voi-usememo" class="md-nav__link">
+    <span class="md-ellipsis">
+      43. useMemo() hook | Tránh thực hiện lại 1 logic không cần thiết với useMemo()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-usereducer-hook-khi-nao-su-dung-usereducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      44. useReducer() hook | Khi nào sử dụng useReducer()?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#45-todo-app-with-usereducer-hook-hieu-ro-hon-ve-usereducer" class="md-nav__link">
+    <span class="md-ellipsis">
+      45. Todo App with useReducer() hook | Hiểu rõ hơn về useReducer()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#46-usereducer-recap-react-hooks-2021-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      46. useReducer() recap | React hooks 2021 | React JS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#47-react-context-usecontext-hook-khai-niem-usecontext" class="md-nav__link">
+    <span class="md-ellipsis">
+      47. React Context &amp; useContext() hook | Khái niệm useContext()
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#48-global-state-with-context-usereducer-trang-thai-toan-cuc" class="md-nav__link">
+    <span class="md-ellipsis">
+      48. Global State with Context + useReducer | Trạng thái toàn cục
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#49-useimperativehandle-hook-react-js" class="md-nav__link">
+    <span class="md-ellipsis">
+      49. useImperativeHandle() hook | React JS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-3-styling-va-routing" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 3: Styling và Routing
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 3: Styling và Routing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#50-su-dung-css-trong-du-an-reactjs-css-in-react" class="md-nav__link">
+    <span class="md-ellipsis">
+      50. Sử dụng CSS trong dự án ReactJS | CSS in React
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#51-css-module-la-gi-su-dung-css-module-nhu-the-nao" class="md-nav__link">
+    <span class="md-ellipsis">
+      51. CSS module là gì? | Sử dụng CSS module như thế nào?
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#52-thu-vien-clsx-va-classnames-su-dung-nhieu-class-class-ong-trong-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      52. Thư viện clsx và classnames | Sử dụng nhiều class &amp; class động trong ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#53-install-sass-e-dung-scss-cai-at-va-su-dung-scss-trong-du-an" class="md-nav__link">
+    <span class="md-ellipsis">
+      53. Install SASS để dùng SCSS | Cài đặt và sử dụng SCSS trong dự án
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#54-react-router-v6-thu-vien-react-router-dom-inh-tuyen-trong-reactjs" class="md-nav__link">
+    <span class="md-ellipsis">
+      54. React Router V6 | Thư viện React router dom | Định tuyến trong ReactJS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="tu-hoc-reactjs-cung-rat-la-nhanh">Tự học ReactJS cũng rất là nhanh<a class="headerlink" href="#tu-hoc-reactjs-cung-rat-la-nhanh" title="Permanent link">&para;</a></h1>
+<p>Dựa trên khóa học của F8</p>
+<h2 id="phan-1-gioi-thieu-reactjs-va-moi-truong">Phần 1: Giới thiệu ReactJS và Môi trường<a class="headerlink" href="#phan-1-gioi-thieu-reactjs-va-moi-truong" title="Permanent link">&para;</a></h2>
+<h3 id="1-reactjs-la-gi-tai-sao-nen-hoc-reactjs-khoa-hoc-reactjs-mien-phi">1. ReactJS là gì | Tại sao nên học ReactJS | Khóa học ReactJS miễn phí<a class="headerlink" href="#1-reactjs-la-gi-tai-sao-nen-hoc-reactjs-khoa-hoc-reactjs-mien-phi" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> ReactJS là một thư viện JavaScript mã nguồn mở để xây dựng giao diện người dùng (UI). Được phát triển bởi Facebook, ReactJS nổi bật với các ưu điểm:<ul>
+<li><strong>Component-based:</strong>  Xây dựng UI từ các thành phần độc lập, tái sử dụng.</li>
+<li><strong>Declarative:</strong>  Mô tả UI mong muốn, React tự động cập nhật DOM khi dữ liệu thay đổi.</li>
+<li><strong>Virtual DOM:</strong> Tăng hiệu năng bằng cách chỉ cập nhật những phần DOM thực sự thay đổi.</li>
+<li><strong>Cộng đồng lớn:</strong>  Nhiều tài liệu, thư viện hỗ trợ, dễ dàng tìm kiếm giúp đỡ.</li>
+<li><strong>Việc làm rộng mở:</strong>  ReactJS là một trong những thư viện/framework frontend phổ biến nhất hiện nay.</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-spampa-la-gi-khai-niem-spa-reactjs">2. SPA/MPA là gì | Khái niệm SPA |  ReactJS<a class="headerlink" href="#2-spampa-la-gi-khai-niem-spa-reactjs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Phân biệt giữa SPA (Single Page Application - Ứng dụng Một Trang) và MPA (Multi Page Application - Ứng dụng Nhiều Trang):<ul>
+<li><strong>MPA:</strong> Mỗi trang là một file HTML riêng biệt, khi chuyển trang trình duyệt tải lại toàn bộ trang.</li>
+<li><strong>SPA:</strong>  Tải một trang HTML duy nhất ban đầu, sau đó cập nhật nội dung động bằng JavaScript mà không cần tải lại trang. ReactJS thường dùng để xây dựng SPA, mang lại trải nghiệm mượt mà hơn cho người dùng.</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-arrow-function-trong-javascript-es6-khai-niem-arrow-function">3. Arrow function trong JavaScript ES6 | Khái niệm arrow function<a class="headerlink" href="#3-arrow-function-trong-javascript-es6-khai-niem-arrow-function" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  (Ôn lại từ Javascript cơ bản) Arrow function là cú pháp ngắn gọn hơn để viết function trong JavaScript ES6. Cú pháp: <code>(parameters) =&gt; expression</code> hoặc <code>(parameters) =&gt; { statements }</code>.</li>
+</ul>
+<h3 id="4-module-trong-javascript-es6">4. Module trong JavaScript ES6<a class="headerlink" href="#4-module-trong-javascript-es6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> (Ôn lại từ Javascript cơ bản)  Module trong ES6 giúp chia code JavaScript thành các file riêng biệt, dễ quản lý và tái sử dụng. Sử dụng <code>export</code> để xuất và <code>import</code> để nhập module.</li>
+</ul>
+<h3 id="5-enhanced-object-literals-trong-javascript-es6">5. Enhanced object literals trong javascript ES6<a class="headerlink" href="#5-enhanced-object-literals-trong-javascript-es6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> (Ôn lại từ Javascript cơ bản) Enhanced object literals cung cấp cú pháp ngắn gọn hơn để tạo object trong ES6, bao gồm shorthand property names, method shorthand, và computed property names.</li>
+</ul>
+<h3 id="6-spread-trong-javascript-es6">6. Spread trong JavaScript ES6<a class="headerlink" href="#6-spread-trong-javascript-es6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> (Ôn lại từ Javascript cơ bản) Spread operator (<code>...</code>) dùng để copy mảng/object, nối mảng, truyền đối số hàm, và rest parameters.</li>
+</ul>
+<h3 id="7-destructuring-trong-javascript-es6">7. Destructuring trong JavaScript ES6<a class="headerlink" href="#7-destructuring-trong-javascript-es6" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> (Ôn lại từ Javascript cơ bản) Destructuring giúp "giải nén" giá trị từ mảng hoặc object vào các biến riêng biệt một cách ngắn gọn.</li>
+</ul>
+<h3 id="8-documentcreateelement-e-lam-gi-phuong-thuc-createelement">8. document.createElement() để làm gì | Phương thức createElement<a class="headerlink" href="#8-documentcreateelement-e-lam-gi-phuong-thuc-createelement" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> <code>document.createElement(tagName)</code> là phương thức DOM API của JavaScript để tạo mới một element HTML. Tuy nhiên, trong ReactJS, chúng ta <strong>ít khi</strong> sử dụng trực tiếp <code>document.createElement()</code>. Thay vào đó, ReactJS cung cấp cách tiếp cận <strong>declarative</strong> hơn thông qua JSX và React Elements.</li>
+</ul>
+<h3 id="9-luu-y-react-a-co-version-18-video-bo-sung-khoa-hoc-reactjs-f8">9. Lưu ý! React đã có version 18 | Video bổ sung khóa học ReactJS F8<a class="headerlink" href="#9-luu-y-react-a-co-version-18-video-bo-sung-khoa-hoc-reactjs-f8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Lưu ý rằng React đã có phiên bản 18 (tại thời điểm khóa học). Khóa học có thể sử dụng phiên bản React cũ hơn (17), nhưng các khái niệm cơ bản vẫn tương tự. Có một số thay đổi và cải tiến trong React 18 (ví dụ: Concurrent Rendering) nhưng không ảnh hưởng lớn đến việc học cơ bản.</li>
+</ul>
+<h3 id="10-them-react-vao-website-github-npmjs-unpkg-la-gi">10. Thêm React vào Website | Github, NPMJS, UNPKG là gì?<a class="headerlink" href="#10-them-react-vao-website-github-npmjs-unpkg-la-gi" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Các cách thêm ReactJS vào website:<ul>
+<li><strong>Trực tiếp từ CDN (UNPKG):</strong>  Thêm thẻ <code>&lt;script&gt;</code> vào HTML để tải ReactJS từ CDN (Content Delivery Network) như UNPKG. Dễ dàng cho mục đích học tập hoặc dự án nhỏ.</li>
+<li><strong>Sử dụng NPM và Webpack (hoặc Create React App):</strong>  Dùng cho dự án lớn, chuyên nghiệp. Cần cài đặt NodeJS, NPM (Node Package Manager), và bundler (Webpack) để quản lý thư viện, build code.</li>
+<li><strong>Github:</strong>  Nền tảng lưu trữ và quản lý code, nơi ReactJS và nhiều thư viện khác được phát triển và chia sẻ.</li>
+<li><strong>NPMJS:</strong>  Website và registry chính thức cho các package (thư viện) JavaScript, bao gồm ReactJS.</li>
+</ul>
+</li>
+</ul>
+<h3 id="11-phuong-thuc-reactcreateelement-cua-thu-vien-reactjs">11. Phương thức React.createElement() của thư viện ReactJS<a class="headerlink" href="#11-phuong-thuc-reactcreateelement-cua-thu-vien-reactjs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>React.createElement(type, [props], ...children)</code> là hàm cốt lõi của ReactJS để tạo ra <strong>React Element</strong>. React Element là một object mô tả UI, không phải DOM thật.</p>
+<ul>
+<li><code>type</code>:  Loại element (tag name như 'div', 'span', hoặc React Component).</li>
+<li><code>props</code>:  Props (thuộc tính) của element, truyền dữ liệu từ component cha xuống con.</li>
+<li><code>children</code>:  Các React Element con.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ:</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// Tạo React Element tương đương &lt;h1 id=&quot;title&quot;&gt;Xin chào React!&lt;/h1&gt;</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">titleElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span>
+<span class="w">    </span><span class="s1">&#39;h1&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;title&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="s1">&#39;Xin chào React!&#39;</span>
+<span class="p">);</span>
+</code></pre></div>
+<h3 id="12-react-dom-la-gi-tai-sao-can-react-dom">12. React-DOM là gì? | Tại sao cần React-DOM?<a class="headerlink" href="#12-react-dom-la-gi-tai-sao-can-react-dom" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> <code>react-dom</code> là một package riêng biệt đi kèm với ReactJS. Chức năng chính của <code>react-dom</code> là <strong>render</strong> (hiển thị) React Element lên DOM thật của trình duyệt.<ul>
+<li><code>ReactDOM.render(reactElement, containerNode)</code> (React 17 trở về trước): Render React Element vào một DOM node (containerNode).</li>
+<li><code>ReactDOM.createRoot(containerNode).render(reactElement)</code> (React 18 trở lên):  Sử dụng <code>createRoot</code> để tạo root và render.</li>
+</ul>
+</li>
+</ul>
+<h3 id="13-su-dung-reactdom-version-18-video-bo-sung-khoa-hoc-reactjs-f8">13. Sử dụng ReactDOM Version 18 | Video bổ sung khóa học ReactJS F8<a class="headerlink" href="#13-su-dung-reactdom-version-18-video-bo-sung-khoa-hoc-reactjs-f8" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hướng dẫn cách sử dụng <code>ReactDOM.createRoot</code> trong React 18 để render ứng dụng React.</li>
+</ul>
+<h3 id="14-jsx-la-gi-tai-sao-can-jsx-jsx-reactjs">14. JSX là gì? Tại sao cần JSX? | JSX ReactJS<a class="headerlink" href="#14-jsx-la-gi-tai-sao-can-jsx-jsx-reactjs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> JSX (JavaScript XML) là một mở rộng cú pháp cho JavaScript, cho phép viết code HTML-like trực tiếp trong file JavaScript. JSX giúp code React dễ đọc, dễ viết, gần gũi hơn với HTML. JSX <strong>không phải</strong> là HTML thật, mà được Babel biên dịch thành các lệnh gọi <code>React.createElement()</code>.</p>
+</li>
+<li>
+<p><strong>Ví dụ (JSX):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// JSX code</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">jsxElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">h1</span><span class="w"> </span><span class="na">id</span><span class="o">=</span><span class="s">&quot;title&quot;</span><span class="p">&gt;</span><span class="nx">Xin</span><span class="w"> </span><span class="nx">chào</span><span class="w"> </span><span class="nx">JSX</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;;</span>
+
+<span class="c1">// Tương đương với React.createElement():</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">reactElement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">createElement</span><span class="p">(</span>
+<span class="w">    </span><span class="s1">&#39;h1&#39;</span><span class="p">,</span>
+<span class="w">    </span><span class="p">{</span><span class="w"> </span><span class="nx">id</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;title&#39;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">    </span><span class="s1">&#39;Xin chào JSX!&#39;</span>
+<span class="p">);</span>
+</code></pre></div>
+<h3 id="15-su-dung-jsx-render-arrays-giai-ap-jsx-jsx-fqa">15. Sử dụng JSX render Arrays | Giải đáp JSX | JSX FQA<a class="headerlink" href="#15-su-dung-jsx-render-arrays-giai-ap-jsx-jsx-fqa" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong>  Cách render mảng các phần tử JSX. Cần đảm bảo mỗi phần tử trong mảng có một prop <code>key</code> duy nhất để React có thể theo dõi và cập nhật hiệu quả.</p>
+</li>
+<li>
+<p><strong>Ví dụ (render mảng JSX):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">const</span><span class="w"> </span><span class="nx">items</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[</span><span class="s1">&#39;Item 1&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Item 2&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;Item 3&#39;</span><span class="p">];</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">list</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">{</span><span class="nx">items</span><span class="p">.</span><span class="nx">map</span><span class="p">((</span><span class="nx">item</span><span class="p">,</span><span class="w"> </span><span class="nx">index</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">(</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">li</span><span class="w"> </span><span class="na">key</span><span class="o">=</span><span class="p">{</span><span class="nx">index</span><span class="p">}&gt;{</span><span class="nx">item</span><span class="p">}&lt;/</span><span class="nt">li</span><span class="p">&gt;</span><span class="w"> </span><span class="c1">// Thêm key prop cho mỗi li</span>
+<span class="w">    </span><span class="p">))}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="p">);</span>
+</code></pre></div>
+<h3 id="16-react-element-types-react-components">16. React element types | React components<a class="headerlink" href="#16-react-element-types-react-components" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  React Element có 2 loại chính:<ul>
+<li><strong>DOM Element:</strong>  Đại diện cho các tag HTML thông thường (ví dụ: <code>&lt;h1&gt;</code>, <code>&lt;div&gt;</code>, <code>&lt;p&gt;</code>). Được tạo ra bằng cách truyền string tag name vào <code>React.createElement()</code> hoặc viết tag HTML trong JSX.</li>
+<li><strong>Component Element:</strong>  Đại diện cho React Component (tự định nghĩa). Được tạo ra bằng cách truyền React Component vào <code>React.createElement()</code> hoặc viết tag component trong JSX (ví dụ: <code>&lt;MyComponent /&gt;</code>).</li>
+</ul>
+</li>
+</ul>
+<h3 id="17-props-la-gi-dung-props-khi-nao-khai-niem-props">17. Props là gì? | Dùng props khi nào? | Khái niệm Props<a class="headerlink" href="#17-props-la-gi-dung-props-khi-nao-khai-niem-props" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> Props (properties) là cơ chế để truyền dữ liệu từ <strong>component cha xuống component con</strong>. Props là object chứa các thuộc tính, được truyền vào component con như attribute HTML. Component con nhận props và sử dụng để render UI. Props là <strong>read-only</strong> (chỉ đọc) từ bên trong component con.</p>
+</li>
+<li>
+<p><strong>Ví dụ (truyền props):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// Component cha</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ParentComponent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">ChildComponent</span><span class="w"> </span><span class="na">name</span><span class="o">=</span><span class="s">&quot;Gemini&quot;</span><span class="w"> </span><span class="na">age</span><span class="o">=</span><span class="p">{</span><span class="mf">2</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="c1">// Truyền props name và age cho ChildComponent</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Component con</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">ChildComponent</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Component con nhận props</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Tên</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Sử dụng props.name */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Tuổi</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">age</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span><span class="w">   </span><span class="p">{</span><span class="cm">/* Sử dụng props.age */</span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="18-dom-events-lam-viec-voi-jsx-phan-1">18. DOM events? | Làm việc với JSX - phần 1<a class="headerlink" href="#18-dom-events-lam-viec-voi-jsx-phan-1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong>  Cách xử lý DOM events (sự kiện DOM) trong JSX.  Trong JSX, event handlers được đặt trực tiếp vào element như attribute, với tên event dạng <code>onEventName</code> (ví dụ: <code>onClick</code>, <code>onChange</code>, <code>onSubmit</code>). Giá trị của event handler là một function.</p>
+</li>
+<li>
+<p><strong>Ví dụ (xử lý sự kiện click):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">MyButton</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">handleClick</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">alert</span><span class="p">(</span><span class="s1">&#39;Button đã được click!&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleClick</span><span class="p">}&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/*  onClick event handler */</span><span class="p">}</span>
+<span class="w">        </span><span class="nx">Click</span><span class="w"> </span><span class="nx">me</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="19-tao-components-lam-viec-voi-jsx-phan-2">19. Tạo Components | Làm việc với JSX - Phần 2<a class="headerlink" href="#19-tao-components-lam-viec-voi-jsx-phan-2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong>  Component là khối xây dựng cơ bản của ReactJS. Có 2 loại component chính:</p>
+<ul>
+<li><strong>Function Component:</strong>  Component là một function JavaScript, trả về JSX.  Thường dùng Hooks để quản lý state và lifecycle.</li>
+<li><strong>Class Component (ít dùng hơn trong React hiện đại):</strong> Component là một class ES6 kế thừa từ <code>React.Component</code>. Có state và lifecycle methods.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ (Function Component):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="kd">function</span><span class="w"> </span><span class="nx">WelcomeMessage</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Function Component, nhận props</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">h1</span><span class="p">&gt;</span><span class="nx">Xin</span><span class="w"> </span><span class="nx">chào</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">name</span><span class="p">}</span><span class="o">!</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;;</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="20-children-props-render-props-lam-viec-voi-jsx-phan-3">20. Children props &amp; Render props | Làm việc với JSX - Phần 3<a class="headerlink" href="#20-children-props-render-props-lam-viec-voi-jsx-phan-3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong></p>
+<ul>
+<li><strong>Children props:</strong>  Prop đặc biệt <code>children</code> dùng để truyền nội dung (React Elements) vào giữa cặp thẻ mở và đóng của component.</li>
+<li><strong>Render props (ít dùng trong React hiện đại):</strong>  Một kỹ thuật để component cha điều khiển cách component con render UI, bằng cách truyền một function (render prop) xuống component con.  Thường được thay thế bằng Higher-Order Components (HOCs) hoặc Hooks.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ (children props):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="c1">// Component Container, nhận children props</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">Container</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="s">&quot;container&quot;</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">children</span><span class="p">}</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Render children props */</span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="c1">// Sử dụng Container component</span>
+<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">Container</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Truyền nội dung vào Container component */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Đây</span><span class="w"> </span><span class="nx">là</span><span class="w"> </span><span class="nx">nội</span><span class="w"> </span><span class="nx">dung</span><span class="w"> </span><span class="nx">bên</span><span class="w"> </span><span class="nx">trong</span><span class="w"> </span><span class="nx">Container</span><span class="p">.&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">button</span><span class="p">&gt;</span><span class="nx">Nút</span><span class="w"> </span><span class="nx">bấm</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">Container</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="21-nodejs-la-gi-su-dung-nodejs-trong-reactjs-cai-at-nodejs">21. NodeJS là gì? Sử dụng NodeJS trong ReactJS? | cài đặt NodeJS<a class="headerlink" href="#21-nodejs-la-gi-su-dung-nodejs-trong-reactjs-cai-at-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> NodeJS là môi trường runtime JavaScript phía server. Trong ReactJS, NodeJS cần thiết để:<ul>
+<li><strong>Chạy các công cụ build:</strong>  NPM, Yarn, Create React App, Webpack...</li>
+<li><strong>Phát triển backend (tùy chọn):</strong>  Có thể dùng NodeJS để xây dựng backend cho ứng dụng React (ví dụ: API server).</li>
+</ul>
+</li>
+</ul>
+<h3 id="22-hay-cai-ung-react-reactdom-17-o-bai-sau-video-bo-sung">22. Hãy cài đúng React &amp; ReactDOM 17 ở bài sau | Video bổ sung<a class="headerlink" href="#22-hay-cai-ung-react-reactdom-17-o-bai-sau-video-bo-sung" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Hướng dẫn cài đặt React và ReactDOM phiên bản 17 (phiên bản được sử dụng trong khóa học). Tuy nhiên, nếu bạn học sau này, nên cài phiên bản React mới nhất (ví dụ: 18) và tham khảo tài liệu cập nhật.</li>
+</ul>
+<h3 id="23-tao-du-an-voi-react-va-webpack-react-js">23. Tạo dự án với React và Webpack | React JS<a class="headerlink" href="#23-tao-du-an-voi-react-va-webpack-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Hướng dẫn cách tự cấu hình dự án React từ đầu với Webpack (module bundler). Webpack giúp đóng gói code JavaScript, CSS, assets... thành bundle để trình duyệt có thể hiểu được.  Tuy nhiên, việc cấu hình Webpack khá phức tạp cho người mới bắt đầu.</li>
+</ul>
+<h3 id="24-nang-cap-react-reactdom-tu-version-17-len-18-reactjs">24. Nâng cấp React &amp; ReactDOM từ version 17 lên 18 | ReactJS<a class="headerlink" href="#24-nang-cap-react-reactdom-tu-version-17-len-18-reactjs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hướng dẫn nâng cấp dự án React từ phiên bản 17 lên 18.</li>
+</ul>
+<h3 id="25-thu-vien-create-react-app-cai-at-thu-vien-cho-windows-va-macos">25. Thư viện Create React App | Cài đặt thư viện cho Windows và MacOS<a class="headerlink" href="#25-thu-vien-create-react-app-cai-at-thu-vien-cho-windows-va-macos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Create React App (CRA) là công cụ chính thức của Facebook để tạo nhanh dự án ReactJS. CRA đã cấu hình sẵn Webpack, Babel, các công cụ cần thiết, giúp người mới bắt đầu dễ dàng tạo và chạy dự án React mà không cần lo lắng về cấu hình phức tạp.</li>
+</ul>
+<h3 id="26-hieu-ro-hon-ve-npm-npx-va-yarn-cai-at-thu-vien-cho-du-an">26. Hiểu rõ hơn về NPM, NPX và YARN | Cài đặt thư viện cho dự án<a class="headerlink" href="#26-hieu-ro-hon-ve-npm-npx-va-yarn-cai-at-thu-vien-cho-du-an" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Các công cụ quản lý package (thư viện) JavaScript:<ul>
+<li><strong>NPM (Node Package Manager):</strong>  Trình quản lý package mặc định của NodeJS.</li>
+<li><strong>Yarn:</strong>  Một trình quản lý package khác, tương tự NPM, có thể nhanh hơn trong một số trường hợp.</li>
+<li><strong>NPX (Node Package eXecutor):</strong>  Công cụ đi kèm NPM, dùng để chạy các package command-line (ví dụ: <code>npx create-react-app my-app</code>).</li>
+</ul>
+</li>
+</ul>
+<h3 id="27-cra-folder-structure-cau-truc-thu-muc-du-an-create-react-app">27. CRA Folder Structure | Cấu trúc thư mục dự án | Create react app<a class="headerlink" href="#27-cra-folder-structure-cau-truc-thu-muc-du-an-create-react-app" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Giải thích cấu trúc thư mục mặc định của dự án Create React App:<ul>
+<li><code>node_modules</code>:  Thư mục chứa các thư viện (packages) đã cài đặt.</li>
+<li><code>public</code>:  Thư mục chứa các file public (ví dụ: <code>index.html</code>, favicon, assets tĩnh).</li>
+<li><code>src</code>:  Thư mục chứa code source của ứng dụng React (components, styles, logic...).</li>
+<li><code>package.json</code>:  File cấu hình dự án (dependencies, scripts...).</li>
+<li><code>package-lock.json</code> (hoặc <code>yarn.lock</code>):  File ghi lại phiên bản chính xác của các dependencies.</li>
+</ul>
+</li>
+</ul>
+<h2 id="phan-2-hooks-quan-ly-state-va-lifecycle">Phần 2: Hooks - Quản lý State và Lifecycle<a class="headerlink" href="#phan-2-hooks-quan-ly-state-va-lifecycle" title="Permanent link">&para;</a></h2>
+<h3 id="28-hooks-la-gi-khai-niem-hooks-react-hooks">28. Hooks là gì? | Khái niệm Hooks - React Hooks<a class="headerlink" href="#28-hooks-la-gi-khai-niem-hooks-react-hooks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hooks là các function đặc biệt trong React, cho phép <strong>function component</strong> có thể "hook vào" các tính năng của React trước đây chỉ có ở class component (ví dụ: state, lifecycle methods). Hooks giúp code function component mạnh mẽ hơn, dễ tái sử dụng logic, và code ngắn gọn hơn. Hooks <strong>chỉ hoạt động</strong> bên trong function component hoặc custom hooks.</li>
+</ul>
+<h3 id="29-usestate-trong-react-hook-react-hook-2021">29. useState trong React hook | React hook 2021<a class="headerlink" href="#29-usestate-trong-react-hook-react-hook-2021" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>useState</code> hook là hook cơ bản nhất, dùng để thêm <strong>state</strong> (trạng thái) vào function component.</p>
+<ul>
+<li><code>const [state, setState] = useState(initialState);</code><ul>
+<li><code>state</code>:  Biến state, giá trị hiện tại của state.</li>
+<li><code>setState</code>:  Function để cập nhật state. Khi <code>setState</code> được gọi, component sẽ re-render (render lại UI).</li>
+<li><code>initialState</code>:  Giá trị khởi tạo của state.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ (useState):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">Counter</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span><span class="w"> </span><span class="c1">// Khai báo state &#39;count&#39; khởi tạo 0</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleIncrement</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span><span class="w"> </span><span class="c1">// Cập nhật state count, component re-render</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Count</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">count</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">handleIncrement</span><span class="p">}&gt;</span><span class="nx">Increment</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="30-two-way-binding-rang-buoc-hai-chieu-react-hooks">30. Two-way binding | Ràng buộc hai chiều | React hooks<a class="headerlink" href="#30-two-way-binding-rang-buoc-hai-chieu-react-hooks" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> Two-way binding (ràng buộc hai chiều) là kỹ thuật liên kết dữ liệu giữa UI và state component. Khi UI (ví dụ: input field) thay đổi, state tự động cập nhật, và ngược lại. Trong React, two-way binding thường được thực hiện kết hợp <code>useState</code> hook và controlled components.</p>
+</li>
+<li>
+<p><strong>Ví dụ (two-way binding với useState):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">InputField</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">inputValue</span><span class="p">,</span><span class="w"> </span><span class="nx">setInputValue</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">&#39;&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// State cho giá trị input</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleInputChange</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">setInputValue</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">);</span><span class="w"> </span><span class="c1">// Cập nhật state khi input thay đổi</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">input</span>
+<span class="w">        </span><span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span>
+<span class="w">        </span><span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">inputValue</span><span class="p">}</span><span class="w">         </span><span class="err">//</span><span class="w"> </span><span class="na">Giá</span><span class="w"> </span><span class="na">trị</span><span class="w"> </span><span class="na">input</span><span class="w"> </span><span class="na">được</span><span class="w"> </span><span class="na">liên</span><span class="w"> </span><span class="na">kết</span><span class="w"> </span><span class="na">với</span><span class="w"> </span><span class="na">state</span>
+<span class="w">        </span><span class="na">onChange</span><span class="o">=</span><span class="p">{</span><span class="nx">handleInputChange</span><span class="p">}</span><span class="w"> </span><span class="err">//</span><span class="w"> </span><span class="na">Xử</span><span class="w"> </span><span class="na">lý</span><span class="w"> </span><span class="na">sự</span><span class="w"> </span><span class="na">kiện</span><span class="w"> </span><span class="na">onChange</span>
+<span class="w">        </span><span class="p">/&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Bạn</span><span class="w"> </span><span class="nx">đã</span><span class="w"> </span><span class="nx">nhập</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">inputValue</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="31-todolist-with-usestate-xay-dung-ung-dung-todolist-react-hooks">31. Todolist with useState() | Xây dựng ứng dụng todolist | React hooks<a class="headerlink" href="#31-todolist-with-usestate-xay-dung-ung-dung-todolist-react-hooks" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Thực hành xây dựng ứng dụng Todolist đơn giản sử dụng <code>useState</code> hook để quản lý danh sách todo, thêm, xóa, sửa todo.</li>
+</ul>
+<h3 id="32-tim-hieu-ve-thuat-ngu-mounted-unmounted">32. Tìm hiểu về thuật ngữ Mounted &amp; Unmounted<a class="headerlink" href="#32-tim-hieu-ve-thuat-ngu-mounted-unmounted" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Lifecycle của component trong React:<ul>
+<li><strong>Mounting:</strong>  Component được tạo và chèn vào DOM lần đầu tiên.</li>
+<li><strong>Updating:</strong>  Component được render lại khi props hoặc state thay đổi.</li>
+<li><strong>Unmounting:</strong> Component bị xóa khỏi DOM.</li>
+</ul>
+</li>
+</ul>
+<h3 id="33-react-useeffect-hook-chi-tiet-danh-cho-nguoi-moi-react-js">33. React useEffect hook chi tiết dành cho người mới | React JS<a class="headerlink" href="#33-react-useeffect-hook-chi-tiet-danh-cho-nguoi-moi-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>useEffect</code> hook là hook quan trọng nhất để xử lý <strong>side effects</strong> (tác dụng phụ) trong function component. Side effects là các tác vụ tương tác với "thế giới bên ngoài" React component, ví dụ:</p>
+<ul>
+<li>Gọi API (fetch data).</li>
+<li>DOM manipulation (thay đổi DOM trực tiếp - ít dùng trong React).</li>
+<li>Timer functions (setTimeout, setInterval).</li>
+<li>Logging.</li>
+</ul>
+</li>
+<li>
+<p><strong>Cú pháp:</strong> <code>useEffect(callback, [dependencies]);</code></p>
+<ul>
+<li><code>callback</code>:  Function chứa side effect code, sẽ được chạy sau mỗi lần render (hoặc sau lần render đầu tiên, tùy thuộc vào <code>dependencies</code>).</li>
+<li><code>dependencies</code> (tùy chọn): Mảng các giá trị dependencies. React sẽ so sánh các giá trị này sau mỗi lần render.<ul>
+<li>Nếu <code>dependencies</code> <strong>không được truyền</strong>: <code>callback</code> chạy sau <strong>mỗi lần render</strong>.</li>
+<li>Nếu <code>dependencies</code> là <strong>mảng rỗng <code>[]</code></strong>: <code>callback</code> chỉ chạy <strong>một lần sau lần render đầu tiên</strong> (tương tự <code>componentDidMount</code> trong class component).</li>
+<li>Nếu <code>dependencies</code> là <strong>mảng có giá trị</strong>: <code>callback</code> chạy khi lần render đầu tiên và khi <strong>bất kỳ giá trị nào trong <code>dependencies</code> thay đổi</strong> (tương tự <code>componentDidUpdate</code> trong class component).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ (useEffect với mảng rỗng <code>[]</code> - chạy một lần sau render đầu tiên):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">MyComponent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">data</span><span class="p">,</span><span class="w"> </span><span class="nx">setData</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span>
+
+<span class="w">    </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// Gọi API fetch data khi component mounted (render lần đầu)</span>
+<span class="w">    </span><span class="nx">fetch</span><span class="p">(</span><span class="s1">&#39;https://api.example.com/data&#39;</span><span class="p">)</span>
+<span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">response</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">response</span><span class="p">.</span><span class="nx">json</span><span class="p">())</span>
+<span class="w">        </span><span class="p">.</span><span class="nx">then</span><span class="p">(</span><span class="nx">data</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setData</span><span class="p">(</span><span class="nx">data</span><span class="p">));</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span><span class="w"> </span><span class="c1">// Mảng dependencies rỗng -&gt; chỉ chạy một lần sau render đầu</span>
+
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="o">!</span><span class="nx">data</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Loading</span><span class="p">...&lt;/</span><span class="nt">p</span><span class="p">&gt;;</span>
+<span class="w">    </span><span class="p">}</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">{</span><span class="cm">/* Render data */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Data</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">data</span><span class="p">.</span><span class="nx">value</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="34-useeffect-with-dependencies-react-hooks-2021-react-js">34. useEffect() with dependencies | React hooks 2021 | React JS<a class="headerlink" href="#34-useeffect-with-dependencies-react-hooks-2021-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Đi sâu hơn về <code>useEffect</code> hook với <code>dependencies</code>. Giải thích cách React theo dõi dependencies và khi nào <code>callback</code> function được chạy lại.</li>
+</ul>
+<h3 id="35-useeffect-with-dom-events-react-hooks-2021-react-js">35. useEffect() with DOM events | React hooks 2021 | React JS<a class="headerlink" href="#35-useeffect-with-dom-events-react-hooks-2021-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong>  Sử dụng <code>useEffect</code> để đăng ký và hủy đăng ký DOM events (ví dụ: <code>window.addEventListener</code>, <code>document.addEventListener</code>).  Cần cleanup event listener khi component unmounted để tránh memory leaks.</p>
+</li>
+<li>
+<p><strong>Ví dụ (useEffect với DOM event - scroll event):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">ScrollIndicator</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">scrollY</span><span class="p">,</span><span class="w"> </span><span class="nx">setScrollY</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+
+<span class="w">    </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">handleScroll</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nx">setScrollY</span><span class="p">(</span><span class="nb">window</span><span class="p">.</span><span class="nx">scrollY</span><span class="p">);</span><span class="w"> </span><span class="c1">// Cập nhật scrollY state khi scroll</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="s1">&#39;scroll&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleScroll</span><span class="p">);</span><span class="w"> </span><span class="c1">// Đăng ký event listener</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Cleanup function (chạy khi component unmounted)</span>
+<span class="w">        </span><span class="nb">window</span><span class="p">.</span><span class="nx">removeEventListener</span><span class="p">(</span><span class="s1">&#39;scroll&#39;</span><span class="p">,</span><span class="w"> </span><span class="nx">handleScroll</span><span class="p">);</span><span class="w"> </span><span class="c1">// Hủy đăng ký event listener</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span><span class="w"> </span><span class="c1">// Mảng dependencies rỗng -&gt; chỉ đăng ký và hủy đăng ký một lần</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Scroll</span><span class="w"> </span><span class="nx">Y</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">scrollY</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="36-useeffect-with-timer-functions-lam-viec-voi-setinterval-settimeout">36. useEffect() with timer functions | Làm việc với setInterval &amp; setTimeout<a class="headerlink" href="#36-useeffect-with-timer-functions-lam-viec-voi-setinterval-settimeout" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong>  Sử dụng <code>useEffect</code> để làm việc với timer functions (<code>setTimeout</code>, <code>setInterval</code>). Cần cleanup timer (clear timeout/interval) khi component unmounted để tránh memory leaks và các hành vi không mong muốn.</p>
+</li>
+<li>
+<p><strong>Ví dụ (useEffect với setInterval - cập nhật thời gian):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">Timer</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">time</span><span class="p">,</span><span class="w"> </span><span class="nx">setTime</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">());</span>
+
+<span class="w">    </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">intervalId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">setInterval</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Thiết lập interval</span>
+<span class="w">        </span><span class="nx">setTime</span><span class="p">(</span><span class="ow">new</span><span class="w"> </span><span class="nb">Date</span><span class="p">());</span><span class="w"> </span><span class="c1">// Cập nhật time state mỗi giây</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="mf">1000</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Cleanup function (chạy khi component unmounted)</span>
+<span class="w">        </span><span class="nx">clearInterval</span><span class="p">(</span><span class="nx">intervalId</span><span class="p">);</span><span class="w"> </span><span class="c1">// Xóa interval</span>
+<span class="w">    </span><span class="p">};</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span><span class="w"> </span><span class="c1">// Mảng dependencies rỗng -&gt; chỉ thiết lập và xóa interval một lần</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Current</span><span class="w"> </span><span class="nx">Time</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">time</span><span class="p">.</span><span class="nx">toLocaleTimeString</span><span class="p">()}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="37-useeffect-with-preview-avatar-ham-don-dep-cleanup-function">37. useEffect() with preview avatar | Hàm dọn dẹp Cleanup function<a class="headerlink" href="#37-useeffect-with-preview-avatar-ham-don-dep-cleanup-function" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Ví dụ thực tế sử dụng <code>useEffect</code> và cleanup function để preview avatar (ảnh đại diện) khi người dùng chọn file ảnh. Cleanup function có thể dùng để hủy các tác vụ bất đồng bộ đang chạy (ví dụ: hủy fetch request) hoặc giải phóng tài nguyên.</li>
+</ul>
+<h3 id="38-useeffect-with-fake-chat-app-xu-ly-cac-chuc-nang-thoi-gian-thuc">38. useEffect() with fake Chat App | Xử lý các chức năng thời gian thực<a class="headerlink" href="#38-useeffect-with-fake-chat-app-xu-ly-cac-chuc-nang-thoi-gian-thuc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Ví dụ phức tạp hơn sử dụng <code>useEffect</code> để xây dựng một ứng dụng chat giả lập, xử lý các chức năng thời gian thực (ví dụ: nhận tin nhắn mới sau mỗi khoảng thời gian).</li>
+</ul>
+<h3 id="39-uselayouteffect-hook-phan-biet-useeffect-va-uselayouteffect-react-js">39. useLayoutEffect() hook | Phân biệt useEffect và useLayoutEffect | React JS<a class="headerlink" href="#39-uselayouteffect-hook-phan-biet-useeffect-va-uselayouteffect-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> <code>useLayoutEffect</code> hook tương tự <code>useEffect</code>, nhưng callback function của <code>useLayoutEffect</code> được chạy <strong>đồng bộ</strong> (synchronously) <strong>ngay sau khi DOM được cập nhật, nhưng trước khi trình duyệt vẽ lại màn hình</strong>. <code>useEffect</code> chạy <strong>bất đồng bộ</strong> (asynchronously) <strong>sau khi trình duyệt đã vẽ lại màn hình</strong>.<ul>
+<li><strong><code>useLayoutEffect</code>:</strong>  Chạy trước khi trình duyệt vẽ, có thể chặn rendering, dùng cho các tác vụ cần đo lường layout, DOM manipulation trước khi hiển thị lên màn hình (ví dụ: tính toán vị trí, kích thước element...). Cẩn thận khi dùng vì có thể ảnh hưởng đến performance.</li>
+<li><strong><code>useEffect</code>:</strong>  Chạy sau khi trình duyệt vẽ, không chặn rendering, dùng cho hầu hết các side effects thông thường (gọi API, timer, event listener...). <strong>Nên ưu tiên dùng <code>useEffect</code></strong>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="40-useref-hook-cach-su-dung-useref-hook">40. useRef() hook | Cách sử dụng useRef() hook<a class="headerlink" href="#40-useref-hook-cach-su-dung-useref-hook" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>useRef</code> hook dùng để tạo ra một <strong>reference</strong> (tham chiếu) đến một giá trị nào đó, giá trị này được giữ nguyên giữa các lần re-render của component. <code>useRef</code> trả về một object có thuộc tính <code>.current</code>, có thể được gán bất kỳ giá trị nào.</p>
+<ul>
+<li><strong>Ứng dụng chính:</strong><ul>
+<li>Truy cập trực tiếp DOM element (ví dụ: focus vào input, gọi method của element).</li>
+<li>Lưu trữ các giá trị mutable (có thể thay đổi) mà không gây re-render component (ví dụ: timer ID, giá trị đếm...).</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ (useRef để focus input):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useRef</span><span class="p">,</span><span class="w"> </span><span class="nx">useEffect</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">FocusInput</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">inputRef</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useRef</span><span class="p">(</span><span class="kc">null</span><span class="p">);</span><span class="w"> </span><span class="c1">// Tạo ref, initial value null</span>
+
+<span class="w">    </span><span class="nx">useEffect</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">inputRef</span><span class="p">.</span><span class="nx">current</span><span class="p">.</span><span class="nx">focus</span><span class="p">();</span><span class="w"> </span><span class="c1">// Focus vào input khi component mounted</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[]);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">input</span><span class="w"> </span><span class="na">type</span><span class="o">=</span><span class="s">&quot;text&quot;</span><span class="w"> </span><span class="na">ref</span><span class="o">=</span><span class="p">{</span><span class="nx">inputRef</span><span class="p">}</span><span class="w"> </span><span class="na">placeholder</span><span class="o">=</span><span class="s">&quot;Nhập gì đó...&quot;</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Gán ref cho input element */</span><span class="p">}</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="41-reactmemo-hoc-phuong-thuc-memo-trong-react-react-js">41. React.memo() HOC | Phương thức memo trong react | React JS<a class="headerlink" href="#41-reactmemo-hoc-phuong-thuc-memo-trong-react-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>React.memo()</code> là một Higher-Order Component (HOC - component bậc cao) dùng để <strong>memoize</strong> (ghi nhớ) một function component. Memoization giúp <strong>tối ưu hiệu năng</strong> bằng cách <strong>tránh re-render component nếu props không thay đổi</strong>.  <code>React.memo()</code> chỉ so sánh props (shallow comparison).</p>
+</li>
+<li>
+<p><strong>Ví dụ (React.memo):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="c1">// Component con, được memoize</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">MyComponent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">memo</span><span class="p">(</span><span class="kd">function</span><span class="w"> </span><span class="nx">MyComponent</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;MyComponent re-rendered!&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Log khi component re-render</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Value</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">props</span><span class="p">.</span><span class="nx">value</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;;</span>
+<span class="p">});</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">ParentComponent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">MyComponent</span><span class="w"> </span><span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">count</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Truyền count prop */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setCount</span><span class="p">(</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">)}&gt;</span><span class="nx">Increment</span><span class="w"> </span><span class="nx">Count</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="42-usecallback-hook-tranh-tao-ra-ham-moi-khong-can-thiet-voi-usecallback">42. useCallback() hook | Tránh tạo ra hàm mới không cần thiết với useCallback()<a class="headerlink" href="#42-usecallback-hook-tranh-tao-ra-ham-moi-khong-can-thiet-voi-usecallback" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>useCallback</code> hook dùng để <strong>memoize</strong> (ghi nhớ) một <strong>callback function</strong>. Trả về một phiên bản memoized của callback function.  Giúp <strong>tối ưu hiệu năng</strong>, đặc biệt khi truyền callback function xuống các component con được memoize (<code>React.memo()</code>) hoặc dùng trong <code>useEffect</code> dependencies.  <code>useCallback</code> chỉ memoize function khi dependencies không thay đổi.</p>
+</li>
+<li>
+<p><strong>Cú pháp:</strong> <code>const memoizedCallback = useCallback(callback, [dependencies]);</code></p>
+</li>
+<li>
+<p><strong>Ví dụ (useCallback):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useCallback</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">MyButton</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">React</span><span class="p">.</span><span class="nx">memo</span><span class="p">(({</span><span class="w"> </span><span class="nx">onClick</span><span class="p">,</span><span class="w"> </span><span class="nx">label</span><span class="w"> </span><span class="p">})</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;MyButton re-rendered!&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">onClick</span><span class="p">}&gt;{</span><span class="nx">label</span><span class="p">}&lt;/</span><span class="nt">button</span><span class="p">&gt;;</span>
+<span class="p">});</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">ParentComponent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count1</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount1</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">count2</span><span class="p">,</span><span class="w"> </span><span class="nx">setCount2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">0</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Memoize incrementCount1 callback function</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">incrementCount1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useCallback</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">setCount1</span><span class="p">(</span><span class="nx">count1</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">count1</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Dependency là count1</span>
+
+<span class="w">    </span><span class="c1">// incrementCount2 không được memoize (tạo mới mỗi lần render)</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">incrementCount2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">setCount2</span><span class="p">(</span><span class="nx">count2</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="p">);</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">MyButton</span><span class="w"> </span><span class="na">label</span><span class="o">=</span><span class="p">{</span><span class="sb">`Count 1: </span><span class="si">${</span><span class="nx">count1</span><span class="si">}</span><span class="sb">`</span><span class="p">}</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">incrementCount1</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Truyền memoized callback */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">MyButton</span><span class="w"> </span><span class="na">label</span><span class="o">=</span><span class="p">{</span><span class="sb">`Count 2: </span><span class="si">${</span><span class="nx">count2</span><span class="si">}</span><span class="sb">`</span><span class="p">}</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">incrementCount2</span><span class="p">}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Truyền non-memoized callback */</span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="43-usememo-hook-tranh-thuc-hien-lai-1-logic-khong-can-thiet-voi-usememo">43. useMemo() hook | Tránh thực hiện lại 1 logic không cần thiết với useMemo()<a class="headerlink" href="#43-usememo-hook-tranh-thuc-hien-lai-1-logic-khong-can-thiet-voi-usememo" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>useMemo</code> hook dùng để <strong>memoize</strong> (ghi nhớ) kết quả của một <strong>expensive calculation</strong> (tính toán tốn kém). Trả về giá trị đã được memoize. Giúp <strong>tối ưu hiệu năng</strong> bằng cách <strong>tránh thực hiện lại tính toán nếu dependencies không thay đổi</strong>. <code>useMemo</code> chỉ tính toán lại giá trị khi dependencies thay đổi.</p>
+</li>
+<li>
+<p><strong>Cú pháp:</strong> <code>const memoizedValue = useMemo(() =&gt; expensiveCalculation(), [dependencies]);</code></p>
+</li>
+<li>
+<p><strong>Ví dụ (useMemo):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useState</span><span class="p">,</span><span class="w"> </span><span class="nx">useMemo</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">FibonacciCalculator</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">number</span><span class="p">,</span><span class="w"> </span><span class="nx">setNumber</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="mf">5</span><span class="p">);</span>
+
+<span class="w">    </span><span class="c1">// Memoize kết quả tính Fibonacci</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">fibonacciResult</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useMemo</span><span class="p">(()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">&#39;Calculating Fibonacci...&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Log khi tính toán Fibonacci</span>
+<span class="w">    </span><span class="kd">function</span><span class="w"> </span><span class="nx">fibonacci</span><span class="p">(</span><span class="nx">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="k">return</span><span class="w"> </span><span class="nx">n</span><span class="p">;</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">fibonacci</span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="nx">fibonacci</span><span class="p">(</span><span class="nx">n</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">2</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="nx">fibonacci</span><span class="p">(</span><span class="nx">number</span><span class="p">);</span><span class="w"> </span><span class="c1">// Expensive calculation</span>
+<span class="w">    </span><span class="p">},</span><span class="w"> </span><span class="p">[</span><span class="nx">number</span><span class="p">]);</span><span class="w"> </span><span class="c1">// Dependency là number</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">input</span>
+<span class="w">        </span><span class="na">type</span><span class="o">=</span><span class="s">&quot;number&quot;</span>
+<span class="w">        </span><span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">number</span><span class="p">}</span>
+<span class="w">        </span><span class="na">onChange</span><span class="o">=</span><span class="p">{(</span><span class="nx">e</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">setNumber</span><span class="p">(</span><span class="nb">parseInt</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">target</span><span class="p">.</span><span class="nx">value</span><span class="p">))}</span>
+<span class="w">        </span><span class="p">/&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Fibonacci</span><span class="p">({</span><span class="nx">number</span><span class="p">})</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="nx">fibonacciResult</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="44-usereducer-hook-khi-nao-su-dung-usereducer">44. useReducer() hook | Khi nào sử dụng useReducer()?<a class="headerlink" href="#44-usereducer-hook-khi-nao-su-dung-usereducer" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> <code>useReducer</code> hook là một hook nâng cao hơn <code>useState</code>, dùng để quản lý <strong>complex state logic</strong> (logic state phức tạp) hoặc khi state có <strong>nhiều state transitions</strong> (chuyển đổi trạng thái). <code>useReducer</code> tương tự <code>useState</code> nhưng quản lý state thông qua <strong>reducer function</strong> (hàm reducer) và <strong>dispatch actions</strong> (gửi action). Lấy cảm hứng từ Redux.</p>
+</li>
+<li>
+<p><strong>Cú pháp:</strong> <code>const [state, dispatch] = useReducer(reducer, initialArg, init);</code></p>
+<ul>
+<li><code>reducer(state, action)</code>: Hàm reducer, nhận state hiện tại và action, trả về state mới.</li>
+<li><code>initialArg</code>:  Initial state hoặc giá trị khởi tạo để truyền vào <code>init</code> function.</li>
+<li><code>init(initialArg)</code> (tùy chọn): Function để khởi tạo initial state một cách lazy (chỉ chạy một lần đầu).</li>
+<li><code>state</code>:  State hiện tại.</li>
+<li><code>dispatch(action)</code>: Function để gửi action tới reducer, kích hoạt cập nhật state.</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ (useReducer):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">useReducer</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="c1">// Reducer function</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">counterReducer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">action</span><span class="p">)</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="nx">action</span><span class="p">.</span><span class="nx">type</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s1">&#39;INCREMENT&#39;</span><span class="o">:</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">count</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s1">&#39;DECREMENT&#39;</span><span class="o">:</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="nx">state</span><span class="p">.</span><span class="nx">count</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mf">1</span><span class="w"> </span><span class="p">};</span>
+<span class="w">    </span><span class="k">default</span><span class="o">:</span>
+<span class="w">        </span><span class="k">return</span><span class="w"> </span><span class="nx">state</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">};</span>
+
+<span class="kd">const</span><span class="w"> </span><span class="nx">initialState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">count</span><span class="o">:</span><span class="w"> </span><span class="mf">0</span><span class="w"> </span><span class="p">};</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">CounterWithReducer</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">state</span><span class="p">,</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useReducer</span><span class="p">(</span><span class="nx">counterReducer</span><span class="p">,</span><span class="w"> </span><span class="nx">initialState</span><span class="p">);</span><span class="w"> </span><span class="c1">// useReducer hook</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">Count</span><span class="o">:</span><span class="w"> </span><span class="p">{</span><span class="nx">state</span><span class="p">.</span><span class="nx">count</span><span class="p">}&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;INCREMENT&#39;</span><span class="w"> </span><span class="p">})}&gt;</span><span class="nx">Increment</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Dispatch INCREMENT action */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="nx">dispatch</span><span class="p">({</span><span class="w"> </span><span class="nx">type</span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;DECREMENT&#39;</span><span class="w"> </span><span class="p">})}&gt;</span><span class="nx">Decrement</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Dispatch DECREMENT action */</span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="45-todo-app-with-usereducer-hook-hieu-ro-hon-ve-usereducer">45. Todo App with useReducer() hook | Hiểu rõ hơn về useReducer()<a class="headerlink" href="#45-todo-app-with-usereducer-hook-hieu-ro-hon-ve-usereducer" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Thực hành xây dựng ứng dụng Todolist sử dụng <code>useReducer</code> hook để quản lý state phức tạp hơn (ví dụ: thêm, xóa, sửa, toggle completed, filter todo).</li>
+</ul>
+<h3 id="46-usereducer-recap-react-hooks-2021-react-js">46. useReducer() recap | React hooks 2021 | React JS<a class="headerlink" href="#46-usereducer-recap-react-hooks-2021-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Tổng kết và ôn lại <code>useReducer</code> hook, so sánh với <code>useState</code>, khi nào nên dùng <code>useReducer</code>.</li>
+</ul>
+<h3 id="47-react-context-usecontext-hook-khai-niem-usecontext">47. React Context &amp; useContext() hook | Khái niệm useContext()<a class="headerlink" href="#47-react-context-usecontext-hook-khai-niem-usecontext" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> React Context API cung cấp cách chia sẻ dữ liệu (state) <strong>toàn cục</strong> (global state) cho toàn bộ cây component <strong>mà không cần truyền props qua nhiều tầng component</strong>.  <code>useContext</code> hook giúp function component truy cập context value.</p>
+</li>
+<li>
+<p><strong>Các bước sử dụng Context:</strong></p>
+<ol>
+<li><strong>Tạo Context:</strong> <code>const MyContext = React.createContext(defaultValue);</code></li>
+<li><strong>Provider:</strong>  Component cha bọc các component con cần truy cập context, cung cấp value bằng prop <code>value</code>: <code>&lt;MyContext.Provider value={contextValue}&gt;...&lt;/MyContext.Provider&gt;</code>.</li>
+<li><strong>Consumer (useContext hook):</strong> Component con sử dụng <code>useContext(MyContext)</code> để truy cập <code>contextValue</code>.</li>
+</ol>
+</li>
+<li>
+<p><strong>Ví dụ (Context và useContext):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">createContext</span><span class="p">,</span><span class="w"> </span><span class="nx">useContext</span><span class="p">,</span><span class="w"> </span><span class="nx">useState</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+
+<span class="c1">// 1. Tạo Context</span>
+<span class="kd">const</span><span class="w"> </span><span class="nx">ThemeContext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">createContext</span><span class="p">(</span><span class="s1">&#39;light&#39;</span><span class="p">);</span><span class="w"> </span><span class="c1">// Default value &#39;light&#39;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">[</span><span class="nx">theme</span><span class="p">,</span><span class="w"> </span><span class="nx">setTheme</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useState</span><span class="p">(</span><span class="s1">&#39;light&#39;</span><span class="p">);</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">toggleTheme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">()</span><span class="w"> </span><span class="p">=&gt;</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nx">setTheme</span><span class="p">(</span><span class="nx">theme</span><span class="w"> </span><span class="o">===</span><span class="w"> </span><span class="s1">&#39;light&#39;</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="s1">&#39;dark&#39;</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="s1">&#39;light&#39;</span><span class="p">);</span>
+<span class="w">    </span><span class="p">};</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="c1">// 2. Provider, cung cấp theme value</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">ThemeContext</span><span class="p">.</span><span class="na">Provider</span><span class="w"> </span><span class="na">value</span><span class="o">=</span><span class="p">{</span><span class="nx">theme</span><span class="p">}&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">Toolbar</span><span class="w"> </span><span class="p">/&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">onClick</span><span class="o">=</span><span class="p">{</span><span class="nx">toggleTheme</span><span class="p">}&gt;</span><span class="nx">Toggle</span><span class="w"> </span><span class="nx">Theme</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">ThemeContext</span><span class="p">.</span><span class="na">Provider</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">Toolbar</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">ThemedButton</span><span class="w"> </span><span class="p">/&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">ThemedButton</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="c1">// 3. Consumer (useContext hook), truy cập theme value</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">theme</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">useContext</span><span class="p">(</span><span class="nx">ThemeContext</span><span class="p">);</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">button</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="p">{</span><span class="nx">theme</span><span class="p">}&gt;</span><span class="nx">Themed</span><span class="w"> </span><span class="nx">Button</span><span class="p">&lt;/</span><span class="nt">button</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="48-global-state-with-context-usereducer-trang-thai-toan-cuc">48. Global State with Context + useReducer |  Trạng thái toàn cục<a class="headerlink" href="#48-global-state-with-context-usereducer-trang-thai-toan-cuc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Kết hợp Context API và <code>useReducer</code> hook để tạo <strong>global state management</strong> (quản lý state toàn cục) mạnh mẽ. Context cung cấp cơ chế chia sẻ state, <code>useReducer</code> quản lý logic cập nhật state phức tạp. Mô hình tương tự Redux (nhưng đơn giản hơn).</li>
+</ul>
+<h3 id="49-useimperativehandle-hook-react-js">49. useImperativeHandle() hook | React JS<a class="headerlink" href="#49-useimperativehandle-hook-react-js" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> <code>useImperativeHandle</code> hook là hook nâng cao, dùng để <strong>customizing the ref</strong> được expose (phơi bày) ra ngoài component con khi component cha sử dụng <code>ref</code> để truy cập component con. Thường dùng khi cần kiểm soát imperative (mệnh lệnh) component con từ component cha (ví dụ: focus input, gọi method của component con), nhưng <strong>hạn chế sử dụng</strong>, nên ưu tiên declarative approach (điều khiển component con qua props).</li>
+</ul>
+<h2 id="phan-3-styling-va-routing">Phần 3: Styling và Routing<a class="headerlink" href="#phan-3-styling-va-routing" title="Permanent link">&para;</a></h2>
+<h3 id="50-su-dung-css-trong-du-an-reactjs-css-in-react">50. Sử dụng CSS trong dự án ReactJS | CSS in React<a class="headerlink" href="#50-su-dung-css-trong-du-an-reactjs-css-in-react" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Các cách styling CSS trong ReactJS:<ul>
+<li><strong>Inline Styles:</strong>  Viết style trực tiếp trong attribute <code>style</code> của JSX element. Style là object JavaScript.</li>
+<li><strong>External CSS Files:</strong>  Import file CSS vào component. Class names trong CSS file có thể bị trùng nhau giữa các component (global scope).</li>
+<li><strong>CSS Modules:</strong>  Giải pháp để CSS có scope theo component, tránh xung đột class names. File CSS module có đuôi <code>.module.css</code>. Import class names từ CSS module vào component như object.</li>
+<li><strong>CSS-in-JS Libraries:</strong>  Thư viện viết CSS trực tiếp trong JavaScript (ví dụ: Styled Components, Emotion).</li>
+</ul>
+</li>
+</ul>
+<h3 id="51-css-module-la-gi-su-dung-css-module-nhu-the-nao">51. CSS module là gì? | Sử dụng CSS module như thế nào?<a class="headerlink" href="#51-css-module-la-gi-su-dung-css-module-nhu-the-nao" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong>  CSS Modules (đã đề cập ở mục trên) là một cách để viết CSS có scope theo component. Khi sử dụng CSS Modules, mỗi class name trong CSS file sẽ được "hash" (băm) thành một tên class duy nhất, tránh xung đột class names giữa các component.</p>
+</li>
+<li>
+<p><strong>Ví dụ (CSS Modules):</strong></p>
+<ul>
+<li><strong><code>MyComponent.module.css</code>:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="p">.</span><span class="nc">title</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">color</span><span class="p">:</span><span class="w"> </span><span class="kc">blue</span><span class="p">;</span>
+<span class="w">    </span><span class="k">font-size</span><span class="p">:</span><span class="w"> </span><span class="mi">24</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+
+<span class="p">.</span><span class="nc">container</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">border</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="kt">px</span><span class="w"> </span><span class="kc">solid</span><span class="w"> </span><span class="kc">black</span><span class="p">;</span>
+<span class="w">    </span><span class="k">padding</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="kt">px</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<ul>
+<li><strong><code>MyComponent.js</code>:</strong></li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="nx">styles</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;./MyComponent.module.css&#39;</span><span class="p">;</span><span class="w"> </span><span class="c1">// Import styles object</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">MyComponent</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">container</span><span class="p">}&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Sử dụng styles.container */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">h1</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="p">{</span><span class="nx">styles</span><span class="p">.</span><span class="nx">title</span><span class="p">}&gt;</span><span class="nx">Hello</span><span class="w"> </span><span class="nx">CSS</span><span class="w"> </span><span class="nx">Modules</span><span class="p">&lt;/</span><span class="nt">h1</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Sử dụng styles.title */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">p</span><span class="p">&gt;</span><span class="nx">This</span><span class="w"> </span><span class="nx">is</span><span class="w"> </span><span class="nx">a</span><span class="w"> </span><span class="nx">CSS</span><span class="w"> </span><span class="nx">Module</span><span class="w"> </span><span class="nx">example</span><span class="p">.&lt;/</span><span class="nt">p</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+</li>
+</ul>
+<h3 id="52-thu-vien-clsx-va-classnames-su-dung-nhieu-class-class-ong-trong-reactjs">52. Thư viện clsx và classnames | Sử dụng nhiều class &amp; class động trong ReactJS<a class="headerlink" href="#52-thu-vien-clsx-va-classnames-su-dung-nhieu-class-class-ong-trong-reactjs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong>  Thư viện <code>clsx</code> và <code>classnames</code> giúp quản lý class names trong ReactJS dễ dàng hơn, đặc biệt khi có nhiều class names hoặc class names thay đổi động dựa trên điều kiện.</p>
+</li>
+<li>
+<p><strong>Ví dụ (<code>classnames</code>):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">classNames</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;classnames&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">MyComponent</span><span class="p">(</span><span class="nx">props</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">isActive</span><span class="p">,</span><span class="w"> </span><span class="nx">isLarge</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">props</span><span class="p">;</span>
+
+<span class="w">    </span><span class="kd">const</span><span class="w"> </span><span class="nx">classes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">classNames</span><span class="p">(</span><span class="s1">&#39;my-component&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="c1">// Class cố định &#39;my-component&#39;</span>
+<span class="w">    </span><span class="s1">&#39;active&#39;</span><span class="o">:</span><span class="w"> </span><span class="nx">isActive</span><span class="p">,</span><span class="w">        </span><span class="c1">// Class &#39;active&#39; chỉ thêm khi isActive là true</span>
+<span class="w">    </span><span class="s1">&#39;large&#39;</span><span class="o">:</span><span class="w"> </span><span class="nx">isLarge</span><span class="p">,</span><span class="w">          </span><span class="c1">// Class &#39;large&#39; chỉ thêm khi isLarge là true</span>
+<span class="w">    </span><span class="s1">&#39;disabled&#39;</span><span class="o">:</span><span class="w"> </span><span class="o">!</span><span class="nx">isActive</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="o">!</span><span class="nx">isLarge</span><span class="w"> </span><span class="c1">// Class &#39;disabled&#39; thêm khi cả isActive và isLarge đều false</span>
+<span class="w">    </span><span class="p">});</span>
+
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">div</span><span class="w"> </span><span class="na">className</span><span class="o">=</span><span class="p">{</span><span class="nx">classes</span><span class="p">}&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Sử dụng classes */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">{</span><span class="cm">/* ... */</span><span class="p">}</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">div</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="53-install-sass-e-dung-scss-cai-at-va-su-dung-scss-trong-du-an">53. Install SASS để dùng SCSS | Cài đặt và sử dụng SCSS trong dự án<a class="headerlink" href="#53-install-sass-e-dung-scss-cai-at-va-su-dung-scss-trong-du-an" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> SCSS (Sassy CSS) là một CSS preprocessor, mở rộng CSS với các tính năng mạnh mẽ hơn (variables, nesting, mixins, functions...). Cần cài đặt SASS compiler để biên dịch file SCSS thành CSS. Trong ReactJS, có thể dùng SCSS kết hợp với CSS Modules.</li>
+</ul>
+<h3 id="54-react-router-v6-thu-vien-react-router-dom-inh-tuyen-trong-reactjs">54. React Router V6 | Thư viện React router dom | Định tuyến trong ReactJS<a class="headerlink" href="#54-react-router-v6-thu-vien-react-router-dom-inh-tuyen-trong-reactjs" title="Permanent link">&para;</a></h3>
+<ul>
+<li>
+<p><strong>Tóm tắt:</strong> React Router DOM là thư viện routing phổ biến nhất cho ReactJS, giúp xây dựng SPA với nhiều "trang" (views) khác nhau, nhưng vẫn giữ nguyên trải nghiệm SPA (không tải lại trang khi chuyển "trang"). React Router V6 là phiên bản mới nhất, có nhiều cải tiến.</p>
+</li>
+<li>
+<p><strong>Các khái niệm chính trong React Router V6:</strong></p>
+<ul>
+<li><strong>BrowserRouter:</strong>  Component router cho web browser, dùng History API để quản lý URL.</li>
+<li><strong>Routes, Route:</strong>  Component <code>Routes</code> chứa các <code>Route</code> components. <code>Route</code> định nghĩa mapping giữa path (đường dẫn URL) và component hiển thị.</li>
+<li><strong>Link, NavLink:</strong>  Component để tạo link điều hướng giữa các "trang" trong SPA. <code>NavLink</code> là phiên bản đặc biệt của <code>Link</code>, có thể active class khi link active.</li>
+<li><strong>useNavigate hook:</strong>  Hook để điều hướng programmatically (ví dụ: sau khi submit form, chuyển trang...).</li>
+<li><strong>useParams hook:</strong>  Hook để lấy parameters từ URL path (ví dụ: <code>/users/:userId</code>).</li>
+</ul>
+</li>
+<li>
+<p><strong>Ví dụ (React Router V6 cơ bản):</strong></p>
+</li>
+</ul>
+<div class="highlight"><pre><span></span><code><span class="k">import</span><span class="w"> </span><span class="nx">React</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react&#39;</span><span class="p">;</span>
+<span class="k">import</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">BrowserRouter</span><span class="p">,</span><span class="w"> </span><span class="nx">Routes</span><span class="p">,</span><span class="w"> </span><span class="nx">Route</span><span class="p">,</span><span class="w"> </span><span class="nx">Link</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="kr">from</span><span class="w"> </span><span class="s1">&#39;react-router-dom&#39;</span><span class="p">;</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">Home</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span><span class="nx">Home</span><span class="w"> </span><span class="nx">Page</span><span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">About</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">&lt;</span><span class="nt">h2</span><span class="p">&gt;</span><span class="nx">About</span><span class="w"> </span><span class="nx">Page</span><span class="p">&lt;/</span><span class="nt">h2</span><span class="p">&gt;;</span>
+<span class="p">}</span>
+
+<span class="kd">function</span><span class="w"> </span><span class="nx">App</span><span class="p">()</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span>
+<span class="w">    </span><span class="p">&lt;</span><span class="nt">BrowserRouter</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* BrowserRouter bọc ứng dụng */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">nav</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">&lt;</span><span class="nt">Link</span><span class="w"> </span><span class="na">to</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="p">&gt;</span><span class="nx">Home</span><span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Link to=&quot;/&quot; */</span><span class="p">}</span>
+<span class="w">            </span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">&lt;</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="w">            </span><span class="p">&lt;</span><span class="nt">Link</span><span class="w"> </span><span class="na">to</span><span class="o">=</span><span class="s">&quot;/about&quot;</span><span class="p">&gt;</span><span class="nx">About</span><span class="p">&lt;/</span><span class="nt">Link</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Link to=&quot;/about&quot; */</span><span class="p">}</span>
+<span class="w">            </span><span class="p">&lt;/</span><span class="nt">li</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">ul</span><span class="p">&gt;</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">nav</span><span class="p">&gt;</span>
+
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">Routes</span><span class="p">&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Routes chứa các Route */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">Route</span><span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s">&quot;/&quot;</span><span class="w"> </span><span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">Home</span><span class="w"> </span><span class="p">/&gt;}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Route cho path=&quot;/&quot; render Home component */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;</span><span class="nt">Route</span><span class="w"> </span><span class="na">path</span><span class="o">=</span><span class="s">&quot;/about&quot;</span><span class="w"> </span><span class="na">element</span><span class="o">=</span><span class="p">{&lt;</span><span class="nt">About</span><span class="w"> </span><span class="p">/&gt;}</span><span class="w"> </span><span class="p">/&gt;</span><span class="w"> </span><span class="p">{</span><span class="cm">/* Route cho path=&quot;/about&quot; render About component */</span><span class="p">}</span>
+<span class="w">        </span><span class="p">&lt;/</span><span class="nt">Routes</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">&lt;/</span><span class="nt">BrowserRouter</span><span class="p">&gt;</span>
+<span class="w">    </span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "search.suggest", "search.highlighting", "search.share"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>

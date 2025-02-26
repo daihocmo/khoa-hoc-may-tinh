@@ -1,0 +1,1913 @@
+
+<!doctype html>
+<html lang="vi" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="vozer vozer vozer vozer vozer vozer vozer vozer vozer vozer">
+      
+      
+        <meta name="author" content="duykhanh471">
+      
+      
+      
+        <link rel="prev" href="../react-js/">
+      
+      
+        <link rel="next" href="../rust-guide/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+    
+    
+      
+        <title>NodeJS & ExpressJS - Tự học Khoa học máy tính</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.8608ea7d.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#huong-dan-tu-hoc-nodejs-va-expressjs" class="md-skip">
+          Bỏ qua
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Đầu trang">
+    <a href=".." title="Tự học Khoa học máy tính" class="md-header__button md-logo" aria-label="Tự học Khoa học máy tính" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Tự học Khoa học máy tính
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              NodeJS & ExpressJS
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Tìm kiếm" placeholder="Tìm kiếm" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Tìm kiếm">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Chia sẻ" aria-label="Chia sẻ" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Xoá" aria-label="Xoá" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/daihocmo/khoa-hoc-may-tinh" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Đóng góp cho trang trên Github
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Thanh điều hướng" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Tự học Khoa học máy tính" class="md-nav__button md-logo" aria-label="Tự học Khoa học máy tính" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Tự học Khoa học máy tính
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/daihocmo/khoa-hoc-may-tinh" title="Xem mã nguồn" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Đóng góp cho trang trên Github
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trang chủ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Hướng dẫn tự học
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Hướng dẫn tự học
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../bat-dau/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bắt đầu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ghi-nho/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Ghi nhớ
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../nhat-ky-code/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Nhật ký code
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tu-duy-lap-trinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tư duy lập trình
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../cach-len-ke-hoach/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Bắt đầu dự án
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Giáo trình tự học
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Giáo trình tự học
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../khmt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hướng dẫn chính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lap-trinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lập trình
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-thong-may-tinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Kiến trúc máy tính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ctdl-gt/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    CTDL & Giải thuật
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../toan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Toán
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-dieu-hanh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hệ điều hành
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../mang-may-tinh/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Mạng máy tính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../csdl/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Cơ sở dữ liệu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../trinh-bien-dich/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Trình biên dịch
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../he-thong-phan-tan/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hệ thống phân tán
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+        
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Định hướng chuyên môn
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Định hướng chuyên môn
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lua-chon/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Lựa chọn
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_4_2" id="__nav_4_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Fullstack
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            Fullstack
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../fullstack/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hướng dẫn chính
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../html-css/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HTML/CSS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    JavaScript
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../react-js/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    React JS
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    NodeJS & ExpressJS
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    NodeJS & ExpressJS
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#phan-1-gioi-thieu-va-cai-at-moi-truong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 1: Giới thiệu và Cài đặt Môi trường
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 1: Giới thiệu và Cài đặt Môi trường">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-http-protocol-giao-thuc-http-giao-thuc-truyen-tai-sieu-van-ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. HTTP protocol | Giao thức HTTP | Giao thức truyền tải siêu văn bản
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ssr-csr-sever-side-rendering-client-side-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. SSR &amp; CSR | Sever side rendering | Client side rendering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cai-at-nodejs-express-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Cài đặt NodeJS &amp;&amp; Express framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-su-dung-thu-vien-nodemon-install-nodemon-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Sử dụng thư viện Nodemon | Install Nodemon &amp; inspector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-add-sourcode-len-github-add-git-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Add sourcode lên Github | Add git repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-cai-at-thu-vien-morgan-install-morgan-morgan-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Cài đặt thư viện Morgan | Install Morgan | Morgan - npm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-khai-niem-template-engine-su-dung-thu-vien-handlebars" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Khái niệm Template Engine | Sử dụng thư viện Handlebars
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-static-file-scss-cau-hinh-su-dung-file-tinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Static file &amp; SCSS | Cấu hình sử dụng file tĩnh
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-tich-hop-bootstrap-vao-du-an-use-bootstrap-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Tích hợp Bootstrap vào dự án | Use Bootstrap 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-2-routing-va-phuong-thuc-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 2: Routing và Phương thức HTTP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 2: Routing và Phương thức HTTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-basic-routing-ki-thuat-inh-tuyen-trong-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Basic routing | Kĩ thuật định tuyến trong NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-get-method-phuong-thuc-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. GET method | Phương thức GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-query-parameters-chuoi-truy-van" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Query parameters | Chuỗi truy vấn
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-form-default-behavior-hanh-vi-mac-inh-cua-form-trong-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Form default behavior | Hành vi mặc định của Form trong HTML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-post-method-phuong-thuc-post-giao-thuc-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. POST method | Phương thức POST | Giao thức HTTP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-3-mo-hinh-mvc-va-crud-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 3: Mô hình MVC và CRUD Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 3: Mô hình MVC và CRUD Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#15-mo-hinh-mvc-mvc-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Mô hình MVC | MVC model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-mvc-routes-controllers-mo-hinh-mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. MVC Routes &amp; Controllers | Mô hình MVC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-mvc-model-xay-dung-thanh-phan-model-trong-mo-hinh-mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. MVC Model | Xây dựng thành phần Model trong mô hình MVC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-crud-read-from-db-oc-database-xay-dung-phan-trang-chu" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. [CRUD] Read from DB | Đọc Database | Xây dựng phần trang chủ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-course-detail-page-xay-dung-trang-chi-tiet-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Course detail page | Xây dựng trang chi tiết | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-crud-create-new-course-dung-trang-tao-moi-khoa-hoc-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. [CRUD] Create new course | Dựng trang tạo mới khóa học | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-crud-update-course-dung-trang-chinh-sua-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. [CRUD] Update course | Dựng trang chỉnh sửa | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-crud-delete-course-tao-chuc-nang-xoa-trong-trang-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. [CRUD] Delete course | Tạo chức năng xóa trong trang | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-soft-delete-ki-thuat-xoa-mem-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Soft delete | Kĩ thuật xóa mềm | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-deleted-count-documents-hien-thi-so-lieu-a-xoa-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Deleted count documents | Hiển thị số liệu đã xóa | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-select-all-with-checkbox-chuc-nang-chon-bo-chon-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. "Select all" with checkbox | Chức năng chọn &amp; bỏ chọn | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-fix-bug-action-form-sua-loi-form-hanh-ong-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Fix bug action form | Sửa lỗi form hành động | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-sort-middleware-chuc-nang-sap-xep-trang-quan-ly-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Sort middleware | Chức năng sắp xếp trang quản lý | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-sort-query-helper-hoan-thien-logic-chuc-nang-sort-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Sort query helper | Hoàn thiện logic chức năng Sort | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-auto-increment-id-field-truong-tang-id-tu-ong-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Auto increment id field | Trường tăng ID tự động | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../rust-guide/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Rust
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../devops/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    DevOps
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tieng-anh-it/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tự học Tiếng Anh
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../tai-nguyen-hoc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Tài nguyên học
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Mục lục">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Mục lục
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#phan-1-gioi-thieu-va-cai-at-moi-truong" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 1: Giới thiệu và Cài đặt Môi trường
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 1: Giới thiệu và Cài đặt Môi trường">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-http-protocol-giao-thuc-http-giao-thuc-truyen-tai-sieu-van-ban" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. HTTP protocol | Giao thức HTTP | Giao thức truyền tải siêu văn bản
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-ssr-csr-sever-side-rendering-client-side-rendering" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. SSR &amp; CSR | Sever side rendering | Client side rendering
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-cai-at-nodejs-express-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Cài đặt NodeJS &amp;&amp; Express framework
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-su-dung-thu-vien-nodemon-install-nodemon-inspector" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Sử dụng thư viện Nodemon | Install Nodemon &amp; inspector
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-add-sourcode-len-github-add-git-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Add sourcode lên Github | Add git repository
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-cai-at-thu-vien-morgan-install-morgan-morgan-npm" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Cài đặt thư viện Morgan | Install Morgan | Morgan - npm
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-khai-niem-template-engine-su-dung-thu-vien-handlebars" class="md-nav__link">
+    <span class="md-ellipsis">
+      7. Khái niệm Template Engine | Sử dụng thư viện Handlebars
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-static-file-scss-cau-hinh-su-dung-file-tinh" class="md-nav__link">
+    <span class="md-ellipsis">
+      8. Static file &amp; SCSS | Cấu hình sử dụng file tĩnh
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-tich-hop-bootstrap-vao-du-an-use-bootstrap-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      9. Tích hợp Bootstrap vào dự án | Use Bootstrap 4
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-2-routing-va-phuong-thuc-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 2: Routing và Phương thức HTTP
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 2: Routing và Phương thức HTTP">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#10-basic-routing-ki-thuat-inh-tuyen-trong-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      10. Basic routing | Kĩ thuật định tuyến trong NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-get-method-phuong-thuc-get" class="md-nav__link">
+    <span class="md-ellipsis">
+      11. GET method | Phương thức GET
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-query-parameters-chuoi-truy-van" class="md-nav__link">
+    <span class="md-ellipsis">
+      12. Query parameters | Chuỗi truy vấn
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-form-default-behavior-hanh-vi-mac-inh-cua-form-trong-html" class="md-nav__link">
+    <span class="md-ellipsis">
+      13. Form default behavior | Hành vi mặc định của Form trong HTML
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-post-method-phuong-thuc-post-giao-thuc-http" class="md-nav__link">
+    <span class="md-ellipsis">
+      14. POST method | Phương thức POST | Giao thức HTTP
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#phan-3-mo-hinh-mvc-va-crud-operations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Phần 3: Mô hình MVC và CRUD Operations
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Phần 3: Mô hình MVC và CRUD Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#15-mo-hinh-mvc-mvc-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      15. Mô hình MVC | MVC model
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16-mvc-routes-controllers-mo-hinh-mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      16. MVC Routes &amp; Controllers | Mô hình MVC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#17-mvc-model-xay-dung-thanh-phan-model-trong-mo-hinh-mvc" class="md-nav__link">
+    <span class="md-ellipsis">
+      17. MVC Model | Xây dựng thành phần Model trong mô hình MVC
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#18-crud-read-from-db-oc-database-xay-dung-phan-trang-chu" class="md-nav__link">
+    <span class="md-ellipsis">
+      18. [CRUD] Read from DB | Đọc Database | Xây dựng phần trang chủ
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#19-course-detail-page-xay-dung-trang-chi-tiet-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      19. Course detail page | Xây dựng trang chi tiết | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#20-crud-create-new-course-dung-trang-tao-moi-khoa-hoc-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      20. [CRUD] Create new course | Dựng trang tạo mới khóa học | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#21-crud-update-course-dung-trang-chinh-sua-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      21. [CRUD] Update course | Dựng trang chỉnh sửa | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-crud-delete-course-tao-chuc-nang-xoa-trong-trang-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      22. [CRUD] Delete course | Tạo chức năng xóa trong trang | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-soft-delete-ki-thuat-xoa-mem-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      23. Soft delete | Kĩ thuật xóa mềm | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-deleted-count-documents-hien-thi-so-lieu-a-xoa-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      24. Deleted count documents | Hiển thị số liệu đã xóa | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-select-all-with-checkbox-chuc-nang-chon-bo-chon-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      25. "Select all" with checkbox | Chức năng chọn &amp; bỏ chọn | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-fix-bug-action-form-sua-loi-form-hanh-ong-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      26. Fix bug action form | Sửa lỗi form hành động | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#27-sort-middleware-chuc-nang-sap-xep-trang-quan-ly-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      27. Sort middleware | Chức năng sắp xếp trang quản lý | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#28-sort-query-helper-hoan-thien-logic-chuc-nang-sort-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      28. Sort query helper | Hoàn thiện logic chức năng Sort | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#29-auto-increment-id-field-truong-tang-id-tu-ong-thuc-hanh-nodejs" class="md-nav__link">
+    <span class="md-ellipsis">
+      29. Auto increment id field | Trường tăng ID tự động | Thực hành NodeJS
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="huong-dan-tu-hoc-nodejs-va-expressjs">Hướng dẫn tự học NodeJS và ExpressJS<a class="headerlink" href="#huong-dan-tu-hoc-nodejs-va-expressjs" title="Permanent link">&para;</a></h1>
+<p>Dựa trên khóa học của F8</p>
+<h2 id="phan-1-gioi-thieu-va-cai-at-moi-truong">Phần 1: Giới thiệu và Cài đặt Môi trường<a class="headerlink" href="#phan-1-gioi-thieu-va-cai-at-moi-truong" title="Permanent link">&para;</a></h2>
+<h3 id="1-http-protocol-giao-thuc-http-giao-thuc-truyen-tai-sieu-van-ban">1. HTTP protocol | Giao thức HTTP | Giao thức truyền tải siêu văn bản<a class="headerlink" href="#1-http-protocol-giao-thuc-http-giao-thuc-truyen-tai-sieu-van-ban" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  HTTP (Hypertext Transfer Protocol) là giao thức nền tảng của World Wide Web, quy định cách client (ví dụ: trình duyệt web) và server giao tiếp với nhau để truyền tải dữ liệu (ví dụ: trang web, hình ảnh, video...). Hiểu về các khái niệm cơ bản của HTTP như request methods (GET, POST...), status codes, headers... là rất quan trọng để lập trình web.</li>
+</ul>
+<h3 id="2-ssr-csr-sever-side-rendering-client-side-rendering">2. SSR &amp; CSR | Sever side rendering | Client side rendering<a class="headerlink" href="#2-ssr-csr-sever-side-rendering-client-side-rendering" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Phân biệt giữa SSR (Server-Side Rendering - Kết xuất phía máy chủ) và CSR (Client-Side Rendering - Kết xuất phía máy khách):<ul>
+<li><strong>SSR:</strong> Server tạo ra trang HTML hoàn chỉnh và gửi về cho client. Trình duyệt chỉ cần hiển thị. Ưu điểm: SEO tốt hơn, tải trang nhanh hơn lần đầu.</li>
+<li><strong>CSR:</strong> Server gửi về trang HTML cơ bản và JavaScript. Trình duyệt tải JavaScript và tự render trang. Ưu điểm: Tương tác mượt mà hơn sau lần tải đầu.</li>
+<li>NodeJS và ExpressJS thường được dùng để xây dựng server backend, có thể hỗ trợ cả SSR và CSR (kết hợp với ReactJS hoặc các frontend framework khác).</li>
+</ul>
+</li>
+</ul>
+<h3 id="3-cai-at-nodejs-express-framework">3. Cài đặt NodeJS &amp;&amp; Express framework<a class="headerlink" href="#3-cai-at-nodejs-express-framework" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hướng dẫn cài đặt NodeJS (môi trường runtime JavaScript phía server) và ExpressJS (framework web cho NodeJS, giúp xây dựng ứng dụng web và API nhanh chóng).</li>
+</ul>
+<h3 id="4-su-dung-thu-vien-nodemon-install-nodemon-inspector">4. Sử dụng thư viện Nodemon | Install Nodemon &amp; inspector<a class="headerlink" href="#4-su-dung-thu-vien-nodemon-install-nodemon-inspector" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong><ul>
+<li><strong>Nodemon:</strong>  Thư viện giúp tự động restart server NodeJS khi code có thay đổi, giúp tăng tốc độ phát triển.</li>
+<li><strong>Inspector (Node Inspector/Chrome DevTools):</strong>  Công cụ để debug code NodeJS, giúp tìm và sửa lỗi.</li>
+</ul>
+</li>
+</ul>
+<h3 id="5-add-sourcode-len-github-add-git-repository">5. Add sourcode lên Github | Add git repository<a class="headerlink" href="#5-add-sourcode-len-github-add-git-repository" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hướng dẫn cách khởi tạo Git repository và đẩy source code dự án lên Github để quản lý phiên bản và chia sẻ code.</li>
+</ul>
+<h3 id="6-cai-at-thu-vien-morgan-install-morgan-morgan-npm">6. Cài đặt thư viện Morgan | Install Morgan | Morgan - npm<a class="headerlink" href="#6-cai-at-thu-vien-morgan-install-morgan-morgan-npm" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Morgan là middleware (phần mềm trung gian) cho ExpressJS, dùng để logging các HTTP request (ví dụ: method, path, status code, thời gian phản hồi...). Giúp theo dõi hoạt động của server và debug.</li>
+</ul>
+<h3 id="7-khai-niem-template-engine-su-dung-thu-vien-handlebars">7. Khái niệm Template Engine | Sử dụng thư viện Handlebars<a class="headerlink" href="#7-khai-niem-template-engine-su-dung-thu-vien-handlebars" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Template Engine (ví dụ: Handlebars, EJS, Pug) giúp tạo ra HTML động từ dữ liệu server-side. Thay vì viết HTML cứng, template engine cho phép nhúng logic (ví dụ: vòng lặp, điều kiện) và dữ liệu vào HTML template, sau đó engine sẽ render ra HTML cuối cùng. Handlebars là một template engine phổ biến cho NodeJS.</li>
+</ul>
+<h3 id="8-static-file-scss-cau-hinh-su-dung-file-tinh">8. Static file &amp; SCSS | Cấu hình sử dụng file tĩnh<a class="headerlink" href="#8-static-file-scss-cau-hinh-su-dung-file-tinh" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong><ul>
+<li><strong>Static files:</strong>  Các file tĩnh (ví dụ: CSS, JavaScript, hình ảnh...) được server phục vụ trực tiếp mà không cần xử lý thêm. Cấu hình ExpressJS để phục vụ static files từ một thư mục cụ thể.</li>
+<li><strong>SCSS (Sassy CSS):</strong>  CSS preprocessor, mở rộng CSS với nhiều tính năng mạnh mẽ hơn. Cấu hình để biên dịch file SCSS thành CSS trong dự án NodeJS.</li>
+</ul>
+</li>
+</ul>
+<h3 id="9-tich-hop-bootstrap-vao-du-an-use-bootstrap-4">9. Tích hợp Bootstrap vào dự án | Use Bootstrap 4<a class="headerlink" href="#9-tich-hop-bootstrap-vao-du-an-use-bootstrap-4" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hướng dẫn tích hợp Bootstrap (framework CSS phổ biến) vào dự án NodeJS và ExpressJS để tạo giao diện nhanh chóng và responsive.</li>
+</ul>
+<h2 id="phan-2-routing-va-phuong-thuc-http">Phần 2: Routing và Phương thức HTTP<a class="headerlink" href="#phan-2-routing-va-phuong-thuc-http" title="Permanent link">&para;</a></h2>
+<h3 id="10-basic-routing-ki-thuat-inh-tuyen-trong-nodejs">10. Basic routing | Kĩ thuật định tuyến trong NodeJS<a class="headerlink" href="#10-basic-routing-ki-thuat-inh-tuyen-trong-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Routing (định tuyến) là quá trình xác định cách ứng dụng phản hồi với các request đến từ client (dựa trên URL và HTTP method). Trong ExpressJS, routing được định nghĩa bằng cách sử dụng <code>app.get()</code>, <code>app.post()</code>, <code>app.put()</code>, <code>app.delete()</code>,... để map các HTTP method và path đến các handler functions (middleware hoặc controller).</li>
+</ul>
+<h3 id="11-get-method-phuong-thuc-get">11. GET method | Phương thức GET<a class="headerlink" href="#11-get-method-phuong-thuc-get" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Phương thức HTTP GET dùng để <strong>lấy dữ liệu từ server</strong>. Dữ liệu có thể được truyền qua URL (query parameters). GET requests thường dùng để lấy trang web, danh sách sản phẩm, thông tin chi tiết...</li>
+</ul>
+<h3 id="12-query-parameters-chuoi-truy-van">12. Query parameters | Chuỗi truy vấn<a class="headerlink" href="#12-query-parameters-chuoi-truy-van" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Query parameters (chuỗi truy vấn) là phần thêm vào sau dấu <code>?</code> trong URL, dùng để truyền dữ liệu bổ sung cho server trong GET requests. Ví dụ: <code>?page=2&amp;sort=price</code>. ExpressJS cung cấp cách để truy cập query parameters từ request object (<code>req.query</code>).</li>
+</ul>
+<h3 id="13-form-default-behavior-hanh-vi-mac-inh-cua-form-trong-html">13. Form default behavior | Hành vi mặc định của Form trong HTML<a class="headerlink" href="#13-form-default-behavior-hanh-vi-mac-inh-cua-form-trong-html" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Hành vi mặc định của form HTML khi submit là gửi request <strong>GET</strong> đến server (nếu không chỉ định method) và <strong>tải lại trang</strong>. Cần hiểu hành vi này để xử lý form submit trong ứng dụng web.</li>
+</ul>
+<h3 id="14-post-method-phuong-thuc-post-giao-thuc-http">14. POST method | Phương thức POST | Giao thức HTTP<a class="headerlink" href="#14-post-method-phuong-thuc-post-giao-thuc-http" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Phương thức HTTP POST dùng để <strong>gửi dữ liệu lên server</strong> (ví dụ: dữ liệu form, dữ liệu JSON...). Dữ liệu được gửi trong body của request. POST requests thường dùng để tạo mới dữ liệu, submit form, upload file...</li>
+</ul>
+<h2 id="phan-3-mo-hinh-mvc-va-crud-operations">Phần 3: Mô hình MVC và CRUD Operations<a class="headerlink" href="#phan-3-mo-hinh-mvc-va-crud-operations" title="Permanent link">&para;</a></h2>
+<h3 id="15-mo-hinh-mvc-mvc-model">15. Mô hình MVC | MVC model<a class="headerlink" href="#15-mo-hinh-mvc-mvc-model" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> MVC (Model-View-Controller) là một design pattern (mẫu thiết kế) phổ biến trong phát triển web, giúp tổ chức code ứng dụng thành 3 phần riêng biệt:<ul>
+<li><strong>Model:</strong>  Xử lý logic dữ liệu, tương tác với database.</li>
+<li><strong>View:</strong>  Hiển thị dữ liệu cho người dùng (UI). Trong NodeJS/ExpressJS, View thường là template engine hoặc frontend framework (ReactJS...).</li>
+<li><strong>Controller:</strong>  Xử lý request từ user, tương tác với Model để lấy/cập nhật dữ liệu, chọn View để render và trả về response cho user.</li>
+<li>MVC giúp code dễ quản lý, bảo trì, và mở rộng hơn.</li>
+</ul>
+</li>
+</ul>
+<h3 id="16-mvc-routes-controllers-mo-hinh-mvc">16. MVC Routes &amp; Controllers | Mô hình MVC<a class="headerlink" href="#16-mvc-routes-controllers-mo-hinh-mvc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Trong mô hình MVC, routes (định tuyến) thường được liên kết với controllers. Controller functions sẽ xử lý logic cho từng route cụ thể (ví dụ: xử lý request lấy danh sách khóa học, request tạo mới khóa học...).</li>
+</ul>
+<h3 id="17-mvc-model-xay-dung-thanh-phan-model-trong-mo-hinh-mvc">17. MVC Model | Xây dựng thành phần Model trong mô hình MVC<a class="headerlink" href="#17-mvc-model-xay-dung-thanh-phan-model-trong-mo-hinh-mvc" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Xây dựng thành phần Model trong ứng dụng NodeJS/ExpressJS theo mô hình MVC. Model chịu trách nhiệm tương tác với database (ví dụ: sử dụng Mongoose để làm việc với MongoDB). Định nghĩa schema (cấu trúc dữ liệu), các phương thức CRUD (Create, Read, Update, Delete) cho dữ liệu.</li>
+</ul>
+<h3 id="18-crud-read-from-db-oc-database-xay-dung-phan-trang-chu">18. [CRUD] Read from DB | Đọc Database | Xây dựng phần trang chủ<a class="headerlink" href="#18-crud-read-from-db-oc-database-xay-dung-phan-trang-chu" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Thực hiện thao tác <strong>Read (Đọc)</strong> trong CRUD operations. Xây dựng chức năng đọc dữ liệu từ database (ví dụ: danh sách khóa học) và hiển thị lên trang chủ (View).</li>
+</ul>
+<h3 id="19-course-detail-page-xay-dung-trang-chi-tiet-thuc-hanh-nodejs">19. Course detail page | Xây dựng trang chi tiết | Thực hành NodeJS<a class="headerlink" href="#19-course-detail-page-xay-dung-trang-chi-tiet-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Xây dựng trang chi tiết khóa học. Route và controller để xử lý request lấy thông tin chi tiết của một khóa học cụ thể (dựa trên ID), sau đó render trang chi tiết (View) với dữ liệu khóa học.</li>
+</ul>
+<h3 id="20-crud-create-new-course-dung-trang-tao-moi-khoa-hoc-thuc-hanh-nodejs">20. [CRUD] Create new course | Dựng trang tạo mới khóa học | Thực hành NodeJS<a class="headerlink" href="#20-crud-create-new-course-dung-trang-tao-moi-khoa-hoc-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Thực hiện thao tác <strong>Create (Tạo)</strong> trong CRUD operations. Xây dựng form tạo mới khóa học (View), route và controller để xử lý form submit (POST request), validate dữ liệu, và lưu khóa học mới vào database (Model).</li>
+</ul>
+<h3 id="21-crud-update-course-dung-trang-chinh-sua-thuc-hanh-nodejs">21. [CRUD] Update course | Dựng trang chỉnh sửa | Thực hành NodeJS<a class="headerlink" href="#21-crud-update-course-dung-trang-chinh-sua-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Thực hiện thao tác <strong>Update (Cập nhật)</strong> trong CRUD operations. Xây dựng form chỉnh sửa khóa học (View), route và controller để xử lý form submit (PUT hoặc POST request), validate dữ liệu, và cập nhật thông tin khóa học trong database (Model).</li>
+</ul>
+<h3 id="22-crud-delete-course-tao-chuc-nang-xoa-trong-trang-thuc-hanh-nodejs">22. [CRUD] Delete course | Tạo chức năng xóa trong trang | Thực hành NodeJS<a class="headerlink" href="#22-crud-delete-course-tao-chuc-nang-xoa-trong-trang-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Thực hiện thao tác <strong>Delete (Xóa)</strong> trong CRUD operations. Xây dựng chức năng xóa khóa học. Route và controller để xử lý request xóa (DELETE request), xóa khóa học khỏi database (Model).</li>
+</ul>
+<h3 id="23-soft-delete-ki-thuat-xoa-mem-thuc-hanh-nodejs">23. Soft delete | Kĩ thuật xóa mềm | Thực hành NodeJS<a class="headerlink" href="#23-soft-delete-ki-thuat-xoa-mem-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Kỹ thuật xóa mềm (Soft Delete) thay vì xóa hẳn dữ liệu khỏi database, sẽ thêm một flag (ví dụ: <code>deletedAt</code> timestamp) để đánh dấu bản ghi là đã xóa. Dữ liệu vẫn còn trong database nhưng không hiển thị và không được sử dụng trong ứng dụng. Ưu điểm: có thể khôi phục dữ liệu đã xóa, lưu lịch sử.</li>
+</ul>
+<h3 id="24-deleted-count-documents-hien-thi-so-lieu-a-xoa-thuc-hanh-nodejs">24. Deleted count documents | Hiển thị số liệu đã xóa | Thực hành NodeJS<a class="headerlink" href="#24-deleted-count-documents-hien-thi-so-lieu-a-xoa-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hiển thị số lượng bản ghi đã bị xóa mềm trong ứng dụng.</li>
+</ul>
+<h3 id="25-select-all-with-checkbox-chuc-nang-chon-bo-chon-thuc-hanh-nodejs">25. "Select all" with checkbox | Chức năng chọn &amp; bỏ chọn | Thực hành NodeJS<a class="headerlink" href="#25-select-all-with-checkbox-chuc-nang-chon-bo-chon-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Xây dựng chức năng "chọn tất cả" và "bỏ chọn tất cả" bằng checkbox trong giao diện quản lý dữ liệu (ví dụ: danh sách khóa học).</li>
+</ul>
+<h3 id="26-fix-bug-action-form-sua-loi-form-hanh-ong-thuc-hanh-nodejs">26. Fix bug action form | Sửa lỗi form hành động | Thực hành NodeJS<a class="headerlink" href="#26-fix-bug-action-form-sua-loi-form-hanh-ong-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Sửa lỗi liên quan đến form hành động (ví dụ: form submit, form delete) trong ứng dụng.</li>
+</ul>
+<h3 id="27-sort-middleware-chuc-nang-sap-xep-trang-quan-ly-thuc-hanh-nodejs">27. Sort middleware | Chức năng sắp xếp trang quản lý | Thực hành NodeJS<a class="headerlink" href="#27-sort-middleware-chuc-nang-sap-xep-trang-quan-ly-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Sử dụng middleware để thêm chức năng sắp xếp dữ liệu (ví dụ: sắp xếp danh sách khóa học theo tên, ngày tạo...) trên trang quản lý. Middleware sẽ xử lý logic sắp xếp trước khi controller xử lý request.</li>
+</ul>
+<h3 id="28-sort-query-helper-hoan-thien-logic-chuc-nang-sort-thuc-hanh-nodejs">28. Sort query helper | Hoàn thiện logic chức năng Sort | Thực hành NodeJS<a class="headerlink" href="#28-sort-query-helper-hoan-thien-logic-chuc-nang-sort-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong> Hoàn thiện logic chức năng sắp xếp dữ liệu, có thể sử dụng helper functions để tái sử dụng logic sắp xếp.</li>
+</ul>
+<h3 id="29-auto-increment-id-field-truong-tang-id-tu-ong-thuc-hanh-nodejs">29. Auto increment id field | Trường tăng ID tự động | Thực hành NodeJS<a class="headerlink" href="#29-auto-increment-id-field-truong-tang-id-tu-ong-thuc-hanh-nodejs" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Tóm tắt:</strong>  Cấu hình database (ví dụ: MongoDB) để trường ID (primary key) tự động tăng giá trị khi thêm bản ghi mới, giúp đơn giản hóa việc quản lý ID.</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["navigation.instant", "navigation.sections", "navigation.expand", "search.suggest", "search.highlighting", "search.share"], "search": "../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "\u0110\u00e3 sao ch\u00e9p", "clipboard.copy": "Sao ch\u00e9p v\u00e0o b\u1ed9 nh\u1edb t\u1ea1m", "search.result.more.one": "1 t\u1eeb kh\u00e1c trong trang", "search.result.more.other": "# t\u1eeb kh\u00e1c trong trang", "search.result.none": "Kh\u00f4ng t\u00ecm th\u1ea5y t\u00e0i li\u1ec7u li\u00ean quan", "search.result.one": "1 t\u00e0i li\u1ec7u li\u00ean quan", "search.result.other": "# t\u00e0i li\u1ec7u li\u00ean quan", "search.result.placeholder": "Nh\u1eadp \u0111\u1ec3 b\u1eaft \u0111\u1ea7u t\u00ecm ki\u1ebfm", "search.result.term.missing": "Kh\u00f4ng", "select.version": "Ch\u1ecdn phi\u00ean b\u1ea3n"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      
+        <script src="../js/open_in_new_tab.js"></script>
+      
+    
+  </body>
+</html>
