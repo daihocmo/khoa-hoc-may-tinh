@@ -1,3 +1,4 @@
+# Lên kế hoạch cho dự án lập trình
 Bài viết này được dịch từ bài viết gốc [How to Plan and Build a Programming Project - A Legitimate Guide for Beginners](https://www.peterlunch.com/blog/how-to-plan-and-build-a-programming-project). Vì bản dịch này sẽ là dịch cho cá nhân mình đọc nên là nếu mọi người đọc mà thấy có vấn đề ở đoạn nào thì gửi Issue hoặc Pull Request lên Github nha. 
 
 # Cách lập kế hoạch và xây dựng dự án lập trình - Hướng dẫn cho người mới bắt đầu.

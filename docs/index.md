@@ -14,13 +14,11 @@ Trang cũng được mở rộng thêm để phục vụ người đọc như m�
 
 ### Một số ghi chú và nhắc nhỏ
 
-#### "Hướng dẫn vẫn đang trong quá trình xây dựng"
+!!! info "Hướng dẫn vẫn đang trong quá trình xây dựng"
+    Chắc chắn là còn nhiều lỗi, dịch chưa hoàn chỉnh hay chưa bổ sung các thông tin, hướng dẫn, tài nguyên như yêu cầu.
 
-Chắc chắn là còn nhiều lỗi, dịch chưa hoàn chỉnh hay chưa bổ sung các thông tin, hướng dẫn, tài nguyên như yêu cầu.
-
-#### "Một số hướng dẫn được dịch bởi Google Dịch và chưa sửa xong"
-
-Mình khá lười nên có thể sẽ mất khá lâu để xong, không biết bao giờ.
+!!! info "Một số hướng dẫn được dịch bởi Google Dịch và chưa sửa xong"
+    Mình khá lười nên có thể sẽ mất khá lâu để xong, không biết bao giờ.
 
 ### Cộng đồng
 Mình có làm một cộng đồng liên quan đến Khoa học máy tính trên Discord. Bạn có thể [tham gia tại đây](https://discord.gg/x93EE354PB)

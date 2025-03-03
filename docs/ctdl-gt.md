@@ -160,5 +160,22 @@ Ta sẽ tập trung học sắp xếp dựa trên so sánh (Comparison-based sor
 4. Greedy Algorithms:
 - Activity Selection Problem, Huffman Coding, Fractional Knapsack Problem
 
+### Tài nguyên
+
+Theo như một bình luận trên Reddit thì: 
+> So there are some that try to advocate for standardizing pseudocode, but personally I think it's a terrible idea. If the code doesn't actually run, how can you be sure it's unambiguous and correct? There are famous examples of pseudocode in textbooks and papers having subtle bugs in them.
+
+Nên có thêm một số phần mềm hỗ trợ trực quan hóa thuật toán, hai công cụ mà mình khá thích là:
+
+- https://tobinatore.github.io/algovis/
+- https://www.cs.usfca.edu/~galles/visualization/Algorithms.html
+
+Nguồn học
+
+- https://tira.mooc.fi/spring-2025/chap16/
+
+
+
+https://www.nandgame.com/
 
 
