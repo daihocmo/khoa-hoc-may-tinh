@@ -53,7 +53,7 @@ Nguồn học cơ bản:
 - [Khóa HTML/CSS cơ bản của F8 - Tiếng Việt](https://www.youtube.com/playlist?list=PL_-VfJajZj0U9nEXa4qyfB4U5ZIYCMPlz)
 - [HTML Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#html-foundations)
 - [CSS Foundations](https://www.theodinproject.com/paths/foundations/courses/foundations#css-foundations) 
-- [Đọc hết toàn bộ nội dung cơ bản của HTML/CSS](html-css.md)
+- [Đọc hết toàn bộ nội dung cơ bản của HTML/CSS](../sample/html-css.md)
 - Nếu học trên FullStackOpen thì học phần [Part 0 - Fundamentals of Web apps](https://fullstackopen.com/en/part0)
 
 Đọc thêm các nội dung khác liên quan đến HTML/CSS:
@@ -81,7 +81,7 @@ JavaScript cơ bản
 - [30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript) - Học từ đầu - Khóa này đã có người dịch sang Tiếng Việt và bạn có thể đọc luôn: [Bản dịch Tiếng Việt của 30-Days-Of-JavaScript](https://github.com/Asabeneh/30-Days-Of-JavaScript/blob/master/Vietnamese/README.md).
 - [33 Concepts Every JavaScript Developer Should Know](https://github.com/leonardomso/33-js-concepts) - Tổng hợp những concepts mà "JS devs" nên biết
 - Nếu bạn thích học thêm thì học khóa [JavaScript nâng cao](https://www.youtube.com/playlist?list=PL_-VfJajZj0U1MSx1IMu13oLJq2nM97ac)
-- [Hướng dẫn tự học JS nhanh](js.md) - Nếu bạn đã học lập trình từ trước.
+- [Hướng dẫn tự học JS nhanh](../sample/js.md) - Nếu bạn đã học lập trình từ trước.
 
 #### Trong lúc học HTML/CSS/JS bạn có thể đọc thêm một số bài viết này
 - [Command Line Basics](https://www.theodinproject.com/lessons/foundations-command-line-basics) - Tìm hiểu cách sử dụng giao diện dòng lệnh cơ bản cho các hệ điều hành Unix-based (MacOS, Linux .etc.)
@@ -138,7 +138,7 @@ Nếu bạn đang học Rust thì hãy đọc [Hướng dẫn cày Rust](https:/
 
 #### Lựa chọn định hướng
 - Nếu bạn dự định Fullstack JS, học NodeJS và ExpressJS (Và thêm cái gì nữa thì mình cũng không rõ). Bạn có thể học toàn bộ phần này trên Khóa [Full Stack JavaScript](https://www.theodinproject.com/paths/full-stack-javascript) của TheOdinProject hoặc [NodeJS & ExpressJS](https://www.youtube.com/playlist?list=PL_-VfJajZj0VatBpaXkEHK_UPHL7dW6I3) của F8 (Tiếng Việt, bằng Video).
-- Nếu bạn chọn Rust thì đọc: [Một hướng dẫn khá nhanh về Rust](rust-guide.md)
+- Nếu bạn chọn Rust thì đọc: [Một hướng dẫn khá nhanh về Rust](../sample/rust-guide.md)
 
 #### Có thể bạn sẽ muốn đọc thêm
 - [Request-Response Cycle Through A Story](https://scribe.rip/@castonboyd/request-response-cycle-through-a-story-e552a7afff41)
@@ -200,7 +200,7 @@ Mình viết lộ trình này để mình học và mình chưa hiểu lắm v�
 - Học [React](https://viblo.asia/p/bat-dau-voi-reactjs-YWOZrDGP5Q0) nền tảng: [JSX, components, props, và state](https://viblo.asia/p/react-co-ban-component-jsx-props-state-bJzKmkA6l9N).
 - Sử dụng React Developer Tools.
 - [Tổng Hợp Nguyên Tắc Vàng Và Xu Hướng Thiết Kế UI/UX Nổi Bật Bạn Không Nên Bỏ Qua](https://glints.com/vn/blog/nguyen-tac-va-xu-huong-thiet-ke-ui-u/)
-- [Học ReactJS nhanh](react-js.md) - Bài hướng dẫn nhanh, chưa sửa
+- [Học ReactJS nhanh](../sample/react-js.md) - Bài hướng dẫn nhanh, chưa sửa
 
 #### Nguồn tài nguyên học
 - [Học thông qua trang chủ của React](https://react.dev/learn)

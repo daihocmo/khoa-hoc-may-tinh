@@ -1,4 +1,6 @@
-# Hướng dẫn tự học Khoa học máy tính
+# Khoa học máy tính
+
+![](images/cover.png)
 
 Đây là một trang tổng hợp hành trình tự học chương trình Khoa học máy tính của cá nhân mình, cả Tiếng Anh lẫn Tiếng Việt. Đồng thời, trang sẽ tổng hợp thêm nhiều những đóng góp, hướng dẫn và gợi ý từ những người khác. 
 
@@ -6,6 +8,9 @@ Lưu ý là trang này không phải là một trang "khóa học" đâu nha. M�
 
 Cảm hứng xây dựng trang đến từ [csdiy.wiki](https://csdiy.wiki/).
 
+!!! warning "Trang đã ẩn đi khá nhiều các trang liên quan đến các môn riêng"
+    Do mình chưa viết được hướng dẫn hoàn chỉnh cho các môn nên mình sẽ tạm thời ẩn toàn bộ khỏi trang. Bạn có thể đọc các bài viết trong Repo trên Github.
+    
 ### Tại sao lại học Khoa học máy tính
 Mình chưa tìm hiểu. Nhưng học KHMT giúp cá nhân mình hiểu hơn về nhiều khái niệm trong *lập trình* nói riêng và *máy tính* nói chung. Hệ quả tất yếu là mình giỏi hơn thật.
  
@@ -14,11 +19,8 @@ Trang cũng được mở rộng thêm để phục vụ người đọc như m�
 
 ### Một số ghi chú và nhắc nhỏ
 
-!!! info "Hướng dẫn vẫn đang trong quá trình xây dựng"
-    Chắc chắn là còn nhiều lỗi, dịch chưa hoàn chỉnh hay chưa bổ sung các thông tin, hướng dẫn, tài nguyên như yêu cầu.
-
-!!! info "Một số hướng dẫn được dịch bởi Google Dịch và chưa sửa xong"
-    Mình khá lười nên có thể sẽ mất khá lâu để xong, không biết bao giờ.
+- "*Hướng dẫn vẫn đang trong quá trình xây dựng*": Chắc chắn là còn nhiều lỗi, dịch chưa hoàn chỉnh hay chưa bổ sung các thông tin, hướng dẫn, tài nguyên như yêu cầu.
+- "*Một số hướng dẫn được dịch bởi Google Dịch và chưa sửa xong*": Mình khá lười nên có thể sẽ mất khá lâu để xong, không biết bao giờ.
 
 ### Cộng đồng
 Mình có làm một cộng đồng liên quan đến Khoa học máy tính trên Discord. Bạn có thể [tham gia tại đây](https://discord.gg/x93EE354PB)

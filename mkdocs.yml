@@ -7,35 +7,14 @@ repo_name: Đóng góp cho trang trên Github
 nav:
   - 'Trang chủ': 'index.md'
   - 'Hướng dẫn tự học':
-    - 'Bắt đầu': 'bat-dau.md'
+    - 'Đôi chút về lập trình': 'bat-dau.md'
     - 'Ghi nhớ': 'ghi-nho.md'
     - 'Nhật ký code': 'nhat-ky-code.md'
-    - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
-    - 'Bắt đầu dự án': 'cach-len-ke-hoach.md'
+    - 'Lên kế hoạch cho dự án': 'cach-len-ke-hoach.md'
   - 'Giáo trình tự học':
     - 'Hướng dẫn chính': 'khmt.md'
-    - 'Lập trình': 'lap-trinh.md'
-    - 'Kiến trúc máy tính': 'he-thong-may-tinh.md'
     - 'CTDL & Giải thuật': 'ctdl-gt.md'
     - 'Toán': 'toan.md'
-    - 'Hệ điều hành': 'he-dieu-hanh.md'
-    - 'Mạng máy tính': 'mang-may-tinh.md'
-    - 'Cơ sở dữ liệu': 'csdl.md'
-    - 'Trình biên dịch': 'trinh-bien-dich.md'
-    - 'Hệ thống phân tán': 'he-thong-phan-tan.md'
-  - 'Định hướng chuyên môn':
-    - 'Lựa chọn': 'lua-chon.md'
-    - 'Fullstack': 
-      - 'Hướng dẫn chính': 'fullstack.md'
-      - 'HTML/CSS': 'html-css.md'
-      - 'JavaScript': 'js.md'
-      - 'React JS': 'react-js.md'
-      - 'NodeJS & ExpressJS': 'node-va-express.md'
-      - 'Rust': 'rust-guide.md'
-    - 'DevOps': 'devops.md'
-  - 'Tự học Tiếng Anh': 'tieng-anh-it.md'
-  - 'Tài nguyên học': 'tai-nguyen-hoc.md'
-
     
 theme:
   palette:
@@ -69,9 +48,6 @@ theme:
   language: vi
 
 markdown_extensions:
-  - pymdownx.emoji:
-      emoji_index: !!python/name:material.extensions.emoji.twemoji
-      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - meta
   - admonition
   - attr_list

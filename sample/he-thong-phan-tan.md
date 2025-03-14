@@ -9,11 +9,6 @@ Bạn lên trang chủ của khóa học để tìm hiểu thêm: [MIT 6.824J](h
 
 #### Các hệ thống phân tán và ứng dụng (IT4611) - SOICT HUST
 
-- [Thông tin toàn bộ khóa học trên trang của giảng viên](https://users.soict.hust.edu.vn/anhth/Courses/DistributedSystems/distributed_systems.html)
-- Giáo trình: [Distributed Systems: Principles and Paradigms](https://csc-knu.github.io/sys-prog/books/Andrew%20S.%20Tanenbaum%20-%20Distributed%20Systems.%20Principles%20and%20Paradigms.pdf)
-- Video bài giảng: [Các hệ thống phân tán và ứng dụng (IT4611) - SOICT HUST](https://www.youtube.com/playlist?list=PL54DF7EQeBp4e2tCXneoGpXX441jBtg5h)
-- [Tài liệu môn](https://tailieuhust.com/tai-lieu-cac-he-thong-phan-tan-va-ung-dung-hust/)
-- Example Code: [Example code distributed system IT4611](https://github.com/Yreus6/Distributed-System/)
 
 ### Lịch học theo tuần
 Chờ ông nào học Bách Khoa có LMS để truy cập.
