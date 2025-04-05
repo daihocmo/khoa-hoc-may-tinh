@@ -7,7 +7,8 @@ repo_name: Đóng góp cho trang trên Github
 nav:
   - 'Trang chủ': 'index.md'
   - 'Hướng dẫn tự học':
-    - 'Đôi chút về lập trình': 'bat-dau.md'
+    - 'Bài học vỡ lòng': 'bat-dau.md'
+    - 'Tư duy lập trình': 'tu-duy-lap-trinh.md'
     - 'Ghi nhớ': 'ghi-nho.md'
     - 'Nhật ký code': 'nhat-ky-code.md'
     - 'Lên kế hoạch cho dự án': 'cach-len-ke-hoach.md'

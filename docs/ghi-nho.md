@@ -1,7 +1,5 @@
 # Lập trình + SRS
 
-Chắc chắn rồi, đây là bản dịch tiếng Việt của văn bản bạn cung cấp:
-
 ## Vấn đề 1: Chúng ta quên quá nhanh
 
 Bạn đã bao giờ dành cả tuần để học cho một kỳ thi, nhưng lại quên mất 90% những gì bạn đã học trong vòng 2 tháng và quên sạch mọi thứ trong vòng một năm chưa?
@@ -207,10 +205,6 @@ Chỉ nhập thẻ vào bộ thẻ của bạn nếu một trong các điều ki
 
 ## 13 quy tắc tạo thẻ
 
-Chắc chắn rồi, đây là bản dịch sang Tiếng Việt của nội dung bạn cung cấp:
-
-Bạn có thể dịch nội dung này sang Tiếng Việt được không?
-
 Tôi đã cô đọng nội dung này thành dạng gạch đầu dòng để tiết kiệm thời gian cho cả hai chúng ta. Mỗi phần nhỏ đại diện cho một nguyên tắc mà tôi đã áp dụng trong chiến lược học tập của mình, với mục tiêu tổng quát là học được càng nhiều tài liệu càng tốt trong thời gian ngắn nhất.
 
 ### 1. Thẻ Ảnh Chụp Màn Hình > Thẻ Văn Bản Thuần Túy.
@@ -277,9 +271,6 @@ Khi tôi ôn tập các thẻ về các tính năng lập trình mà tôi chưa 
 
 Bạn sẽ luôn muốn thực hiện các biện pháp để giảm thời gian bạn dành cho việc ôn tập bộ thẻ của mình. Một giải pháp đơn giản, hiệu quả là in đậm từ khóa hoặc điểm chính trong câu hỏi hoặc câu trả lời hoặc cả hai. Kỹ thuật này đặc biệt hữu ích khi bạn có một số thẻ ghi nhớ đề cập đến các điểm tương tự, ví dụ: giải thích các ngoại lệ khác nhau trong một không gian tên hoặc lớp duy nhất. Do nhiều năm quét văn bản trực tuyến, đôi mắt của bạn đã thích nghi cao độ với việc nhìn thấy văn bản in đậm một cách rõ ràng và tôi đã phát hiện ra rằng chỉ cần nhìn thấy phông chữ in đậm trong thẻ Anki của bạn là đủ để kích thích trí nhớ của bạn và đưa ra câu trả lời cần thiết, giúp bạn tiết kiệm thời gian mà bạn cần để đọc toàn bộ thẻ. Kích hoạt trí nhớ càng nhanh càng tốt trong các lần ôn tập của bạn sau đó tiếp tục.
 
-##### Nếu không in đậm, rất khó để quét...
-
-##### ... so sánh với phiên bản \_có\_ in đậm
 
 ### 12. Thẻ "Best Practice" (Thực Hành Tốt Nhất)
 
